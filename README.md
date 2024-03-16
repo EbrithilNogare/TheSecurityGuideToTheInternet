@@ -1,2 +1,3 @@
 # The Security Guide to the Internet
-An educational game focused on cyber security
+CZ translation: Bezpečný průvodce internetem
+An educational game focused on cybersecurity
