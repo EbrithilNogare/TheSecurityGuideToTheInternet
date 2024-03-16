@@ -1,6 +1,6 @@
 # The Security Guide to the Internet
 
-CZ translation: Bezpečný průvodce internetem
+CZ translation: Bezpečný průvodce internetem  
 An educational game focused on cybersecurity
 
 [![](https://img.shields.io/github/actions/workflow/status/EbrithilNogare/TheSecurityGuideToTheInternet/buildGame.yml?style=for-the-badge&cacheSeconds=300)](https://ebrithilnogare.github.io/TheSecurityGuideToTheInternet/)
