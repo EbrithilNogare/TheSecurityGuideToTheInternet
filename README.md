@@ -1,2 +1,2 @@
-# The Ultimate Security Guide to the Internet
-Educational game focused on cyber security
+# The Security Guide to the Internet
+An educational game focused on cyber security
