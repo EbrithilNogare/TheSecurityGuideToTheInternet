@@ -16,7 +16,7 @@ An educational game focused on cybersecurity
 ## Versions
 
 [![](https://img.shields.io/badge/Online%20version-555555?style=for-the-badge&logo=webgl&logoColor=white&cacheSeconds=3000)](https://ebrithilnogare.github.io/TheSecurityGuideToTheInternet/)
-[![](https://img.shields.io/badge/Android%20version-555555?style=for-the-badge&logo=android&logoColor=white&cacheSeconds=3000)](https://nightly.link/EbrithilNogare/TheSecurityGuideToTheInternet/workflows/buildGame/main/Build-Android.zip)
+[![](https://img.shields.io/badge/Android%20version-555555?style=for-the-badge&logo=android&logoColor=white&cacheSeconds=3000)](https://nightly.link/EbrithilNogare/TheSecurityGuideToTheInternet/workflows/buildGame/main/build-Android.zip)
 
 ## Wiki
 
