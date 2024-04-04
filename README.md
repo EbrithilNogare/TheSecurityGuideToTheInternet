@@ -1,7 +1,8 @@
 # The Security Guide to the Internet
 
 CZ translation: Bezpečný průvodce internetem  
-An educational game focused on cybersecurity
+
+The Security Guide to the Internet is an educational game designed to teach kids about internet safety and security fundamentals in a fun and engaging way. In the game, players embark on a journey through various levels, encountering different scenarios related to cybersecurity threats such as malware, privacy breaches, and encryption vulnerabilities.
 
 [![](https://img.shields.io/github/actions/workflow/status/EbrithilNogare/TheSecurityGuideToTheInternet/buildGame.yml?style=for-the-badge&cacheSeconds=300)](https://ebrithilnogare.github.io/TheSecurityGuideToTheInternet/)
 [![](https://img.shields.io/github/last-commit/EbrithilNogare/TheSecurityGuideToTheInternet/main?label=Last%20build&style=for-the-badge&logo=unity&cacheSeconds=300)](https://ebrithilnogare.github.io/TheSecurityGuideToTheInternet/)
