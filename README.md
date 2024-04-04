@@ -20,7 +20,7 @@
 
 CZ translation: Bezpečný průvodce internetem  
 
-The Security Guide to the Internet is an educational game teaching kids about safety on the Internet and other security basics in a fun and interesting way.  
+The Security Guide to the Internet is an educational game teaching students in the second grade of elementary school about safety on the Internet and other security basics in a fun and interesting way.  
 For a player, there are multiple levels in the game, encountering scenarios related to cybersecurity threats such as malware, privacy protection, and encryption, applicable not only on desktops but also on phones.  
 The game will be built using Unity and shipped for any mobile device and desktop.
 
