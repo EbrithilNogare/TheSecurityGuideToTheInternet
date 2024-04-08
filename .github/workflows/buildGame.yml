@@ -34,7 +34,7 @@ jobs:
           lfs: false
 
       - if: matrix.targetPlatform == 'WebGL'
-        run: mkdir -p ./build/WebGL/WebGL && touch ./build/WebGL/WebGL/package.json
+        run: mkdir -p ./build/WebGL/${{ github.event.repository.name }} && touch ./build/WebGL/${{ github.event.repository.name }}/package.json
 
       - if: matrix.targetPlatform == 'WebGL' ||  matrix.targetPlatform == 'Android' || matrix.targetPlatform == 'StandaloneWindows64'
         uses: actions/cache@v4
@@ -62,11 +62,12 @@ jobs:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
+          buildName: ${{ github.event.repository.name }}
           versioning: Semantic
           targetPlatform: ${{ matrix.targetPlatform }}
 
       - if: matrix.targetPlatform == 'WebGL'
-        run: echo '{ "version":"${{ steps.myBuildStep.outputs.buildVersion }}" }' > ./build/WebGL/WebGL/package.json
+        run: echo '{ "version":"${{ steps.myBuildStep.outputs.buildVersion }}" }' > ./build/WebGL/${{ github.event.repository.name }}/package.json
 
       - if: matrix.targetPlatform == 'WebGL'
         uses: JamesIves/github-pages-deploy-action@v4
