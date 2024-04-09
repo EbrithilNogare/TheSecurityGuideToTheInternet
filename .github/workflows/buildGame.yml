@@ -33,9 +33,6 @@ jobs:
           fetch-depth: 0
           lfs: false
 
-      - if: matrix.targetPlatform == 'WebGL'
-        run: mkdir -p ./build/WebGL/${{ github.event.repository.name }} && touch ./build/WebGL/${{ github.event.repository.name }}/package.json
-
       - if: matrix.targetPlatform == 'WebGL' ||  matrix.targetPlatform == 'Android' || matrix.targetPlatform == 'StandaloneWindows64'
         uses: actions/cache@v4
         with:
@@ -65,9 +62,13 @@ jobs:
           buildName: ${{ github.event.repository.name }}
           versioning: Semantic
           targetPlatform: ${{ matrix.targetPlatform }}
+      
+      - name: Remove DoNotShip folder
+        run: sudo find ./build/${{ matrix.targetPlatform }} -maxdepth 1 -type d -name "*DoNotShip*" -exec rm -rf {} +
 
-      - if: matrix.targetPlatform == 'WebGL'
-        run: echo '{ "version":"${{ steps.myBuildStep.outputs.buildVersion }}" }' > ./build/WebGL/${{ github.event.repository.name }}/package.json
+      - name: Write version into package.json for badges to work
+        if: matrix.targetPlatform == 'WebGL'
+        run: echo '{ "version":"${{ steps.myBuildStep.outputs.buildVersion }}" }' | sudo tee ./build/WebGL/${{ github.event.repository.name }}/package.json
 
       - if: matrix.targetPlatform == 'WebGL'
         uses: JamesIves/github-pages-deploy-action@v4
