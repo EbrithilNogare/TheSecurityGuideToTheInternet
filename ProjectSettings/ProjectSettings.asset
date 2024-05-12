@@ -397,6 +397,7 @@ PlayerSettings:
   openGLRequireES32: 0
   m_TemplateCustomTags:
     HIDE_FULL_SCREEN_BUTTON: 
+    LOADER_COLOR: '#6ec6ff'
     PRODUCT_DESCRIPTION: 
   mobileMTRendering:
     Android: 1
