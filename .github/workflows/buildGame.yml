@@ -11,6 +11,8 @@ on:
     branches:
       - master
       - main
+  schedule:
+    - cron: "0 0 1 */2 *" # run every 2 months to keep artifacts alive
 
 jobs:
   buildForAllSupportedPlatforms:
@@ -20,11 +22,10 @@ jobs:
       fail-fast: false
       matrix:
         targetPlatform:
-          #- StandaloneOSX # Build a macOS standalone (Intel 64-bit)
-          #- iOS # Build an iOS player
-          - StandaloneWindows # Build a Windows standalone
-          #- StandaloneWindows64 # Build a Windows 64-bit standalone
-          #- StandaloneLinux64 # Build a Linux 64-bit standalone
+          # - iOS # Build an iOS player
+          # - StandaloneWindows # Build a Windows standalone
+          - StandaloneWindows64 # Build a Windows 64-bit standalone
+          # - StandaloneLinux64 # Build a Linux 64-bit standalone
           - Android # Build an Android .apk standalone app
           - WebGL # WebGL
     steps:
@@ -45,12 +46,18 @@ jobs:
         with:
           path: Library
           key: Library-StandaloneWindows64
-          restore-keys:
-            Library-WebGL
+          restore-keys: Library-WebGL
             Library-
 
-      - if: matrix.targetPlatform == 'Android' || matrix.targetPlatform == 'StandaloneOSX'
+      - if: matrix.targetPlatform == 'Android'
         uses: jlumbroso/free-disk-space@v1.3.1
+        with:
+          android: true # ~ 8.7 GiB in 5s
+          dotnet: true # ~ 1.6 GiB in 1s
+          haskell: true # ~ 5.2 GiB in 1s
+          large-packages: false # ~ 4,7 GiB in 100s
+          docker-images: true # ~ 3.2 GiB in 1s
+          swap-storage: false # ~ 4.0 GiB in 1s
 
       - uses: game-ci/unity-builder@v4
         id: myBuildStep
@@ -62,7 +69,10 @@ jobs:
           buildName: ${{ github.event.repository.name }}
           versioning: Semantic
           targetPlatform: ${{ matrix.targetPlatform }}
-      
+
+      - name: Get disk space usage
+        run: df -ah /
+
       - name: Remove DoNotShip folder
         run: sudo find ./build/${{ matrix.targetPlatform }} -maxdepth 1 -type d -name "*DoNotShip*" -exec rm -rf {} +
 
