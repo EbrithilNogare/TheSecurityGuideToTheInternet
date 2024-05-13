@@ -74,7 +74,9 @@ jobs:
         run: df -ah /
 
       - name: Remove DoNotShip folder
-        run: sudo find ./build/${{ matrix.targetPlatform }} -maxdepth 1 -type d -name "*DoNotShip*" -exec rm -rf {} +
+        run: |
+          sudo find ./build/${{ matrix.targetPlatform }} -maxdepth 1 -type d -name "*DoNotShip*" -exec rm -rf {} +
+          sudo find ./build/${{ matrix.targetPlatform }} -maxdepth 1 -type d -name "*ButDontShipItWithYourGame*" -exec rm -rf {} +
 
       - name: Write version into package.json for badges to work
         if: matrix.targetPlatform == 'WebGL'
