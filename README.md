@@ -28,6 +28,10 @@ CZ translation: Bezpečný průvodce internetem
 
 https://github.com/EbrithilNogare/TheSecurityGuideToTheInternet/wiki
 
+## Thesis
+
+https://www.overleaf.com/read/tkjrcsfsrwrh#395b31
+
 ### Unity version
 
 2022.3.9f1
