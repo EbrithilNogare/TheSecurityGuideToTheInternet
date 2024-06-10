@@ -24,13 +24,11 @@ The game will be built using Unity and shipped for any mobile device and desktop
 
 CZ translation: Bezpečný průvodce internetem  
 
-## Wiki
+## Links:
 
-https://github.com/EbrithilNogare/TheSecurityGuideToTheInternet/wiki
-
-## Thesis
-
-https://www.overleaf.com/read/tkjrcsfsrwrh#395b31
+[Wiki](https://github.com/EbrithilNogare/TheSecurityGuideToTheInternet/wiki)  
+[GDD](https://github.com/EbrithilNogare/TheSecurityGuideToTheInternet/wiki/Game-Design-Document)  
+[Thesis](https://www.overleaf.com/read/tkjrcsfsrwrh#395b31)  
 
 ### Unity version
 
