@@ -6,6 +6,28 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 98da61ebca6bf5847ad6ede55efeb015
+  - enabled: 1
     path: Assets/Scenes/Room.unity
     guid: 844e8d37b3904fa46a34cdeab7f0c9ff
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 5c4a502aa48a2e249b36f0f31084f2c2
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: bfc48d0340418c24dbd0a7277f9888c2
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: c00fd86b77dd63f4781b429c2c815010
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 67da6e879d7c1d74f9dbc562ff728866
+  - enabled: 1
+    path: Assets/Scenes/LevelSelection.unity
+    guid: 22d400540c1d6144fa11995eef31b621
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 267e98edf00f0e94283a3ac6dc529d54,
+      type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 352b61638c7c12446a1e206cd71c41fe,
+      type: 2}
