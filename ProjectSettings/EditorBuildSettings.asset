@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelection.unity
     guid: 22d400540c1d6144fa11995eef31b621
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/Antivirus.unity
+    guid: 89336ab29765ba145805f3d096ad2f1d
+  - enabled: 1
+    path: Assets/Scenes/Library.unity
+    guid: 1f055770cf809a745ad74f54a7c49fdc
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 267e98edf00f0e94283a3ac6dc529d54,
       type: 2}
