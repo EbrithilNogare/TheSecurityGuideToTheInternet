@@ -141,7 +141,7 @@ jobs:
               elif [ "$file_count" -gt 1 ]; then
                 zip_file="${file}.zip"
                 echo "Zipping directory $file to $zip_file"
-                zip -r -q "$zip_file" "$file" -i ./*
+                zip -r -q "$zip_file" "$file"
                 echo "Uploading zip file $zip_file"
                 gh release upload "${{needs.buildForAllSupportedPlatforms.outputs.version}}" "$zip_file" --clobber
               fi
