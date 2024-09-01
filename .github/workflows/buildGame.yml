@@ -123,8 +123,6 @@ jobs:
           draft: false
           prerelease: false
 
-      - run: tree ./artifacts -L 2
-
       - name: Upload release variants
         if: env.release_exists == 'false'
         env:
