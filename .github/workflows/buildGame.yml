@@ -129,7 +129,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          for file in ./artifacts/*; do
+          for file in ./artifacts/; do
             if [ -f "$file" ]; then
                 zip_file="${file}.zip"
                 echo "Zipping $file to $zip_file..."
