@@ -123,11 +123,15 @@ jobs:
           draft: false
           prerelease: false
 
+      - run: ls ./artifacts
+
+      - run: tree -L 4 ./artifacts
+
       - name: Upload release variants
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          for file in ./artifacts/*/*; do
+          for file in ./artifacts/*; do
             if [ -f "$file" ]; then
               echo "Uploading $file..."
               gh release upload "${{needs.buildForAllSupportedPlatforms.outputs.version}}" "$file" --clobber
