@@ -81,7 +81,7 @@ jobs:
       - name: Write version into package.json for badges to work
         if: matrix.targetPlatform == 'WebGL'
         run: echo '{ "version":"${{ steps.myBuildStep.outputs.buildVersion }}" }' | sudo tee ./build/WebGL/${{ github.event.repository.name }}/package.json
-      
+
       - name: Save version for next job
         id: versionSave
         run: echo "version=${{ steps.myBuildStep.outputs.buildVersion }}" >> "$GITHUB_OUTPUT"
@@ -130,6 +130,6 @@ jobs:
           for file in ./artifacts/*/*; do
             if [ -f "$file" ]; then
               echo "Uploading $file..."
-              gh release upload "${{ steps.createRelease.outputs.id }}" "$file" --clobber
+              gh release upload "${{needs.buildForAllSupportedPlatforms.outputs.version}}" "$file" --clobber
             fi
           done
