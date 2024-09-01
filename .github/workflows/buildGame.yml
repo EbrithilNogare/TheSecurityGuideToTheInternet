@@ -26,7 +26,7 @@ jobs:
           # - StandaloneWindows # Build a Windows standalone
           - StandaloneWindows64 # Build a Windows 64-bit standalone
           # - StandaloneLinux64 # Build a Linux 64-bit standalone
-          # - Android # Build an Android .apk standalone app
+          - Android # Build an Android .apk standalone app
           - WebGL # WebGL
     steps:
       - uses: actions/checkout@v4
@@ -134,7 +134,7 @@ jobs:
               echo "Uploading $file..."
               gh release upload "${{needs.buildForAllSupportedPlatforms.outputs.version}}" "$file" --clobber
             elif [ -d "$file" ]; then
-              zip_file="${file}.zip"
+              zip_file="${file##*/}.zip"
               echo "Zipping directory $file to $zip_file..."
               zip -r "$zip_file" "$file"
               echo "Uploading $zip_file..."
