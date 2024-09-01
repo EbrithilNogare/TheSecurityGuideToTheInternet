@@ -124,7 +124,6 @@ jobs:
           prerelease: false
 
       - name: Upload release variants
-        if: env.release_exists == 'false'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
