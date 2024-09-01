@@ -34,14 +34,16 @@ jobs:
           fetch-depth: 0
           lfs: false
 
-      - if: matrix.targetPlatform == 'WebGL' || matrix.targetPlatform == 'Android' || matrix.targetPlatform == 'StandaloneWindows64'
+      - name: Restore platform specific cache
+        if: matrix.targetPlatform == 'WebGL' || matrix.targetPlatform == 'Android' || matrix.targetPlatform == 'StandaloneWindows64'
         uses: actions/cache@v4
         with:
           path: Library
           key: Library-${{ matrix.targetPlatform }}
           restore-keys: Library-
 
-      - if: matrix.targetPlatform != 'WebGL' && matrix.targetPlatform != 'Android' && matrix.targetPlatform != 'StandaloneWindows64'
+      - name: Restore fallback cache
+        if: matrix.targetPlatform != 'WebGL' && matrix.targetPlatform != 'Android' && matrix.targetPlatform != 'StandaloneWindows64'
         uses: actions/cache/restore@v4
         with:
           path: Library
@@ -49,7 +51,8 @@ jobs:
           restore-keys: Library-WebGL
             Library-
 
-      - if: matrix.targetPlatform == 'Android'
+      - name: Free disk space
+        if: matrix.targetPlatform == 'Android'
         uses: jlumbroso/free-disk-space@v1.3.1
         with:
           android: true # ~ 8.7 GiB in 5s
@@ -86,7 +89,8 @@ jobs:
         id: versionSave
         run: echo "version=${{ steps.myBuildStep.outputs.buildVersion }}" >> "$GITHUB_OUTPUT"
 
-      - if: matrix.targetPlatform == 'WebGL'
+      - name: Deploy to GitHub Pages
+        if: matrix.targetPlatform == 'WebGL'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
@@ -104,16 +108,13 @@ jobs:
     needs: buildForAllSupportedPlatforms
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Download all artifacts
-        uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v4
         with:
           path: ./artifacts
 
-      - name: Create GitHub Release
-        uses: actions/create-release@v1
+      - uses: actions/create-release@v1
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -124,17 +125,16 @@ jobs:
           draft: false
           prerelease: false
 
-      - run: ls ./artifacts
-
-      - run: tree -L 4 ./artifacts
-
       - name: Upload release variants
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           for file in ./artifacts/*; do
             if [ -f "$file" ]; then
-              echo "Uploading $file..."
-              gh release upload "${{needs.buildForAllSupportedPlatforms.outputs.version}}" "$file" --clobber
+                zip_file="${file}.zip"
+                echo "Zipping $file to $zip_file..."
+                zip -j "$zip_file" "$file"
+                echo "Uploading $zip_file..."
+                gh release upload "${{needs.buildForAllSupportedPlatforms.outputs.version}}" "$zip_file" --clobber
             fi
           done
