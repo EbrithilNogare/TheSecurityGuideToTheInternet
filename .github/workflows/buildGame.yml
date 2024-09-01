@@ -16,6 +16,8 @@ jobs:
   buildForAllSupportedPlatforms:
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.versionSave.outputs.version }}
     strategy:
       fail-fast: false
       matrix:
@@ -24,7 +26,7 @@ jobs:
           # - StandaloneWindows # Build a Windows standalone
           - StandaloneWindows64 # Build a Windows 64-bit standalone
           # - StandaloneLinux64 # Build a Linux 64-bit standalone
-          - Android # Build an Android .apk standalone app
+          # - Android # Build an Android .apk standalone app
           - WebGL # WebGL
     steps:
       - uses: actions/checkout@v4
@@ -79,6 +81,10 @@ jobs:
       - name: Write version into package.json for badges to work
         if: matrix.targetPlatform == 'WebGL'
         run: echo '{ "version":"${{ steps.myBuildStep.outputs.buildVersion }}" }' | sudo tee ./build/WebGL/${{ github.event.repository.name }}/package.json
+      
+      - name: Save version for next job
+        id: versionSave
+        run: echo "version=${{ steps.myBuildStep.outputs.buildVersion }}" >> "$GITHUB_OUTPUT"
 
       - if: matrix.targetPlatform == 'WebGL'
         uses: JamesIves/github-pages-deploy-action@v4
@@ -93,7 +99,7 @@ jobs:
           name: ${{ github.event.repository.name }}-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
 
-  create_release:
+  createRelease:
     name: Create GitHub Release
     needs: buildForAllSupportedPlatforms
     runs-on: ubuntu-latest
@@ -111,19 +117,19 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ steps.myBuildStep.outputs.buildVersion }}
-          body: |
-            This is an automated release that contains all build artifacts.
+          tag_name: ${{needs.buildForAllSupportedPlatforms.outputs.version}}
+          release_name: Release ${{needs.buildForAllSupportedPlatforms.outputs.version}}
+          body: This is an automated release that contains all builds.
           draft: false
           prerelease: false
 
-      - name: Upload Release Assets
-        uses: actions/upload-release-asset@v1
+      - name: Upload release variants
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./artifacts/*
-          asset_name: ${{ github.event.repository.name }}-${{ matrix.targetPlatform }}-artifact
-          asset_content_type: application/zip
+        run: |
+          for file in ./artifacts/*/*; do
+            if [ -f "$file" ]; then
+              echo "Uploading $file..."
+              gh release upload "${{ steps.createRelease.outputs.id }}" "$file" --clobber
+            fi
+          done
