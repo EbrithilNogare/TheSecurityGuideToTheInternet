@@ -93,37 +93,37 @@ jobs:
           name: ${{ github.event.repository.name }}-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
 
-create_release:
-  name: Create GitHub Release
-  needs: buildForAllSupportedPlatforms
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+  create_release:
+    name: Create GitHub Release
+    needs: buildForAllSupportedPlatforms
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Download all artifacts
-      uses: actions/download-artifact@v4
-      with:
-        path: ./artifacts
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: ./artifacts
 
-    - name: Create GitHub Release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ steps.myBuildStep.outputs.buildVersion }}
-        body: |
-          This is an automated release that contains all build artifacts.
-        draft: false
-        prerelease: false
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ steps.myBuildStep.outputs.buildVersion }}
+          body: |
+            This is an automated release that contains all build artifacts.
+          draft: false
+          prerelease: false
 
-    - name: Upload Release Assets
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./artifacts/*
-        asset_name: ${{ github.event.repository.name }}-${{ matrix.targetPlatform }}-artifact
-        asset_content_type: application/zip
+      - name: Upload Release Assets
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./artifacts/*
+          asset_name: ${{ github.event.repository.name }}-${{ matrix.targetPlatform }}-artifact
+          asset_content_type: application/zip
