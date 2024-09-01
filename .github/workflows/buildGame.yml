@@ -125,19 +125,22 @@ jobs:
           draft: false
           prerelease: false
 
+      - run: tree ./artifacts -L 2
+
       - name: Upload release variants
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          for file in ./artifacts/*; do
+          cd ./artifacts
+          for file in ./*; do
             if [ -f "$file" ]; then
-              echo "Uploading $file..."
+              echo "Uploading single file $file"
               gh release upload "${{needs.buildForAllSupportedPlatforms.outputs.version}}" "$file" --clobber
             elif [ -d "$file" ]; then
-              zip_file="${file##*/}.zip"
+              zip_file="${file}.zip"
               echo "Zipping directory $file to $zip_file..."
-              zip -r "$zip_file" "$file"
-              echo "Uploading $zip_file..."
+              zip -r -q "$zip_file" "${file}/*"
+              echo "Uploading directory $zip_file"
               gh release upload "${{needs.buildForAllSupportedPlatforms.outputs.version}}" "$zip_file" --clobber
               rm "$zip_file"
             fi
