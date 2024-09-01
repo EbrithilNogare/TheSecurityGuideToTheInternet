@@ -133,15 +133,11 @@ jobs:
         run: |
           cd ./artifacts
           for file in ./*; do
-            if [ -f "$file" ]; then
-              echo "Uploading single file $file"
-              gh release upload "${{needs.buildForAllSupportedPlatforms.outputs.version}}" "$file" --clobber
-            elif [ -d "$file" ]; then
+            if [ -d "$file" ]; then
               zip_file="${file}.zip"
-              echo "Zipping directory $file to $zip_file..."
-              zip -r -q "$zip_file" "${file}/*"
+              echo "Zipping directory $file to $zip_file"
+              zip -r -q "$zip_file" "$file" -i ./*
               echo "Uploading directory $zip_file"
               gh release upload "${{needs.buildForAllSupportedPlatforms.outputs.version}}" "$zip_file" --clobber
-              rm "$zip_file"
             fi
           done
