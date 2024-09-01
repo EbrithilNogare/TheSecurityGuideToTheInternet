@@ -1472,6 +1472,21 @@ PrefabInstance:
       propertyPath: CameraOperator
       value: 
       objectReference: {fileID: 2077235217}
+    - target: {fileID: 4072474060962056510, guid: 464679250725dfd43b289e5a8d0e0864,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072474060962056510, guid: 464679250725dfd43b289e5a8d0e0864,
+        type: 3}
+      propertyPath: m_lineSpacing
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072474060962056510, guid: 464679250725dfd43b289e5a8d0e0864,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 5196309238796779617, guid: 464679250725dfd43b289e5a8d0e0864,
         type: 3}
       propertyPath: m_Camera
@@ -1527,6 +1542,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6723092513216994706, guid: 464679250725dfd43b289e5a8d0e0864,
+        type: 3}
+      propertyPath: m_Name
+      value: Browser window - download game
+      objectReference: {fileID: 0}
     - target: {fileID: 7776229501052521540, guid: 464679250725dfd43b289e5a8d0e0864,
         type: 3}
       propertyPath: m_Name
@@ -1535,7 +1555,7 @@ PrefabInstance:
     - target: {fileID: 8989140558946701272, guid: 464679250725dfd43b289e5a8d0e0864,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
