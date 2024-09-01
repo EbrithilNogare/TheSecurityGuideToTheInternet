@@ -11,8 +11,6 @@ on:
     branches:
       - master
       - main
-  schedule:
-    - cron: "0 0 1 */2 *" # run every 2 months to keep artifacts alive
 
 jobs:
   buildForAllSupportedPlatforms:
@@ -34,14 +32,14 @@ jobs:
           fetch-depth: 0
           lfs: false
 
-      - if: matrix.targetPlatform == 'WebGL' ||  matrix.targetPlatform == 'Android' || matrix.targetPlatform == 'StandaloneWindows64'
+      - if: matrix.targetPlatform == 'WebGL' || matrix.targetPlatform == 'Android' || matrix.targetPlatform == 'StandaloneWindows64'
         uses: actions/cache@v4
         with:
           path: Library
           key: Library-${{ matrix.targetPlatform }}
           restore-keys: Library-
 
-      - if: matrix.targetPlatform != 'WebGL' &&  matrix.targetPlatform != 'Android' && matrix.targetPlatform != 'StandaloneWindows64'
+      - if: matrix.targetPlatform != 'WebGL' && matrix.targetPlatform != 'Android' && matrix.targetPlatform != 'StandaloneWindows64'
         uses: actions/cache/restore@v4
         with:
           path: Library
@@ -94,3 +92,38 @@ jobs:
         with:
           name: ${{ github.event.repository.name }}-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
+
+create_release:
+  name: Create GitHub Release
+  needs: buildForAllSupportedPlatforms
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Download all artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: ./artifacts
+
+    - name: Create GitHub Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ steps.myBuildStep.outputs.buildVersion }}
+        body: |
+          This is an automated release that contains all build artifacts.
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Assets
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./artifacts/*
+        asset_name: ${{ github.event.repository.name }}-${{ matrix.targetPlatform }}-artifact
+        asset_content_type: application/zip
