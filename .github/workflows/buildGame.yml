@@ -112,7 +112,18 @@ jobs:
         with:
           path: ./artifacts
 
+      - name: Check if release exists
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if gh release view "${{ needs.buildForAllSupportedPlatforms.outputs.version }}" > /dev/null 2>&1; then
+            echo "release_exists=true" >> $GITHUB_ENV
+          else
+            echo "release_exists=false" >> $GITHUB_ENV
+          fi
+
       - uses: actions/create-release@v1
+        if: env.release_exists == 'false'
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -132,11 +143,11 @@ jobs:
             if [ -d "$file" ]; then
               file_count=$(find "$file" -maxdepth 1 -type f | wc -l)
               all_count=$(find "$file" -maxdepth 1 | wc -l)
-              if [ "$file_count" -eq 1 and "$all_count" -eq 1 ]; then
+              if [ "$file_count" -eq 1 ] && [ "$all_count" -eq 1 ]; then
                 single_file=$(find "$file" -maxdepth 1 -type f)
                 echo "Uploading single file $single_file"
                 gh release upload "${{needs.buildForAllSupportedPlatforms.outputs.version}}" "$single_file" --clobber
-              elif [ "$file_count" -gt 1 ]; then
+              elif [ "$all_count" -gt 1 ]; then
                 zip_file="${file}.zip"
                 echo "Zipping directory $file to $zip_file"
                 zip -r -q "$zip_file" "$file"
