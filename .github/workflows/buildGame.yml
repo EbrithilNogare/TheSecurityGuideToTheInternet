@@ -85,7 +85,7 @@ jobs:
 
       - name: Save version for next job
         id: versionSave
-        run: echo "version=${{ echo ${a} | cut -d. -f1,2)}}" >> "$GITHUB_OUTPUT"
+        run: echo "version=${{ echo ${{ steps.myBuildStep.outputs.buildVersion }} | cut -d. -f1,2)}}" >> "$GITHUB_OUTPUT"
 
       - name: Deploy to GitHub Pages
         if: matrix.targetPlatform == 'WebGL'
