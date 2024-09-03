@@ -22,9 +22,12 @@ jobs:
       fail-fast: false
       matrix:
         targetPlatform:
-          - StandaloneWindows64
-          - Android
-          - WebGL
+          # - iOS # Build an iOS player
+          # - StandaloneWindows # Build a Windows standalone
+          - StandaloneWindows64 # Build a Windows 64-bit standalone
+          # - StandaloneLinux64 # Build a Linux 64-bit standalone
+          - Android # Build an Android .apk standalone app
+          - WebGL # WebGL
     steps:
       - uses: actions/checkout@v4
         with:
@@ -53,12 +56,12 @@ jobs:
         if: matrix.targetPlatform == 'Android'
         uses: jlumbroso/free-disk-space@v1.3.1
         with:
-          android: true
-          dotnet: true
-          haskell: true
-          large-packages: false
-          docker-images: true
-          swap-storage: false
+          android: true # ~ 8.7 GiB in 5s
+          dotnet: true # ~ 1.6 GiB in 1s
+          haskell: true # ~ 5.2 GiB in 1s
+          large-packages: false # ~ 4,7 GiB in 100s
+          docker-images: true # ~ 3.2 GiB in 1s
+          swap-storage: false # ~ 4.0 GiB in 1s
 
       - uses: game-ci/unity-builder@v4
         id: myBuildStep
