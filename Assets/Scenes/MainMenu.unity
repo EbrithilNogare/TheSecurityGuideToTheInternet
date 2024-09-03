@@ -191,62 +191,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &138471336 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1892766417743429897, guid: 43353270638ca2c438f8dd6a2ad104e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1031317283}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &138471338 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2156315243587077121, guid: 43353270638ca2c438f8dd6a2ad104e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1031317283}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138471336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &138471340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138471336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 1478236676168613912
-  references:
-    version: 2
-    RefIds:
-    - rid: 1478236676168613912
-      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
-        asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 138471338}
-        m_TrackedProperties:
-          items:
-          - rid: 1478236676168613913
-        m_UpdateType: 0
-    - rid: 1478236676168613913
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_text
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: Start Game
-        - localeIdentifier:
-            m_Code: cs
-          value: Start Hry
 --- !u!1001 &140782889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -367,47 +311,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1851481929}
     - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GoToShop
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Navigation, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1892766417743429897, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1099922607}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43353270638ca2c438f8dd6a2ad104e6, type: 3}
 --- !u!224 &140782890 stripped
 RectTransform:
@@ -638,47 +553,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1851481929}
     - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GoToSettings
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Navigation, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1892766417743429897, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1547446032}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43353270638ca2c438f8dd6a2ad104e6, type: 3}
 --- !u!224 &735684499 stripped
 RectTransform:
@@ -806,47 +692,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1851481929}
     - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GoToTutorial
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Navigation, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1892766417743429897, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1719763091}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43353270638ca2c438f8dd6a2ad104e6, type: 3}
 --- !u!224 &937012242 stripped
 RectTransform:
@@ -865,11 +722,6 @@ PrefabInstance:
     - target: {fileID: 311066848477131065, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_Name
-      value: Start Game
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156315243587077121, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_text
       value: Start Game
       objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
@@ -974,47 +826,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1851481929}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToLevelSelection
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Navigation, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1892766417743429897, guid: 43353270638ca2c438f8dd6a2ad104e6,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 138471340}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43353270638ca2c438f8dd6a2ad104e6, type: 3}
 --- !u!224 &1031317284 stripped
 RectTransform:
@@ -1022,31 +840,14 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1031317283}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1099922603 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1892766417743429897, guid: 43353270638ca2c438f8dd6a2ad104e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 140782889}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1099922605 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2156315243587077121, guid: 43353270638ca2c438f8dd6a2ad104e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 140782889}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099922603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1099922607
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1783846539335069454, guid: 43353270638ca2c438f8dd6a2ad104e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 140782889}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099922603}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
@@ -1061,7 +862,7 @@ MonoBehaviour:
       type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
         asm: Unity.Localization}
       data:
-        m_Target: {fileID: 1099922605}
+        m_Target: {fileID: 0}
         m_TrackedProperties:
           items:
           - rid: 1478236676168613917
@@ -1156,31 +957,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c9a30e8bef255d42a4891bdd3b6a0c4, type: 3}
---- !u!1 &1547446028 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1892766417743429897, guid: 43353270638ca2c438f8dd6a2ad104e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 735684498}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1547446030 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2156315243587077121, guid: 43353270638ca2c438f8dd6a2ad104e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 735684498}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547446028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1547446032
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6386221951734429210, guid: 43353270638ca2c438f8dd6a2ad104e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 735684498}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547446028}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
@@ -1195,7 +979,7 @@ MonoBehaviour:
       type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
         asm: Unity.Localization}
       data:
-        m_Target: {fileID: 1547446030}
+        m_Target: {fileID: 0}
         m_TrackedProperties:
           items:
           - rid: 1478236676168613919
@@ -1349,31 +1133,14 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!1 &1719763087 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1892766417743429897, guid: 43353270638ca2c438f8dd6a2ad104e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 937012241}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1719763089 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2156315243587077121, guid: 43353270638ca2c438f8dd6a2ad104e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 937012241}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1719763087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1719763091
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 9084815411835872652, guid: 43353270638ca2c438f8dd6a2ad104e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 937012241}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1719763087}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
@@ -1388,7 +1155,7 @@ MonoBehaviour:
       type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
         asm: Unity.Localization}
       data:
-        m_Target: {fileID: 1719763089}
+        m_Target: {fileID: 0}
         m_TrackedProperties:
           items:
           - rid: 1478236676168613915

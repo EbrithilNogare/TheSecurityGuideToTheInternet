@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class Store : MonoBehaviour
 {
+    public string activeLevel = "";
+
     public static readonly List<string> LevelCategories = new List<string> {
-    "Malware-1", "Privacy-1", "Phone-1", "Encryption-1",
-    "Malware-2", "Privacy-2", "Phone-2", "Encryption-2",
+        "Malware-1", "Privacy-1", "Phone-1", "Encryption-1",
+        "Malware-2", "Privacy-2", "Phone-2", "Encryption-2",
     };
 
     void Start()
@@ -22,7 +24,10 @@ public class Store : MonoBehaviour
     }
 
 
-
+    public void GoToLevelMenu()
+    {
+        SceneManager.LoadScene("LevelSelection");
+    }
 
     public void LoadLevel(string level)
     {
@@ -32,9 +37,11 @@ public class Store : MonoBehaviour
         switch (level)
         {
             case "Malware-1":
+                activeLevel = level;
                 SceneManager.LoadScene("Room");
                 break;
             case "Privacy-1":
+                activeLevel = level;
                 SceneManager.LoadScene("Library");
                 break;
             case "Phone-1": break;
