@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning: QR Code Safety</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fdf5e6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #ff8c42;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+
+        .svg-container {
+            width: 150px;
+            height: 150px;
+            margin: 30px auto;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 30px;
+            background-color: #ff8c42;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, but be careful!</h1>
+
+    <div class="svg-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#ff6f61">
+            <circle cx="32" cy="32" r="32" fill="#ffcccb" />
+            <path d="M32,16a16,16,0,1,0,16,16A16,16,0,0,0,32,16Zm-1,28H33V36H31ZM33,34H31V22H33Z" fill="#ff6f61"/>
+        </svg>
+    </div>
+
+    <h2>Scanning random QR codes can be dangerous!</h2>
+    <p>You just scanned a QR code, and while this one is safe, not all QR codes are. A malicious QR code can redirect you to harmful websites, steal personal data, or even install malware on your device.</p>
+
+    <p>Attackers can:</p>
+    <ul>
+        <li>Redirect you to phishing websites to steal your passwords or sensitive information.</li>
+        <li>Send you to malicious sites that install malware on your device.</li>
+        <li>Display fake login screens that capture your credentials.</li>
+        <li>Trigger unwanted actions, like sending messages without your consent.</li>
+    </ul>
+
+    <div class="svg-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#ff8c42">
+            <path d="M32,3A29,29,0,1,0,61,32,29,29,0,0,0,32,3ZM32,58A26,26,0,1,1,58,32,26,26,0,0,1,32,58Z"/>
+            <path d="M43.47,20.14a2,2,0,0,0-1.9,1.46A11,11,0,0,1,32,29,11,11,0,0,1,22.44,21.6,2,2,0,0,0,19.93,23.4a15,15,0,1,0,24.07-.1A2,2,0,0,0,43.47,20.14Z"/>
+            <circle cx="32" cy="40" r="2"/>
+        </svg>
+    </div>
+
+    <a href="https://www.cyberaware.gov">Learn More About Staying Safe</a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                alert('Reminder: Be cautious when scanning unknown QR codes!');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
+          
