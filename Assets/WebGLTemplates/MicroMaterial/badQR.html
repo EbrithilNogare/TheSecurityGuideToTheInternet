@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warning: QR Code Safety</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            font-family: 'Roboto';
             background-color: #fdf5e6;
             color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
             text-align: center;
         }
 
@@ -43,6 +39,14 @@
             margin: 30px auto;
         }
 
+        p {
+            text-align: justify;
+        }
+
+        ul {
+            text-align: left;
+        }
+
         a {
             display: inline-block;
             padding: 10px 20px;
@@ -58,44 +62,47 @@
         }
     </style>
 </head>
+
 <body>
-    <h1>Welcome, but be careful!</h1>
+    <h1>Welcome<br>but be careful!</h1>
 
     <div class="svg-container">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#ff6f61">
-            <circle cx="32" cy="32" r="32" fill="#ffcccb" />
-            <path d="M32,16a16,16,0,1,0,16,16A16,16,0,0,0,32,16Zm-1,28H33V36H31ZM33,34H31V22H33Z" fill="#ff6f61"/>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 138">
+            <path d="M19,19V57.6H57.6V19ZM44.7,44.7H31.9V31.9H44.7Z" transform="translate(5 5)" style="fill:#ff6f61" />
+            <rect x="75.4" y="75.4" width="12.9" height="12.86" style="fill:#ff6f61" />
+            <rect x="101.1" y="75.4" width="12.9" height="12.86" style="fill:#ff6f61" />
+            <rect x="88.3" y="88.3" width="12.9" height="12.86" style="fill:#ff6f61" />
+            <rect x="75.4" y="101.1" width="12.9" height="12.86" style="fill:#ff6f61" />
+            <rect x="101.1" y="101.1" width="12.9" height="12.86" style="fill:#ff6f61" />
+            <path d="M70.4,19V57.6H109V19ZM96.1,44.7H83.3V31.9H96.1Z" transform="translate(5 5)" style="fill:#ff6f61" />
+            <path d="M19,70.4V109H57.6V70.4ZM44.7,96.1H31.9V83.3H44.7Z" transform="translate(5 5)" style="fill:#ff6f61" />
+            <path d="M5,20.7V45H45V5H20.7A15.8,15.8,0,0,0,5,20.7Z" transform="translate(5 5)" style="fill:none" />
+            <path d="M0,20.7A20.7,20.7,0,0,1,20.7,0H45V-3H-5V45H0Z" transform="translate(5 5)" style="fill:none" />
+            <path d="M0,20.7V45H5V20.7A15.8,15.8,0,0,1,20.7,5H45V0H20.7A20.7,20.7,0,0,0,0,20.7Z" transform="translate(5 5)" style="fill:#ff6f61" />
+            <path d="M107.3,5H83V45h40V20.7A15.8,15.8,0,0,0,107.3,5Z" transform="translate(5 5)" style="fill:none" />
+            <path d="M107.3,0A20.7,20.7,0,0,1,128,20.7V45h3V-5H83V0Z" transform="translate(5 5)" style="fill:none" />
+            <path d="M107.3,0H83V5h24.3A15.8,15.8,0,0,1,123,20.7V45h5V20.7A20.7,20.7,0,0,0,107.3,0Z" transform="translate(5 5)" style="fill:#ff6f61" />
+            <path d="M123,107.3V83H83v40h24.3A15.8,15.8,0,0,0,123,107.3Z" transform="translate(5 5)" style="fill:none" />
+            <path d="M128,107.3A20.7,20.7,0,0,1,107.3,128H83v3h50V83h-5Z" transform="translate(5 5)" style="fill:none" />
+            <path d="M128,107.3V83h-5v24.3A15.8,15.8,0,0,1,107.3,123H83v5h24.3A20.7,20.7,0,0,0,128,107.3Z" transform="translate(5 5)" style="fill:#ff6f61" />
+            <path d="M20.7,123H45V83H5v24.3A15.8,15.8,0,0,0,20.7,123Z" transform="translate(5 5)" style="fill:none" />
+            <path d="M20.7,128A20.7,20.7,0,0,1,0,107.3V83H-3v50H45v-5Z" transform="translate(5 5)" style="fill:none" />
+            <path d="M20.7,128H45v-5H20.7A15.8,15.8,0,0,1,5,107.3V83H0v24.3A20.7,20.7,0,0,0,20.7,128Z" transform="translate(5 5)" style="fill:#ff6f61" />
         </svg>
     </div>
 
     <h2>Scanning random QR codes can be dangerous!</h2>
-    <p>You just scanned a QR code, and while this one is safe, not all QR codes are. A malicious QR code can redirect you to harmful websites, steal personal data, or even install malware on your device.</p>
+    <p>You just scanned a QR code, and while this one is safe, not all QR codes are.</p>
 
-    <p>Attackers can:</p>
+    <p>A malicious QR code can:</p>
     <ul>
         <li>Redirect you to phishing websites to steal your passwords or sensitive information.</li>
         <li>Send you to malicious sites that install malware on your device.</li>
-        <li>Display fake login screens that capture your credentials.</li>
         <li>Trigger unwanted actions, like sending messages without your consent.</li>
     </ul>
 
-    <div class="svg-container">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#ff8c42">
-            <path d="M32,3A29,29,0,1,0,61,32,29,29,0,0,0,32,3ZM32,58A26,26,0,1,1,58,32,26,26,0,0,1,32,58Z"/>
-            <path d="M43.47,20.14a2,2,0,0,0-1.9,1.46A11,11,0,0,1,32,29,11,11,0,0,1,22.44,21.6,2,2,0,0,0,19.93,23.4a15,15,0,1,0,24.07-.1A2,2,0,0,0,43.47,20.14Z"/>
-            <circle cx="32" cy="40" r="2"/>
-        </svg>
-    </div>
+    <a href="https://www.kaspersky.com/resource-center/definitions/what-is-a-qr-code-how-to-scan">Learn More About Staying Safe</a>
 
-    <a href="https://www.cyberaware.gov">Learn More About Staying Safe</a>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => {
-                alert('Reminder: Be cautious when scanning unknown QR codes!');
-            }, 5000);
-        });
-    </script>
 </body>
+
 </html>
-          
