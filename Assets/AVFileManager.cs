@@ -1,6 +1,7 @@
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AVFileManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class AVFileManager : MonoBehaviour
     public TextMeshProUGUI dropZoneScanProgressInfo;
     public RectTransform dropZoneNotOK;
     public RectTransform dropZoneNotOKRow;
+    public GameObject submitButton;
 
     public Canvas canvas;
 
@@ -44,6 +46,11 @@ public class AVFileManager : MonoBehaviour
         else
         {
             ReturnToSource(item);
+        }
+
+        if (sourceRow.childCount == 1)
+        {
+            submitButton.SetActive(true);
         }
     }
 
@@ -102,5 +109,12 @@ public class AVFileManager : MonoBehaviour
     {
         Debug.Log("ReturnToSource");
         item.rectTransform.anchoredPosition = sourceRow.anchoredPosition;
+    }
+
+    public void Submit()
+    {
+        Debug.Log("Submit");
+        SceneManager.UnloadSceneAsync("Antivirus");
+        // todo
     }
 }
