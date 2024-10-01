@@ -56,20 +56,24 @@ public class AVFileManager : MonoBehaviour
 
     public void HandleDropOnOK(AVFileStructure item)
     {
-        Debug.Log("HandleDropOnOK");
-        item.transform.SetParent(dropZoneOKRow);
+        if (transform.parent == dropZoneOKRow)
+            return;
+
+        item.transform.SetParent(dropZoneOKRow, false);
     }
 
     public void HandleDropOnScan(AVFileStructure item)
     {
-        Debug.Log("HandleDropOnScan");
+        if (transform.parent == dropZoneScanRow)
+            return;
+
         if (dropZoneScanRow.childCount > 0)
         {
             ReturnToSource(item);
             return;
         }
 
-        item.transform.SetParent(dropZoneScanRow);
+        item.transform.SetParent(dropZoneScanRow, false);
 
         // scanning for viruses
 
@@ -96,25 +100,30 @@ public class AVFileManager : MonoBehaviour
                          dropZoneScanProgressInfo.SetText(scanProgressOk);
                      }
                  });
-        // todo handle scan
+
+        // todo handle scan animation better
     }
 
     public void HandleDropOnNotOK(AVFileStructure item)
     {
-        Debug.Log("HandleDropOnNotOK");
-        item.transform.SetParent(dropZoneNotOKRow);
+        if (transform.parent == dropZoneNotOKRow)
+            return;
+
+        item.transform.SetParent(dropZoneNotOKRow, false);
     }
 
     public void ReturnToSource(AVFileStructure item)
     {
-        Debug.Log("ReturnToSource");
-        item.rectTransform.anchoredPosition = sourceRow.anchoredPosition;
+        if (transform.parent == sourceRow)
+            return;
+
+        item.transform.SetParent(sourceRow, false);
     }
 
     public void Submit()
     {
+        // todo
         Debug.Log("Submit");
         SceneManager.UnloadSceneAsync("Antivirus");
-        // todo
     }
 }

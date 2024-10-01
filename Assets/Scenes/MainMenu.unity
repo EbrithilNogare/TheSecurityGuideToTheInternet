@@ -209,6 +209,11 @@ PrefabInstance:
       propertyPath: m_text
       value: Shop
       objectReference: {fileID: 0}
+    - target: {fileID: 2745684211900766696, guid: 43353270638ca2c438f8dd6a2ad104e6,
+        type: 3}
+      propertyPath: managedReferences[1478236676168613913].m_VariantData.Array.data[0].value
+      value: Shop
+      objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -451,6 +456,11 @@ PrefabInstance:
       propertyPath: m_text
       value: Settings
       objectReference: {fileID: 0}
+    - target: {fileID: 2745684211900766696, guid: 43353270638ca2c438f8dd6a2ad104e6,
+        type: 3}
+      propertyPath: managedReferences[1478236676168613913].m_VariantData.Array.data[0].value
+      value: Settings
+      objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -588,6 +598,11 @@ PrefabInstance:
     - target: {fileID: 2156315243587077121, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_text
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745684211900766696, guid: 43353270638ca2c438f8dd6a2ad104e6,
+        type: 3}
+      propertyPath: managedReferences[1478236676168613913].m_VariantData.Array.data[0].value
       value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
@@ -840,45 +855,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1031317283}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1099922607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1783846539335069454, guid: 43353270638ca2c438f8dd6a2ad104e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 140782889}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 1478236676168613916
-  references:
-    version: 2
-    RefIds:
-    - rid: 1478236676168613916
-      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
-        asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 0}
-        m_TrackedProperties:
-          items:
-          - rid: 1478236676168613917
-        m_UpdateType: 0
-    - rid: 1478236676168613917
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_text
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: Shop
-        - localeIdentifier:
-            m_Code: cs
-          value: Obchod
 --- !u!1001 &1300365603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -957,45 +933,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c9a30e8bef255d42a4891bdd3b6a0c4, type: 3}
---- !u!114 &1547446032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 6386221951734429210, guid: 43353270638ca2c438f8dd6a2ad104e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 735684498}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 1478236676168613918
-  references:
-    version: 2
-    RefIds:
-    - rid: 1478236676168613918
-      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
-        asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 0}
-        m_TrackedProperties:
-          items:
-          - rid: 1478236676168613919
-        m_UpdateType: 0
-    - rid: 1478236676168613919
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_text
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: Settings
-        - localeIdentifier:
-            m_Code: cs
-          value: "Nastaven\xED"
 --- !u!1 &1709698065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,45 +1070,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &1719763091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 9084815411835872652, guid: 43353270638ca2c438f8dd6a2ad104e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 937012241}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 1478236676168613914
-  references:
-    version: 2
-    RefIds:
-    - rid: 1478236676168613914
-      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
-        asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 0}
-        m_TrackedProperties:
-          items:
-          - rid: 1478236676168613915
-        m_UpdateType: 0
-    - rid: 1478236676168613915
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_text
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: Tutorial
-        - localeIdentifier:
-            m_Code: cs
-          value: "Tutori\xE1l"
 --- !u!1 &1851481926
 GameObject:
   m_ObjectHideFlags: 0

@@ -32,7 +32,7 @@ public class AVFileStructure : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta / avFileManager.canvas.scaleFactor;
+        rectTransform.anchoredPosition += eventData.delta / (new Vector2(rectTransform.lossyScale.x, rectTransform.lossyScale.y));
     }
 
     public void OnEndDrag(PointerEventData eventData)
