@@ -27,8 +27,8 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelection.unity
     guid: 22d400540c1d6144fa11995eef31b621
   - enabled: 1
-    path: Assets/Scenes/MiniGames/Antivirus - backup.unity
-    guid: 89336ab29765ba145805f3d096ad2f1d
+    path: Assets/Scenes/MiniGames/Antivirus.unity
+    guid: ff8c954adebcbc942a3bb53c83c44a63
   - enabled: 1
     path: Assets/Scenes/Library.unity
     guid: 1f055770cf809a745ad74f54a7c49fdc
