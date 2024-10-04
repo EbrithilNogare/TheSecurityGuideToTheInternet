@@ -9,25 +9,26 @@ public class AVFileStructure : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public TextMeshProUGUI label;
     public Image image;
     public bool isVirus;
+    public AVManager avManager;
 
     [NonSerialized]
     public CanvasGroup canvasGroup;
     [NonSerialized]
     public RectTransform rectTransform;
 
-    private AVFileManager avFileManager;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-        avFileManager = GetComponentInParent<AVFileManager>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        transform.SetParent(avManager.dragAndDropTemporaryParent.transform);
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.5f;
+        transform.localScale = Vector3.one;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -40,6 +41,6 @@ public class AVFileStructure : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
 
-        avFileManager.EvaluateDrop(this);
+        avManager.EvaluateDrop(this);
     }
 }
