@@ -38,7 +38,7 @@ public class Store : MonoBehaviour
         {
             case "Malware-1":
                 activeLevel = level;
-                SceneManager.LoadScene("Room");
+                SceneManager.LoadScene("Malware_Antivirus_Presentation");
                 break;
             case "Privacy-1":
                 activeLevel = level;

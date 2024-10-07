@@ -1892,6 +1892,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1973227446565770314, guid: 79684cd3f802f34409181cab376b9d72,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36d70b0a5da75bc4a9918be6915fe961,
+        type: 3}
     - target: {fileID: 5134930703438424026, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_Name
@@ -1905,12 +1911,12 @@ PrefabInstance:
     - target: {fileID: 7445666349372468545, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_text
-      value: document.docx
+      value: thesis.docx
       objectReference: {fileID: 0}
     - target: {fileID: 7445666349372468545, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_fontSize
-      value: 21.7
+      value: 29.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2650,7 +2656,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 150, y: 200}
-  m_Spacing: {x: 100, y: 100}
+  m_Spacing: {x: 85, y: 100}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!1 &1517336041
@@ -3316,7 +3322,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 36d70b0a5da75bc4a9918be6915fe961,
+      objectReference: {fileID: 21300000, guid: cbb1e1328c8e7604abb48b67666ec5d8,
         type: 3}
     - target: {fileID: 5134930703438424026, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
@@ -3461,7 +3467,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: cbb1e1328c8e7604abb48b67666ec5d8,
+      objectReference: {fileID: 21300000, guid: 36d70b0a5da75bc4a9918be6915fe961,
         type: 3}
     - target: {fileID: 5134930703438424026, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
@@ -3473,6 +3479,16 @@ PrefabInstance:
       propertyPath: avManager
       value: 
       objectReference: {fileID: 1028047106}
+    - target: {fileID: 7445666349372468545, guid: 79684cd3f802f34409181cab376b9d72,
+        type: 3}
+      propertyPath: m_text
+      value: book.pdf
+      objectReference: {fileID: 0}
+    - target: {fileID: 7445666349372468545, guid: 79684cd3f802f34409181cab376b9d72,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 38
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3537,7 +3553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
+  m_Color: {r: 0.447, g: 0.447, b: 0.447, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -6,32 +6,35 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Menu/MainMenu.unity
     guid: 98da61ebca6bf5847ad6ede55efeb015
   - enabled: 1
-    path: Assets/Scenes/Room.unity
-    guid: 844e8d37b3904fa46a34cdeab7f0c9ff
-  - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
+    path: Assets/Scenes/Menu/Tutorial.unity
     guid: 5c4a502aa48a2e249b36f0f31084f2c2
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Menu/Game.unity
     guid: bfc48d0340418c24dbd0a7277f9888c2
   - enabled: 1
-    path: Assets/Scenes/Settings.unity
+    path: Assets/Scenes/Menu/Settings.unity
     guid: c00fd86b77dd63f4781b429c2c815010
   - enabled: 1
-    path: Assets/Scenes/Shop.unity
+    path: Assets/Scenes/Menu/Shop.unity
     guid: 67da6e879d7c1d74f9dbc562ff728866
   - enabled: 1
-    path: Assets/Scenes/LevelSelection.unity
+    path: Assets/Scenes/Menu/LevelSelection.unity
     guid: 22d400540c1d6144fa11995eef31b621
+  - enabled: 1
+    path: Assets/Scenes/Rooms/Room.unity
+    guid: 844e8d37b3904fa46a34cdeab7f0c9ff
+  - enabled: 1
+    path: Assets/Scenes/Rooms/Library.unity
+    guid: 1f055770cf809a745ad74f54a7c49fdc
   - enabled: 1
     path: Assets/Scenes/MiniGames/Antivirus.unity
     guid: ff8c954adebcbc942a3bb53c83c44a63
   - enabled: 1
-    path: Assets/Scenes/Library.unity
-    guid: 1f055770cf809a745ad74f54a7c49fdc
+    path: Assets/Scenes/Presentations/Malware_Antivirus_Presentation.unity
+    guid: 57738e9a2a1afe84b84eae862e857b0d
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 267e98edf00f0e94283a3ac6dc529d54,
       type: 2}

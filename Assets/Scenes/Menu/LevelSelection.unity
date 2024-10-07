@@ -817,6 +817,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1273,7 +1278,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
