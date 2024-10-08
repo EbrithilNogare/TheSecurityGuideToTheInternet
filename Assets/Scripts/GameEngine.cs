@@ -15,6 +15,11 @@ public class GameEngine : MonoBehaviour
     public TextMeshProUGUI task3Text;
     public Image task3Icon;
     public Sprite taskDoneImage;
+    public Image levelCompletedStar1;
+    public Image levelCompletedStar2;
+    public Image levelCompletedStar3;
+    public Sprite filledStarIcon;
+    public Sprite outlineStarIcon;
 
     [Header("Dektop Manager UI")]
     public Button internetButton;
@@ -29,6 +34,7 @@ public class GameEngine : MonoBehaviour
     public GameObject gameButton3Check;
     public GameObject gameButton3Cross;
     public Button backupButton;
+    public GameObject trashDropZone;
 
 
     [Header("Window Manager UI")]
@@ -73,5 +79,10 @@ public class GameEngine : MonoBehaviour
         }
     }
 
-
+    public void levelCompletedSetStars(bool task1completed, bool task2completed, bool optionalTaskCompleted)
+    {
+        levelCompletedStar1.sprite = task1completed ? filledStarIcon : outlineStarIcon;
+        levelCompletedStar2.sprite = task2completed ? filledStarIcon : outlineStarIcon;
+        levelCompletedStar3.sprite = optionalTaskCompleted ? filledStarIcon : outlineStarIcon;
+    }
 }
