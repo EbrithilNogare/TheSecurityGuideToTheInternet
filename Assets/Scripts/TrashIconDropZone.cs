@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -18,7 +17,9 @@ public class TrashIconDropZone : MonoBehaviour, IPointerEnterHandler, IPointerEx
     {
         if (eventData.pointerDrag != null)
         {
-            image.color = originalColor.WithAlphaMultiplied(2.0f);
+            Color newColor = originalColor;
+            newColor.a *= 2.0f;
+            image.color = newColor;
         }
     }
 
@@ -29,5 +30,4 @@ public class TrashIconDropZone : MonoBehaviour, IPointerEnterHandler, IPointerEx
             image.color = originalColor;
         }
     }
-
 }
