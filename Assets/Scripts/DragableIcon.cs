@@ -5,11 +5,13 @@ public class DragableIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 {
     public RectTransform trashDropZone;
 
+    Canvas canvas;
     CanvasGroup canvasGroup;
     RectTransform rectTransform;
 
     private void Awake()
     {
+        canvas = GetComponentInParent<Canvas>();
         canvasGroup = GetComponent<CanvasGroup>();
         rectTransform = GetComponent<RectTransform>();
     }
@@ -24,7 +26,15 @@ public class DragableIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta * 2.9f; // todo, make it precise by scale, canvas width, scale and in screen converage of canvas
+        Vector2 localPoint;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            rectTransform.parent as RectTransform,
+            eventData.position,
+            Camera.main,
+            out localPoint
+        );
+
+        rectTransform.localPosition = localPoint;
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -34,7 +44,7 @@ public class DragableIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
 
-        if (RectTransformUtility.RectangleContainsScreenPoint(trashDropZone, Input.mousePosition, Camera.main))
+        if (trashDropZone.gameObject.activeSelf && RectTransformUtility.RectangleContainsScreenPoint(trashDropZone, Input.mousePosition, Camera.main))
         {
             gameObject.SetActive(false);
         }
