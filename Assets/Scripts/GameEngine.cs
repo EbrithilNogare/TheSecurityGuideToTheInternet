@@ -4,8 +4,6 @@ using UnityEngine.UI;
 
 public class GameEngine : MonoBehaviour
 {
-    public Store store;
-
     [Header("UI Elements")]
     public GameObject levelCompletedPopUp;
     public TextMeshProUGUI task1Text;
