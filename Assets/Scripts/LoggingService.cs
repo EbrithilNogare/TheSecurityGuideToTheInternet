@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 
 public static class LoggingService
 {
-    private const string ApiKey = "eu01xxa859536e6ba2396fdb70699e1cFFFFNRAL";
-    private const string NewRelicLogUrl = "https://log-api.eu.newrelic.com/log/v1?Api-Key=" + ApiKey;
+    private const string NewRelicLogUrl = "https://log-api.eu.newrelic.com/log/v1?Api-Key=";
+    private static string ApiKey;
     private static HttpClient client;
 
     private static string sessionId;
@@ -22,6 +22,7 @@ public static class LoggingService
 
     static LoggingService()
     {
+        ApiKey = Encoding.UTF8.GetString(Convert.FromBase64String("ZXUwMXh4MDlkNWJjMWJiZmIzYjAxNDA2NGM3ZmMyMDNGRkZGTlJBTA=="));
         client = new HttpClient();
         sessionId = Guid.NewGuid().ToString();
         permissionToLog = true; // todo make it false and ask for it
@@ -82,7 +83,7 @@ public static class LoggingService
 
         var content = new StringContent(logData, Encoding.UTF8, "application/json");
 
-        var response = await client.PostAsync(NewRelicLogUrl, content);
+        var response = await client.PostAsync(NewRelicLogUrl + ApiKey, content);
         response.EnsureSuccessStatusCode();
         //Debug.Log("Logs: " + response.StatusCode);
     }
