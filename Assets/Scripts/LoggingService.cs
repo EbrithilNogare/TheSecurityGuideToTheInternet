@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public static class LoggingService
 {
-    private const string NewRelicLogUrl = "https://log-api.eu.newrelic.com/log/v1?Api-Key=";
+    private const string NewRelicLogUrl = "https://log-api.eu.newrelic.com/log/v1";
     private static string ApiKey;
 
     private static string sessionId;
@@ -81,12 +81,13 @@ public static class LoggingService
     ""attributes"": {{ {attributesJson.ToString()} }}
 }}";
 
-        using (UnityWebRequest request = new UnityWebRequest(NewRelicLogUrl + ApiKey, "POST"))
+        using (UnityWebRequest request = new UnityWebRequest(NewRelicLogUrl, "POST"))
         {
             byte[] bodyRaw = Encoding.UTF8.GetBytes(logData);
             request.uploadHandler = new UploadHandlerRaw(bodyRaw);
             request.downloadHandler = new DownloadHandlerBuffer();
             request.SetRequestHeader("Content-Type", "application/json");
+            request.SetRequestHeader("Api-Key", ApiKey);
 
             var operation = request.SendWebRequest();
 
