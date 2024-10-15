@@ -60,6 +60,8 @@ public static class LoggingService
         attributes.Add("sessionId", sessionId);
         attributes.Add("activeScene", SceneManager.GetActiveScene().name);
         attributes.Add("category", category.ToString());
+        attributes.Add("platform", Application.platform.ToString());
+        attributes.Add("version", Application.version);
 
         var attributesJson = new StringBuilder();
         bool first = true;
