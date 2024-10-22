@@ -24,11 +24,10 @@ public static class LoggingService
         ApiKey = Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXUwMXh4MDlkNWJjMWJiZmIzYjAxNDA2NGM3ZmMyMDNGRkZGTlJBTA==")); // key is visible in request anyway
         sessionId = System.Guid.NewGuid().ToString();
         permissionToLogPersonalDetails = false;
+        environment = Environment.Production;
 
 #if UNITY_EDITOR
         environment = Environment.Development;
-#else
-        environment = Environment.Production;
 #endif
 
         Application.logMessageReceived += (message, stackTrace, type) =>
@@ -105,7 +104,7 @@ public static class LoggingService
     {
         SendLogsAsync(LogLevel.Info, category, description);
     }
-    public static void LogStartGame()
+    public async static void LogStartGame()
     {
         var moreData = new Dictionary<string, string>();
 
@@ -114,8 +113,9 @@ public static class LoggingService
             // personal data, that need permisions (GDPR)
         }
 
-        moreData.Add("language", LocalizationSettings.SelectedLocale.LocaleName);
-
+        var languageHandle = LocalizationSettings.SelectedLocaleAsync;
+        var language = await languageHandle.Task;
+        moreData.Add("language", language.LocaleName);
 
         SendLogsAsync(LogLevel.Info, LogCategory.Navigation, "Game Opened", moreData);
     }
