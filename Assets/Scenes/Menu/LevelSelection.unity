@@ -2901,7 +2901,7 @@ PrefabInstance:
     - target: {fileID: 2156315243587077121, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_text
-      value: "Zp\u011Bt do menu"
+      value: Back to menu
       objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}

@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Presentations/Malware_Antivirus_Presentation.unity
     guid: 57738e9a2a1afe84b84eae862e857b0d
   m_configObjects:
-    com.unity.addressableassets: {fileID: 11400000, guid: 267e98edf00f0e94283a3ac6dc529d54,
+    com.unity.addressableassets: {fileID: 11400000, guid: bdd79a51c7c8e5a4190c1aa2ba645f2d,
       type: 2}
-    com.unity.localization.settings: {fileID: 11400000, guid: 352b61638c7c12446a1e206cd71c41fe,
+    com.unity.localization.settings: {fileID: 11400000, guid: 7f388cb0215016048bcb6220d8803c42,
       type: 2}
