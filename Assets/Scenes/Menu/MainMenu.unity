@@ -313,6 +313,16 @@ PrefabInstance:
       propertyPath: managedReferences[6812718590254645269].m_Localized.m_TableEntryReference.m_KeyId
       value: 6097382178816
       objectReference: {fileID: 0}
+    - target: {fileID: 8116097598189356553, guid: 43353270638ca2c438f8dd6a2ad104e6,
+        type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 11319160635392
+      objectReference: {fileID: 0}
+    - target: {fileID: 8116097598189356553, guid: 43353270638ca2c438f8dd6a2ad104e6,
+        type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:6d85f9d2b6f8e5045a27a77e7f99058e
+      objectReference: {fileID: 0}
     - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -561,6 +571,16 @@ PrefabInstance:
       propertyPath: managedReferences[6812718590254645269].m_Localized.m_TableEntryReference.m_KeyId
       value: 6109780541440
       objectReference: {fileID: 0}
+    - target: {fileID: 8116097598189356553, guid: 43353270638ca2c438f8dd6a2ad104e6,
+        type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 11344573923328
+      objectReference: {fileID: 0}
+    - target: {fileID: 8116097598189356553, guid: 43353270638ca2c438f8dd6a2ad104e6,
+        type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:6d85f9d2b6f8e5045a27a77e7f99058e
+      objectReference: {fileID: 0}
     - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -599,7 +619,7 @@ PrefabInstance:
     - target: {fileID: 2156315243587077121, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_text
-      value: Turorial
+      value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
@@ -705,6 +725,16 @@ PrefabInstance:
         type: 3}
       propertyPath: managedReferences[6812718590254645269].m_Localized.m_TableEntryReference.m_KeyId
       value: 6081422852096
+      objectReference: {fileID: 0}
+    - target: {fileID: 8116097598189356553, guid: 43353270638ca2c438f8dd6a2ad104e6,
+        type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 11263015682048
+      objectReference: {fileID: 0}
+    - target: {fileID: 8116097598189356553, guid: 43353270638ca2c438f8dd6a2ad104e6,
+        type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:6d85f9d2b6f8e5045a27a77e7f99058e
       objectReference: {fileID: 0}
     - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
@@ -850,6 +880,16 @@ PrefabInstance:
         type: 3}
       propertyPath: managedReferences[6812718590254645269].m_Localized.m_TableEntryReference.m_KeyId
       value: 5746943885312
+      objectReference: {fileID: 0}
+    - target: {fileID: 8116097598189356553, guid: 43353270638ca2c438f8dd6a2ad104e6,
+        type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 11164508258304
+      objectReference: {fileID: 0}
+    - target: {fileID: 8116097598189356553, guid: 43353270638ca2c438f8dd6a2ad104e6,
+        type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:6d85f9d2b6f8e5045a27a77e7f99058e
       objectReference: {fileID: 0}
     - target: {fileID: 8682251555484279902, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
@@ -1310,37 +1350,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 1888764865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 6812718599665352777
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:6d85f9d2b6f8e5045a27a77e7f99058e
+    m_TableEntryReference:
+      m_KeyId: 5705072640
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1888764867}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   references:
     version: 2
-    RefIds:
-    - rid: 6812718599665352777
-      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
-        asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 1888764867}
-        m_TrackedProperties:
-          items:
-          - rid: 6812718599665352778
-        m_UpdateType: 0
-    - rid: 6812718599665352778
-      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_Localized:
-          m_TableReference:
-            m_TableCollectionName: GUID:ca98b8d4799da2f48aa769d33157edd6
-          m_TableEntryReference:
-            m_KeyId: 3362574336000
-            m_Key: 
-          m_FallbackState: 0
-          m_WaitForCompletion: 0
-          m_LocalVariables: []
-        m_PropertyPath: m_text
+    RefIds: []
 --- !u!1 &2007782110
 GameObject:
   m_ObjectHideFlags: 0

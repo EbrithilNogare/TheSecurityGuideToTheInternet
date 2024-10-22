@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Localization_cs
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: 6d85f9d2b6f8e5045a27a77e7f99058e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 5705072640
+    m_Localized: "Bezpe\u010Dnostn\xED pr\u016Fvodce internetem"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11164508258304
+    m_Localized: Start Hry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11263015682048
+    m_Localized: "Tutori\xE1l"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11344573923328
+    m_Localized: "Nastaven\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11319160635392
+    m_Localized: Obchod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12202317479936
+    m_Localized: "Zp\u011Bt do menu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12729407275008
+    m_Localized: Malware
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12738982871040
+    m_Localized: "Soukrom\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12751435759616
+    m_Localized: Mobil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12753126064128
+    m_Localized: "Zabezpe\u010Den\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17931908710400
+    m_Localized: Jazyk
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

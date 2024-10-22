@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
-//using UnityEngine.Localization.Settings;
+using UnityEngine.Localization.Settings;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
@@ -17,7 +17,7 @@ public static class LoggingService
 
     private enum LogLevel { Info, Warning, Error }
     private enum Environment { Development, Production }
-    public enum LogCategory { LogMessageReceived, Navigation, Minigame, Level, PersonalDetails }
+    public enum LogCategory { LogMessageReceived, Navigation, Minigame, Level, PersonalDetails, Settings }
 
     static LoggingService()
     {
@@ -109,9 +109,9 @@ public static class LoggingService
             // personal data, that need permisions (GDPR)
         }
 
-        // var languageHandle = LocalizationSettings.SelectedLocaleAsync;
-        // var language = await languageHandle.Task;
-        // moreData.Add("language", language.LocaleName);
+        var languageHandle = LocalizationSettings.SelectedLocaleAsync;
+        var language = await languageHandle.Task;
+        moreData.Add("language", language.LocaleName);
 
         SendLogsAsync(LogLevel.Info, LogCategory.Navigation, "Game Opened", moreData);
     }
