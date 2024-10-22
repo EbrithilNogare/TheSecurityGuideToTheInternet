@@ -24,11 +24,7 @@ public static class LoggingService
         ApiKey = Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXUwMXh4MDlkNWJjMWJiZmIzYjAxNDA2NGM3ZmMyMDNGRkZGTlJBTA==")); // key is visible in request anyway
         sessionId = System.Guid.NewGuid().ToString();
         permissionToLogPersonalDetails = false;
-        environment = Environment.Production;
-
-#if UNITY_EDITOR
-        environment = Environment.Development;
-#endif
+        environment = Debug.isDebugBuild ? Environment.Development : Environment.Production;
 
         Application.logMessageReceived += (message, stackTrace, type) =>
         {
