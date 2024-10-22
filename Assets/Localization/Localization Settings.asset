@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StartupSelectors:
   - rid: 1478236676168613888
-  - rid: 1478236676168613890
   - rid: 1478236676168613889
+  - rid: 1478236676168613890
   m_AvailableLocales:
     rid: 1478236676168613891
   m_AssetDatabase:
@@ -60,6 +60,7 @@ MonoBehaviour:
           rid: -2
         m_CustomTablePostprocessor:
           rid: -2
+        m_AsynchronousBehaviour: 0
         m_UseFallback: 1
     - rid: 1478236676168613893
       type: {class: LocalizedStringDatabase, ns: UnityEngine.Localization.Settings,
@@ -71,6 +72,7 @@ MonoBehaviour:
           rid: -2
         m_CustomTablePostprocessor:
           rid: -2
+        m_AsynchronousBehaviour: 0
         m_UseFallback: 1
         m_MissingTranslationState: -1
         m_NoTranslationFoundMessage: No translation found for '{key}' in {table.TableCollectionName}
