@@ -10,6 +10,7 @@ public class Store : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            LoggingService.LogStartGame();
         }
         else
         {

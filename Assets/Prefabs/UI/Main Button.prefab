@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 4676149912955572740}
   - component: {fileID: 4027751372170303476}
   - component: {fileID: 2156315243587077121}
-  - component: {fileID: 2745684211900766696}
+  - component: {fileID: 6688284194050412182}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start Game
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4df05822f15a2584f9901b75eb26ebe2, type: 2}
   m_sharedMaterial: {fileID: -628191379978384950, guid: 4df05822f15a2584f9901b75eb26ebe2,
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2745684211900766696
+--- !u!114 &6688284194050412182
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -282,28 +282,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedObjects:
-  - rid: 1478236676168613912
+  - rid: 6812718590254645268
   references:
     version: 2
     RefIds:
-    - rid: 1478236676168613912
+    - rid: 6812718590254645268
       type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
         asm: Unity.Localization}
       data:
         m_Target: {fileID: 2156315243587077121}
         m_TrackedProperties:
           items:
-          - rid: 1478236676168613913
+          - rid: 6812718590254645269
         m_UpdateType: 0
-    - rid: 1478236676168613913
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+    - rid: 6812718590254645269
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
       data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:b2746b1dc7bf1b64f8d8b87d2d219728
+          m_TableEntryReference:
+            m_KeyId: 8956358197248
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
         m_PropertyPath: m_text
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: Start Game
-        - localeIdentifier:
-            m_Code: cs
-          value: Start Hry

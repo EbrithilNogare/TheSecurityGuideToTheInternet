@@ -18,7 +18,7 @@ public class LevelSelection : MonoBehaviour
 
     public void LoadLevel(string level)
     {
-        LoggingService.Log(LoggingService.LogCategory.NAVIGATION, "Navigated to level: " + level);
+        LoggingService.Log(LoggingService.LogCategory.Navigation, "Navigated to level: " + level);
         Assert.IsTrue(LevelCategories.Contains(level), "Unknown level: " + level);
 
         switch (level)

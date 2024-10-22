@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
@@ -12,33 +13,35 @@ public static class LoggingService
 
     private static string sessionId;
     private static Environment environment;
-    private static bool permissionToLog;
+    private static bool permissionToLogPersonalDetails;
 
-    private enum LogLevel { INFO, ERROR }
-    private enum Environment { DEVELOPMENT, PRODUCTION }
-    public enum LogCategory { ERROR, NAVIGATION, MINIGAME, LEVEL }
+    private enum LogLevel { Info, Warning, Error }
+    private enum Environment { Development, Production }
+    public enum LogCategory { LogMessageReceived, Navigation, Minigame, Level, PersonalDetails }
 
     static LoggingService()
     {
         ApiKey = Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXUwMXh4MDlkNWJjMWJiZmIzYjAxNDA2NGM3ZmMyMDNGRkZGTlJBTA==")); // key is visible in request anyway
         sessionId = System.Guid.NewGuid().ToString();
-
-        permissionToLog = true; // todo make it false and ask for it
+        permissionToLogPersonalDetails = false;
 
 #if UNITY_EDITOR
-        environment = Environment.DEVELOPMENT;
+        environment = Environment.Development;
 #else
-        environment = Environment.PRODUCTION;
+        environment = Environment.Production;
 #endif
 
         Application.logMessageReceived += (message, stackTrace, type) =>
         {
             if (type == LogType.Error || type == LogType.Exception)
             {
-                SendLogsAsync(LogLevel.ERROR, LogCategory.ERROR, message, new Dictionary<string, string> { { "stackTrace", stackTrace } });
+                SendLogsAsync(LogLevel.Error, LogCategory.LogMessageReceived, message, new Dictionary<string, string> { { "stackTrace", stackTrace } });
+            }
+            if (type == LogType.Warning || type == LogType.Assert)
+            {
+                SendLogsAsync(LogLevel.Warning, LogCategory.LogMessageReceived, message, new Dictionary<string, string> { { "stackTrace", stackTrace } });
             }
         };
-
     }
 
     private static string Sanitize(string message)
@@ -48,7 +51,7 @@ public static class LoggingService
 
     private static async void SendLogsAsync(LogLevel logLevel, LogCategory category, string description, Dictionary<string, string> attributes = null)
     {
-        if (!permissionToLog) { return; }
+        if (environment == Environment.Development) { return; }
 
         if (attributes == null)
         {
@@ -96,10 +99,24 @@ public static class LoggingService
         }
     }
 
-    public static void GrandPermissionToTrack(bool permission) { permissionToLog = permission; }
+    public static void GrandPermissionToTrack(bool permission) { permissionToLogPersonalDetails = permission; }
 
     public static void Log(LogCategory category, string description)
     {
-        SendLogsAsync(LogLevel.INFO, category, description);
+        SendLogsAsync(LogLevel.Info, category, description);
+    }
+    public static void LogStartGame()
+    {
+        var moreData = new Dictionary<string, string>();
+
+        if (permissionToLogPersonalDetails)
+        {
+            // personal data, that need permisions (GDPR)
+        }
+
+        moreData.Add("language", LocalizationSettings.SelectedLocale.LocaleName);
+
+
+        SendLogsAsync(LogLevel.Info, LogCategory.Navigation, "Game Opened", moreData);
     }
 }

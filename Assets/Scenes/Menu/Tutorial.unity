@@ -580,8 +580,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
+  near clip plane: 0.01
+  far clip plane: 10
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -609,7 +609,7 @@ Transform:
   m_GameObject: {fileID: 1453495041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -858,31 +858,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedObjects:
-  - rid: 1478236676168613912
+  - rid: 6812718590254645319
   references:
     version: 2
     RefIds:
-    - rid: 1478236676168613912
+    - rid: 6812718590254645319
       type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
         asm: Unity.Localization}
       data:
         m_Target: {fileID: 1895105024}
         m_TrackedProperties:
           items:
-          - rid: 1478236676168613913
+          - rid: 6812718590254645320
         m_UpdateType: 0
-    - rid: 1478236676168613913
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+    - rid: 6812718590254645320
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
       data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:b2746b1dc7bf1b64f8d8b87d2d219728
+          m_TableEntryReference:
+            m_KeyId: 20618851155968
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
         m_PropertyPath: m_text
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: Back to menu
-        - localeIdentifier:
-            m_Code: cs
-          value: "Zp\u011Bt do menu"
 --- !u!1 &1965485501
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,31 +936,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedObjects:
-  - rid: 1478236676168613920
+  - rid: 6812718590254645317
   references:
     version: 2
     RefIds:
-    - rid: 1478236676168613920
+    - rid: 6812718590254645317
       type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
         asm: Unity.Localization}
       data:
         m_Target: {fileID: 1965485504}
         m_TrackedProperties:
           items:
-          - rid: 1478236676168613921
+          - rid: 6812718590254645318
         m_UpdateType: 0
-    - rid: 1478236676168613921
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+    - rid: 6812718590254645318
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
       data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:b2746b1dc7bf1b64f8d8b87d2d219728
+          m_TableEntryReference:
+            m_KeyId: 10294169206784
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
         m_PropertyPath: m_text
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: The Security Guide To The Internet
-        - localeIdentifier:
-            m_Code: cs
-          value: "Bezpe\u010Dn\xFD pr\u016Fvodce internetem"
 --- !u!114 &1965485504
 MonoBehaviour:
   m_ObjectHideFlags: 0
