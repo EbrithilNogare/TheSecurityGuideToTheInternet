@@ -207,7 +207,7 @@ PrefabInstance:
     - target: {fileID: 2156315243587077121, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_text
-      value: Shop
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
@@ -454,7 +454,7 @@ PrefabInstance:
     - target: {fileID: 2156315243587077121, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_text
-      value: Settings
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
@@ -598,7 +598,7 @@ PrefabInstance:
     - target: {fileID: 2156315243587077121, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_text
-      value: Tutorial
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
