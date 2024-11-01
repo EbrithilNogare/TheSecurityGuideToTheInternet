@@ -1,5 +1,10 @@
 name: Build project
 
+# SECRETS IN USE:
+# - UNITY_LICENSE
+# - UNITY_EMAIL
+# - UNITY_PASSWORD
+
 on:
   push:
     branches:
@@ -21,8 +26,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        targetPlatform:
-          # - iOS # Build an iOS player
+        targetPlatform: # EDIT HERE: choose which platforms you want to build for
+          # - iOS # Build an iOS player (not working at the moment)
           # - StandaloneWindows # Build a Windows standalone
           - StandaloneWindows64 # Build a Windows 64-bit standalone
           # - StandaloneLinux64 # Build a Linux 64-bit standalone
