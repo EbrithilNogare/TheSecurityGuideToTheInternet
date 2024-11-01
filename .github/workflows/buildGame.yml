@@ -1,9 +1,9 @@
 name: Build project
 
 # SECRETS IN USE:
-# - UNITY_LICENSE
-# - UNITY_EMAIL
-# - UNITY_PASSWORD
+# ⚠️ UNITY_LICENSE
+# ⚠️ UNITY_EMAIL
+# ⚠️ UNITY_PASSWORD
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        targetPlatform: # EDIT HERE: choose which platforms you want to build for
+        targetPlatform: # 🔴 EDIT HERE: choose which platforms you want to build for
           # - iOS # Build an iOS player (not working at the moment)
           # - StandaloneWindows # Build a Windows standalone
           - StandaloneWindows64 # Build a Windows 64-bit standalone
@@ -110,6 +110,7 @@ jobs:
           path: build/${{ matrix.targetPlatform }}
 
   createRelease:
+    if: true # 🔴 EDIT HERE: enable / disable github release
     name: Create GitHub Release
     needs: buildForAllSupportedPlatforms
     runs-on: ubuntu-latest
@@ -165,13 +166,13 @@ jobs:
           done
 
   deploy:
-    if: false # EDIT HERE: enable / disable itch deploy
+    if: false # 🔴 EDIT HERE: enable / disable itch deploy
     name: Butler Push to Itch
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        targetPlatform: # EDIT HERE: select which platform should be deployed (must be also in the list above)
+        targetPlatform: # 🔴 EDIT HERE: select which platform should be deployed (must be also in the list above)
           # - { platform: StandaloneOSX, itchChannel: "osx" } # Build a macOS standalone (Intel 64-bit)
           - { platform: StandaloneWindows, itchChannel: "win32" } # Build a Windows standalone
           # - { platform: StandaloneWindows64, itchChannel: "windows" } # Build a Windows 64-bit standalone
@@ -189,6 +190,6 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.ITCH_IO_CREDENTIALS }}
           CHANNEL: ${{ matrix.targetPlatform.itchChannel }}
-          ITCH_GAME: todo # EDIT HERE: name of the game on itch
-          ITCH_USER: ebrithilnogare # EDIT HERE: itch username
+          ITCH_GAME: todo # 🔴 EDIT HERE: name of the game on itch
+          ITCH_USER: ebrithilnogare # 🔴 EDIT HERE: itch username
           PACKAGE: build/${{ github.event.repository.name }}-${{ matrix.targetPlatform.platform }}
