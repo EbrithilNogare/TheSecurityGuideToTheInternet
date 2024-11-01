@@ -163,3 +163,32 @@ jobs:
               fi
             fi
           done
+
+  deploy:
+    if: false # EDIT HERE: enable / disable itch deploy
+    name: Butler Push to Itch
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        targetPlatform: # EDIT HERE: select which platform should be deployed (must be also in the list above)
+          # - { platform: StandaloneOSX, itchChannel: "osx" } # Build a macOS standalone (Intel 64-bit)
+          - { platform: StandaloneWindows, itchChannel: "win32" } # Build a Windows standalone
+          # - { platform: StandaloneWindows64, itchChannel: "windows" } # Build a Windows 64-bit standalone
+          - { platform: StandaloneLinux64, itchChannel: "linux" } # Build a Linux 64-bit standalone
+          # - { platform: Android, itchChannel: "android" } # Build an Android .apk standalone app
+          - { platform: WebGL, itchChannel: "html5" } # WebGL
+    needs: buildForAllSupportedPlatforms
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ github.event.repository.name }}-${{ matrix.targetPlatform.platform }}
+          path: build/${{ github.event.repository.name }}-${{ matrix.targetPlatform.platform }}
+      - name: Push ${{ matrix.targetPlatform.platform }} to Itch.io
+        uses: manleydev/butler-publish-itchio-action@master
+        env:
+          BUTLER_CREDENTIALS: ${{ secrets.ITCH_IO_CREDENTIALS }}
+          CHANNEL: ${{ matrix.targetPlatform.itchChannel }}
+          ITCH_GAME: todo # EDIT HERE: name of the game on itch
+          ITCH_USER: ebrithilnogare # EDIT HERE: itch username
+          PACKAGE: build/${{ github.event.repository.name }}-${{ matrix.targetPlatform.platform }}
