@@ -1,58 +1,13 @@
 name: Build project
 
-# 🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨
-# 🟨       Secrets      🟨
-# 🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨
+# ❗ All thing to set up are marked with red dot -> 🔴
+
+######## SECRETS ########
 # ⚠️ UNITY_EMAIL
 # ⚠️ UNITY_PASSWORD
 # ⚠️ UNITY_LICENSE             How to get it: https://game.ci/docs/github/activation/
 # ⚠️ ITCH_IO_CREDENTIALS       Where to get it: https://itch.io/user/settings/api-keys       (not needed if itch deploy is off)
 
-
-# 🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨
-# 🟨    Configuration   🟨
-# 🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨
-
-# ========= BUILD ==========
-targetPlatforms: # Choose which platforms you want to build for
-  # - iOS # Build an iOS player (not supported at the moment)
-  # - StandaloneWindows # Build a Windows standalone
-  - StandaloneWindows64 # Build a Windows 64-bit standalone
-  # - StandaloneLinux64 # Build a Linux 64-bit standalone
-  - Android # Build an Android .apk standalone app
-  - WebGL # WebGL
-
-  
-# ========= RELEASE ON GIThUB  ==========
-enableGithubRelease: true # Enable/disable GitHub release
-
-
-# ========= DEPLOY ON ITCH.io ==========
-enableItchDeploy: false # Enable/disable Itch deployment
-itchUser: ebrithilnogare # Itch username
-itchGame: todo # Name of the game on Itch
-deployPlatforms: # Select platforms to deploy to Itch (must match one in `targetPlatforms`)
-  # - { platform: StandaloneOSX, itchChannel: "osx" } # Build a macOS standalone (Intel 64-bit)
-  - { platform: StandaloneWindows, itchChannel: "win32" } # Build a Windows standalone
-  # - { platform: StandaloneWindows64, itchChannel: "windows" } # Build a Windows 64-bit standalone
-  - { platform: StandaloneLinux64, itchChannel: "linux" } # Build a Linux 64-bit standalone
-  # - { platform: Android, itchChannel: "android" } # Build an Android .apk standalone app
-  - { platform: WebGL, itchChannel: "html5" } # WebGL
-
-
-# =========== OTHER SETTINGS =================
-freeDiskOptions: # In case Android build fails due to out of disk space, enable these
-  android: true           # free ~ 8.7 GiB in 5s
-  dotnet: true            # free ~ 1.6 GiB in 1s
-  haskell: true           # free ~ 5.2 GiB in 1s
-  large-packages: false   # free ~ 4.7 GiB in 100s
-  docker-images: true     # free ~ 3.2 GiB in 1s
-  swap-storage: false     # free ~ 4.0 GiB in 1s
-
-
-# 🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨
-# 🟨      Workflow      🟨
-# 🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨
 on:
   push:
     branches:
@@ -74,7 +29,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        targetPlatform: ${{ fromJson(env.targetPlatforms) }}
+        targetPlatform: # 🔴 Choose which platforms you want to build for
+          # - iOS # Build an iOS player
+          # - StandaloneWindows # Build a Windows standalone
+          - StandaloneWindows64 # Build a Windows 64-bit standalone
+          # - StandaloneLinux64 # Build a Linux 64-bit standalone
+          - Android # Build an Android .apk standalone app
+          - WebGL # WebGL
     steps:
       - uses: actions/checkout@v4
         with:
@@ -102,7 +63,13 @@ jobs:
       - name: Free disk space
         if: matrix.targetPlatform == 'Android'
         uses: jlumbroso/free-disk-space@v1.3.1
-        with: ${{ fromJson(env.freeDiskOptions) }}
+        with: # In case Android build fails due to out of disk space, enable these
+          android: true # free ~ 8.7 GiB in   5s
+          dotnet: true # free ~ 1.6 GiB in   1s
+          haskell: true # free ~ 5.2 GiB in   1s
+          large-packages: false # free ~ 4,7 GiB in 100s
+          docker-images: true # free ~ 3.2 GiB in   1s
+          swap-storage: false # free ~ 4.0 GiB in   1s
 
       - uses: game-ci/unity-builder@v4
         id: myBuildStep
@@ -146,7 +113,7 @@ jobs:
           path: build/${{ matrix.targetPlatform }}
 
   createRelease:
-    if: ${{ env.enableGithubRelease }}
+    if: true # 🔴 Enable / disable GITHUB RELEASE
     name: Create GitHub Release
     needs: buildForAllSupportedPlatforms
     runs-on: ubuntu-latest
@@ -202,13 +169,19 @@ jobs:
           done
 
   deploy:
-    if: ${{ env.enableItchDeploy }}
+    if: false # 🔴 Enable / disable ITCH deploy
     name: Butler Push to Itch
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        targetPlatform: ${{ fromJson(env.deployPlatforms) }}
+        targetPlatform: # 🔴 Select platforms to deploy to Itch (must match one in `targetPlatforms`)
+          # - { platform: StandaloneOSX, itchChannel: "osx" } # Build a macOS standalone (Intel 64-bit)
+          # - { platform: StandaloneWindows, itchChannel: "win32" } # Build a Windows standalone
+          - { platform: StandaloneWindows64, itchChannel: "windows" } # Build a Windows 64-bit standalone
+          - { platform: StandaloneLinux64, itchChannel: "linux" } # Build a Linux 64-bit standalone
+          #- { platform: Android, itchChannel: "android" } # Build an Android .apk standalone app
+          - { platform: WebGL, itchChannel: "html5" } # WebGL
     needs: buildForAllSupportedPlatforms
     steps:
       - uses: actions/download-artifact@v4
@@ -220,6 +193,6 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.ITCH_IO_CREDENTIALS }}
           CHANNEL: ${{ matrix.targetPlatform.itchChannel }}
-          ITCH_GAME: ${{ env.itchGame }}
-          ITCH_USER: ${{ env.itchUser }}
+          ITCH_GAME: luciditydungeon # 🔴 Name of the game on Itch
+          ITCH_USER: ebrithilnogare # 🔴 Itch username
           PACKAGE: build/${{ github.event.repository.name }}-${{ matrix.targetPlatform.platform }}
