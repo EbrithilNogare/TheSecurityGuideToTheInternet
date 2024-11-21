@@ -144,7 +144,7 @@ PrefabInstance:
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -530,7 +530,7 @@ PrefabInstance:
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -858,7 +858,7 @@ PrefabInstance:
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -1063,17 +1063,17 @@ PrefabInstance:
     - target: {fileID: 434879824214577075, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.4433962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 434879824214577075, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.4433962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 434879824214577075, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.4433962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -1083,7 +1083,7 @@ PrefabInstance:
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -1452,22 +1452,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4933a128d67f9324f9805829e9970e1c,
+      objectReference: {fileID: 21300000, guid: 22c4a306a4f66c942a0ea1a0e3def701,
         type: 3}
     - target: {fileID: 434879824214577075, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.4433962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 434879824214577075, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.4433962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 434879824214577075, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.4433962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -1482,7 +1482,7 @@ PrefabInstance:
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -2338,17 +2338,17 @@ PrefabInstance:
     - target: {fileID: 434879824214577075, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.4433962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 434879824214577075, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.4433962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 434879824214577075, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.4433962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -2358,7 +2358,7 @@ PrefabInstance:
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -2739,17 +2739,17 @@ PrefabInstance:
     - target: {fileID: 434879824214577075, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.4433962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 434879824214577075, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.4433962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 434879824214577075, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.4433962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -2759,7 +2759,7 @@ PrefabInstance:
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -3915,7 +3915,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 22c4a306a4f66c942a0ea1a0e3def701,
+      objectReference: {fileID: 21300000, guid: 4933a128d67f9324f9805829e9970e1c,
         type: 3}
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
