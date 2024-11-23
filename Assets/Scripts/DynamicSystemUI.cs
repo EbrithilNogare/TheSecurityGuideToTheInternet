@@ -69,17 +69,17 @@ public class DynamicSystemUI : MonoBehaviour
 
     private void StartMoveTween(TweenSettings settings)
     {
-        settings.originalValue = transform.position;
+        settings.originalValue = transform.localPosition;
         if (settings.relative)
         {
-            settings.tweener = transform.DOMove(transform.position + settings.targetValue, settings.duration)
+            settings.tweener = transform.DOLocalMove(transform.localPosition + settings.targetValue, settings.duration)
                 .SetEase(GetEase(settings.easeType))
                 .SetDelay(settings.delay)
                 .SetLoops(settings.loop ? -1 : 0, settings.loopType);
         }
         else
         {
-            settings.tweener = transform.DOMove(settings.targetValue, settings.duration)
+            settings.tweener = transform.DOLocalMove(settings.targetValue, settings.duration)
                 .SetEase(GetEase(settings.easeType))
                 .SetDelay(settings.delay)
                 .SetLoops(settings.loop ? -1 : 0, settings.loopType);
@@ -107,22 +107,23 @@ public class DynamicSystemUI : MonoBehaviour
 
     private void StartRotateTween(TweenSettings settings)
     {
-        settings.originalValue = transform.eulerAngles;
+        settings.originalValue = transform.localEulerAngles;
         if (settings.relative)
         {
-            settings.tweener = transform.DORotate(transform.eulerAngles + settings.targetValue, settings.duration, RotateMode.FastBeyond360)
+            settings.tweener = transform.DOLocalRotate(transform.localEulerAngles + settings.targetValue, settings.duration, RotateMode.FastBeyond360)
                 .SetEase(GetEase(settings.easeType))
                 .SetDelay(settings.delay)
                 .SetLoops(settings.loop ? -1 : 0, settings.loopType);
         }
         else
         {
-            settings.tweener = transform.DORotate(settings.targetValue, settings.duration, RotateMode.FastBeyond360)
+            settings.tweener = transform.DOLocalRotate(settings.targetValue, settings.duration, RotateMode.FastBeyond360)
                 .SetEase(GetEase(settings.easeType))
                 .SetDelay(settings.delay)
                 .SetLoops(settings.loop ? -1 : 0, settings.loopType);
         }
     }
+
 
     private void StartFadeTween(TweenSettings settings)
     {

@@ -141,10 +141,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle button (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Interactable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -527,10 +532,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle button (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Interactable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -1080,10 +1090,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle button (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Interactable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -2355,10 +2370,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle button (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Interactable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -2756,10 +2776,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle button (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Interactable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
