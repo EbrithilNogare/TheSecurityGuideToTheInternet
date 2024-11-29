@@ -30,4 +30,4 @@ CZ translation: Bezpečný průvodce internetem
 
 ### Unity version
 
-2022.3.9f1
+2022.3.53f1
