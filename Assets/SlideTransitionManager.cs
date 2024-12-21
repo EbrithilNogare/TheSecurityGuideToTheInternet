@@ -15,7 +15,7 @@ public class SlideTransitionManager : MonoBehaviour
     private int currentSlideIndex;
     private bool isTransitioning;
 
-    void Start()
+    void Awake()
     {
         currentSlideIndex = 0;
         for (int i = 0; i < slides.Length; i++)
