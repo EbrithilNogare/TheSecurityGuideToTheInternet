@@ -21,10 +21,14 @@ public class SlideTransitionManager : MonoBehaviour
         for (int i = 0; i < slides.Length; i++)
             slides[i].SetActive(false);
         slides[currentSlideIndex].SetActive(true);
+
+        LoggingService.Log(LoggingService.LogCategory.Presentation, "{action:Awake;sceneAfterPresentation:" + sceneAfterPresentation + ";destination:0");
     }
 
     public void NextSlide()
     {
+        LoggingService.Log(LoggingService.LogCategory.Presentation, "{action:NextSlide;sceneAfterPresentation:" + sceneAfterPresentation + ";destination:" + (currentSlideIndex + 1).ToString());
+
         if (isTransitioning || currentSlideIndex >= slides.Length) return;
 
         if (currentSlideIndex < slides.Length - 1)
@@ -43,6 +47,8 @@ public class SlideTransitionManager : MonoBehaviour
 
     public void PreviousSlide()
     {
+        LoggingService.Log(LoggingService.LogCategory.Presentation, "{action:PreviousSlide;sceneAfterPresentation:" + sceneAfterPresentation + ";destination:" + (currentSlideIndex - 1).ToString());
+
         if (isTransitioning || currentSlideIndex < 0) return;
 
         if (currentSlideIndex > 0)

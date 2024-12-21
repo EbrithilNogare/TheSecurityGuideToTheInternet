@@ -17,7 +17,7 @@ public static class LoggingService
 
     private enum LogLevel { Info, Warning, Error }
     private enum Environment { Development, Production }
-    public enum LogCategory { LogMessageReceived, Navigation, Minigame, Level, PersonalDetails, Settings }
+    public enum LogCategory { LogMessageReceived, Navigation, Presentation, Minigame, Level, PersonalDetails, Settings }
 
     static LoggingService()
     {
@@ -46,7 +46,11 @@ public static class LoggingService
 
     private static async void SendLogsAsync(LogLevel logLevel, LogCategory category, string description, Dictionary<string, string> attributes = null)
     {
-        if (environment == Environment.Development) { return; }
+        if (environment == Environment.Development)
+        {
+            // Debug.Log($"[LoggingService] {logLevel} {category} {description}");
+            return;
+        }
 
         if (attributes == null)
         {
@@ -94,7 +98,10 @@ public static class LoggingService
         }
     }
 
-    public static void GrandPermissionToTrack(bool permission) { permissionToLogPersonalDetails = permission; }
+    public static void GrandPermissionToTrack(bool permission)
+    {
+        permissionToLogPersonalDetails = permission;
+    }
 
     public static void Log(LogCategory category, string description)
     {
