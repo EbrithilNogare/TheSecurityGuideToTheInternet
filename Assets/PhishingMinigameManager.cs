@@ -17,8 +17,10 @@ public class PhishingMinigameManager : MonoBehaviour
     public GameObject templateContainer;
     public GameObject websiteContainer;
     public GameObject trashDropZone;
+    public Image progressBar;
+    public TMPro.TextMeshProUGUI scoreText;
 
-    private List<System.Tuple<Vector3, itemName, Color>> objectsInTemplate;
+    private List<System.Tuple<Vector2, itemName, Color>> objectsInTemplate;
 
     public enum itemName
     {
@@ -37,33 +39,45 @@ public class PhishingMinigameManager : MonoBehaviour
 
     void SpawnObjectsInTemplate()
     {
-        objectsInTemplate = new List<System.Tuple<Vector3, itemName, Color>>();
+        objectsInTemplate = new List<System.Tuple<Vector2, itemName, Color>>();
 
         // Image 1
-        Vector3 image1Position = new Vector3(200, -500, 0);
-        GameObject image1 = Instantiate(images[0], image1Position, Quaternion.identity, templateContainer.transform);
-        //image1.transform.localPosition = image1Position;
+        Vector3 image1Position = new Vector2(200, 200);
+        GameObject image1 = Instantiate(images[0], templateContainer.transform);
+        image1.GetComponent<RectTransform>().anchoredPosition = image1Position;
         image1.GetComponent<Image>().color = colors[Random.Range(0, colors.Length)];
-        objectsInTemplate.Add(new System.Tuple<Vector3, itemName, Color>(image1Position, itemName.Pet, image1.GetComponent<Image>().color));
+        image1.GetComponent<PhishingMinigameDragable>().enabled = false;
+        image1.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
+        image1.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
+        objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(image1Position, itemName.Pet, image1.GetComponent<Image>().color));
 
         // Image 2
-        Vector3 image2Position = new Vector3(1000, 500, 0);
-        GameObject image2 = Instantiate(images[1], image2Position, Quaternion.identity, templateContainer.transform);
-        image2.transform.localPosition = image2Position;
+        Vector3 image2Position = new Vector2(1000, 200);
+        GameObject image2 = Instantiate(images[1], templateContainer.transform);
+        image2.GetComponent<RectTransform>().anchoredPosition = image2Position;
         image2.GetComponent<Image>().color = colors[Random.Range(0, colors.Length)];
-        objectsInTemplate.Add(new System.Tuple<Vector3, itemName, Color>(image2Position, itemName.Flower, image2.GetComponent<Image>().color));
+        image2.GetComponent<PhishingMinigameDragable>().enabled = false;
+        image2.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
+        image2.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
+        objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(image2Position, itemName.Flower, image2.GetComponent<Image>().color));
 
         // Field 1
-        Vector3 field1Position = new Vector3(600, -300, 0);
-        GameObject field1 = Instantiate(fields[0], field1Position, Quaternion.identity, templateContainer.transform);
-        field1.transform.localPosition = field1Position;
-        objectsInTemplate.Add(new System.Tuple<Vector3, itemName, Color>(field1Position, itemName.Username, Color.white));
+        Vector3 field1Position = new Vector2(600, 400);
+        GameObject field1 = Instantiate(fields[0], templateContainer.transform);
+        field1.GetComponent<RectTransform>().anchoredPosition = field1Position;
+        field1.GetComponent<PhishingMinigameDragable>().enabled = false;
+        field1.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
+        field1.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
+        objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(field1Position, itemName.Username, Color.white));
 
         // Field 2
-        Vector3 field2Position = new Vector3(600, -400, 0);
-        GameObject field2 = Instantiate(fields[1], field2Position, Quaternion.identity, templateContainer.transform);
-        field2.transform.localPosition = field2Position;
-        objectsInTemplate.Add(new System.Tuple<Vector3, itemName, Color>(field2Position, itemName.Password, Color.white));
+        Vector3 field2Position = new Vector2(600, 300);
+        GameObject field2 = Instantiate(fields[1], templateContainer.transform);
+        field2.GetComponent<RectTransform>().anchoredPosition = field2Position;
+        field2.GetComponent<PhishingMinigameDragable>().enabled = false;
+        field2.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
+        field2.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
+        objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(field2Position, itemName.Password, Color.white));
     }
 
     public void ChangeColor(int colorIndex)
@@ -105,5 +119,55 @@ public class PhishingMinigameManager : MonoBehaviour
                 colorSelectorContainer.SetActive(true);
                 break;
         }
+    }
+
+    public void EvaluateTemplate()
+    {
+        float score = 0;
+        bool hasUrl = false;
+        int childrensNotAactive = 0;
+        for (int webpageChildIndex = 0; webpageChildIndex < websiteContainer.transform.childCount; webpageChildIndex++)
+        {
+            var websiteChild = websiteContainer.transform.GetChild(webpageChildIndex);
+            var dragableComponent = websiteChild?.GetComponent<PhishingMinigameDragable>();
+
+            if (dragableComponent == null || !dragableComponent.isActiveAndEnabled)
+            {
+                childrensNotAactive++;
+                continue;
+            }
+
+            if (!hasUrl && dragableComponent.objectName == itemName.Url)
+            {
+                hasUrl = true;
+                score += .5f;
+                continue;
+            }
+
+            float bestScoreForChild = 0;
+            foreach (var item in objectsInTemplate)
+            {
+
+                Debug.Log(websiteChild.GetComponent<RectTransform>().anchoredPosition + "     " + item.Item1 + "     " + Vector2.Distance(websiteChild.GetComponent<RectTransform>().anchoredPosition, item.Item1));
+
+                float distance = 1f - Mathf.Clamp((Vector2.Distance(websiteChild.GetComponent<RectTransform>().anchoredPosition, item.Item1) - 20) / 200f, 0f, 1f);
+                float type = dragableComponent.objectName == item.Item2 ? 1 : 0;
+                float color =
+                    websiteChild.GetComponent<Image>().color == item.Item3 ||
+                    websiteChild.GetComponent<Image>().color == fields[0].GetComponent<Image>().color
+                    ? 1
+                    : 0;
+                bestScoreForChild = Mathf.Max(bestScoreForChild, (distance + type + color) / 3f);
+            }
+
+            score += bestScoreForChild;
+            Debug.Log(bestScoreForChild);
+        }
+
+        float finalScore = websiteContainer.transform.childCount <= childrensNotAactive ? 0 : score / ((float)Mathf.Max(websiteContainer.transform.childCount - childrensNotAactive, 5)) * 100f;
+
+
+        progressBar.fillAmount = finalScore / 100f;
+        scoreText.text = finalScore.ToString("F0") + "%";
     }
 }

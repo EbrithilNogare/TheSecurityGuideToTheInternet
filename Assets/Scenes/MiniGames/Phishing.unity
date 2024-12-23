@@ -1746,7 +1746,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 88%
+  m_text: 00%
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4df05822f15a2584f9901b75eb26ebe2, type: 2}
   m_sharedMaterial: {fileID: -628191379978384950, guid: 4df05822f15a2584f9901b75eb26ebe2,
@@ -4226,7 +4226,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.199
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -5060,6 +5060,8 @@ MonoBehaviour:
   templateContainer: {fileID: 68658799}
   websiteContainer: {fileID: 934868883}
   trashDropZone: {fileID: 1072063735}
+  progressBar: {fileID: 1058292645}
+  scoreText: {fileID: 470348085}
 --- !u!1 &1286568907
 GameObject:
   m_ObjectHideFlags: 0

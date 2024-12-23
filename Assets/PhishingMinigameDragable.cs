@@ -43,13 +43,13 @@ public class PhishingMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragH
         // drop into website container
         if (RectTransformUtility.RectangleContainsScreenPoint(websiteContainer, Input.mousePosition, canvas.worldCamera))
         {
-            Debug.Log("website drop");
             if (isOriginal)
             {
                 var copyForContainer = Instantiate(gameObject, websiteContainer, true);
                 copyForContainer.GetComponent<PhishingMinigameDragable>().isOriginal = false;
                 rectTransform.localPosition = originalPosition;
             }
+            phishingMinigameManager.EvaluateTemplate();
             return;
         }
 
@@ -58,27 +58,25 @@ public class PhishingMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragH
         {
             if (isOriginal)
             {
-                Debug.Log("trash drop - original");
                 rectTransform.localPosition = originalPosition;
             }
             else
             {
-                Debug.Log("trash drop - copy");
                 Destroy(gameObject);
             }
+            phishingMinigameManager.EvaluateTemplate();
             return;
         }
 
         // droped somewhere else
         if (isOriginal)
         {
-            Debug.Log("else drop - original");
             rectTransform.localPosition = originalPosition;
         }
         else
         {
-            Debug.Log("else drop - copy");
             rectTransform.localPosition = originalPosition;
         }
+        phishingMinigameManager.EvaluateTemplate();
     }
 }
