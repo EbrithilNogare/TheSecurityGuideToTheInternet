@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -123,9 +124,9 @@ public class PhishingMinigameManager : MonoBehaviour
 
     public void EvaluateTemplate()
     {
-        float score = 0;
-        bool hasUrl = false;
+        float urlScore = 0;
         int childrensNotAactive = 0;
+        float[] scoreTablePerComponent = new float[objectsInTemplate.Count];
         for (int webpageChildIndex = 0; webpageChildIndex < websiteContainer.transform.childCount; webpageChildIndex++)
         {
             var websiteChild = websiteContainer.transform.GetChild(webpageChildIndex);
@@ -137,19 +138,15 @@ public class PhishingMinigameManager : MonoBehaviour
                 continue;
             }
 
-            if (!hasUrl && dragableComponent.objectName == itemName.Url)
+            if (urlScore == 0 && dragableComponent.objectName == itemName.Url)
             {
-                hasUrl = true;
-                score += .5f;
+                urlScore = .5f;
                 continue;
             }
 
-            float bestScoreForChild = 0;
-            foreach (var item in objectsInTemplate)
+            for (int templateChild = 0; templateChild < objectsInTemplate.Count; templateChild++)
             {
-
-                Debug.Log(websiteChild.GetComponent<RectTransform>().anchoredPosition + "     " + item.Item1 + "     " + Vector2.Distance(websiteChild.GetComponent<RectTransform>().anchoredPosition, item.Item1));
-
+                System.Tuple<Vector2, itemName, Color> item = objectsInTemplate[templateChild];
                 float distance = 1f - Mathf.Clamp((Vector2.Distance(websiteChild.GetComponent<RectTransform>().anchoredPosition, item.Item1) - 20) / 200f, 0f, 1f);
                 float type = dragableComponent.objectName == item.Item2 ? 1 : 0;
                 float color =
@@ -157,13 +154,11 @@ public class PhishingMinigameManager : MonoBehaviour
                     websiteChild.GetComponent<Image>().color == fields[0].GetComponent<Image>().color
                     ? 1
                     : 0;
-                bestScoreForChild = Mathf.Max(bestScoreForChild, (distance + type + color) / 3f);
+                scoreTablePerComponent[templateChild] = Mathf.Max(scoreTablePerComponent[templateChild], (distance + type + color) / 3f);
             }
-
-            score += bestScoreForChild;
-            Debug.Log(bestScoreForChild);
         }
 
+        float score = scoreTablePerComponent.Sum() + urlScore;
         float finalScore = websiteContainer.transform.childCount <= childrensNotAactive ? 0 : score / ((float)Mathf.Max(websiteContainer.transform.childCount - childrensNotAactive, 5)) * 100f;
 
 
