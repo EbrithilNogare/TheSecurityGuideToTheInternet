@@ -32,10 +32,10 @@ public class PhishingMinigameManager : MonoBehaviour
 
     void Start()
     {
+        SpawnObjectsInTemplate();
         setActiveTab(0);
         changeColorOfButtons();
         ChangeColor(0);
-        SpawnObjectsInTemplate();
     }
 
     void SpawnObjectsInTemplate()
@@ -50,6 +50,7 @@ public class PhishingMinigameManager : MonoBehaviour
         image1.GetComponent<PhishingMinigameDragable>().enabled = false;
         image1.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
         image1.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
+        image1.GetComponent<RectTransform>().sizeDelta = new Vector2(200, 200);
         objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(image1Position, itemName.Pet, image1.GetComponent<Image>().color));
 
         // Image 2
@@ -60,6 +61,7 @@ public class PhishingMinigameManager : MonoBehaviour
         image2.GetComponent<PhishingMinigameDragable>().enabled = false;
         image2.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
         image2.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
+        image2.GetComponent<RectTransform>().sizeDelta = new Vector2(200, 200);
         objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(image2Position, itemName.Flower, image2.GetComponent<Image>().color));
 
         // Field 1
@@ -69,6 +71,7 @@ public class PhishingMinigameManager : MonoBehaviour
         field1.GetComponent<PhishingMinigameDragable>().enabled = false;
         field1.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
         field1.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
+        field1.GetComponent<RectTransform>().sizeDelta = new Vector2(350, 80);
         objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(field1Position, itemName.Username, Color.white));
 
         // Field 2
@@ -78,6 +81,7 @@ public class PhishingMinigameManager : MonoBehaviour
         field2.GetComponent<PhishingMinigameDragable>().enabled = false;
         field2.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
         field2.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
+        field2.GetComponent<RectTransform>().sizeDelta = new Vector2(350, 80);
         objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(field2Position, itemName.Password, Color.white));
     }
 
@@ -160,7 +164,6 @@ public class PhishingMinigameManager : MonoBehaviour
 
         float score = scoreTablePerComponent.Sum() + urlScore;
         float finalScore = websiteContainer.transform.childCount <= childrensNotAactive ? 0 : score / ((float)Mathf.Max(websiteContainer.transform.childCount - childrensNotAactive, 5)) * 100f;
-
 
         progressBar.fillAmount = finalScore / 100f;
         scoreText.text = finalScore.ToString("F0") + "%";

@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Presentations/Malware_Phishing_Presentation.unity
     guid: 5f4a96bcaa464c24ebedf5964bde3d87
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/Phishing.unity
+    guid: 674c3af58a1e03946b0f23111acca71d
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: bdd79a51c7c8e5a4190c1aa2ba645f2d,
       type: 2}
