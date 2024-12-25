@@ -8,6 +8,11 @@ public class PhishingMinigameManager : MonoBehaviour
     public GameObject urlTabContainer;
     public GameObject fieldTabContainer;
     public GameObject imageTabContainer;
+    public Image urlTabButtonImage;
+    public Image fieldTabButtonImage;
+    public Image imageTabButtonImage;
+    public Color tabButtonColorActive;
+    public Color tabButtonColorInactive;
     public GameObject colorSelectorContainer;
     public string[] fakeURLs;
     public GameObject[] fields;
@@ -43,46 +48,36 @@ public class PhishingMinigameManager : MonoBehaviour
         objectsInTemplate = new List<System.Tuple<Vector2, itemName, Color>>();
 
         // Image 1
-        Vector3 image1Position = new Vector2(200, 200);
-        GameObject image1 = Instantiate(images[0], templateContainer.transform);
-        image1.GetComponent<RectTransform>().anchoredPosition = image1Position;
-        image1.GetComponent<Image>().color = colors[Random.Range(0, colors.Length)];
-        image1.GetComponent<PhishingMinigameDragable>().enabled = false;
-        image1.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
-        image1.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
-        image1.GetComponent<RectTransform>().sizeDelta = new Vector2(200, 200);
-        objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(image1Position, itemName.Pet, image1.GetComponent<Image>().color));
+        SpawnObjectInTemplate(new Vector2(200, 200), Random.Range(0, images.Length), true);
 
         // Image 2
-        Vector3 image2Position = new Vector2(1000, 200);
-        GameObject image2 = Instantiate(images[1], templateContainer.transform);
-        image2.GetComponent<RectTransform>().anchoredPosition = image2Position;
-        image2.GetComponent<Image>().color = colors[Random.Range(0, colors.Length)];
-        image2.GetComponent<PhishingMinigameDragable>().enabled = false;
-        image2.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
-        image2.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
-        image2.GetComponent<RectTransform>().sizeDelta = new Vector2(200, 200);
-        objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(image2Position, itemName.Flower, image2.GetComponent<Image>().color));
+        SpawnObjectInTemplate(new Vector2(1000, 200), Random.Range(0, images.Length), true);
 
         // Field 1
-        Vector3 field1Position = new Vector2(600, 400);
-        GameObject field1 = Instantiate(fields[0], templateContainer.transform);
-        field1.GetComponent<RectTransform>().anchoredPosition = field1Position;
-        field1.GetComponent<PhishingMinigameDragable>().enabled = false;
-        field1.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
-        field1.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
-        field1.GetComponent<RectTransform>().sizeDelta = new Vector2(350, 80);
-        objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(field1Position, itemName.Username, Color.white));
+        SpawnObjectInTemplate(new Vector2(600, 400), Random.Range(0, 3), false);
 
         // Field 2
-        Vector3 field2Position = new Vector2(600, 300);
-        GameObject field2 = Instantiate(fields[1], templateContainer.transform);
-        field2.GetComponent<RectTransform>().anchoredPosition = field2Position;
-        field2.GetComponent<PhishingMinigameDragable>().enabled = false;
-        field2.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
-        field2.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
-        field2.GetComponent<RectTransform>().sizeDelta = new Vector2(350, 80);
-        objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(field2Position, itemName.Password, Color.white));
+        SpawnObjectInTemplate(new Vector2(600, 300), Random.Range(3, 5), false);
+
+        // Field 3
+        SpawnObjectInTemplate(new Vector2(600, 200), 5, false);
+    }
+
+    void SpawnObjectInTemplate(Vector3 position, int index, bool image)
+    {
+        GameObject instance = Instantiate(image ? images[index] : fields[index], templateContainer.transform);
+        instance.GetComponent<RectTransform>().anchoredPosition = position;
+        if (image) { instance.GetComponent<Image>().color = colors[Random.Range(0, colors.Length)]; }
+        instance.GetComponent<PhishingMinigameDragable>().enabled = false;
+        instance.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
+        instance.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
+        instance.GetComponent<RectTransform>().sizeDelta = image ? new Vector2(200, 200) : new Vector2(350, 80);
+        objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(
+            position,
+            instance.GetComponent<PhishingMinigameDragable>().objectName,
+            image ? instance.GetComponent<Image>().color : Color.white
+        ));
+
     }
 
     public void ChangeColor(int colorIndex)
@@ -106,22 +101,31 @@ public class PhishingMinigameManager : MonoBehaviour
         switch (tabIndex)
         {
             case 0:
-                urlTabContainer.SetActive(true);
-                fieldTabContainer.SetActive(false);
-                imageTabContainer.SetActive(false);
-                colorSelectorContainer.SetActive(false);
-                break;
-            case 1:
-                urlTabContainer.SetActive(false);
                 fieldTabContainer.SetActive(true);
                 imageTabContainer.SetActive(false);
                 colorSelectorContainer.SetActive(false);
-                break;
-            case 2:
                 urlTabContainer.SetActive(false);
+                fieldTabButtonImage.color = tabButtonColorActive;
+                imageTabButtonImage.color = tabButtonColorInactive;
+                urlTabButtonImage.color = tabButtonColorInactive;
+                break;
+            case 1:
                 fieldTabContainer.SetActive(false);
                 imageTabContainer.SetActive(true);
                 colorSelectorContainer.SetActive(true);
+                urlTabContainer.SetActive(false);
+                fieldTabButtonImage.color = tabButtonColorInactive;
+                imageTabButtonImage.color = tabButtonColorActive;
+                urlTabButtonImage.color = tabButtonColorInactive;
+                break;
+            case 2:
+                fieldTabContainer.SetActive(false);
+                imageTabContainer.SetActive(false);
+                colorSelectorContainer.SetActive(false);
+                urlTabContainer.SetActive(true);
+                fieldTabButtonImage.color = tabButtonColorInactive;
+                imageTabButtonImage.color = tabButtonColorInactive;
+                urlTabButtonImage.color = tabButtonColorActive;
                 break;
         }
     }
@@ -142,12 +146,14 @@ public class PhishingMinigameManager : MonoBehaviour
                 continue;
             }
 
-            if (urlScore == 0 && dragableComponent.objectName == itemName.Url)
+            if (dragableComponent.objectName == itemName.Url)
             {
-                urlScore = .5f;
+                urlScore = .8f;
                 continue;
             }
 
+            float scoreOfBestComponent = 0;
+            int indexOfBestComponent = 0;
             for (int templateChild = 0; templateChild < objectsInTemplate.Count; templateChild++)
             {
                 System.Tuple<Vector2, itemName, Color> item = objectsInTemplate[templateChild];
@@ -158,12 +164,19 @@ public class PhishingMinigameManager : MonoBehaviour
                     websiteChild.GetComponent<Image>().color == fields[0].GetComponent<Image>().color
                     ? 1
                     : 0;
-                scoreTablePerComponent[templateChild] = Mathf.Max(scoreTablePerComponent[templateChild], (distance + type + color) / 3f);
+                float scoreOfThisComponent = (distance + type + color) / 3f;
+                if (scoreOfBestComponent < scoreOfThisComponent)
+                {
+                    scoreOfBestComponent = scoreOfThisComponent;
+                    indexOfBestComponent = templateChild;
+                }
             }
+            scoreTablePerComponent[indexOfBestComponent] = Mathf.Max(scoreTablePerComponent[indexOfBestComponent], scoreOfBestComponent);
         }
-
         float score = scoreTablePerComponent.Sum() + urlScore;
-        float finalScore = websiteContainer.transform.childCount <= childrensNotAactive ? 0 : score / ((float)Mathf.Max(websiteContainer.transform.childCount - childrensNotAactive, 5)) * 100f;
+        float finalScore = websiteContainer.transform.childCount <= childrensNotAactive
+            ? 0
+            : score / ((float)Mathf.Max(websiteContainer.transform.childCount - childrensNotAactive, objectsInTemplate.Count + 1)) * 100f;
 
         progressBar.fillAmount = finalScore / 100f;
         scoreText.text = finalScore.ToString("F0") + "%";
