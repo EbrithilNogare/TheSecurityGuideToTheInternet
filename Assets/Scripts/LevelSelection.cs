@@ -8,8 +8,8 @@ public class LevelSelection : MonoBehaviour
     public string activeLevel = "";
 
     public static readonly List<string> LevelCategories = new List<string> {
-        "Malware-1", "Privacy-1", "Phone-1", "Encryption-1",
-        "Malware-2", "Privacy-2", "Phone-2", "Encryption-2",
+        "Malware-1", "Privacy-1", "Encryption-1", "Phone-1", "AI-1",
+        "Malware-2", "Privacy-2", "Encryption-2",
     };
     public void GoToLevelMenu()
     {
@@ -27,16 +27,16 @@ public class LevelSelection : MonoBehaviour
                 activeLevel = level;
                 SceneManager.LoadScene("Malware_Antivirus_Presentation");
                 break;
-            case "Malware-2":
+            case "Privacy-1":
                 activeLevel = level;
                 SceneManager.LoadScene("Malware_Phishing_Presentation");
                 break;
-            case "Privacy-1":
-                activeLevel = level;
-                SceneManager.LoadScene("Library");
-                break;
-            case "Phone-1": break;
             case "Encryption-1": break;
+            case "Phone-1": break;
+            case "AI-1": break;
+            case "Malware-2": break;
+            case "Privacy-2": break;
+            case "Encryption-2": break;
             default:
                 throw new System.Exception("Unknown level: " + level);
         }
