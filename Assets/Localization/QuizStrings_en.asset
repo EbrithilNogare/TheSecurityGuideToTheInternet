@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: QuizStrings_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 8f64f174061ab9244bae4b255fcf3b32, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 12449513472
+    m_Localized: What is phishing?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176358719488
+    m_Localized: A cyberattack using fake websites or emails to steal personal information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208189292544
+    m_Localized: A sport involving catching fish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223829852160
+    m_Localized: A method to clean computer systems
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32896019365888
+    m_Localized: "Which of these is a common sign of a phishing email?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32936339210240
+    m_Localized: It asks for urgent action or personal information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32967515471872
+    m_Localized: It comes from a trusted organization with proper formatting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32994208022528
+    m_Localized: It has no spelling or grammatical errors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33068774359040
+    m_Localized: What should you do if you suspect an email is a phishing attempt?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33121685504000
+    m_Localized: Reply to the sender asking for clarification
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33140689895424
+    m_Localized: "Click on the link to verify its content\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33150194188288
+    m_Localized: "Do not click on any links and report the email\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33209048662016
+    m_Localized: "What type of information do phishing attacks commonly try to steal?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33266334466048
+    m_Localized: "Banking details, passwords, or social security numbers\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33290019700736
+    m_Localized: General feedback about a product
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33300807450624
+    m_Localized: Your favorite movies and music preferences
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33314178891776
+    m_Localized: "Which image below shows an example of a phishing website?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33371120762880
+    m_Localized: www.facebook.com/add-credit-card
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33389647003648
+    m_Localized: "www.faceb00k.com/login\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33398299852800
+    m_Localized: "www.app.en.facebook.com/pay\r"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -17,6 +17,13 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: a3bf27a01e6c2114b99e4d38288a96ee
   m_SerializeEntries:
+  - m_GUID: 25cc257830bc2334d9f6d508c0bda1e2
+    m_Address: QuizStrings_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3196c65a016de944bb0d0fa8cd151eb5
     m_Address: Localization_en
     m_ReadOnly: 1
