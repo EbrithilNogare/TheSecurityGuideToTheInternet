@@ -62,6 +62,164 @@ MonoBehaviour:
     m_Localized: Language
     m_Metadata:
       m_Items: []
+  - m_Id: 23492994846720000
+    m_Localized: Phishing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23493685199798272
+    m_Localized: "A fish might fall for a worm on a hook. You\u2019re smarter than
+      that, right?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23493734877134848
+    m_Localized: What is Phishing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23493770004430848
+    m_Localized: 'Phishing is when someone pretends to be someone you trust online
+
+      to
+      trick you into sharing your information.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23493788635529216
+    m_Localized: 'Think of it like a sneaky trick to "catch" you!
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23493855585009664
+    m_Localized: 'What they want
+
+      from you'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23493904951967744
+    m_Localized: passwords
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23493919132909568
+    m_Localized: credit card number
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23493936581214208
+    m_Localized: money
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23493969259036672
+    m_Localized: identity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494144660635648
+    m_Localized: How to defend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494162675171328
+    m_Localized: You must not give them what they want
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494217545056256
+    m_Localized: How it works
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494231608557568
+    m_Localized: They make you believe in them
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494263351050240
+    m_Localized: 'Fake add to page
+
+      that looks like original'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494281336225792
+    m_Localized: 'Fake email
+
+      "payment required"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494296012095488
+    m_Localized: 'Fake call
+
+      from bank'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494312151777280
+    m_Localized: 'Fake message
+
+      from hacked friend'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494328090132480
+    m_Localized: "Clicking that link is like swimming into a shark's mouth. Don\u2019t
+      be the fish!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494422503915520
+    m_Localized: 'Hi, this is your bank.
+
+      We''ve noticed suspicious activity
+      on your account, and
+
+      we need to verify your card details to secure it.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494441256648704
+    m_Localized: Bad answer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494458579124224
+    m_Localized: Oh, you need my credit card number? Sure, let me grab it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494476715294720
+    m_Localized: Good answer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494495350587392
+    m_Localized: "I\u2019ll verify it with the bank myself."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494513818107904
+    m_Localized: "Phishers send you fake treasure maps. Don\u2019t lose your gold
+      to pirates!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494549809430528
+    m_Localized: Bank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494630725943296
+    m_Localized: what to do after
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494660971069440
+    m_Localized: 'Warn your surrounding,
+
+      so they will not fall for it'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494676351582208
+    m_Localized: Block the sender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494691102949376
+    m_Localized: 'If the message is from a friend, tell them
+
+      they need to
+      change their passwords'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494852491378688
+    m_Localized: Previous
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23494866064146432
+    m_Localized: Next
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
