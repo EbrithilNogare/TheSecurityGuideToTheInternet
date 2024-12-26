@@ -48,7 +48,7 @@ public static class LoggingService
     {
         if (environment == Environment.Development)
         {
-            Debug.Log($"[LoggingService] {logLevel} {category} {description}");
+            //Debug.Log($"[LoggingService] {logLevel} {category} {description}");
             return;
         }
 

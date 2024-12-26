@@ -11,6 +11,7 @@ public class LevelSelection : MonoBehaviour
         "Malware-1", "Privacy-1", "Encryption-1", "Phone-1", "AI-1",
         "Malware-2", "Privacy-2", "Encryption-2",
     };
+
     public void GoToLevelMenu()
     {
         SceneManager.LoadScene("LevelSelection");
@@ -25,10 +26,12 @@ public class LevelSelection : MonoBehaviour
         {
             case "Malware-1":
                 activeLevel = level;
+                Store.Instance.selectedLevel = Store.Level.Malware;
                 SceneManager.LoadScene("Malware_Antivirus_Presentation");
                 break;
             case "Privacy-1":
                 activeLevel = level;
+                Store.Instance.selectedLevel = Store.Level.Phishing;
                 SceneManager.LoadScene("Malware_Phishing_Presentation");
                 break;
             case "Encryption-1": break;

@@ -35,6 +35,76 @@ MonoBehaviour:
     m_Localized: "Metoda \u010Di\u0161t\u011Bn\xED po\u010D\xEDta\u010Dov\xFDch syst\xE9m\u016F"
     m_Metadata:
       m_Items: []
+  - m_Id: 32896019365888
+    m_Localized: "Kter\xE9 z n\xE1sleduj\xEDc\xEDch je b\u011B\u017En\xFDm znakem
+      phishingov\xE9ho e-mailu?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32936339210240
+    m_Localized: "\u017D\xE1d\xE1 o okam\u017Eitou akci nebo osobn\xED \xFAdaje"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32967515471872
+    m_Localized: "Poch\xE1z\xED od d\u016Fv\u011Bryhodn\xE9 organizace s \u0159\xE1dn\xFDm
+      form\xE1tov\xE1n\xEDm"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32994208022528
+    m_Localized: "Nem\xE1 \u017E\xE1dn\xE9 pravopisn\xE9 ani gramatick\xE9 chyby"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33068774359040
+    m_Localized: "Co d\u011Blat, pokud m\xE1te podez\u0159en\xED, \u017Ee e-mail
+      phishing?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33121685504000
+    m_Localized: "Odpov\u011Bd\u011Bt odes\xEDlateli a po\u017E\xE1dat o vysv\u011Btlen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33140689895424
+    m_Localized: "Kliknout na odkaz, abyste ov\u011B\u0159ili jeho obsah"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33150194188288
+    m_Localized: "Neklikat na \u017E\xE1dn\xE9 odkazy a nahl\xE1sit e-mail"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33209048662016
+    m_Localized: "Jak\xE9 typy informac\xED se phishingov\xE9 \xFAtoky obvykle sna\u017E\xED
+      ukr\xE1st?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33266334466048
+    m_Localized: "Bankovn\xED \xFAdaje, hesla nebo \u010D\xEDsla soci\xE1ln\xEDho
+      poji\u0161t\u011Bn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33290019700736
+    m_Localized: "N\xE1zor na specifick\xFD produkt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33300807450624
+    m_Localized: "Va\u0161e obl\xEDben\xE9 filmy a hudebn\xED preference"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33314178891776
+    m_Localized: "Kter\xE1 z n\xED\u017Ee uveden\xFDch webov\xFDch adres je p\u0159\xEDkladem
+      phishingov\xE9 str\xE1nky?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33371120762880
+    m_Localized: www.facebook.cz/pridat-platebni-kartu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33389647003648
+    m_Localized: www.faceb00k.cz/prihlaseni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33398299852800
+    m_Localized: www.app.en.facebook.cz/zaplatit
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
