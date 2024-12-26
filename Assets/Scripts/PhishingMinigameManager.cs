@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PhishingMinigameManager : MonoBehaviour
@@ -25,6 +26,11 @@ public class PhishingMinigameManager : MonoBehaviour
     public GameObject trashDropZone;
     public Image progressBar;
     public TMPro.TextMeshProUGUI scoreText;
+    public GameObject TutorialGameObject;
+    public GameObject SubmitGameObject;
+    public Image[] scoreStars;
+    public Sprite scoreStarFilled;
+    public Sprite scoreStarEmpty;
 
     private List<System.Tuple<Vector2, itemName, Color>> objectsInTemplate;
 
@@ -130,6 +136,13 @@ public class PhishingMinigameManager : MonoBehaviour
         }
     }
 
+    public void SubmitSolution()
+    {
+        Store.Instance.minigameScore = int.Parse(scoreText.text.Replace("%", "")) >= 96 ? 2 : 1;
+        Store.Instance.quizToLoad = Store.Quiz.Phishing;
+        SceneManager.LoadScene("Quiz");
+    }
+
     public void EvaluateTemplate()
     {
         float urlScore = 0;
@@ -179,6 +192,27 @@ public class PhishingMinigameManager : MonoBehaviour
             : score / ((float)Mathf.Max(websiteContainer.transform.childCount - childrensNotAactive, objectsInTemplate.Count + 1)) * 100f;
 
         progressBar.fillAmount = finalScore / 100f;
-        scoreText.text = finalScore.ToString("F0") + "%";
+        scoreText.text = ((int)finalScore).ToString() + "%";
+        if (finalScore >= 85)
+        {
+            TutorialGameObject.SetActive(false);
+            SubmitGameObject.SetActive(true);
+            scoreStars[0].sprite = scoreStarFilled;
+        }
+        else
+        {
+            TutorialGameObject.SetActive(true);
+            SubmitGameObject.SetActive(false);
+            scoreStars[0].sprite = scoreStarEmpty;
+        }
+        if ((int)finalScore >= 96)
+        {
+            scoreStars[1].sprite = scoreStarFilled;
+        }
+        else
+        {
+            scoreStars[1].sprite = scoreStarEmpty;
+        }
+
     }
 }

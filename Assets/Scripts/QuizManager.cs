@@ -77,8 +77,7 @@ public class QuizManager : MonoBehaviour
             horizontalAnswersContainer.transform.DOMoveY(horizontalAnswersContainer.transform.position.y - 1000, duration).From(horizontalAnswersContainer.transform.position.y).SetEase(Ease.InBack);
         quizQuestionText.transform.DOMoveY(quizQuestionText.transform.position.y - 1000, duration).From(quizQuestionText.transform.position.y).SetEase(Ease.InBack).OnComplete(() =>
         {
-            Store.Instance.quizScore[0] = int.Parse(scoreCounterText.text) / 100;
-            Store.Instance.quizScore[1] = currentQuiz.Length - Store.Instance.quizScore[0];
+            Store.Instance.quizScore = currentQuiz.Length == int.Parse(scoreCounterText.text) / 100 ? 1 : 0;
             SceneManager.LoadScene("LevelSelection");
         });
     }
