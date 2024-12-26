@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniGames/Phishing.unity
     guid: 674c3af58a1e03946b0f23111acca71d
+  - enabled: 1
+    path: Assets/Scenes/Quizes/Quiz.unity
+    guid: f43ca7fdbcc96204bb2893042e3bb681
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: bdd79a51c7c8e5a4190c1aa2ba645f2d,
       type: 2}

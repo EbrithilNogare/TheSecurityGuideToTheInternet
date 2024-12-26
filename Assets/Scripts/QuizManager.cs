@@ -70,13 +70,15 @@ public class QuizManager : MonoBehaviour
     }
     private void DoEndAnimation()
     {
-        float duration = 1f;
-        if (currentQuiz[currentQuestionIndex].isVertialLayouot)
-            verticalAnswersContainer.transform.DOMoveY(verticalAnswersContainer.transform.position.y - 300, duration).From().SetEase(Ease.InBack);
+        float duration = 1.5f;
+        if (currentQuiz[currentQuestionIndex - 1].isVertialLayouot)
+            verticalAnswersContainer.transform.DOMoveY(verticalAnswersContainer.transform.position.y - 1000, duration).From(verticalAnswersContainer.transform.position.y).SetEase(Ease.InBack);
         else
-            horizontalAnswersContainer.transform.DOMoveY(horizontalAnswersContainer.transform.position.y - 300, duration).From().SetEase(Ease.InBack);
-        quizQuestionText.transform.DOMoveY(quizQuestionText.transform.position.y - 300, duration).From().SetEase(Ease.InBack).OnComplete(() =>
+            horizontalAnswersContainer.transform.DOMoveY(horizontalAnswersContainer.transform.position.y - 1000, duration).From(horizontalAnswersContainer.transform.position.y).SetEase(Ease.InBack);
+        quizQuestionText.transform.DOMoveY(quizQuestionText.transform.position.y - 1000, duration).From(quizQuestionText.transform.position.y).SetEase(Ease.InBack).OnComplete(() =>
         {
+            Store.Instance.quizScore[0] = int.Parse(scoreCounterText.text) / 100;
+            Store.Instance.quizScore[1] = currentQuiz.Length - Store.Instance.quizScore[0];
             SceneManager.LoadScene("LevelSelection");
         });
     }
@@ -128,10 +130,10 @@ public class QuizManager : MonoBehaviour
                 answerButton.GetComponent<Image>().color = originalColor;
 
                 currentQuestionIndex++;
-                isEvaluatingInProgress = false;
 
                 if (currentQuestionIndex < currentQuiz.Length)
                 {
+                    isEvaluatingInProgress = false;
                     quizProgress.text = $"{currentQuestionIndex + 1} / {currentQuiz.Length}";
                     DisplayQuestion(currentQuiz[currentQuestionIndex]);
                 }

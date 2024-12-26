@@ -26,12 +26,12 @@ public class LevelSelection : MonoBehaviour
         {
             case "Malware-1":
                 activeLevel = level;
-                Store.Instance.selectedLevel = Store.Level.Malware;
+                Store.Instance.quizToLoad = Store.Quiz.Malware;
                 SceneManager.LoadScene("Malware_Antivirus_Presentation");
                 break;
             case "Privacy-1":
                 activeLevel = level;
-                Store.Instance.selectedLevel = Store.Level.Phishing;
+                Store.Instance.quizToLoad = Store.Quiz.Phishing;
                 SceneManager.LoadScene("Malware_Phishing_Presentation");
                 break;
             case "Encryption-1": break;

@@ -5,9 +5,11 @@ public class Store : MonoBehaviour
 {
     public static Store Instance { get; private set; }
 
-    public enum Level { Menu, Malware, Phishing }
+    public enum Quiz { None, Malware, Phishing }
 
-    public Level selectedLevel = Level.Menu;
+    public Quiz quizToLoad = Quiz.None;
+    public int minigameScore = 0;
+    public int[] quizScore = new int[2] { 0, 0 }; // correct / incorect answers
 
     public void LoadScene(string sceneName)
     {
