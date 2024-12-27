@@ -79,21 +79,15 @@ MonoBehaviour:
     m_Localized: 'Phishing is when someone pretends to be someone you trust online
 
       to
-      trick you into sharing your information.
-
-'
+      trick you into sharing your information.'
     m_Metadata:
       m_Items: []
   - m_Id: 23493788635529216
-    m_Localized: 'Think of it like a sneaky trick to "catch" you!
-
-'
+    m_Localized: Think of it like a sneaky trick to "catch" you!
     m_Metadata:
       m_Items: []
   - m_Id: 23493855585009664
-    m_Localized: 'What they want
-
-      from you'
+    m_Localized: What they want from you
     m_Metadata:
       m_Items: []
   - m_Id: 23493904951967744
@@ -125,17 +119,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494231608557568
-    m_Localized: They make you believe in them
+    m_Localized: They will try to convince you, they are trustworthy
     m_Metadata:
       m_Items: []
   - m_Id: 23494263351050240
-    m_Localized: 'Fake add to page
+    m_Localized: 'Fake add to a page
 
       that looks like original'
     m_Metadata:
       m_Items: []
   - m_Id: 23494281336225792
-    m_Localized: 'Fake email
+    m_Localized: 'Fake email about
 
       "payment required"'
     m_Metadata:
@@ -143,13 +137,13 @@ MonoBehaviour:
   - m_Id: 23494296012095488
     m_Localized: 'Fake call
 
-      from bank'
+      from a bank'
     m_Metadata:
       m_Items: []
   - m_Id: 23494312151777280
-    m_Localized: 'Fake message
+    m_Localized: 'Fake message from
 
-      from hacked friend'
+      a hacked friend'
     m_Metadata:
       m_Items: []
   - m_Id: 23494328090132480
@@ -158,12 +152,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494422503915520
-    m_Localized: 'Hi, this is your bank.
-
-      We''ve noticed suspicious activity
-      on your account, and
-
-      we need to verify your card details to secure it.'
+    m_Localized: Hi, this is your bank. We've noticed suspicious activity on your
+      account, and we need to verify your card details to secure it.
     m_Metadata:
       m_Items: []
   - m_Id: 23494441256648704
@@ -171,7 +161,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494458579124224
-    m_Localized: Oh, you need my credit card number? Sure, let me grab it.
+    m_Localized: 'Oh, you need my credit card number?
+
+      Sure, let me grab it.'
     m_Metadata:
       m_Items: []
   - m_Id: 23494476715294720
@@ -218,6 +210,41 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 23494866064146432
     m_Localized: Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23904873972793344
+    m_Localized: 'Drag and drop elements from right menu and
+
+      recreate original
+      website by template as close as possible'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23905854643011584
+    m_Localized: Submit webpage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906013531635712
+    m_Localized: Username
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906026869522432
+    m_Localized: Email
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906041587335168
+    m_Localized: Social number
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906053847285760
+    m_Localized: Card number
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906066765742080
+    m_Localized: Password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906084134354944
+    m_Localized: Submit
     m_Metadata:
       m_Items: []
   references:

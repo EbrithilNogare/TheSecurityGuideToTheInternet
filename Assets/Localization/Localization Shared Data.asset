@@ -206,6 +206,44 @@ MonoBehaviour:
     m_Key: Malware_Phishing_Presentation/Canvas/Navigation/Next/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 23904873972793344
+    m_Key: Phishing/Canvas/Level info/Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23905854643011584
+    m_Key: Phishing/Canvas/Level info/Submit/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906013531635712
+    m_Key: Phishing/Canvas/Side panel/Item selection/fieldTabContainer/Image/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906026869522432
+    m_Key: Phishing/Canvas/Side panel/Item selection/fieldTabContainer/Image (1)/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906041587335168
+    m_Key: Phishing/Canvas/Side panel/Item selection/fieldTabContainer/Image (2)/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906053847285760
+    m_Key: Phishing/Canvas/Side panel/Item selection/fieldTabContainer/Image (3)/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906066765742080
+    m_Key: Phishing/Canvas/Side panel/Item selection/fieldTabContainer/Image (4)/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906084134354944
+    m_Key: Phishing/Canvas/Side panel/Item selection/fieldTabContainer/Image (5)/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

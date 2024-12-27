@@ -67,99 +67,109 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23493685199798272
-    m_Localized: todo
+    m_Localized: "Ryba se m\u016F\u017Ee chytit na h\xE1\u010Dek s n\xE1vnadou. Ty
+      jsi ale chyt\u0159ej\u0161\xED, \u017Ee?"
     m_Metadata:
       m_Items: []
   - m_Id: 23493734877134848
-    m_Localized: todo
+    m_Localized: Co je phishing
     m_Metadata:
       m_Items: []
   - m_Id: 23493770004430848
-    m_Localized: todo
+    m_Localized: "Phishing je, kdy\u017E se n\u011Bkdo na internetu vyd\xE1v\xE1\r
+      za n\u011Bkoho,\nkomu d\u016Fv\u011B\u0159uje\u0161, aby z tebe vyl\xE1kal
+      tajn\xE9 informac\xED."
     m_Metadata:
       m_Items: []
   - m_Id: 23493788635529216
-    m_Localized: todo
+    m_Localized: "P\u0159edstav si to jako z\xE1ke\u0159n\xFD trik, jak t\u011B \"nachytat\"!"
     m_Metadata:
       m_Items: []
   - m_Id: 23493855585009664
-    m_Localized: todo
+    m_Localized: "Co \xFAto\u010Dn\xEDci cht\u011Bj\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 23493904951967744
-    m_Localized: todo
+    m_Localized: "p\u0159\xEDstupov\xE9 \xFAdaje"
     m_Metadata:
       m_Items: []
   - m_Id: 23493919132909568
-    m_Localized: todo
+    m_Localized: "\u010D\xEDslo kreditn\xED karty"
     m_Metadata:
       m_Items: []
   - m_Id: 23493936581214208
-    m_Localized: todo
+    m_Localized: "pen\xEDze"
     m_Metadata:
       m_Items: []
   - m_Id: 23493969259036672
-    m_Localized: todo
+    m_Localized: identitu
     m_Metadata:
       m_Items: []
   - m_Id: 23494144660635648
-    m_Localized: todo
+    m_Localized: "Jak se br\xE1nit"
     m_Metadata:
       m_Items: []
   - m_Id: 23494162675171328
-    m_Localized: todo
+    m_Localized: "Nesm\xED\u0161 jim d\xE1t to, co cht\u011Bj\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 23494217545056256
-    m_Localized: todo
+    m_Localized: Jak to funguje
     m_Metadata:
       m_Items: []
   - m_Id: 23494231608557568
-    m_Localized: todo
+    m_Localized: "Pokus\xED se t\u011B p\u0159esv\u011Bd\u010Dit, \u017Ee jsou d\u016Fv\u011Bryhodn\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 23494263351050240
-    m_Localized: todo
+    m_Localized: "Fale\u0161n\xE1 reklama na str\xE1nce,\r\nkter\xE1 vypad\xE1 skoro
+      jako prav\xE1"
     m_Metadata:
       m_Items: []
   - m_Id: 23494281336225792
-    m_Localized: todo
+    m_Localized: "Fale\u0161n\xFD email\r s p\u0159edm\u011Btem\n\"je pot\u0159eba
+      zaplatit\""
     m_Metadata:
       m_Items: []
   - m_Id: 23494296012095488
-    m_Localized: todo
+    m_Localized: "Fale\u0161n\xFD hovor\r \nt\u0159eba z banky"
     m_Metadata:
       m_Items: []
   - m_Id: 23494312151777280
-    m_Localized: todo
+    m_Localized: "Fale\u0161n\xE1 zpr\xE1va\r\nod napaden\xE9ho kamar\xE1da"
     m_Metadata:
       m_Items: []
   - m_Id: 23494328090132480
-    m_Localized: todo
+    m_Localized: "Kliknut\xED na ten odkaz je jako plavat p\u0159\xEDmo do tlamy
+      \u017Eraloka. Nebu\u010F ta ryba!"
     m_Metadata:
       m_Items: []
   - m_Id: 23494422503915520
-    m_Localized: todo
+    m_Localized: "Dobr\xFD den, tady va\u0161e banka.\r\nZaznamenali jsme podez\u0159elou
+      aktivitu na va\u0161em \xFA\u010Dtu a\r\npot\u0159ebujeme ov\u011B\u0159it
+      \xFAdaje va\u0161\xED karty, abychom ji zabezpe\u010Dili."
     m_Metadata:
       m_Items: []
   - m_Id: 23494441256648704
-    m_Localized: todo
+    m_Localized: "\u0160patn\xE1 odpov\u011B\u010F"
     m_Metadata:
       m_Items: []
   - m_Id: 23494458579124224
-    m_Localized: todo
+    m_Localized: "Pot\u0159ebujete \u010D\xEDslo m\xE9 kreditn\xED karty?\nSamoz\u0159ejm\u011B,
+      hned V\xE1m ho najdu."
     m_Metadata:
       m_Items: []
   - m_Id: 23494476715294720
-    m_Localized: todo
+    m_Localized: "Spr\xE1vn\xE1 odpov\u011B\u010F"
     m_Metadata:
       m_Items: []
   - m_Id: 23494495350587392
-    m_Localized: todo
+    m_Localized: "Ov\u011B\u0159\xEDm si to rad\u011Bji p\u0159\xEDmo u banky."
     m_Metadata:
       m_Items: []
   - m_Id: 23494513818107904
-    m_Localized: todo
+    m_Localized: "Phishe\u0159i ti pos\xEDlaj\xED fale\u0161n\xE9 mapy s pokladem.
+      Nenech si ukr\xE1st sv\xE9 zlato pir\xE1ty!"
     m_Metadata:
       m_Items: []
   - m_Id: 23494549809430528
@@ -167,26 +177,60 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494630725943296
-    m_Localized: todo
+    m_Localized: "Co d\u011Blat potom"
     m_Metadata:
       m_Items: []
   - m_Id: 23494660971069440
-    m_Localized: todo
+    m_Localized: "Varuj sv\xE9 okol\xED,\r\naby se nenachytali"
     m_Metadata:
       m_Items: []
   - m_Id: 23494676351582208
-    m_Localized: todo
+    m_Localized: "Zablokuj odes\xEDlatele"
     m_Metadata:
       m_Items: []
   - m_Id: 23494691102949376
-    m_Localized: todo
+    m_Localized: "Pokud zpr\xE1va p\u0159i\u0161la od kamar\xE1da, \u0159ekni mu,\r\n\u017Ee
+      si bude muset zm\u011Bnit hesla"
     m_Metadata:
       m_Items: []
   - m_Id: 23494852491378688
-    m_Localized: todo
+    m_Localized: "Zp\u011Bt"
     m_Metadata:
       m_Items: []
   - m_Id: 23494866064146432
+    m_Localized: "D\xE1le"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23904873972793344
+    m_Localized: "P\u0159et\xE1hn\u011Bte prvky z prav\xE9 nab\xEDdky a\r napodobte\np\u016Fvodn\xED
+      web podle \u0161ablony co nejp\u0159esn\u011Bji to p\u016Fjde"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23905854643011584
+    m_Localized: "Odeslat webovou str\xE1nku"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906013531635712
+    m_Localized: "U\u017Eivatelsk\xE9 jm\xE9no"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906026869522432
+    m_Localized: Email
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906041587335168
+    m_Localized: "\u010C\xEDslo ob\u010Dansk\xE9ho pr\u016Fkazu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906053847285760
+    m_Localized: "\u010C\xEDslo kreditn\xED karty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906066765742080
+    m_Localized: Heslo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23906084134354944
     m_Localized: todo
     m_Metadata:
       m_Items: []
