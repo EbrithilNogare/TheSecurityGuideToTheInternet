@@ -54,25 +54,25 @@ public class PhishingMinigameManager : MonoBehaviour
         objectsInTemplate = new List<System.Tuple<Vector2, itemName, Color>>();
 
         // Image 1
-        SpawnObjectInTemplate(new Vector2(200, 200), Random.Range(0, images.Length), true);
+        SpawnObjectInTemplate(new Vector2(-400, -138), Random.Range(0, images.Length), true);
 
         // Image 2
-        SpawnObjectInTemplate(new Vector2(1000, 200), Random.Range(0, images.Length), true);
+        SpawnObjectInTemplate(new Vector2(400, -138), Random.Range(0, images.Length), true);
 
         // Field 1
-        SpawnObjectInTemplate(new Vector2(600, 400), Random.Range(0, 3), false);
+        SpawnObjectInTemplate(new Vector2(0, 62), Random.Range(0, 3), false);
 
         // Field 2
-        SpawnObjectInTemplate(new Vector2(600, 300), Random.Range(3, 5), false);
+        SpawnObjectInTemplate(new Vector2(0, -38), Random.Range(3, 5), false);
 
         // Field 3
-        SpawnObjectInTemplate(new Vector2(600, 200), 5, false);
+        SpawnObjectInTemplate(new Vector2(0, -138), 5, false);
     }
 
     void SpawnObjectInTemplate(Vector3 position, int index, bool image)
     {
         GameObject instance = Instantiate(image ? images[index] : fields[index], templateContainer.transform);
-        instance.GetComponent<RectTransform>().anchoredPosition = position;
+        instance.transform.localPosition = position;
         if (image) { instance.GetComponent<Image>().color = colors[Random.Range(0, colors.Length)]; }
         instance.GetComponent<PhishingMinigameDragable>().enabled = false;
         instance.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
@@ -170,7 +170,7 @@ public class PhishingMinigameManager : MonoBehaviour
             for (int templateChild = 0; templateChild < objectsInTemplate.Count; templateChild++)
             {
                 System.Tuple<Vector2, itemName, Color> item = objectsInTemplate[templateChild];
-                float distance = 1f - Mathf.Clamp((Vector2.Distance(websiteChild.GetComponent<RectTransform>().anchoredPosition, item.Item1) - 20) / 200f, 0f, 1f);
+                float distance = 1f - Mathf.Clamp((Vector2.Distance(websiteChild.transform.localPosition, item.Item1) - 20) / 200f, 0f, 1f);
                 float type = dragableComponent.objectName == item.Item2 ? 1 : 0;
                 float color =
                     websiteChild.GetComponent<Image>().color == item.Item3 ||

@@ -78,7 +78,7 @@ MonoBehaviour:
   - m_Id: 23493770004430848
     m_Localized: "Phishing je, kdy\u017E se n\u011Bkdo na internetu vyd\xE1v\xE1
       za n\u011Bkoho,\nkomu d\u016Fv\u011B\u0159uje\u0161, aby z tebe vyl\xE1kal
-      tajn\xE9 informac\xED."
+      osobn\xED informace."
     m_Metadata:
       m_Items: []
   - m_Id: 23493788635529216
@@ -140,8 +140,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494328090132480
-    m_Localized: "Kliknut\xED na ten odkaz je jako plavat p\u0159\xEDmo do tlamy
-      \u017Eraloka. Nebu\u010F ta ryba!"
+    m_Localized: "Kliknut\xED na ten odkaz je jako vplavat do tlamy \u017Eraloka.
+      Nebu\u010F ryba!"
     m_Metadata:
       m_Items: []
   - m_Id: 23494422503915520
@@ -177,7 +177,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494630725943296
-    m_Localized: "Co d\u011Blat potom"
+    m_Localized: "Co d\u011Blat pot\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 23494660971069440
@@ -231,7 +231,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23906084134354944
-    m_Localized: todo
+    m_Localized: Odeslat
     m_Metadata:
       m_Items: []
   references:
