@@ -107,30 +107,30 @@ public class PhishingMinigameManager : MonoBehaviour
         switch (tabIndex)
         {
             case 0:
-                fieldTabContainer.SetActive(true);
-                imageTabContainer.SetActive(false);
-                colorSelectorContainer.SetActive(false);
+                imageTabContainer.SetActive(true);
+                colorSelectorContainer.SetActive(true);
+                fieldTabContainer.SetActive(false);
                 urlTabContainer.SetActive(false);
-                fieldTabButtonImage.color = tabButtonColorActive;
-                imageTabButtonImage.color = tabButtonColorInactive;
+                imageTabButtonImage.color = tabButtonColorActive;
+                fieldTabButtonImage.color = tabButtonColorInactive;
                 urlTabButtonImage.color = tabButtonColorInactive;
                 break;
             case 1:
-                fieldTabContainer.SetActive(false);
-                imageTabContainer.SetActive(true);
-                colorSelectorContainer.SetActive(true);
+                imageTabContainer.SetActive(false);
+                colorSelectorContainer.SetActive(false);
+                fieldTabContainer.SetActive(true);
                 urlTabContainer.SetActive(false);
-                fieldTabButtonImage.color = tabButtonColorInactive;
-                imageTabButtonImage.color = tabButtonColorActive;
+                imageTabButtonImage.color = tabButtonColorInactive;
+                fieldTabButtonImage.color = tabButtonColorActive;
                 urlTabButtonImage.color = tabButtonColorInactive;
                 break;
             case 2:
-                fieldTabContainer.SetActive(false);
                 imageTabContainer.SetActive(false);
                 colorSelectorContainer.SetActive(false);
+                fieldTabContainer.SetActive(false);
                 urlTabContainer.SetActive(true);
-                fieldTabButtonImage.color = tabButtonColorInactive;
                 imageTabButtonImage.color = tabButtonColorInactive;
+                fieldTabButtonImage.color = tabButtonColorInactive;
                 urlTabButtonImage.color = tabButtonColorActive;
                 break;
         }

@@ -183,12 +183,61 @@ public class QuizManager : MonoBehaviour
     }
 
     private Dictionary<string, QuizQuestion[]> allQuizes = new Dictionary<string, QuizQuestion[]>(){
+        { "malwareQuiz" , new QuizQuestion[]{
+            new QuizQuestion(true, "malware_question_0", new string[]{ "malware_answer_0_0", "malware_answer_0_1", "malware_answer_0_2" }, null, -1),
+            new QuizQuestion(true, "malware_question_1", new string[]{ "malware_answer_1_0", "malware_answer_1_1", "malware_answer_1_2" }, null, -1),
+            new QuizQuestion(true, "malware_question_2", new string[]{ "malware_answer_2_0", "malware_answer_2_1", "malware_answer_2_2" }, null, -1),
+            new QuizQuestion(true, "malware_question_3", new string[]{ "malware_answer_3_0", "malware_answer_3_1", "malware_answer_3_2" }, null, -1),
+            new QuizQuestion(true, "malware_question_4", new string[]{ "malware_answer_4_0", "malware_answer_4_1", "malware_answer_4_2" }, null, -1),
+        }},
+        { "firewallQuiz" , new QuizQuestion[]{
+            new QuizQuestion(true, "firewall_question_0", new string[]{ "firewall_answer_0_0", "firewall_answer_0_1", "firewall_answer_0_2" }, null, -1),
+            new QuizQuestion(true, "firewall_question_1", new string[]{ "firewall_answer_1_0", "firewall_answer_1_1", "firewall_answer_1_2" }, null, -1),
+            new QuizQuestion(true, "firewall_question_2", new string[]{ "firewall_answer_2_0", "firewall_answer_2_1", "firewall_answer_2_2" }, null, -1),
+            new QuizQuestion(true, "firewall_question_3", new string[]{ "firewall_answer_3_0", "firewall_answer_3_1", "firewall_answer_3_2" }, null, -1),
+            new QuizQuestion(false, "firewall_question_4", null, new Sprite[]{ }, -1), // todo add images
+        }},
         { "phishingQuiz" , new QuizQuestion[]{
             new QuizQuestion(true, "phishing_question_0", new string[]{ "phishing_answer_0_0", "phishing_answer_0_1", "phishing_answer_0_2" }, null, 0),
             new QuizQuestion(true, "phishing_question_1", new string[]{ "phishing_answer_1_0", "phishing_answer_1_1", "phishing_answer_1_2" }, null, 0),
             new QuizQuestion(true, "phishing_question_2", new string[]{ "phishing_answer_2_0", "phishing_answer_2_1", "phishing_answer_2_2" }, null, 2),
             new QuizQuestion(true, "phishing_question_3", new string[]{ "phishing_answer_3_0", "phishing_answer_3_1", "phishing_answer_3_2" }, null, 0),
             new QuizQuestion(true, "phishing_question_4", new string[]{ "phishing_answer_4_0", "phishing_answer_4_1", "phishing_answer_4_2" }, null, 1),
-        }}
+        }},
+        { "cookiesQuiz" , new QuizQuestion[]{
+            new QuizQuestion(true, "cookies_question_0", new string[]{ "cookies_answer_0_0", "cookies_answer_0_1", "cookies_answer_0_2" }, null, -1),
+            new QuizQuestion(true, "cookies_question_1", new string[]{ "cookies_answer_1_0", "cookies_answer_1_1", "cookies_answer_1_2" }, null, -1),
+            new QuizQuestion(true, "cookies_question_2", new string[]{ "cookies_answer_2_0", "cookies_answer_2_1", "cookies_answer_2_2" }, null, -1),
+            new QuizQuestion(true, "cookies_question_3", new string[]{ "cookies_answer_3_0", "cookies_answer_3_1", "cookies_answer_3_2" }, null, -1),
+            new QuizQuestion(true, "cookies_question_4", new string[]{ "cookies_answer_4_0", "cookies_answer_4_1", "cookies_answer_4_2" }, null, -1),
+        }},
+        { "phoneQuiz" , new QuizQuestion[]{
+            new QuizQuestion(true, "phone_question_0", new string[]{ "phone_answer_0_0", "phone_answer_0_1", "phone_answer_0_2" }, null, -1),
+            new QuizQuestion(true, "phone_question_1", new string[]{ "phone_answer_1_0", "phone_answer_1_1", "phone_answer_1_2" }, null, -1),
+            new QuizQuestion(true, "phone_question_2", new string[]{ "phone_answer_2_0", "phone_answer_2_1", "phone_answer_2_2" }, null, -1),
+            new QuizQuestion(true, "phone_question_3", new string[]{ "phone_answer_3_0", "phone_answer_3_1", "phone_answer_3_2" }, null, -1),
+            new QuizQuestion(true, "phone_question_4", new string[]{ "phone_answer_4_0", "phone_answer_4_1", "phone_answer_4_2" }, null, -1),
+        }},
+        { "aiQuiz" , new QuizQuestion[]{
+            new QuizQuestion(true, "ai_question_0", new string[]{ "ai_answer_0_0", "ai_answer_0_1", "ai_answer_0_2" }, null, -1),
+            new QuizQuestion(true, "ai_question_1", new string[]{ "ai_answer_1_0", "ai_answer_1_1", "ai_answer_1_2" }, null, -1),
+            new QuizQuestion(true, "ai_question_2", new string[]{ "ai_answer_2_0", "ai_answer_2_1", "ai_answer_2_2" }, null, -1),
+            new QuizQuestion(true, "ai_question_3", new string[]{ "ai_answer_3_0", "ai_answer_3_1", "ai_answer_3_2" }, null, -1),
+            new QuizQuestion(true, "ai_question_4", new string[]{ "ai_answer_4_0", "ai_answer_4_1", "ai_answer_4_2" }, null, -1),
+        }},
+        { "passwordsQuiz" , new QuizQuestion[]{
+            new QuizQuestion(true, "passwords_question_0", new string[]{ "passwords_answer_0_0", "passwords_answer_0_1", "passwords_answer_0_2" }, null, -1),
+            new QuizQuestion(true, "passwords_question_1", new string[]{ "passwords_answer_1_0", "passwords_answer_1_1", "passwords_answer_1_2" }, null, -1),
+            new QuizQuestion(true, "passwords_question_2", new string[]{ "passwords_answer_2_0", "passwords_answer_2_1", "passwords_answer_2_2" }, null, -1),
+            new QuizQuestion(true, "passwords_question_3", new string[]{ "passwords_answer_3_0", "passwords_answer_3_1", "passwords_answer_3_2" }, null, -1),
+            new QuizQuestion(true, "passwords_question_4", new string[]{ "passwords_answer_4_0", "passwords_answer_4_1", "passwords_answer_4_2" }, null, -1),
+        }},
+        { "tfaQuiz" , new QuizQuestion[]{
+            new QuizQuestion(true, "tfa_question_0", new string[]{ "tfa_answer_0_0", "tfa_answer_0_1", "tfa_answer_0_2" }, null, -1),
+            new QuizQuestion(true, "tfa_question_1", new string[]{ "tfa_answer_1_0", "tfa_answer_1_1", "tfa_answer_1_2" }, null, -1),
+            new QuizQuestion(true, "tfa_question_2", new string[]{ "tfa_answer_2_0", "tfa_answer_2_1", "tfa_answer_2_2" }, null, -1),
+            new QuizQuestion(true, "tfa_question_3", new string[]{ "tfa_answer_3_0", "tfa_answer_3_1", "tfa_answer_3_2" }, null, -1),
+            new QuizQuestion(false, "tfa_question_4", null, new Sprite[]{ }, -1), // todo add images 
+        }},
     };
 }

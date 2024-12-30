@@ -98,6 +98,480 @@ MonoBehaviour:
     m_Localized: "www.app.en.facebook.com/pay\r"
     m_Metadata:
       m_Items: []
+  - m_Id: 1778581081194496
+    m_Localized: todo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778629256970240
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779040160350208
+    m_Localized: "What is the primary purpose of a firewall?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779203281027072
+    m_Localized: To speed up internet browsing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779223325605888
+    m_Localized: To monitor and control incoming and outgoing network traffic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779231412224000
+    m_Localized: "To increase the storage capacity of your device\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779301276745728
+    m_Localized: Which type of firewall inspects data packets and allows or blocks
+      them based on rules?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779395141074944
+    m_Localized: Physical firewall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779425356840960
+    m_Localized: "Packet filtering firewall\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779435033100288
+    m_Localized: Network extender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779607012147200
+    m_Localized: What does a firewall protect your system from?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779643720695808
+    m_Localized: Unauthorized access or cyber threats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779706438123520
+    m_Localized: Overheating and physical damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779716303126528
+    m_Localized: Low Wi-Fi signal strength
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779807424380928
+    m_Localized: "Which of the following is a limitation of a firewall?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779840118980608
+    m_Localized: "It cannot prevent malware from being downloaded\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779846309773312
+    m_Localized: "It can only work during office hours\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779855868592128
+    m_Localized: "It decreases the speed of your computer\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780033778384896
+    m_Localized: Which image shows a firewall in action?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780077776633856
+    m_Localized: "What is a cookie in the context of the internet?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780399345532928
+    m_Localized: A delicious snack you eat while browsing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780433789157376
+    m_Localized: A small file stored on your device that tracks website activity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780446619533312
+    m_Localized: A program that protects your device from malware
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780578136129536
+    m_Localized: Which of the following is a common use of cookies?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780612453924864
+    m_Localized: "Enhancing website functionality and saving user preferences\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780626978799616
+    m_Localized: Removing viruses from your computer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780637426810880
+    m_Localized: Displaying offline advertisements
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780789625520128
+    m_Localized: What type of cookies are used to remember login details across sessions?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780837704826880
+    m_Localized: Temporary cookies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780893648453632
+    m_Localized: Persistent cookies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780904075493376
+    m_Localized: Advertising cookies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780948015022080
+    m_Localized: "Which of these is a potential risk of cookies?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781015719477248
+    m_Localized: They can overload your internet speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781020844916736
+    m_Localized: "They may track your online activity and share it with third parties\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781029661343744
+    m_Localized: They cause websites to crash frequently
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781109147598848
+    m_Localized: How can you manage cookies on your device?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781156400627712
+    m_Localized: Disable them in your browser settings or delete stored cookies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781179242807296
+    m_Localized: Clear your device's cache memory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781188432527360
+    m_Localized: Restart your computer regularly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781275128791040
+    m_Localized: Which permission is reasonable for a flashlight app to request?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781347329540096
+    m_Localized: Camera access
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781353654550528
+    m_Localized: Microphone access
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781362483560448
+    m_Localized: Contact list access
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781475968843776
+    m_Localized: "What should you do if an app asks for permissions unrelated to
+      its function?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781499763130368
+    m_Localized: Grant the permissions immediately
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781527651057664
+    m_Localized: Deny the permissions and uninstall the app if permissions are too
+      suspicious
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781544633794560
+    m_Localized: Ignore the request and keep using the app
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781697256128512
+    m_Localized: Why might a social media app request access to your location?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781801782378496
+    m_Localized: To enhance ad targeting or provide location-based features
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781806618411008
+    m_Localized: To enhance internet signal and speed up browsing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781820946153472
+    m_Localized: To access your browsing history
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781908821016576
+    m_Localized: Which permission is NOT appropriate for a weather app?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1781980560392192
+    m_Localized: Location access
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782000651108352
+    m_Localized: Contact list access
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782006397304832
+    m_Localized: Internet access
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782088421113856
+    m_Localized: "What do you think you should check before granting app permissions?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782127667216384
+    m_Localized: The app's developer, reviews, and the necessity of the permission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782133048508416
+    m_Localized: "The app\u2019s color scheme and design"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782142296948736
+    m_Localized: Whether your friends also use the app
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782238308761600
+    m_Localized: What should you do if you suspect the information provided by an
+      AI is incorrect?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782296106270720
+    m_Localized: Trust the AI since it is always accurate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782304704593920
+    m_Localized: Verify the information using trusted sources
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782361067651072
+    m_Localized: Ask Ai again, and if it verifies it is correct, then trust it
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782489258164224
+    m_Localized: "Why is it important not to share personal or sensitive information
+      with AI systems?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782514650480640
+    m_Localized: Because the AI might use it for future responses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782538570596352
+    m_Localized: Because it slows down the AI's performance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782548200718336
+    m_Localized: Because the AI will forget the information immediately
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1783592704049152
+    m_Localized: Which of the following is an example of inappropriate information
+      to share with an AI?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1783648593149952
+    m_Localized: Your favorite hobby
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1783674765606912
+    m_Localized: Your full credit card number
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1783683535896576
+    m_Localized: A question about history
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1783745758396416
+    m_Localized: What should you do if an AI gives you financial or medical advice?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1783775533760512
+    m_Localized: Follow it without any hesitation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1783780533370880
+    m_Localized: Cross-check the advice with a qualified professional
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1783789672759296
+    m_Localized: Share the advice with others as reliable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1783897164382208
+    m_Localized: Why should you avoid trusting AI-generated information blindly?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1783941141659648
+    m_Localized: AI systems can sometimes hallucinate or provide inaccurate data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1783946959159296
+    m_Localized: AI systems are always biased against users
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1783955280658432
+    m_Localized: AI systems cannot generate any useful information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1784748104777728
+    m_Localized: "What is the primary purpose of a password manager?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1784769206321152
+    m_Localized: To create and store strong, unique passwords securely
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1784774201737216
+    m_Localized: To guess passwords for forgotten accounts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1784782791671808
+    m_Localized: To share passwords with other users easily
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1784932167614464
+    m_Localized: Which of the following is an example of a weak password?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1784954871382016
+    m_Localized: ilovepizza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1784963029303296
+    m_Localized: "Z7#dG$k2!P\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1784971812175872
+    m_Localized: "feral-replied-lucille-gringo-ash\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1785100233375744
+    m_Localized: What should you do if you suspect your password has been compromised?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1785126569410560
+    m_Localized: Change it immediately to a strong, unique password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1785143241768960
+    m_Localized: "Ignore it if the account seems fine\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1785156160225280
+    m_Localized: Change it to the same password with slight modifications
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1785224615460864
+    m_Localized: How are passwords typically stored by web applications?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1785266365562880
+    m_Localized: As text in a database
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1785271650385920
+    m_Localized: Encrypted or hashed with secure algorithms
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1785281372782592
+    m_Localized: "In a locked file on the user\u2019s device"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1785697741340672
+    m_Localized: What is one major risk of reusing the same password for multiple
+      accounts?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1785726619123712
+    m_Localized: It makes it easier to remember a password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1785740862980096
+    m_Localized: A breach of one account could expose all other accounts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1785743807381504
+    m_Localized: It makes your accounts harder to access from different devices
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786024746057728
+    m_Localized: What is the primary purpose of two-factor authentication (2FA)?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786025857548288
+    m_Localized: To provide an additional layer of security beyond just a password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786027459772416
+    m_Localized: "To replace the need for passwords altogether\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786028424462336
+    m_Localized: To share login credentials across multiple devices
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786168958812160
+    m_Localized: Which of the following is an example of a second factor in 2FA?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786173182476288
+    m_Localized: A security question answer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786174960861184
+    m_Localized: A one-time code sent to your phone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786176156237824
+    m_Localized: Remembering the second password aside from the first
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786309904203776
+    m_Localized: "What happens if you lose access to your second factor (e.g., your
+      phone)?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786434751856640
+    m_Localized: You are permanently locked out of your account
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786436320526336
+    m_Localized: You can use backup codes or alternative recovery options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786437486542848
+    m_Localized: You can log in without any verification
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786600338784256
+    m_Localized: Which of the following is NOT true about phishing websites and 2FA?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786680026365952
+    m_Localized: SSO is more secure because it does not use text code that can be
+      reposted
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786683562164224
+    m_Localized: "Users must verify the location to ensure the authenticity of the
+      website\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786686225547264
+    m_Localized: Authentication apps only work when connected to the internet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1786803464732672
+    m_Localized: Which image below represents a proper implementation of 2FA?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
