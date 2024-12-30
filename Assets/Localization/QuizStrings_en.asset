@@ -572,6 +572,38 @@ MonoBehaviour:
     m_Localized: Which image below represents a proper implementation of 2FA?
     m_Metadata:
       m_Items: []
+  - m_Id: 1805767444037632
+    m_Localized: Malware
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1808592064512000
+    m_Localized: Firewall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1808598964142080
+    m_Localized: Phishing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1808628072611840
+    m_Localized: Cookies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1808642895282176
+    m_Localized: Phone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1808657629872128
+    m_Localized: AI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1808676743315456
+    m_Localized: Passwords
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1808867219243008
+    m_Localized: 2FA
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

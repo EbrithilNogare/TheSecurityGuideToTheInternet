@@ -20,8 +20,9 @@ public class Navigation : MonoBehaviour
     }
     public void GoToTutorial()
     {
-        LoggingService.Log(LoggingService.LogCategory.Navigation, "Navigated to Tutorial");
-        SceneManager.LoadScene("Tutorial");
+        LoggingService.Log(LoggingService.LogCategory.Navigation, "Navigated to Quiz");
+        Store.Instance.quizToLoad = Store.Quiz.All;
+        SceneManager.LoadScene("Quiz");
     }
     public void GoToShop()
     {
