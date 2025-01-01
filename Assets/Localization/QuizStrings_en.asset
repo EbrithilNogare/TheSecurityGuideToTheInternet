@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 32896019365888
-    m_Localized: "Which of these is a common sign of a phishing email?\r"
+    m_Localized: Which of these is a common sign of a phishing email?
     m_Metadata:
       m_Items: []
   - m_Id: 32936339210240
@@ -59,19 +59,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 33140689895424
-    m_Localized: "Click on the link to verify its content\r"
+    m_Localized: Click on the link to verify its content
     m_Metadata:
       m_Items: []
   - m_Id: 33150194188288
-    m_Localized: "Do not click on any links and report the email\r"
+    m_Localized: Do not click on any links and report the email
     m_Metadata:
       m_Items: []
   - m_Id: 33209048662016
-    m_Localized: "What type of information do phishing attacks commonly try to steal?\r"
+    m_Localized: What type of information do phishing attacks commonly try to steal?
     m_Metadata:
       m_Items: []
   - m_Id: 33266334466048
-    m_Localized: "Banking details, passwords, or social security numbers\r"
+    m_Localized: Banking details, passwords, or social security numbers
     m_Metadata:
       m_Items: []
   - m_Id: 33290019700736
@@ -83,7 +83,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 33314178891776
-    m_Localized: "Which image below shows an example of a phishing website?\r"
+    m_Localized: Which image below shows an example of a phishing website?
     m_Metadata:
       m_Items: []
   - m_Id: 33371120762880
@@ -91,23 +91,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 33389647003648
-    m_Localized: "www.faceb00k.com/login\r"
+    m_Localized: www.faceb00k.com/login
     m_Metadata:
       m_Items: []
   - m_Id: 33398299852800
-    m_Localized: "www.app.en.facebook.com/pay\r"
+    m_Localized: www.app.en.facebook.com/pay
     m_Metadata:
       m_Items: []
   - m_Id: 1778581081194496
-    m_Localized: todo
+    m_Localized: What is malware?
     m_Metadata:
       m_Items: []
   - m_Id: 1778629256970240
-    m_Localized: 
+    m_Localized: Software designed to protect your computer
     m_Metadata:
       m_Items: []
   - m_Id: 1779040160350208
-    m_Localized: "What is the primary purpose of a firewall?\r"
+    m_Localized: What is the primary purpose of a firewall?
     m_Metadata:
       m_Items: []
   - m_Id: 1779203281027072
@@ -119,7 +119,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779231412224000
-    m_Localized: "To increase the storage capacity of your device\r"
+    m_Localized: To increase the storage capacity of your device
     m_Metadata:
       m_Items: []
   - m_Id: 1779301276745728
@@ -132,7 +132,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779425356840960
-    m_Localized: "Packet filtering firewall\r"
+    m_Localized: Packet filtering firewall
     m_Metadata:
       m_Items: []
   - m_Id: 1779435033100288
@@ -144,7 +144,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779643720695808
-    m_Localized: Unauthorized access or cyber threats
+    m_Localized: Unauthorized access to a device
     m_Metadata:
       m_Items: []
   - m_Id: 1779706438123520
@@ -156,19 +156,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779807424380928
-    m_Localized: "Which of the following is a limitation of a firewall?\r"
+    m_Localized: Which of the following is a limitation of a firewall?
     m_Metadata:
       m_Items: []
   - m_Id: 1779840118980608
-    m_Localized: "It cannot prevent malware from being downloaded\r"
+    m_Localized: It cannot prevent malware from being downloaded
     m_Metadata:
       m_Items: []
   - m_Id: 1779846309773312
-    m_Localized: "It can only work during office hours\r"
+    m_Localized: It can only work during office hours
     m_Metadata:
       m_Items: []
   - m_Id: 1779855868592128
-    m_Localized: "It decreases the speed of your computer\r"
+    m_Localized: It decreases the speed of your computer
     m_Metadata:
       m_Items: []
   - m_Id: 1780033778384896
@@ -176,7 +176,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1780077776633856
-    m_Localized: "What is a cookie in the context of the internet?\r"
+    m_Localized: What is a cookie in the context of the internet?
     m_Metadata:
       m_Items: []
   - m_Id: 1780399345532928
@@ -196,7 +196,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1780612453924864
-    m_Localized: "Enhancing website functionality and saving user preferences\r"
+    m_Localized: Enhancing website functionality and saving user preferences
     m_Metadata:
       m_Items: []
   - m_Id: 1780626978799616
@@ -208,7 +208,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1780789625520128
-    m_Localized: What type of cookies are used to remember login details across sessions?
+    m_Localized: What type of cookies are used to remember shopping cart content?
     m_Metadata:
       m_Items: []
   - m_Id: 1780837704826880
@@ -224,7 +224,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1780948015022080
-    m_Localized: "Which of these is a potential risk of cookies?\r"
+    m_Localized: Which of these is a potential risk of cookies?
     m_Metadata:
       m_Items: []
   - m_Id: 1781015719477248
@@ -232,7 +232,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781020844916736
-    m_Localized: "They may track your online activity and share it with third parties\r"
+    m_Localized: They may track your online activity and share it with third parties
     m_Metadata:
       m_Items: []
   - m_Id: 1781029661343744
@@ -272,12 +272,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781475968843776
-    m_Localized: "What should you do if an app asks for permissions unrelated to
-      its function?\r"
+    m_Localized: What should you do if an app asks for permissions unrelated to its
+      function?
     m_Metadata:
       m_Items: []
   - m_Id: 1781499763130368
-    m_Localized: Grant the permissions immediately
+    m_Localized: Permissions must be enabled for the application to function properly
     m_Metadata:
       m_Items: []
   - m_Id: 1781527651057664
@@ -286,7 +286,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781544633794560
-    m_Localized: Ignore the request and keep using the app
+    m_Localized: Deny the permissions and keep using the app
     m_Metadata:
       m_Items: []
   - m_Id: 1781697256128512
@@ -322,7 +322,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782088421113856
-    m_Localized: "What do you think you should check before granting app permissions?\r"
+    m_Localized: What do you think you should check before granting app permissions?
     m_Metadata:
       m_Items: []
   - m_Id: 1782127667216384
@@ -330,7 +330,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782133048508416
-    m_Localized: "The app\u2019s color scheme and design"
+    m_Localized: The amount of ads in the app and its icon
     m_Metadata:
       m_Items: []
   - m_Id: 1782142296948736
@@ -355,8 +355,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782489258164224
-    m_Localized: "Why is it important not to share personal or sensitive information
-      with AI systems?\r"
+    m_Localized: Why is it important not to share personal or sensitive information
+      with AI systems?
     m_Metadata:
       m_Items: []
   - m_Id: 1782514650480640
@@ -368,7 +368,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782548200718336
-    m_Localized: Because the AI will forget the information immediately
+    m_Localized: Because AI will exploit them to its advantage
     m_Metadata:
       m_Items: []
   - m_Id: 1783592704049152
@@ -385,7 +385,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1783683535896576
-    m_Localized: A question about history
+    m_Localized: Essay on how AI is bad
     m_Metadata:
       m_Items: []
   - m_Id: 1783745758396416
@@ -393,11 +393,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1783775533760512
-    m_Localized: Follow it without any hesitation
+    m_Localized: Trust it and apply it as soon as possible
     m_Metadata:
       m_Items: []
   - m_Id: 1783780533370880
-    m_Localized: Cross-check the advice with a qualified professional
+    m_Localized: Check with a qualified professional before using the advice
     m_Metadata:
       m_Items: []
   - m_Id: 1783789672759296
@@ -421,7 +421,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1784748104777728
-    m_Localized: "What is the primary purpose of a password manager?\r"
+    m_Localized: What is the primary purpose of a password manager?
     m_Metadata:
       m_Items: []
   - m_Id: 1784769206321152
@@ -433,7 +433,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1784782791671808
-    m_Localized: To share passwords with other users easily
+    m_Localized: To share your passwords with other users easily
     m_Metadata:
       m_Items: []
   - m_Id: 1784932167614464
@@ -445,11 +445,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1784963029303296
-    m_Localized: "Z7#dG$k2!P\r"
+    m_Localized: Z7#dG$k2!P
     m_Metadata:
       m_Items: []
   - m_Id: 1784971812175872
-    m_Localized: "feral-replied-lucille-gringo-ash\r"
+    m_Localized: feral-replied-lucille-gringo-ash
     m_Metadata:
       m_Items: []
   - m_Id: 1785100233375744
@@ -461,7 +461,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1785143241768960
-    m_Localized: "Ignore it if the account seems fine\r"
+    m_Localized: Ignore it if the account seems fine
     m_Metadata:
       m_Items: []
   - m_Id: 1785156160225280
@@ -473,15 +473,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1785266365562880
-    m_Localized: As text in a database
+    m_Localized: As readable text in the website's database
     m_Metadata:
       m_Items: []
   - m_Id: 1785271650385920
-    m_Localized: Encrypted or hashed with secure algorithms
+    m_Localized: As encrypted text in the website's database
     m_Metadata:
       m_Items: []
   - m_Id: 1785281372782592
-    m_Localized: "In a locked file on the user\u2019s device"
+    m_Localized: In an encrypted file on the user's device
     m_Metadata:
       m_Items: []
   - m_Id: 1785697741340672
@@ -510,7 +510,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786027459772416
-    m_Localized: "To replace the need for passwords altogether\r"
+    m_Localized: To replace the need for passwords altogether
     m_Metadata:
       m_Items: []
   - m_Id: 1786028424462336
@@ -534,8 +534,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786309904203776
-    m_Localized: "What happens if you lose access to your second factor (e.g., your
-      phone)?\r"
+    m_Localized: What happens if you lose access to your second factor (e.g., your
+      phone)?
     m_Metadata:
       m_Items: []
   - m_Id: 1786434751856640
@@ -547,7 +547,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786437486542848
-    m_Localized: You can log in without any verification
+    m_Localized: You can log in with just your password, 2FA is optional
     m_Metadata:
       m_Items: []
   - m_Id: 1786600338784256
@@ -555,13 +555,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786680026365952
-    m_Localized: SSO is more secure because it does not use text code that can be
-      reposted
+    m_Localized: SSO (single sign on) is more secure because it does not use text
+      code that can be stolen
     m_Metadata:
       m_Items: []
   - m_Id: 1786683562164224
-    m_Localized: "Users must verify the location to ensure the authenticity of the
-      website\r"
+    m_Localized: Users must verify the location to ensure the authenticity of the
+      website
     m_Metadata:
       m_Items: []
   - m_Id: 1786686225547264
@@ -569,7 +569,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786803464732672
-    m_Localized: Which image below represents a proper implementation of 2FA?
+    m_Localized: Which of the forms below uses 2FA?
     m_Metadata:
       m_Items: []
   - m_Id: 1805767444037632
@@ -602,6 +602,78 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1808867219243008
     m_Localized: 2FA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778671241953280
+    m_Localized: Malicious software intended to harm or exploit computer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778706188894208
+    m_Localized: An antivirus program
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778806176907264
+    m_Localized: Which of these behaviors might indicate a malware infection?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778824417935360
+    m_Localized: Your computer automatically updates without permission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778841941737472
+    m_Localized: Add pop-ups, slower performance, or unauthorized changes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778852410720256
+    m_Localized: The internet connection becomes faster than usual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778873109610496
+    m_Localized: How does malware usually get onto your computer?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778891426136064
+    m_Localized: Through updates from trusted sources
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778897155555328
+    m_Localized: Using a weak password to log in to your computer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778907280605184
+    m_Localized: By downloading email attachments or software from unverified sources
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778919179845632
+    m_Localized: Which of the following is an effective way to defend against malware?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778936187748352
+    m_Localized: Ignoring pop-ups and antivirus notifications
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778958287536128
+    m_Localized: Using strong passwords and avoiding unverified downloads
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778968299339776
+    m_Localized: Frequently sharing usage reports
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778982102794240
+    m_Localized: What does antivirus software do to protect your system?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779015665614848
+    m_Localized: It scans, detects, and removes harmful software
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779021856407552
+    m_Localized: It makes your computer immune to all viruses permanently
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779031327145984
+    m_Localized: It automatically blocks all websites to keep you safe
     m_Metadata:
       m_Items: []
   references:
