@@ -5,7 +5,7 @@ public class Store : MonoBehaviour
 {
     public static Store Instance { get; private set; }
 
-    public enum Quiz { None, All, Malware, Firewall, Phishing, Cookies, Phone, AI, Passwords, TFA }
+    public enum Quiz { None = -2, All = -1, Malware, Firewall, Phishing, Cookies, Phone, AI, Passwords, TFA }
 
     public Quiz quizToLoad = Quiz.None;
     public int minigameScore = 0;
