@@ -13,22 +13,23 @@ public class QuizManager : MonoBehaviour
         public bool isVertialLayouot;
         public string textQuestion;
         public string[] textAnswers;
-        public Sprite[] imageAnswers;
+        public int[] imageAnswerIndices;
         public int correctAnswerIndex;
 
 #nullable enable
-        public QuizQuestion(bool isVertialLayouot, string textQuestion, string[]? textAnswers, Sprite[]? imageAnswers, int correctAnswerIndex)
+        public QuizQuestion(bool isVertialLayouot, string textQuestion, string[]? textAnswers, int[]? imageAnswerIndices, int correctAnswerIndex)
         {
             this.isVertialLayouot = isVertialLayouot;
             this.textQuestion = textQuestion;
             this.textAnswers = textAnswers ?? new string[0];
-            this.imageAnswers = imageAnswers ?? new Sprite[0];
+            this.imageAnswerIndices = imageAnswerIndices ?? new int[0];
             this.correctAnswerIndex = correctAnswerIndex;
         }
     }
 #nullable disable
 
     [Header("External variables")]
+    public Sprite[] quizSprites;
     public Color correctAnswerColor;
     public Color incorrectAnswerColor;
     public TMPro.TextMeshProUGUI quizProgress;
@@ -256,13 +257,13 @@ public class QuizManager : MonoBehaviour
             verticalAnswersContainer.SetActive(false);
             horizontalAnswersContainer.SetActive(true);
 
-            for (int i = 0; i < quizQuestion.imageAnswers.Length; i++)
+            for (int i = 0; i < quizQuestion.imageAnswerIndices.Length; i++)
             {
                 horizontalQuestionGameObjects[i].SetActive(true);
-                horizontalQuestionImages[i].sprite = quizQuestion.imageAnswers[i];
+                horizontalQuestionImages[i].sprite = quizSprites[quizQuestion.imageAnswerIndices[i]];
             }
 
-            for (int i = quizQuestion.imageAnswers.Length; i < horizontalQuestionGameObjects.Length; i++)
+            for (int i = quizQuestion.imageAnswerIndices.Length; i < horizontalQuestionGameObjects.Length; i++)
             {
                 horizontalQuestionGameObjects[i].SetActive(false);
             }
@@ -282,7 +283,7 @@ public class QuizManager : MonoBehaviour
             new QuizQuestion(true, "firewall_question_1", new string[]{ "firewall_answer_1_0", "firewall_answer_1_1", "firewall_answer_1_2" }, null, 1),
             new QuizQuestion(true, "firewall_question_2", new string[]{ "firewall_answer_2_0", "firewall_answer_2_1", "firewall_answer_2_2" }, null, 0),
             new QuizQuestion(true, "firewall_question_3", new string[]{ "firewall_answer_3_0", "firewall_answer_3_1", "firewall_answer_3_2" }, null, 0),
-            new QuizQuestion(false, "firewall_question_4", null, new Sprite[]{ }, -1), // todo add images and mark correct answer
+            new QuizQuestion(false, "firewall_question_4", null, new int[]{0, 1}, 0),
         }},
         { Store.Quiz.Phishing , new QuizQuestion[]{
             new QuizQuestion(true, "phishing_question_0", new string[]{ "phishing_answer_0_0", "phishing_answer_0_1", "phishing_answer_0_2" }, null, 0),
@@ -324,7 +325,7 @@ public class QuizManager : MonoBehaviour
             new QuizQuestion(true, "tfa_question_1", new string[]{ "tfa_answer_1_0", "tfa_answer_1_1", "tfa_answer_1_2" }, null, 1),
             new QuizQuestion(true, "tfa_question_2", new string[]{ "tfa_answer_2_0", "tfa_answer_2_1", "tfa_answer_2_2" }, null, 1),
             new QuizQuestion(true, "tfa_question_3", new string[]{ "tfa_answer_3_0", "tfa_answer_3_1", "tfa_answer_3_2" }, null, 0),
-            new QuizQuestion(false, "tfa_question_4", null, new Sprite[]{ }, -1), // todo add images and mark correct answer
+            new QuizQuestion(false, "tfa_question_4", null, new int[]{2, 3}, 1),
         }},
     };
 }
