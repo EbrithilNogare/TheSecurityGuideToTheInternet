@@ -24,14 +24,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Rooms/Library.unity
     guid: 1f055770cf809a745ad74f54a7c49fdc
   - enabled: 1
-    path: Assets/Scenes/MiniGames/Antivirus.unity
-    guid: ff8c954adebcbc942a3bb53c83c44a63
-  - enabled: 1
-    path: Assets/Scenes/Presentations/Malware_Antivirus_Presentation.unity
+    path: Assets/Scenes/Presentations/Malware_Presentation.unity
     guid: 57738e9a2a1afe84b84eae862e857b0d
   - enabled: 1
-    path: Assets/Scenes/Presentations/Malware_Phishing_Presentation.unity
+    path: Assets/Scenes/Presentations/Phishing_Presentation.unity
     guid: 5f4a96bcaa464c24ebedf5964bde3d87
+  - enabled: 1
+    path: Assets/Scenes/Presentations/Phone_Presentation.unity
+    guid: cd3f886743f86e84094863ebd750ce78
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/Antivirus.unity
+    guid: ff8c954adebcbc942a3bb53c83c44a63
   - enabled: 1
     path: Assets/Scenes/MiniGames/Phishing.unity
     guid: 674c3af58a1e03946b0f23111acca71d

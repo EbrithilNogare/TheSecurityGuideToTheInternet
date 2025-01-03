@@ -199,11 +199,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494852491378688
-    m_Key: Malware_Phishing_Presentation/Canvas/Navigation/Previous/Text (TMP)
+    m_Key: Previous_Slide
     m_Metadata:
       m_Items: []
   - m_Id: 23494866064146432
-    m_Key: Malware_Phishing_Presentation/Canvas/Navigation/Next/Text (TMP)
+    m_Key: Next_Slide
     m_Metadata:
       m_Items: []
   - m_Id: 23904873972793344

@@ -3073,7 +3073,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 518759523}
-  - component: {fileID: 518759522}
   m_Layer: 5
   m_Name: Slide 6
   m_TagString: Untagged
@@ -3081,18 +3080,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &518759522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518759521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af0b924adb0227141a6eb62bd5ec0ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &518759523
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4261,7 +4248,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 646197674}
-  - component: {fileID: 646197675}
   m_Layer: 5
   m_Name: Slide 1
   m_TagString: Untagged
@@ -4292,18 +4278,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &646197675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 646197673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af0b924adb0227141a6eb62bd5ec0ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &666827757
 GameObject:
   m_ObjectHideFlags: 0
@@ -6949,7 +6923,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 921133197}
-  - component: {fileID: 921133196}
   m_Layer: 5
   m_Name: Slide 4
   m_TagString: Untagged
@@ -6957,18 +6930,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &921133196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921133195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af0b924adb0227141a6eb62bd5ec0ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &921133197
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7342,6 +7303,7 @@ MonoBehaviour:
   duration: 1
   sceneBeforePresentation: LevelSelection
   sceneAfterPresentation: Phishing
+  quizIfNeeded: 2
   slides:
   - {fileID: 646197673}
   - {fileID: 1568694909}
@@ -8063,7 +8025,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1054031559}
-  - component: {fileID: 1054031558}
   m_Layer: 5
   m_Name: Slide 3
   m_TagString: Untagged
@@ -8071,18 +8032,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1054031558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054031557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af0b924adb0227141a6eb62bd5ec0ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1054031559
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8404,7 +8353,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1126932762}
-  - component: {fileID: 1126932761}
   m_Layer: 5
   m_Name: Slide 5
   m_TagString: Untagged
@@ -8412,18 +8360,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1126932761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126932760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af0b924adb0227141a6eb62bd5ec0ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1126932762
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10769,7 +10705,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1568694910}
-  - component: {fileID: 1568694911}
   m_Layer: 5
   m_Name: Slide 2
   m_TagString: Untagged
@@ -10800,18 +10735,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1568694911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568694909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af0b924adb0227141a6eb62bd5ec0ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1594266991
 GameObject:
   m_ObjectHideFlags: 0
@@ -12659,7 +12582,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1896446796}
-  - component: {fileID: 1896446795}
   m_Layer: 5
   m_Name: Slide 5 v2
   m_TagString: Untagged
@@ -12667,18 +12589,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1896446795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1896446794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af0b924adb0227141a6eb62bd5ec0ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1896446796
 RectTransform:
   m_ObjectHideFlags: 0
