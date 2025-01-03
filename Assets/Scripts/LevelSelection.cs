@@ -26,14 +26,17 @@ public class LevelSelection : MonoBehaviour
         {
             case "Malware-1":
                 activeLevel = level;
-                SceneManager.LoadScene("Malware_Antivirus_Presentation");
+                SceneManager.LoadScene("Malware_Presentation");
                 break;
             case "Privacy-1":
                 activeLevel = level;
-                SceneManager.LoadScene("Malware_Phishing_Presentation");
+                SceneManager.LoadScene("Phishing_Presentation");
                 break;
             case "Encryption-1": break;
-            case "Phone-1": break;
+            case "Phone-1":
+                activeLevel = level;
+                SceneManager.LoadScene("Phone_Presentation");
+                break;
             case "AI-1": break;
             case "Malware-2": break;
             case "Privacy-2": break;
