@@ -7303,7 +7303,6 @@ MonoBehaviour:
   duration: 1
   sceneBeforePresentation: LevelSelection
   sceneAfterPresentation: Phishing
-  quizIfNeeded: 2
   slides:
   - {fileID: 646197673}
   - {fileID: 1568694909}

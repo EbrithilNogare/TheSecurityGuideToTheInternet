@@ -132,7 +132,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494296012095488
-    m_Localized: "Fale\u0161n\xFD hovor\r\nt\u0159eba z banky"
+    m_Localized: "Fale\u0161n\xFD hovor\r\njakoby z banky"
     m_Metadata:
       m_Items: []
   - m_Id: 23494312151777280
@@ -168,8 +168,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494513818107904
-    m_Localized: "Phishe\u0159i ti pos\xEDlaj\xED fale\u0161n\xE9 mapy s pokladem.
-      Nenech si ukr\xE1st sv\xE9 zlato pir\xE1ty!"
+    m_Localized: "Phishe\u0159i ti pos\xEDlaj\xED fale\u0161n\xE9 mapy k pokladu.
+      Kdy\u017E se na n\u011B vyd\xE1\u0161, okradou t\u011B."
     m_Metadata:
       m_Items: []
   - m_Id: 23494549809430528

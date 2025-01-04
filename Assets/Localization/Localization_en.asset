@@ -137,7 +137,7 @@ MonoBehaviour:
   - m_Id: 23494296012095488
     m_Localized: 'Fake call
 
-      from a bank'
+      as if from a bank'
     m_Metadata:
       m_Items: []
   - m_Id: 23494312151777280
@@ -175,8 +175,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494513818107904
-    m_Localized: "Phishers send you fake treasure maps. Don\u2019t lose your gold
-      to pirates!"
+    m_Localized: Phishers send you fake treasure maps. If you follow them, they'll
+      rip you off.
     m_Metadata:
       m_Items: []
   - m_Id: 23494549809430528
