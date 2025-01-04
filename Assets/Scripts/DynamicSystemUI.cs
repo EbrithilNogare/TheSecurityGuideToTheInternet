@@ -41,6 +41,14 @@ public class DynamicSystemUI : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        foreach (var tween in tweenSettings)
+        {
+            StopTween(tween);
+        }
+    }
+
     public void StartTween(TweenSettings settings)
     {
         StopTween(settings);

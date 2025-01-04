@@ -36,7 +36,7 @@ public class SlideTransitionManager : MonoBehaviour
             AnimateTransition(
                 transitions[currentSlideIndex % transitions.Length],
                 slides[currentSlideIndex],
-                slides[currentSlideIndex + 1]);
+                slides[currentSlideIndex + 1], false);
             currentSlideIndex++;
         }
         else
@@ -54,7 +54,7 @@ public class SlideTransitionManager : MonoBehaviour
         if (currentSlideIndex > 0)
         {
             AnimateTransition(
-                transitions[currentSlideIndex % transitions.Length],
+                transitions[(currentSlideIndex - 1) % transitions.Length],
                 slides[currentSlideIndex],
                 slides[currentSlideIndex - 1], true);
             currentSlideIndex--;
@@ -65,11 +65,11 @@ public class SlideTransitionManager : MonoBehaviour
         }
     }
 
-    private void AnimateTransition(TransitionType transitionType, GameObject currentSlide, GameObject nextSlide, bool reverse = false)
+    private void AnimateTransition(TransitionType transitionType, GameObject currentSlide, GameObject nextSlide, bool reverse)
     {
         isTransitioning = true;
         if (transitionType == TransitionType.FadeIn)
-            AnimateFadeTransition(currentSlide, nextSlide, reverse);
+            AnimateFadeTransition(currentSlide, nextSlide);
         else
             AnimateMoveTransition(transitionType, currentSlide, nextSlide, reverse);
     }
@@ -117,7 +117,7 @@ public class SlideTransitionManager : MonoBehaviour
         });
     }
 
-    private void AnimateFadeTransition(GameObject currentSlide, GameObject nextSlide, bool reverse)
+    private void AnimateFadeTransition(GameObject currentSlide, GameObject nextSlide)
     {
         CanvasGroup currentCanvas = currentSlide.GetComponent<CanvasGroup>();
         CanvasGroup nextCanvas = nextSlide.GetComponent<CanvasGroup>();
@@ -128,8 +128,8 @@ public class SlideTransitionManager : MonoBehaviour
         nextSlide.SetActive(true);
 
         Sequence sequence = DOTween.Sequence();
-        sequence.Join(currentCanvas.DOFade(reverse ? 0f : 1f, duration).From(reverse ? 1f : 0f));
-        sequence.Join(nextCanvas.DOFade(reverse ? 1f : 0f, duration).From(reverse ? 0f : 1f));
+        sequence.Join(currentCanvas.DOFade(0f, duration).From(1f));
+        sequence.Join(nextCanvas.DOFade(1f, duration).From(0f));
         sequence.OnComplete(() =>
         {
             currentSlide.SetActive(false);
