@@ -137,7 +137,7 @@ public class DynamicSystemUI : MonoBehaviour
     {
         if (!canvasGroup)
         {
-            canvasGroup = GetComponent<CanvasGroup>() ?? gameObject.AddComponent<CanvasGroup>();
+            canvasGroup = GetComponent<CanvasGroup>() != null ? GetComponent<CanvasGroup>() : gameObject.AddComponent<CanvasGroup>();
         }
 
         settings.originalValue = new Vector3(canvasGroup.alpha, 0, 0);
