@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelection : MonoBehaviour
 {
-    public string activeLevel = "";
-
     public static readonly List<string> LevelCategories = new List<string> {
         "Malware-1", "Privacy-1", "Encryption-1", "Phone-1", "AI-1",
         "Malware-2", "Privacy-2", "Encryption-2",
@@ -25,22 +23,32 @@ public class LevelSelection : MonoBehaviour
         switch (level)
         {
             case "Malware-1":
-                activeLevel = level;
+                Store.Instance.quizToLoad = Store.Quiz.Malware;
                 SceneManager.LoadScene("Malware_Presentation");
                 break;
             case "Privacy-1":
-                activeLevel = level;
+                Store.Instance.quizToLoad = Store.Quiz.Phishing;
                 SceneManager.LoadScene("Phishing_Presentation");
                 break;
-            case "Encryption-1": break;
+            case "Encryption-1":
+                Store.Instance.quizToLoad = Store.Quiz.Passwords;
+                break;
             case "Phone-1":
-                activeLevel = level;
+                Store.Instance.quizToLoad = Store.Quiz.Phone;
                 SceneManager.LoadScene("Phone_Presentation");
                 break;
-            case "AI-1": break;
-            case "Malware-2": break;
-            case "Privacy-2": break;
-            case "Encryption-2": break;
+            case "AI-1":
+                Store.Instance.quizToLoad = Store.Quiz.AI;
+                break;
+            case "Malware-2":
+                Store.Instance.quizToLoad = Store.Quiz.Firewall;
+                break;
+            case "Privacy-2":
+                Store.Instance.quizToLoad = Store.Quiz.Cookies;
+                break;
+            case "Encryption-2":
+                Store.Instance.quizToLoad = Store.Quiz.TFA;
+                break;
             default:
                 throw new System.Exception("Unknown level: " + level);
         }
