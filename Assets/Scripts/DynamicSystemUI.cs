@@ -3,7 +3,6 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-[ExecuteInEditMode]
 public class DynamicSystemUI : MonoBehaviour
 {
     public enum TweenType { Move, Scale, Rotate, Fade }
@@ -19,6 +18,7 @@ public class DynamicSystemUI : MonoBehaviour
 
         public float duration = 1f;
         public float delay = 0f;
+        public float loopDelay = 0f;
         public bool loop = false;
         public LoopType loopType = LoopType.Restart;
 
@@ -26,27 +26,67 @@ public class DynamicSystemUI : MonoBehaviour
         public bool relative = false;
 
         [HideInInspector] public Tweener tweener;
-        [HideInInspector] public Vector3 originalValue;
+        [HideInInspector] public Sequence sequence;
     }
 
     public TweenSettings[] tweenSettings = new TweenSettings[0];
 
     private CanvasGroup canvasGroup;
 
+    private Vector3 defaultPosition;
+    private Vector3 defaultRotation;
+    private Vector3 defaultScale;
+    private float defaultAlpha;
+    private bool initialized = false;
+
     private void Start()
     {
-        foreach (var tween in tweenSettings)
-        {
-            if (tween.autoStart) StartTween(tween);
-        }
+        defaultPosition = transform.localPosition;
+        defaultRotation = transform.localEulerAngles;
+        defaultScale = transform.localScale;
+        canvasGroup = GetComponent<CanvasGroup>();
+        defaultAlpha = canvasGroup != null ? canvasGroup.alpha : 1;
+        initialized = true;
+        StartTweens();
+    }
+
+    private void OnEnable()
+    {
+        if (!initialized) return;
+        StartTweens();
+    }
+    private void OnDisable()
+    {
+        if (!initialized) return;
+        Cleanup();
     }
 
     private void OnDestroy()
+    {
+        if (!initialized) return;
+        Cleanup();
+
+    }
+
+    public void StartTweens()
+    {
+        foreach (var tween in tweenSettings)
+            if (tween.autoStart)
+                StartTween(tween);
+    }
+
+    public void Cleanup()
     {
         foreach (var tween in tweenSettings)
         {
             StopTween(tween);
         }
+
+        transform.localPosition = defaultPosition;
+        transform.localEulerAngles = defaultRotation;
+        transform.localScale = defaultScale;
+        if (canvasGroup != null)
+            canvasGroup.alpha = defaultAlpha;
     }
 
     public void StartTween(TweenSettings settings)
@@ -56,13 +96,13 @@ public class DynamicSystemUI : MonoBehaviour
         switch (settings.tweenType)
         {
             case TweenType.Move:
-                StartMoveTween(settings);
+                StartSuperTween(settings, TweenType.Move);
                 break;
             case TweenType.Scale:
-                StartScaleTween(settings);
+                StartSuperTween(settings, TweenType.Scale);
                 break;
             case TweenType.Rotate:
-                StartRotateTween(settings);
+                StartSuperTween(settings, TweenType.Rotate);
                 break;
             case TweenType.Fade:
                 StartFadeTween(settings);
@@ -73,65 +113,44 @@ public class DynamicSystemUI : MonoBehaviour
     public void StopTween(TweenSettings settings)
     {
         settings.tweener?.Kill();
+        settings.sequence?.Kill();
     }
 
-    private void StartMoveTween(TweenSettings settings)
+    private void StartSuperTween(TweenSettings settings, TweenType tweenType)
     {
-        settings.originalValue = transform.localPosition;
-        if (settings.relative)
+        if (tweenType == TweenType.Fade && !canvasGroup)
         {
-            settings.tweener = transform.DOLocalMove(transform.localPosition + settings.targetValue, settings.duration)
-                .SetEase(GetEase(settings.easeType))
-                .SetDelay(settings.delay)
-                .SetLoops(settings.loop ? -1 : 0, settings.loopType);
+            canvasGroup = GetComponent<CanvasGroup>() != null ? GetComponent<CanvasGroup>() : gameObject.AddComponent<CanvasGroup>();
         }
-        else
-        {
-            settings.tweener = transform.DOLocalMove(settings.targetValue, settings.duration)
-                .SetEase(GetEase(settings.easeType))
-                .SetDelay(settings.delay)
-                .SetLoops(settings.loop ? -1 : 0, settings.loopType);
-        }
-    }
 
-    private void StartScaleTween(TweenSettings settings)
-    {
-        settings.originalValue = transform.localScale;
-        if (settings.relative)
+        void tweenCreator()
         {
-            settings.tweener = transform.DOScale(transform.localScale + settings.targetValue, settings.duration)
-                .SetEase(GetEase(settings.easeType))
-                .SetDelay(settings.delay)
-                .SetLoops(settings.loop ? -1 : 0, settings.loopType);
-        }
-        else
-        {
-            settings.tweener = transform.DOScale(settings.targetValue, settings.duration)
-                .SetEase(GetEase(settings.easeType))
-                .SetDelay(settings.delay)
-                .SetLoops(settings.loop ? -1 : 0, settings.loopType);
-        }
-    }
+            settings.sequence = DOTween.Sequence()
+            .Append(
+                tweenType == TweenType.Move ? transform
+                    .DOLocalMove(settings.relative ? transform.localPosition + settings.targetValue : settings.targetValue, settings.duration)
+                    .SetEase(GetEase(settings.easeType)) :
+                tweenType == TweenType.Scale ? transform
+                    .DOScale(settings.relative ? transform.localScale + settings.targetValue : settings.targetValue, settings.duration)
+                    .SetEase(GetEase(settings.easeType)) :
+                tweenType == TweenType.Rotate ? transform
+                    .DOLocalRotate(settings.relative ? transform.localEulerAngles + settings.targetValue : settings.targetValue, settings.duration, RotateMode.FastBeyond360)
+                    .SetEase(GetEase(settings.easeType)) :
+                canvasGroup.DOFade(settings.relative ? canvasGroup.alpha + settings.targetValue.x : settings.targetValue.x, settings.duration)
+                    .SetEase(GetEase(settings.easeType))
+                    .SetDelay(settings.delay)
+                )
+            .AppendInterval(settings.loopDelay)
+            .SetLoops(settings.loop ? -1 : 0, settings.loopType);
+        };
 
-    private void StartRotateTween(TweenSettings settings)
-    {
-        settings.originalValue = transform.localEulerAngles;
-        if (settings.relative)
-        {
-            settings.tweener = transform.DOLocalRotate(transform.localEulerAngles + settings.targetValue, settings.duration, RotateMode.FastBeyond360)
-                .SetEase(GetEase(settings.easeType))
-                .SetDelay(settings.delay)
-                .SetLoops(settings.loop ? -1 : 0, settings.loopType);
-        }
+        if (settings.delay <= 0)
+            tweenCreator();
         else
-        {
-            settings.tweener = transform.DOLocalRotate(settings.targetValue, settings.duration, RotateMode.FastBeyond360)
-                .SetEase(GetEase(settings.easeType))
-                .SetDelay(settings.delay)
-                .SetLoops(settings.loop ? -1 : 0, settings.loopType);
-        }
+            settings.sequence = DOTween.Sequence()
+                    .AppendInterval(settings.delay)
+                    .OnComplete(tweenCreator);
     }
-
 
     private void StartFadeTween(TweenSettings settings)
     {
@@ -140,7 +159,6 @@ public class DynamicSystemUI : MonoBehaviour
             canvasGroup = GetComponent<CanvasGroup>() != null ? GetComponent<CanvasGroup>() : gameObject.AddComponent<CanvasGroup>();
         }
 
-        settings.originalValue = new Vector3(canvasGroup.alpha, 0, 0);
         settings.tweener = canvasGroup.DOFade(settings.relative ? canvasGroup.alpha + settings.targetValue.x : settings.targetValue.x, settings.duration)
             .SetEase(GetEase(settings.easeType))
             .SetDelay(settings.delay)
@@ -195,61 +213,7 @@ public class DynamicSystemUIEditor : Editor
             }
         }
 
-        if (GUILayout.Button("Stop All Tweens"))
-        {
-            if (Application.isPlaying)
-            {
-                var script = (DynamicSystemUI)target;
-                foreach (var tween in script.tweenSettings)
-                {
-                    script.StopTween(tween);
-                }
-            }
-            else
-            {
-                Debug.LogWarning("StopTween can only be called in Play Mode.");
-            }
-        }
-
-        foreach (SerializedProperty setting in tweenSettings)
-        {
-            int index = int.Parse(setting.propertyPath.Split('[')[1].Trim(']'));
-            var tween = ((DynamicSystemUI)target).tweenSettings.Length > index + 1 ? ((DynamicSystemUI)target).tweenSettings[index] : null;
-
-            if (tween != null && GUILayout.Button($"Save Current As Target ({tween.tweenName})"))
-            {
-                SaveCurrentAsTarget(tween);
-            }
-        }
-
         serializedObject.ApplyModifiedProperties();
-    }
-
-    private void SaveCurrentAsTarget(DynamicSystemUI.TweenSettings settings)
-    {
-        var script = (DynamicSystemUI)target;
-
-        switch (settings.tweenType)
-        {
-            case DynamicSystemUI.TweenType.Move:
-                settings.targetValue = script.transform.position;
-                break;
-            case DynamicSystemUI.TweenType.Scale:
-                settings.targetValue = script.transform.localScale;
-                break;
-            case DynamicSystemUI.TweenType.Rotate:
-                settings.targetValue = script.transform.eulerAngles;
-                break;
-            case DynamicSystemUI.TweenType.Fade:
-                if (!script.GetComponent<CanvasGroup>())
-                {
-                    script.gameObject.AddComponent<CanvasGroup>();
-                }
-                settings.targetValue = new Vector3(script.GetComponent<CanvasGroup>().alpha, 0, 0);
-                break;
-        }
-
-        Debug.Log($"Saved current value as target for '{settings.tweenName}'.");
     }
 }
 #endif
