@@ -45,6 +45,7 @@ public class LevelSelection : MonoBehaviour
                 break;
             case "Privacy-2":
                 Store.Instance.quizToLoad = Store.Quiz.Cookies;
+                SceneManager.LoadScene("Cookies_Presentation");
                 break;
             case "Encryption-2":
                 Store.Instance.quizToLoad = Store.Quiz.TFA;

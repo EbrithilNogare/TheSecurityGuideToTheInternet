@@ -60,7 +60,6 @@ public class AVScanManager : MonoBehaviour
 
     public void OnFileRemoved()
     {
-        Debug.Log("OnFileRemoved");
         isScanning = false;
         if (currentTween != null && currentTween.IsActive())
         {

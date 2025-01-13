@@ -18,8 +18,6 @@ public class DragableIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("OnBeginDrag");
-
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.5f;
     }
@@ -39,8 +37,6 @@ public class DragableIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("OnEndDrag");
-
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
 
