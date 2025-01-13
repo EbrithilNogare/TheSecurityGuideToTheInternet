@@ -12,7 +12,7 @@
 ## Versions
 
 [![](https://img.shields.io/badge/Online%20version-555555?style=for-the-badge&logo=webgl&logoColor=white&cacheSeconds=3000)](https://ebrithilnogare.github.io/TheSecurityGuideToTheInternet/)
-[![](https://img.shields.io/badge/Android%20version-555555?style=for-the-badge&logo=android&logoColor=white&cacheSeconds=3000)](https://nightly.link/EbrithilNogare/TheSecurityGuideToTheInternet/workflows/buildGame/main/TheSecurityGuideToTheInternet-Android.zip)
+[![](https://img.shields.io/badge/Android%20version-555555?style=for-the-badge&logo=android&logoColor=white&cacheSeconds=3000)](https://github.com/EbrithilNogare/TheSecurityGuideToTheInternet/releases/latest/download/TheSecurityGuideToTheInternet.apk)
 
 ## Abstract
 
