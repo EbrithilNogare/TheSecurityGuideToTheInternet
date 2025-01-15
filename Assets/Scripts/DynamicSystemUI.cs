@@ -47,13 +47,13 @@ public class DynamicSystemUI : MonoBehaviour
         canvasGroup = GetComponent<CanvasGroup>();
         defaultAlpha = canvasGroup != null ? canvasGroup.alpha : 1;
         initialized = true;
-        StartTweens();
+        AutoStartTweens();
     }
 
     private void OnEnable()
     {
         if (!initialized) return;
-        StartTweens();
+        AutoStartTweens();
     }
     private void OnDisable()
     {
@@ -68,10 +68,17 @@ public class DynamicSystemUI : MonoBehaviour
 
     }
 
-    public void StartTweens()
+    private void AutoStartTweens()
     {
         foreach (var tween in tweenSettings)
             if (tween.autoStart)
+                StartTween(tween);
+    }
+
+    public void StartTweens()
+    {
+        foreach (var tween in tweenSettings)
+            if (!tween.autoStart)
                 StartTween(tween);
     }
 
