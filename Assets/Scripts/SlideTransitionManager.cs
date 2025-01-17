@@ -22,12 +22,12 @@ public class SlideTransitionManager : MonoBehaviour
             slides[i].SetActive(false);
         slides[currentSlideIndex].SetActive(true);
 
-        LoggingService.Log(LoggingService.LogCategory.Presentation, "{action:Awake;sceneAfterPresentation:" + sceneAfterPresentation + ";destination:0}");
+        LoggingService.Log(LoggingService.LogCategory.Presentation, "{\"action\":\"Awake\",\"sceneAfterPresentation\":\"" + sceneAfterPresentation + "\",\"destination\":0}");
     }
 
     public void NextSlide()
     {
-        LoggingService.Log(LoggingService.LogCategory.Presentation, "{action:NextSlide;sceneAfterPresentation:" + sceneAfterPresentation + ";destination:" + (currentSlideIndex + 1).ToString()+"}");
+        LoggingService.Log(LoggingService.LogCategory.Presentation, "{\"action\":\"NextSlide\",\"sceneAfterPresentation\":\"" + sceneAfterPresentation + "\",\"destination\":" + (currentSlideIndex + 1).ToString()+"}");
 
         if (isTransitioning || currentSlideIndex >= slides.Length) return;
 
@@ -47,7 +47,7 @@ public class SlideTransitionManager : MonoBehaviour
 
     public void PreviousSlide()
     {
-        LoggingService.Log(LoggingService.LogCategory.Presentation, "{action:PreviousSlide;sceneAfterPresentation:" + sceneAfterPresentation + ";destination:" + (currentSlideIndex - 1).ToString()+"}");
+        LoggingService.Log(LoggingService.LogCategory.Presentation, "{\"action\":\"PreviousSlide\",\"sceneAfterPresentation\":\"" + sceneAfterPresentation + "\",\"destination\":" + (currentSlideIndex - 1).ToString()+"}");
 
         if (isTransitioning || currentSlideIndex < 0) return;
 
