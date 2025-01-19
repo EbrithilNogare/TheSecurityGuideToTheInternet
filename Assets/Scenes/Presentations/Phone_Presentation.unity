@@ -375,11 +375,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 10
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!225 &33741826
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -488,11 +488,11 @@ MonoBehaviour:
     easeType: 0
     duration: 0.5
     delay: 12.5
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!225 &34333992
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -958,11 +958,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 5
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!225 &66634975
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1785,11 +1785,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 13
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!225 &167065787
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4752,11 +4752,11 @@ MonoBehaviour:
     easeType: 0
     duration: 50
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 0
     targetValue: {x: 800, y: 0, z: 0}
     relative: 0
-    originalValue: {x: -800, y: 0, z: 0}
 --- !u!114 &598764197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4934,11 +4934,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 2
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!225 &626216785
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5711,11 +5711,11 @@ MonoBehaviour:
     easeType: 0
     duration: 50
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 0
     targetValue: {x: 800, y: 0, z: 0}
     relative: 0
-    originalValue: {x: -800, y: 0, z: 0}
 --- !u!114 &782193520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5893,11 +5893,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 10
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!225 &786362858
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6193,11 +6193,11 @@ MonoBehaviour:
     easeType: 0
     duration: 50
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 0
     targetValue: {x: 800, y: 0, z: 0}
     relative: 0
-    originalValue: {x: -800, y: 0, z: 0}
 --- !u!114 &816943583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6868,11 +6868,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 1
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!114 &945425479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7050,7 +7050,7 @@ MonoBehaviour:
   canvas: {fileID: 1915602256}
   duration: 1
   sceneBeforePresentation: LevelSelection
-  sceneAfterPresentation: Quiz
+  sceneAfterPresentation: Phone
   slides:
   - {fileID: 1414725561}
   - {fileID: 1169293633}
@@ -7384,22 +7384,22 @@ MonoBehaviour:
     easeType: 0
     duration: 0.5
     delay: 10
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
   - tweenName: Move
     autoStart: 1
     tweenType: 0
     easeType: 0
     duration: 3
     delay: 10.5
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 250, y: 0, z: 0}
     relative: 1
-    originalValue: {x: -452, y: -815, z: 0}
 --- !u!225 &1024070217
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7483,44 +7483,44 @@ MonoBehaviour:
     easeType: 0
     duration: 0.5
     delay: 2.5
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
   - tweenName: Move
     autoStart: 1
     tweenType: 0
     easeType: 0
     duration: 7
     delay: 3
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 917, y: 0, z: 0}
     relative: 1
-    originalValue: {x: -451, y: -816, z: 0}
   - tweenName: Scale
     autoStart: 1
     tweenType: 1
     easeType: 0
     duration: 1
     delay: 9.5
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 0.5, y: 0.5, z: 0.5}
     relative: 0
-    originalValue: {x: 1, y: 1, z: 1}
   - tweenName: Move
     autoStart: 1
     tweenType: 0
     easeType: 0
     duration: 1
     delay: 10.1
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1050, y: 66, z: 0}
     relative: 1
-    originalValue: {x: -451, y: -816, z: 0}
 --- !u!114 &1024478984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8131,11 +8131,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 7
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!114 &1181480267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8651,11 +8651,11 @@ MonoBehaviour:
     easeType: 0
     duration: 50
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 0
     targetValue: {x: 800, y: 0, z: 0}
     relative: 0
-    originalValue: {x: -800, y: 0, z: 0}
 --- !u!114 &1275553036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9988,11 +9988,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 3
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!225 &1437138659
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10591,11 +10591,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 5
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!114 &1474396763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12813,11 +12813,11 @@ MonoBehaviour:
     easeType: 0
     duration: 50
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 0
     targetValue: {x: 800, y: 0, z: 0}
     relative: 0
-    originalValue: {x: -800, y: 0, z: 0}
 --- !u!114 &1817121441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12929,11 +12929,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 4
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!114 &1826696384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14424,11 +14424,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 1
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!225 &2059186089
 CanvasGroup:
   m_ObjectHideFlags: 0

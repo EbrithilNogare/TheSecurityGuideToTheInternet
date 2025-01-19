@@ -42,74 +42,71 @@ public class MovableTetrisTileController : MonoBehaviour, IBeginDragHandler, IDr
 
     private void EvaluateDrop()
     {
-        bool isOverBoard = RectTransformUtility.RectangleContainsScreenPoint(phoneMinigameController.mainDropZone, Input.mousePosition);
-        if (!isOverBoard)
-        {
-            // Reset the piece to its original drop zone
-            parent.transform.SetParent(defaultDropZone);
-            parentRectTransform.anchoredPosition = Vector2.zero;
-            return;
-        }
+        Vector3 parentPosition = parent.transform.position;
+        Vector3 parentOffset = new Vector3(parentRectTransform.rect.width / 2, -parentRectTransform.rect.height / 2, 0);
+        Vector3 parentPositionWithOffset = parentPosition - parentOffset;
 
-        // Get the local position relative to the main drop zone
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(phoneMinigameController.mainDropZone, Input.mousePosition, null, out Vector2 localPointerPosition);
+        Vector3 mainDropZonePosition = phoneMinigameController.mainDropZone.transform.position;
+        Vector3 mainDropZoneOffset = new Vector3(phoneMinigameController.mainDropZone.rect.width / 2, -phoneMinigameController.mainDropZone.rect.height / 2, 0);
+        Vector3 mainDropZonePositionWithOffset = mainDropZonePosition - mainDropZoneOffset;
 
-        // Calculate the board position taking into account the parent anchor being in the center
-        float cellWidth = phoneMinigameController.mainDropZone.rect.width / 7;
-        float cellHeight = phoneMinigameController.mainDropZone.rect.height / 7;
+        Vector3 diff = parentPositionWithOffset - mainDropZonePositionWithOffset;
+        Vector2Int boardPosition = new Vector2Int((int)Mathf.Round(diff.x / 64.0f), -(int)Mathf.Round(diff.y / 64.0f));
 
-        Vector2 boardPosition = new Vector2(
-            Mathf.Floor(localPointerPosition.x / cellWidth),
-            Mathf.Floor(localPointerPosition.y / cellHeight)
-        );
 
-        // Adjust the rounded position to account for the center anchor
-        Vector2 roundedPosition = new Vector2(
-            boardPosition.x * cellWidth - phoneMinigameController.mainDropZone.rect.width / 2 + cellWidth / 2,
-            boardPosition.y * cellHeight - phoneMinigameController.mainDropZone.rect.height / 2 + cellHeight / 2
-        );
-
-        // Get the shape offsets for the current piece
+        bool isValidlyOverBoard = true;
         List<Vector2> shapeOffsets = phoneMinigameController.pieceShapes[pieceType];
-        bool hasCollision = false;
-
-        // Check for collisions and ensure the piece fits within the board
         foreach (var offset in shapeOffsets)
         {
             int x = (int)(boardPosition.x + offset.x);
             int y = (int)(boardPosition.y + offset.y);
 
-            if (x < 0 || x >= 7 || y < 0 || y >= 7 ||
-                (phoneMinigameController.currentBooard[x, y] != PhoneMinigameController.PieceType.None &&
-                 phoneMinigameController.currentBooard[x, y] != pieceType))
+            if (x < 0 || x >= 7 || y < 0 || y >= 7 || (phoneMinigameController.currentBooard[x, y] != PhoneMinigameController.PieceType.None && phoneMinigameController.currentBooard[x, y] != pieceType))
             {
-                hasCollision = true;
+                isValidlyOverBoard = false;
                 break;
             }
         }
 
-        if (hasCollision)
+        for (int x = 0; x < 7; x++)
         {
-            // Reset the piece to its original drop zone
+            for (int y = 0; y < 7; y++)
+            {
+                if (phoneMinigameController.currentBooard[y, x] == pieceType)
+                    phoneMinigameController.currentBooard[y, x] = PhoneMinigameController.PieceType.None;
+            }
+        }
+
+        if (!isValidlyOverBoard)
+        {
             parent.transform.SetParent(defaultDropZone);
             parentRectTransform.anchoredPosition = Vector2.zero;
+
+            phoneMinigameController.EvaluateMove();
             return;
         }
 
-        // Move the piece to the rounded position
-        parentRectTransform.anchoredPosition = roundedPosition;
         parent.transform.SetParent(phoneMinigameController.mainDropZone);
+        parentRectTransform.anchoredPosition = new Vector2(boardPosition.x * 64 - mainDropZoneOffset.x + parentOffset.x, -boardPosition.y * 64 - mainDropZoneOffset.y + parentOffset.y);
 
-        // Update the board state
         foreach (var offset in shapeOffsets)
         {
             int x = (int)(boardPosition.x + offset.x);
             int y = (int)(boardPosition.y + offset.y);
-            phoneMinigameController.currentBooard[x, y] = pieceType;
+            phoneMinigameController.currentBooard[x, y] = pieceType; // reversed visualisation
         }
 
-        // Notify the controller of the move
-        phoneMinigameController.DoMove(pieceType, boardPosition);
-    }
+        // debug print the board
+        //for (int y = 0; y < 7; y++)
+        //{
+        //    string row = "";
+        //    for (int x = 0; x < 7; x++)
+        //    {
+        //        row += (int)phoneMinigameController.currentBooard[x, y] + " ";
+        //    }
+        //    Debug.Log(row);
+        //}
 
+        phoneMinigameController.EvaluateMove();
+    }
 }
