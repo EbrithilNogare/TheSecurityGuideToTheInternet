@@ -247,6 +247,22 @@ MonoBehaviour:
     m_Localized: Submit
     m_Metadata:
       m_Items: []
+  - m_Id: 32278629963300864
+    m_Localized: Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32278723928293376
+    m_Localized: Low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32278753963704320
+    m_Localized: Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32278778907230208
+    m_Localized: High
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

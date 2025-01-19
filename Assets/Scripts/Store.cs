@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Store : MonoBehaviour
 {
@@ -11,22 +10,49 @@ public class Store : MonoBehaviour
     public int minigameScore = 0;
     public int quizScore = 0;
 
-    public void LoadScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-    }
-
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            LoggingService.LogStartGame();
+            Init();
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Init()
+    {
+        LoggingService.LogStartGame();
+        ApplyQualityLevel(PlayerPrefs.GetInt("QualityLevel", 2));
+    }
+
+    // Quality level
+    public void SelectQualityLevel(int level)
+    {
+        LoggingService.Log(LoggingService.LogCategory.Settings, "Quality changed to: " + level);
+        PlayerPrefs.SetInt("QualityLevel", level);
+        ApplyQualityLevel(level);
+    }
+
+    private void ApplyQualityLevel(int level)
+    {
+        QualitySettings.vSyncCount = 1;
+        switch (level)
+        {
+            case 0:
+                Application.targetFrameRate = 30;
+                break;
+            case 1:
+                Application.targetFrameRate = 60;
+                break;
+            case 2:
+                Application.targetFrameRate = 240;
+                break;
+        }
+
     }
 }

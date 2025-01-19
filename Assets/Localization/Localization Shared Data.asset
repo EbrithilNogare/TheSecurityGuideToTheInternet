@@ -244,6 +244,22 @@ MonoBehaviour:
       (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 32278629963300864
+    m_Key: Settings/Canvas/Quality selection/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32278723928293376
+    m_Key: Settings/Canvas/Quality selection/Low/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32278753963704320
+    m_Key: Settings/Canvas/Quality selection/Mid/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32278778907230208
+    m_Key: Settings/Canvas/Quality selection/High/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
