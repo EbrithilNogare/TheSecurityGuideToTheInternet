@@ -5,8 +5,8 @@
 
 [![](https://img.shields.io/github/package-json/v/EbrithilNogare/TheSecurityGuideToTheInternet/gh-pages?label=version&style=for-the-badge&cacheSeconds=300)](https://github.com/EbrithilNogare/TheSecurityGuideToTheInternet/releases/latest)
 
-[![](https://img.shields.io/github/size/EbrithilNogare/TheSecurityGuideToTheInternet/Build/TheSecurityGuideToTheInternet.wasm?branch=gh-pages&style=for-the-badge&label=Size%20of%20scripts&cacheSeconds=300)](https://github.com/EbrithilNogare/TheSecurityGuideToTheInternet/tree/gh-pages/Build)
-[![](https://img.shields.io/github/size/EbrithilNogare/TheSecurityGuideToTheInternet/Build/TheSecurityGuideToTheInternet.data?branch=gh-pages&style=for-the-badge&label=Size%20of%20data&cacheSeconds=300)](https://github.com/EbrithilNogare/TheSecurityGuideToTheInternet/tree/gh-pages/Build)
+[![](https://img.shields.io/github/size/EbrithilNogare/TheSecurityGuideToTheInternet/Build/TheSecurityGuideToTheInternet.wasm.unityweb?branch=gh-pages&style=for-the-badge&label=Size%20of%20scripts&cacheSeconds=300)](https://github.com/EbrithilNogare/TheSecurityGuideToTheInternet/tree/gh-pages/Build)
+[![](https://img.shields.io/github/size/EbrithilNogare/TheSecurityGuideToTheInternet/Build/TheSecurityGuideToTheInternet.data.unityweb?branch=gh-pages&style=for-the-badge&label=Size%20of%20data&cacheSeconds=300)](https://github.com/EbrithilNogare/TheSecurityGuideToTheInternet/tree/gh-pages/Build)
 
 
 ## Versions
