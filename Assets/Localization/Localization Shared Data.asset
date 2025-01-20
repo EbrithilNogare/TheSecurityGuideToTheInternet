@@ -260,6 +260,10 @@ MonoBehaviour:
     m_Key: Settings/Canvas/Quality selection/High/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 32544938676486144
+    m_Key: Settings/Canvas/Language selection/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
