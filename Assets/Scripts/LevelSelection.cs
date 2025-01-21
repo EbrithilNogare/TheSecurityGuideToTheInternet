@@ -39,6 +39,7 @@ public class LevelSelection : MonoBehaviour
                 break;
             case "AI-1":
                 Store.Instance.quizToLoad = Store.Quiz.AI;
+                SceneManager.LoadScene("AI_Presentation");
                 break;
             case "Malware-2":
                 Store.Instance.quizToLoad = Store.Quiz.Firewall;
