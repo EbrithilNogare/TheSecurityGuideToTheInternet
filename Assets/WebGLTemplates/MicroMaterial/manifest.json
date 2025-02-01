@@ -1,0 +1,12 @@
+{
+  "name": "{{{ PRODUCT_NAME }}}",
+  "start_url": "https://ebrithilnogare.github.io/TheSecurityGuideToTheInternet/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "TemplateData/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}
