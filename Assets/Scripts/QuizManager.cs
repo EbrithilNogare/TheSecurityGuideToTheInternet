@@ -324,7 +324,7 @@ public class QuizManager : MonoBehaviour
             new QuizQuestion(true, "tfa_question_0", new string[]{ "tfa_answer_0_0", "tfa_answer_0_1", "tfa_answer_0_2" }, null, 0),
             new QuizQuestion(true, "tfa_question_1", new string[]{ "tfa_answer_1_0", "tfa_answer_1_1", "tfa_answer_1_2" }, null, 1),
             new QuizQuestion(true, "tfa_question_2", new string[]{ "tfa_answer_2_0", "tfa_answer_2_1", "tfa_answer_2_2" }, null, 1),
-            new QuizQuestion(true, "tfa_question_3", new string[]{ "tfa_answer_3_0", "tfa_answer_3_1", "tfa_answer_3_2" }, null, 0),
+            new QuizQuestion(true, "tfa_question_3", new string[]{ "tfa_answer_3_0", "tfa_answer_3_1", "tfa_answer_3_2" }, null, 1),
             new QuizQuestion(false, "tfa_question_4", null, new int[]{2, 3}, 1),
         }},
     };
