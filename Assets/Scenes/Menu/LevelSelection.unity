@@ -139,7 +139,7 @@ PrefabInstance:
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Name
-      value: Circle button (3)
+      value: Passwords
       objectReference: {fileID: 0}
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -530,7 +530,7 @@ PrefabInstance:
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Name
-      value: Circle button (2)
+      value: Phone
       objectReference: {fileID: 0}
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -931,7 +931,7 @@ PrefabInstance:
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Name
-      value: Circle button (1)
+      value: Phishing
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -1156,7 +1156,7 @@ PrefabInstance:
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Name
-      value: Circle button (6)
+      value: AI
       objectReference: {fileID: 0}
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -1555,7 +1555,7 @@ PrefabInstance:
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Name
-      value: Circle button (4)
+      value: Firewall
       objectReference: {fileID: 0}
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -2435,7 +2435,7 @@ PrefabInstance:
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Name
-      value: Circle button (5)
+      value: Cookies
       objectReference: {fileID: 0}
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -2841,7 +2841,7 @@ PrefabInstance:
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Name
-      value: Circle button (7)
+      value: TFA
       objectReference: {fileID: 0}
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
@@ -4012,7 +4012,7 @@ PrefabInstance:
     - target: {fileID: 2444412640993403114, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}
       propertyPath: m_Name
-      value: Circle button
+      value: Malware
       objectReference: {fileID: 0}
     - target: {fileID: 6335117903245965926, guid: 0954dfd8a9f3f414e98adfe937cb47da,
         type: 3}

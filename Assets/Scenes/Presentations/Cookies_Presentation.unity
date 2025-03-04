@@ -6073,7 +6073,7 @@ MonoBehaviour:
   canvas: {fileID: 1915602256}
   duration: 1
   sceneBeforePresentation: LevelSelection
-  sceneAfterPresentation: Quiz
+  sceneAfterPresentation: Cookies
   slides:
   - {fileID: 1414725561}
   - {fileID: 1169293633}
