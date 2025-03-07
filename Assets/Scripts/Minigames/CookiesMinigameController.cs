@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,20 +12,24 @@ public enum CookieIngredient
 
 public class CookiesMinigameController : MonoBehaviour
 {
-    public TextMeshProUGUI bowlLabel;
     public GameObject dropZone;
     public GameObject draggingParent;
     public List<GameObject> bowlIngredients;
+    public List<GameObject> bowlLabels;
     public List<Image> cookieScoreImages;
     public List<CookiesMinigameDragable> dragableObjects;
 
     List<CookiesMinigameDragable> cookieIngredientsInBowl = new List<CookiesMinigameDragable>();
     int currentCookieCategoryIndex = 0;
 
+    void Start()
+    {
+        RestartIngredients();
+    }
 
     public void CookieAddedToBowl(CookiesMinigameDragable cookieIngredient)
     {
-        Debug.Log("CookieAddedToBowl: " + cookieIngredient);
+        Debug.Log("CookieAddedToBowl: " + cookieIngredient.cookieIngredient);
         cookieIngredientsInBowl.Add(cookieIngredient);
     }
 
@@ -36,13 +39,18 @@ public class CookiesMinigameController : MonoBehaviour
         {
             item.Reset();
         }
-
         cookieIngredientsInBowl.Clear();
 
         foreach (var bowlIngredient in bowlIngredients)
         {
             bowlIngredient.SetActive(false);
         }
+
+        foreach (var bowlLabel in bowlLabels)
+        {
+            bowlLabel.SetActive(false);
+        }
+        bowlLabels[currentCookieCategoryIndex].SetActive(true);
 
         // todo reset other things
 
