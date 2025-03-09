@@ -120,7 +120,6 @@ public class CookiesMinigameManager : MonoBehaviour
 
         if (currentCookieCategoryIndex + 1 >= cookieScoreImages.Count)
         {
-            // todo evaluate score
             FinishMinigame();
             return;
         }
@@ -140,6 +139,6 @@ public class CookiesMinigameManager : MonoBehaviour
         Store.Instance.SetLevelScore((int)Store.Level.Cookies, scoreForStore);
         Store.Instance.quizToLoad = Store.Quiz.Cookies;
 
-        DOVirtual.DelayedCall(2, () => SceneManager.LoadScene("LevelSelection")); // todo revert it to quiz
+        DOVirtual.DelayedCall(2, () => SceneManager.LoadScene("Quiz"));
     }
 }
