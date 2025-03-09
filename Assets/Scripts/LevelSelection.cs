@@ -12,7 +12,7 @@ public class LevelSelection : MonoBehaviour
 
     public List<LevelSelectionCard> levelCards;
 
-    private void Start()
+    private void Awake()
     {
         for (int i = 0; i < levelCards.Count; i++)
         {
