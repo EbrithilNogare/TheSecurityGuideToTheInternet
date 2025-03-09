@@ -107,6 +107,7 @@ public static class LoggingService
     {
         SendLogsAsync(LogLevel.Info, category, description);
     }
+
     public async static void LogStartGame()
     {
         var moreData = new Dictionary<string, string>();

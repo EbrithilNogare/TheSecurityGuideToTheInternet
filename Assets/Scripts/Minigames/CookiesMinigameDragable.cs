@@ -8,7 +8,7 @@ public class CookiesMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragHa
     Canvas canvas;
     CanvasGroup canvasGroup;
     RectTransform rectTransform;
-    CookiesMinigameController cookiesMinigameController;
+    CookiesMinigameManager cookiesMinigameController;
     RectTransform dropZone;
     Transform draggingParent;
     Vector2 originalPosition;
@@ -19,7 +19,7 @@ public class CookiesMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragHa
         canvas = GetComponentInParent<Canvas>();
         canvasGroup = GetComponent<CanvasGroup>() != null ? GetComponent<CanvasGroup>() : gameObject.AddComponent<CanvasGroup>();
         rectTransform = GetComponent<RectTransform>();
-        cookiesMinigameController = FindObjectOfType<CookiesMinigameController>();
+        cookiesMinigameController = FindObjectOfType<CookiesMinigameManager>();
         dropZone = cookiesMinigameController.dropZone.GetComponent<RectTransform>();
         draggingParent = cookiesMinigameController.draggingParent.transform;
         originalParent = rectTransform.parent;
@@ -60,14 +60,14 @@ public class CookiesMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragHa
             // droped in drop zone
             rectTransform.localPosition = originalPosition;
             gameObject.SetActive(false);
+
+            // send information to controller
+            cookiesMinigameController.CookieAddedToBowl(this);
         }
         else
         {
             // droped somewhere else
             rectTransform.localPosition = originalPosition;
         }
-
-        // send information to controller
-        cookiesMinigameController.CookieAddedToBowl(this);
     }
 }

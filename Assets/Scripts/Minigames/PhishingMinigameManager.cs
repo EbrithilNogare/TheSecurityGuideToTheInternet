@@ -138,7 +138,9 @@ public class PhishingMinigameManager : MonoBehaviour
 
     public void SubmitSolution()
     {
-        Store.Instance.minigameScore = int.Parse(scoreText.text.Replace("%", "")) >= 96 ? 2 : 1;
+        int score = int.Parse(scoreText.text.Replace("%", "")) >= 96 ? 2 : 1;
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "Phishing Minigame completed with score: " + score);
+        Store.Instance.minigameScore = score;
         Store.Instance.quizToLoad = Store.Quiz.Phishing;
         SceneManager.LoadScene("Quiz");
     }
