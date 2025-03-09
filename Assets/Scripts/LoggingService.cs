@@ -17,7 +17,7 @@ public static class LoggingService
 
     private enum LogLevel { Info, Warning, Error }
     private enum Environment { Development, Production }
-    public enum LogCategory { LogMessageReceived, Navigation, Presentation, Minigame, Quiz, Level, PersonalDetails, Settings }
+    public enum LogCategory { LogMessageReceived, Navigation, Presentation, Minigame, Quiz, Level, PersonalDetails, Settings, Store }
 
     static LoggingService()
     {
@@ -48,7 +48,7 @@ public static class LoggingService
     {
         if (environment == Environment.Development)
         {
-            //Debug.Log($"[LoggingService] {logLevel} {category} {description}");
+            Debug.Log($"[LoggingService] {logLevel} {category} {description}");
             return;
         }
 

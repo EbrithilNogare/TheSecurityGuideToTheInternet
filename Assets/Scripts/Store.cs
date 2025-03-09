@@ -1,14 +1,25 @@
+using System;
 using UnityEngine;
+
+public record LevelData
+{
+    public int score;
+    public bool isUnlocked;
+}
 
 public class Store : MonoBehaviour
 {
-    public static Store Instance { get; private set; }
-
     public enum Quiz { None = -2, All = -1, Malware, Firewall, Phishing, Cookies, Phone, AI, Passwords, TFA }
+    public enum Level { Malware = 0, Firewall = 1, Phishing = 2, Cookies = 3, Phone = 4, AI = 5, Passwords = 6, TFA = 7 }
 
-    public Quiz quizToLoad = Quiz.None;
-    public int minigameScore = 0;
-    public int quizScore = 0;
+    [HideInInspector] public static Store Instance { get; private set; }
+
+    public bool[] levelUnlocked;
+
+    [NonSerialized] public Quiz quizToLoad = Quiz.None;
+    [NonSerialized] public int minigameScore = 0;
+    [NonSerialized] public int quizScore = 0;
+    [NonSerialized] public int[] levelStars = new int[] { 0b000, 0b000, 0b000, 0b000, 0b000, 0b000, 0b000, 0b000 }; // level, level, quiz;
 
     private void Awake()
     {
@@ -27,11 +38,38 @@ public class Store : MonoBehaviour
     private void Init()
     {
         LoggingService.LogStartGame();
+
         ApplyQualityLevel(PlayerPrefs.GetInt("QualityLevel", 2));
+        if (PlayerPrefs.HasKey("LevelUnlocked"))
+        {
+            var levelUnlockedFromPlayerPref = JSON.FromJson<bool>(PlayerPrefs.GetString("LevelUnlocked"));
+            for (int i = 0; i < levelUnlocked.Length; i++)
+            {
+                levelUnlocked[i] |= levelUnlockedFromPlayerPref[i];
+            }
+        }
+        if (PlayerPrefs.HasKey("LevelStars"))
+        {
+            levelStars = JSON.FromJson<int>(PlayerPrefs.GetString("LevelStars"));
+        }
     }
 
-    // Quality level
-    public void SelectQualityLevel(int level)
+    public void SetLevelUnlocked(int level, bool unlocked)
+    {
+        LoggingService.Log(LoggingService.LogCategory.Store, "Level: " + level + ", unlocked: " + unlocked);
+        levelUnlocked[level] = unlocked;
+        PlayerPrefs.SetString("LevelUnlocked", JSON.ArrayToJson(levelUnlocked));
+    }
+
+    public void SetLevelScore(int level, int score)
+    {
+        // todo make it as OR
+        LoggingService.Log(LoggingService.LogCategory.Store, "Level: " + level + ", score set: " + score);
+        levelStars[level] = score;
+        PlayerPrefs.SetString("LevelStars", JSON.ArrayToJson(levelStars));
+    }
+
+    public void SetQualityLevel(int level)
     {
         LoggingService.Log(LoggingService.LogCategory.Settings, "Quality changed to: " + level);
         PlayerPrefs.SetInt("QualityLevel", level);

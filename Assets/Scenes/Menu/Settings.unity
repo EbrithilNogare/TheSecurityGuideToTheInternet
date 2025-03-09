@@ -633,7 +633,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 641386285}
         m_TargetAssemblyTypeName: Store, Assembly-CSharp
-        m_MethodName: SelectQualityLevel
+        m_MethodName: SetQualityLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -766,7 +766,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 641386285}
         m_TargetAssemblyTypeName: Store, Assembly-CSharp
-        m_MethodName: SelectQualityLevel
+        m_MethodName: SetQualityLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1804,7 +1804,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 641386285}
         m_TargetAssemblyTypeName: Store, Assembly-CSharp
-        m_MethodName: SelectQualityLevel
+        m_MethodName: SetQualityLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

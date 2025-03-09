@@ -10,6 +10,16 @@ public class LevelSelection : MonoBehaviour
         "Malware-2", "Privacy-2", "Encryption-2",
     };
 
+    public List<LevelSelectionCard> levelCards;
+
+    private void Start()
+    {
+        for (int i = 0; i < levelCards.Count; i++)
+        {
+            levelCards[i].Render(Store.Instance.levelUnlocked[i], Store.Instance.levelStars[i]);
+        }
+    }
+
     public void GoToLevelMenu()
     {
         SceneManager.LoadScene("LevelSelection");
