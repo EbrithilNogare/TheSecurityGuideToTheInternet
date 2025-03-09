@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -138,11 +139,13 @@ public class PhishingMinigameManager : MonoBehaviour
 
     public void SubmitSolution()
     {
-        int score = int.Parse(scoreText.text.Replace("%", "")) >= 96 ? 2 : 1;
-        LoggingService.Log(LoggingService.LogCategory.Minigame, "Phishing Minigame completed with score: " + score);
+        int percentage = int.Parse(scoreText.text.Replace("%", ""));
+        int score = percentage >= 96 ? 2 : 1;
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Phishing minigame completed\",\"PhishingMinigamePercentage\":" + percentage + ",\"score\":" + score + "}");
         Store.Instance.minigameScore = score;
         Store.Instance.quizToLoad = Store.Quiz.Phishing;
-        SceneManager.LoadScene("Quiz");
+
+        DOVirtual.DelayedCall(2, () => SceneManager.LoadScene("Quiz"));
     }
 
     public void EvaluateTemplate()

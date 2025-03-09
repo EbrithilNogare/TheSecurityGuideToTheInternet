@@ -84,12 +84,10 @@ public class PhoneMinigameController : MonoBehaviour
 
     public void Finish(int score)
     {
-        LoggingService.Log(LoggingService.LogCategory.Minigame, "Phone Minigame: finished board with score: " + score);
-
-        // todo do tween animation and go to next level
-
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Phone minigame completed\",\"score\":" + score + "}");
         Store.Instance.quizToLoad = Store.Quiz.Phone;
-        SceneManager.LoadScene("Quiz");
+
+        DOVirtual.DelayedCall(2, () => SceneManager.LoadScene("Quiz"));
     }
 
     public int EvaluateMove()

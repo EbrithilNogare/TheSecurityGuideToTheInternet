@@ -134,7 +134,7 @@ public class CookiesMinigameManager : MonoBehaviour
     public void FinishMinigame()
     {
         int score = correctCookiesFinished;
-        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Phishing Minigame completed\",\"correctCookiessFinished\":" + correctCookiesFinished + ",\"score\":" + correctCookiesFinished + "}");
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Cookie minigame completed\",\"correctCookiessFinished\":" + correctCookiesFinished + ",\"score\":" + score + "}");
         Store.Instance.minigameScore = score;
         Store.Instance.quizToLoad = Store.Quiz.Cookies;
 
