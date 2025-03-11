@@ -203,6 +203,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shop
       objectReference: {fileID: 0}
+    - target: {fileID: 311066848477131065, guid: 43353270638ca2c438f8dd6a2ad104e6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2156315243587077121, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_text
@@ -226,7 +231,7 @@ PrefabInstance:
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
@@ -236,17 +241,17 @@ PrefabInstance:
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
@@ -286,12 +291,12 @@ PrefabInstance:
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: 4284280978919088331, guid: 43353270638ca2c438f8dd6a2ad104e6,
         type: 3}
@@ -1194,7 +1199,7 @@ MonoBehaviour:
   m_ChildAlignment: 7
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 400, y: 100}
+  m_CellSize: {x: 440, y: 128}
   m_Spacing: {x: 50, y: 50}
   m_Constraint: 1
   m_ConstraintCount: 1
