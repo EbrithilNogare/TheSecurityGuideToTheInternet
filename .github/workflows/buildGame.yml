@@ -13,8 +13,8 @@ name: Build project
 #    - Set Workflow permissions to "Read and write permissions"
 #    - Check "Allow GitHub Actions to create and approve pull requests"
 #    - Save
-# 5) Copy this file into repo as: .github/workflows/buildGame.yml 
-# 6) Check all red dots 🔴 in this file to configure it properly to your needs
+# 3) Copy this file into repo as: .github/workflows/buildGame.yml 
+# 4) Check all red dots 🔴 in this file to configure it properly to your needs
 
 # This setup will give you:
 # - Artifact (zip file) of your build (this one can be uploaded to Itch.io manually) that you find in Actions where you select the last run, and on the bottom will be artifacts
