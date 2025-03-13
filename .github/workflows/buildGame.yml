@@ -3,19 +3,19 @@ name: Build project
 #  Full documentation: https://game.ci/docs/github/getting-started
 
 ######## ⚠️ STEPS TO SETUP IN NEW REPOSITORY ⚠️ ########
-# 0) Make the repository public (you get free unlimited CPU time for GitHub actions)
-# 1) Create Github secrets as mentioned below: https://github.com/{username}/{repo}/settings/secrets/actions
+# 0️⃣ Make the repository public (you get free unlimited CPU time for GitHub actions)
+# 1️⃣ Create Github secrets as mentioned below: https://github.com/{username}/{repo}/settings/secrets/actions
 #   - UNITY_EMAIL
 #   - UNITY_PASSWORD
 #   - UNITY_LICENSE             How to get it: https://game.ci/docs/github/activation/
 #   - ITCH_IO_CREDENTIALS       Where to get it: https://itch.io/user/settings/api-keys       (not needed if itch deploy is off)
-# 2) Go to https://github.com/{username}/{repo}/settings/actions
+# 2️⃣ Go to https://github.com/{username}/{repo}/settings/actions
 #    - Set Workflow permissions to "Read and write permissions"
 #    - Check "Allow GitHub Actions to create and approve pull requests"
 #    - Save
-# 3) Copy this file into repo as: .github/workflows/buildGame.yml 
-# 4) Check all red dots 🔴 in this file to configure it properly to your needs
-# 5) If you want a webpage with WebGL, you need to set up GitHub Pages AFTER first run
+# 3️⃣ Copy this file into repo as: .github/workflows/buildGame.yml 
+# 4️⃣ Check all red dots 🔴 in this file to configure it properly to your needs
+# 5️⃣ If you want a webpage with WebGL, you need to set up GitHub Pages AFTER first run
 #    - Go here: https://github.com/{username}/{repo}/settings/pages
 #    - Set "Deploy from a branch"
 #    - Set in Branch "gh-pages" & "/(root)", Save
