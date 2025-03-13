@@ -1,7 +1,3 @@
-name: Build project
-
-#  Full documentation: https://game.ci/docs/github/getting-started
-
 ######## ⚠️ STEPS TO SETUP IN NEW REPOSITORY ⚠️ ########
 # 0️⃣ Make the repository public (you get free unlimited CPU time for GitHub actions)
 # 1️⃣ Create Github secrets as mentioned below: https://github.com/{username}/{repo}/settings/secrets/actions
@@ -26,6 +22,10 @@ name: Build project
 # - Web page with your game: https://{username}.github.io/{repo}/ 
 # - GitHub release with latest artifacts
 # - Itchio auto-deploy
+
+#  Full documentation: https://game.ci/docs/github/getting-started
+
+name: Build Unity project in GitHub actions
 
 on:
   push:
