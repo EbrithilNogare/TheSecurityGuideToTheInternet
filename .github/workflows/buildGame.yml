@@ -4,21 +4,26 @@ name: Build project
 
 ######## ⚠️ STEPS TO SETUP IN NEW REPOSITORY ⚠️ ########
 # 0) Make the repository public (you get free unlimited CPU time for GitHub actions)
-# 1) Create Github secrets as mentioned below: https://github.com/{user}/{repo root}/settings/secrets/actions
+# 1) Create Github secrets as mentioned below: https://github.com/{username}/{repo}/settings/secrets/actions
 #   - UNITY_EMAIL
 #   - UNITY_PASSWORD
 #   - UNITY_LICENSE             How to get it: https://game.ci/docs/github/activation/
 #   - ITCH_IO_CREDENTIALS       Where to get it: https://itch.io/user/settings/api-keys       (not needed if itch deploy is off)
-# 2) Go to https://github.com/{user}/{repo root}/settings/actions
+# 2) Go to https://github.com/{username}/{repo}/settings/actions
 #    - Set Workflow permissions to "Read and write permissions"
 #    - Check "Allow GitHub Actions to create and approve pull requests"
 #    - Save
 # 3) Copy this file into repo as: .github/workflows/buildGame.yml 
 # 4) Check all red dots 🔴 in this file to configure it properly to your needs
+# 5) If you want a webpage with WebGL, you need to set up GitHub Pages AFTER first run
+#    - Go here: https://github.com/{username}/{repo}/settings/pages
+#    - Set "Deploy from a branch"
+#    - Set in Branch "gh-pages" & "/(root)", Save
+#    - In Unity: Project settings -> Player -> WebGL icon (third) -> Publishing settings -> Decompression Fallback -> TRUE
 
 # This setup will give you:
 # - Artifact (zip file) of your build (this one can be uploaded to Itch.io manually) that you find in Actions where you select the last run, and on the bottom will be artifacts
-# - Web page with your game: https://{UserName}.github.io/{RepoName}/ 
+# - Web page with your game: https://{username}.github.io/{repo}/ 
 # - GitHub release with latest artifacts
 # - Itchio auto-deploy
 
