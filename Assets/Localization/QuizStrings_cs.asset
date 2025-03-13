@@ -207,7 +207,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778968299339776
-    m_Localized: "\u010Cast\xE9 zas\xEDlan\xED zpr\xE1v o pou\u017E\xEDv\xE1n\xED "
+    m_Localized: "Povolit zas\xEDlan\xED zpr\xE1v o pou\u017E\xEDv\xE1n\xED softwaru"
     m_Metadata:
       m_Items: []
   - m_Id: 1778982102794240
@@ -238,7 +238,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779223325605888
-    m_Localized: "Monitorovat a kontrolovat p\u0159\xEDchoz\xED a odchoz\xED s\xED\u0165ov\xFD
+    m_Localized: "Monitorovat a blokovat p\u0159\xEDchoz\xED a odchoz\xED s\xED\u0165ov\xFD
       provoz"
     m_Metadata:
       m_Items: []
@@ -277,7 +277,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779716303126528
-    m_Localized: "Slab\xFDm sign\xE1le Wi-Fi"
+    m_Localized: "Slab\xFDm sign\xE1lem Wi-Fi"
     m_Metadata:
       m_Items: []
   - m_Id: 1779807424380928
@@ -310,8 +310,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1780433789157376
-    m_Localized: "Mal\xFD soubor ulo\u017Een\xFD v za\u0159\xEDzen\xED, kter\xFD
-      sleduje aktivitu na webu"
+    m_Localized: "Text s u\u017Eivatelsk\xFDmi daty odes\xEDlan\xFD na server."
     m_Metadata:
       m_Items: []
   - m_Id: 1780446619533312
@@ -363,8 +362,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781020844916736
-    m_Localized: "Mohou sledovat online aktivitu a sd\xEDlet ji s t\u0159et\xEDmi
-      stranami"
+    m_Localized: "Sd\xEDleni tvoj\xED online aktivity s spole\u010Dnostmi t\u0159et\xEDch
+      stran"
     m_Metadata:
       m_Items: []
   - m_Id: 1781029661343744
@@ -411,12 +410,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781499763130368
-    m_Localized: "Opr\xE1vn\u011Bn\xED ji povolit aby aplikace spr\xE1vn\u011B fungovala"
+    m_Localized: "Opr\xE1vn\u011Bn\xED ji povolit, aby aplikace spr\xE1vn\u011B fungovala"
     m_Metadata:
       m_Items: []
   - m_Id: 1781527651057664
-    m_Localized: "Odm\xEDtnout opr\xE1vn\u011Bn\xED a aplikaci odinstalovat, pokud
-      jsou opr\xE1vn\u011Bn\xED p\u0159\xEDli\u0161 podez\u0159el\xE1"
+    m_Localized: "Odm\xEDtnout opr\xE1vn\u011Bn\xED a aplikaci odinstalovat"
     m_Metadata:
       m_Items: []
   - m_Id: 1781544633794560
@@ -476,8 +474,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782238308761600
-    m_Localized: "Co byste m\u011Bli ud\u011Blat, pokud m\xE1te podez\u0159en\xED,
-      \u017Ee informace poskytnut\xE9 AI jsou nespr\xE1vn\xE9?"
+    m_Localized: "Co byste m\u011Bli ud\u011Blat, pokud obdr\u017E\xEDte informace
+      od AI, kter\xE9 mohou ovlivnit rozhodov\xE1n\xED?"
     m_Metadata:
       m_Items: []
   - m_Id: 1782296106270720
@@ -490,7 +488,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782361067651072
-    m_Localized: "Zeptejte se AI znovu, a pokud potvrd\xED, \u017Ee je to spr\xE1vn\u011B,
+    m_Localized: "Zeptat se AI znovu, a pokud potvrd\xED, \u017Ee je to spr\xE1vn\u011B,
       d\u016Fv\u011B\u0159ovat ji"
     m_Metadata:
       m_Items: []
@@ -500,8 +498,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782514650480640
-    m_Localized: "Proto\u017Ee AI je m\u016F\u017Ee pou\u017E\xEDt pro budouc\xED
-      odpov\u011Bdi"
+    m_Localized: "Proto\u017Ee AI se z nich u\u010D\xED a mohou je z\xEDskat i ciz\xED
+      osoby"
     m_Metadata:
       m_Items: []
   - m_Id: 1782538570596352
@@ -526,7 +524,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1783683535896576
-    m_Localized: "Slohov\xE1 pr\xE1ce o tom jak je AI \u0161patn\xE9"
+    m_Localized: "Slohov\xE1 pr\xE1ce o tom, jak je AI \u0161patn\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 1783745758396416
@@ -535,7 +533,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1783775533760512
-    m_Localized: "D\u016Fv\u011B\u0159ovat ji a aplikovat ji co nejd\u0159\xEDve"
+    m_Localized: "D\u016Fv\u011B\u0159ovat ji a aplikovat ji, co nejd\u0159\xEDve"
     m_Metadata:
       m_Items: []
   - m_Id: 1783780533370880
@@ -544,7 +542,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1783789672759296
-    m_Localized: "Sd\xEDlejte tuto radu s ostatn\xEDmi jako spolehlivou"
+    m_Localized: "Sd\xEDlet tuto radu s ostatn\xEDmi jako spolehlivou"
     m_Metadata:
       m_Items: []
   - m_Id: 1783897164382208
@@ -640,7 +638,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1785726619123712
-    m_Localized: "Usnad\u0148uje to zapamatov\xE1n\xED hesla"
+    m_Localized: "Zapomenut\xEDm jednoho hesla p\u0159ijdu o v\u0161echny p\u0159\xEDstupy"
     m_Metadata:
       m_Items: []
   - m_Id: 1785740862980096
@@ -649,8 +647,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1785743807381504
-    m_Localized: "Zt\u011B\u017Euje to p\u0159\xEDstup k \xFA\u010Dt\u016Fm z r\u016Fzn\xFDch
-      za\u0159\xEDzen\xED"
+    m_Localized: "Kdykoliv m\u011Bn\xEDm heslo, mus\xEDm je zm\u011Bnit v\u0161ude"
     m_Metadata:
       m_Items: []
   - m_Id: 1786024746057728
@@ -673,7 +670,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1786168958812160
     m_Localized: "Kter\xFD z n\xE1sleduj\xEDc\xEDch je p\u0159\xEDkladem druh\xE9ho
-      faktoru v 2FA?"
+      faktoru v 2FA (dvoufaktorov\xE9 ov\xE9\u0159ov\xE1n\xED)?"
     m_Metadata:
       m_Items: []
   - m_Id: 1786173182476288

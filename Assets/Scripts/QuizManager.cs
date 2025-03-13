@@ -196,7 +196,7 @@ public class QuizManager : MonoBehaviour
 
             DOTween.Sequence()
                 .Append(correctAnswerButton.GetComponent<Image>().DOColor(targetColorOfCorrectAnswer, 0.2f))
-                .AppendInterval(1f)
+                .AppendInterval(3f)
                 .OnComplete(() =>
                 {
                     correctAnswerButton.GetComponent<Image>().color = originalColorOfCorrectAnswer;
@@ -210,7 +210,7 @@ public class QuizManager : MonoBehaviour
                 if (isCorrectAnswer)
                     DoParticlesAnimation(answerButton.GetComponent<RectTransform>(), 1f);
             })
-            .AppendInterval(1f)
+            .AppendInterval(isCorrectAnswer ? 1f : 3f)
             .OnComplete(() =>
             {
                 answerButton.GetComponent<Image>().color = originalColor;

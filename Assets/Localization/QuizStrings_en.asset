@@ -115,7 +115,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779223325605888
-    m_Localized: To monitor and control incoming and outgoing network traffic
+    m_Localized: Monitor and block incoming and outgoing network traffic
     m_Metadata:
       m_Items: []
   - m_Id: 1779231412224000
@@ -184,7 +184,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1780433789157376
-    m_Localized: A small file stored on your device that tracks website activity
+    m_Localized: Text with user data sent to the server
     m_Metadata:
       m_Items: []
   - m_Id: 1780446619533312
@@ -232,7 +232,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781020844916736
-    m_Localized: They may track your online activity and share it with third parties
+    m_Localized: Sharing your online activity with third-party companies
     m_Metadata:
       m_Items: []
   - m_Id: 1781029661343744
@@ -281,8 +281,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781527651057664
-    m_Localized: Deny the permissions and uninstall the app if permissions are too
-      suspicious
+    m_Localized: Deny permissions and uninstall the app
     m_Metadata:
       m_Items: []
   - m_Id: 1781544633794560
@@ -338,8 +337,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782238308761600
-    m_Localized: What should you do if you suspect the information provided by an
-      AI is incorrect?
+    m_Localized: What should you do if you receive AI-generated information that
+      may affect decision-making?
     m_Metadata:
       m_Items: []
   - m_Id: 1782296106270720
@@ -351,7 +350,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782361067651072
-    m_Localized: Ask Ai again, and if it verifies it is correct, then trust it
+    m_Localized: Ask AI again, and if it confirms, trust it
     m_Metadata:
       m_Items: []
   - m_Id: 1782489258164224
@@ -360,7 +359,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782514650480640
-    m_Localized: Because the AI might use it for future responses
+    m_Localized: Because AI learns from them and others may access them
     m_Metadata:
       m_Items: []
   - m_Id: 1782538570596352
@@ -385,7 +384,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1783683535896576
-    m_Localized: Essay on how AI is bad
+    m_Localized: An essay about how AI is bad
     m_Metadata:
       m_Items: []
   - m_Id: 1783745758396416
@@ -490,7 +489,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1785726619123712
-    m_Localized: It makes it easier to remember a password
+    m_Localized: Forgetting one password means losing all access
     m_Metadata:
       m_Items: []
   - m_Id: 1785740862980096
@@ -498,11 +497,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1785743807381504
-    m_Localized: It makes your accounts harder to access from different devices
+    m_Localized: Whenever I change a password, I must update it everywhere
     m_Metadata:
       m_Items: []
   - m_Id: 1786024746057728
-    m_Localized: What is the primary purpose of two-factor authentication (2FA)?
+    m_Localized: Which of the following is an example of a second factor in 2FA (two
+      factor authentization)??
     m_Metadata:
       m_Items: []
   - m_Id: 1786025857548288
@@ -657,7 +657,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778968299339776
-    m_Localized: Frequently sharing usage reports
+    m_Localized: Allow sending software usage reports
     m_Metadata:
       m_Items: []
   - m_Id: 1778982102794240
