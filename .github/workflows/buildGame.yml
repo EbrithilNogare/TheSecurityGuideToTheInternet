@@ -1,12 +1,26 @@
 name: Build project
 
-# ❗ All thing to set up are marked with red dot -> 🔴
+#  Full documentation: https://game.ci/docs/github/getting-started
 
-######## SECRETS ########
-# ⚠️ UNITY_EMAIL
-# ⚠️ UNITY_PASSWORD
-# ⚠️ UNITY_LICENSE             How to get it: https://game.ci/docs/github/activation/
-# ⚠️ ITCH_IO_CREDENTIALS       Where to get it: https://itch.io/user/settings/api-keys       (not needed if itch deploy is off)
+######## ⚠️ STEPS TO SETUP IN NEW REPOSITORY ⚠️ ########
+# 0) Make the repository public (you get free unlimited CPU time for GitHub actions)
+# 1) Create Github secrets as mentioned below: https://github.com/{user}/{repo root}/settings/secrets/actions
+#   - UNITY_EMAIL
+#   - UNITY_PASSWORD
+#   - UNITY_LICENSE             How to get it: https://game.ci/docs/github/activation/
+#   - ITCH_IO_CREDENTIALS       Where to get it: https://itch.io/user/settings/api-keys       (not needed if itch deploy is off)
+# 2) Go to https://github.com/{user}/{repo root}/settings/actions
+#    - Set Workflow permissions to "Read and write permissions"
+#    - Check "Allow GitHub Actions to create and approve pull requests"
+#    - Save
+# 5) Copy this file into repo as: .github/workflows/buildGame.yml 
+# 6) Check all red dots 🔴 in this file to configure it properly to your needs
+
+# This setup will give you:
+# - Artifact (zip file) of your build (this one can be uploaded to Itch.io manually) that you find in Actions where you select the last run, and on the bottom will be artifacts
+# - Web page with your game: https://{UserName}.github.io/{RepoName}/ 
+# - GitHub release with latest artifacts
+# - Itchio auto-deploy
 
 on:
   push:
@@ -14,7 +28,7 @@ on:
       - master
       - main
     tags:
-      - "*"
+      - "*" # If you put a version into the tag, it will create a new release in GitHub (e.g. "v1.0")
   pull_request:
     branches:
       - master
@@ -40,9 +54,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          lfs: false
+          lfs: false # Do not use LFS as it is not free on GitHub
 
-      - name: Restore platform specific cache
+      - name: Restore platform-specific cache
         if: matrix.targetPlatform == 'WebGL' || matrix.targetPlatform == 'Android' || matrix.targetPlatform == 'StandaloneWindows64'
         uses: actions/cache@v4
         with:
@@ -63,13 +77,13 @@ jobs:
       - name: Free disk space
         if: matrix.targetPlatform == 'Android'
         uses: jlumbroso/free-disk-space@v1.3.1
-        with: # In case Android build fails due to out of disk space, enable these
-          android: true # free ~ 8.7 GiB in   5s
-          dotnet: true # free ~ 1.6 GiB in   1s
-          haskell: true # free ~ 5.2 GiB in   1s
+        with: # In case the Android build fails due to out of disk space, enable these
+          haskell: true #         free ~ 5.2 GiB in   1s
+          docker-images: true #   free ~ 3.2 GiB in   1s
+          dotnet: true #          free ~ 1.6 GiB in   1s
+          android: true #         free ~ 8.7 GiB in   5s
           large-packages: false # free ~ 4,7 GiB in 100s
-          docker-images: true # free ~ 3.2 GiB in   1s
-          swap-storage: false # free ~ 4.0 GiB in   1s
+          swap-storage: false #   free ~ 4.0 GiB in   1s
 
       - uses: game-ci/unity-builder@v4
         id: myBuildStep
@@ -175,12 +189,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        targetPlatform: # 🔴 Select platforms to deploy to Itch (must match one in `targetPlatforms`)
+        targetPlatform: # 🔴 Select platforms to deploy to Itch (must be also in `targetPlatforms`)
           # - { platform: StandaloneOSX, itchChannel: "osx" } # Build a macOS standalone (Intel 64-bit)
           # - { platform: StandaloneWindows, itchChannel: "win32" } # Build a Windows standalone
           - { platform: StandaloneWindows64, itchChannel: "windows" } # Build a Windows 64-bit standalone
-          - { platform: StandaloneLinux64, itchChannel: "linux" } # Build a Linux 64-bit standalone
-          #- { platform: Android, itchChannel: "android" } # Build an Android .apk standalone app
+          # - { platform: StandaloneLinux64, itchChannel: "linux" } # Build a Linux 64-bit standalone
+          # - { platform: Android, itchChannel: "android" } # Build an Android .apk standalone app
           - { platform: WebGL, itchChannel: "html5" } # WebGL
     needs: buildForAllSupportedPlatforms
     steps:
@@ -193,6 +207,6 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.ITCH_IO_CREDENTIALS }}
           CHANNEL: ${{ matrix.targetPlatform.itchChannel }}
-          ITCH_GAME: luciditydungeon # 🔴 Name of the game on Itch
+          ITCH_GAME: ${{ github.event.repository.name }} # 🔴 Name of the game on Itch
           ITCH_USER: ebrithilnogare # 🔴 Itch username
           PACKAGE: build/${{ github.event.repository.name }}-${{ matrix.targetPlatform.platform }}
