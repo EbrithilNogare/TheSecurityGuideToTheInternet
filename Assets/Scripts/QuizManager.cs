@@ -14,16 +14,14 @@ public class QuizManager : MonoBehaviour
         public string textQuestion;
         public string[] textAnswers;
         public int[] imageAnswerIndices;
-        public int correctAnswerIndex;
 
 #nullable enable
-        public QuizQuestion(bool isVertialLayouot, string textQuestion, string[]? textAnswers, int[]? imageAnswerIndices, int correctAnswerIndex)
+        public QuizQuestion(bool isVertialLayouot, string textQuestion, string[]? textAnswers, int[]? imageAnswerIndices)
         {
             this.isVertialLayouot = isVertialLayouot;
             this.textQuestion = textQuestion;
             this.textAnswers = textAnswers ?? new string[0];
             this.imageAnswerIndices = imageAnswerIndices ?? new int[0];
-            this.correctAnswerIndex = correctAnswerIndex;
         }
     }
 #nullable disable
@@ -46,6 +44,7 @@ public class QuizManager : MonoBehaviour
     public Image countdown;
     public TMPro.TextMeshProUGUI categoryLabel;
 
+    private const int CORRECT_ANSWER_INDEX = 0;
 
     private StringTable stringTable;
     private QuizQuestion[] currentQuiz;
@@ -57,6 +56,7 @@ public class QuizManager : MonoBehaviour
     private float timeToRespond;
     private bool allQuizesMode = false;
     private int allQuizesModeIndex = 0;
+    private int currentAnswersOffset = 0;
 
     void Start()
     {
@@ -172,14 +172,14 @@ public class QuizManager : MonoBehaviour
             return;
 
         isEvaluatingInProgress = true;
+        QuizQuestion currentQuestion = currentQuiz[currentQuestionIndex];
+        int numAnswers = currentQuestion.isVertialLayouot ? currentQuestion.textAnswers.Length : currentQuestion.imageAnswerIndices.Length;
+        int realIndex = (answerIndex + currentAnswersOffset) % numAnswers;
+        bool isCorrectAnswer = realIndex == CORRECT_ANSWER_INDEX;
 
-        bool isVerticalLayout = currentQuiz[currentQuestionIndex].isVertialLayouot;
-        int correctAnswerIndex = currentQuiz[currentQuestionIndex].correctAnswerIndex;
-        bool isCorrectAnswer = answerIndex == correctAnswerIndex;
+        LoggingService.Log(LoggingService.LogCategory.Quiz, $"{{category:{currentQuizCategory},questionIndex:{currentQuestionIndex},answerIndex:{realIndex},isCorrectAnswer:{isCorrectAnswer},timeToRespond:{Mathf.Floor(timeToRespond)}}}");
 
-        LoggingService.Log(LoggingService.LogCategory.Quiz, $"{{category:{currentQuizCategory},questionIndex:{currentQuestionIndex},answerIndex:{answerIndex},isCorrectAnswer:{isCorrectAnswer},timeToRespond:{Mathf.Floor(timeToRespond)}}}");
-
-        GameObject answerButton = currentQuiz[currentQuestionIndex].isVertialLayouot
+        GameObject answerButton = currentQuestion.isVertialLayouot
             ? verticalQuestionGameObjects[answerIndex]
             : horizontalQuestionGameObjects[answerIndex];
         Color targetColor = isCorrectAnswer ? correctAnswerColor : incorrectAnswerColor;
@@ -187,9 +187,10 @@ public class QuizManager : MonoBehaviour
 
         if (!isCorrectAnswer)
         {
-            GameObject correctAnswerButton = currentQuiz[currentQuestionIndex].isVertialLayouot
-            ? verticalQuestionGameObjects[correctAnswerIndex]
-            : horizontalQuestionGameObjects[correctAnswerIndex];
+            int correctButtonIndex = (numAnswers - currentAnswersOffset) % numAnswers;
+            GameObject correctAnswerButton = currentQuestion.isVertialLayouot
+                ? verticalQuestionGameObjects[correctButtonIndex]
+                : horizontalQuestionGameObjects[correctButtonIndex];
 
             Color targetColorOfCorrectAnswer = correctAnswerColor;
             Color originalColorOfCorrectAnswer = correctAnswerButton.GetComponent<Image>().color;
@@ -240,27 +241,30 @@ public class QuizManager : MonoBehaviour
             verticalAnswersContainer.SetActive(true);
             horizontalAnswersContainer.SetActive(false);
 
+            currentAnswersOffset = Random.Range(0, quizQuestion.textAnswers.Length);
             for (int i = 0; i < quizQuestion.textAnswers.Length; i++)
             {
+                int answerIndex = (i + currentAnswersOffset) % quizQuestion.textAnswers.Length;
                 verticalQuestionGameObjects[i].SetActive(true);
-                verticalQuestionTexts[i].text = stringTable.GetEntry(quizQuestion.textAnswers[i]).GetLocalizedString();
+                verticalQuestionTexts[i].text = stringTable.GetEntry(quizQuestion.textAnswers[answerIndex]).GetLocalizedString();
             }
 
             for (int i = quizQuestion.textAnswers.Length; i < verticalQuestionGameObjects.Length; i++)
             {
                 verticalQuestionGameObjects[i].SetActive(false);
             }
-
         }
         else
         {
             verticalAnswersContainer.SetActive(false);
             horizontalAnswersContainer.SetActive(true);
 
+            currentAnswersOffset = Random.Range(0, quizQuestion.imageAnswerIndices.Length);
             for (int i = 0; i < quizQuestion.imageAnswerIndices.Length; i++)
             {
+                int answerIndex = (i + currentAnswersOffset) % quizQuestion.imageAnswerIndices.Length;
                 horizontalQuestionGameObjects[i].SetActive(true);
-                horizontalQuestionImages[i].sprite = quizSprites[quizQuestion.imageAnswerIndices[i]];
+                horizontalQuestionImages[i].sprite = quizSprites[quizQuestion.imageAnswerIndices[answerIndex]];
             }
 
             for (int i = quizQuestion.imageAnswerIndices.Length; i < horizontalQuestionGameObjects.Length; i++)
@@ -272,60 +276,60 @@ public class QuizManager : MonoBehaviour
 
     private Dictionary<Store.Quiz, QuizQuestion[]> allQuizes = new Dictionary<Store.Quiz, QuizQuestion[]>(){
         { Store.Quiz.Malware , new QuizQuestion[]{
-            new QuizQuestion(true, "malware_question_0", new string[]{ "malware_answer_0_0", "malware_answer_0_1", "malware_answer_0_2" }, null, 1),
-            new QuizQuestion(true, "malware_question_1", new string[]{ "malware_answer_1_0", "malware_answer_1_1", "malware_answer_1_2" }, null, 1),
-            new QuizQuestion(true, "malware_question_2", new string[]{ "malware_answer_2_0", "malware_answer_2_1", "malware_answer_2_2" }, null, 2),
-            new QuizQuestion(true, "malware_question_3", new string[]{ "malware_answer_3_0", "malware_answer_3_1", "malware_answer_3_2" }, null, 1),
-            new QuizQuestion(true, "malware_question_4", new string[]{ "malware_answer_4_0", "malware_answer_4_1", "malware_answer_4_2" }, null, 0),
+            new QuizQuestion(true, "malware_question_0", new string[]{ "malware_answer_0_0", "malware_answer_0_1", "malware_answer_0_2" }, null),
+            new QuizQuestion(true, "malware_question_1", new string[]{ "malware_answer_1_0", "malware_answer_1_1", "malware_answer_1_2" }, null),
+            new QuizQuestion(true, "malware_question_2", new string[]{ "malware_answer_2_0", "malware_answer_2_1", "malware_answer_2_2" }, null),
+            new QuizQuestion(true, "malware_question_3", new string[]{ "malware_answer_3_0", "malware_answer_3_1", "malware_answer_3_2" }, null),
+            new QuizQuestion(true, "malware_question_4", new string[]{ "malware_answer_4_0", "malware_answer_4_1", "malware_answer_4_2" }, null),
         }},
         { Store.Quiz.Firewall , new QuizQuestion[]{
-            new QuizQuestion(true, "firewall_question_0", new string[]{ "firewall_answer_0_0", "firewall_answer_0_1", "firewall_answer_0_2" }, null, 1),
-            new QuizQuestion(true, "firewall_question_1", new string[]{ "firewall_answer_1_0", "firewall_answer_1_1", "firewall_answer_1_2" }, null, 1),
-            new QuizQuestion(true, "firewall_question_2", new string[]{ "firewall_answer_2_0", "firewall_answer_2_1", "firewall_answer_2_2" }, null, 0),
-            new QuizQuestion(true, "firewall_question_3", new string[]{ "firewall_answer_3_0", "firewall_answer_3_1", "firewall_answer_3_2" }, null, 0),
-            new QuizQuestion(false, "firewall_question_4", null, new int[]{0, 1}, 0),
+            new QuizQuestion(true, "firewall_question_0", new string[]{ "firewall_answer_0_0", "firewall_answer_0_1", "firewall_answer_0_2" }, null),
+            new QuizQuestion(true, "firewall_question_1", new string[]{ "firewall_answer_1_0", "firewall_answer_1_1", "firewall_answer_1_2" }, null),
+            new QuizQuestion(true, "firewall_question_2", new string[]{ "firewall_answer_2_0", "firewall_answer_2_1", "firewall_answer_2_2" }, null),
+            new QuizQuestion(true, "firewall_question_3", new string[]{ "firewall_answer_3_0", "firewall_answer_3_1", "firewall_answer_3_2" }, null),
+            new QuizQuestion(false, "firewall_question_4", null, new int[]{0, 1}),
         }},
         { Store.Quiz.Phishing , new QuizQuestion[]{
-            new QuizQuestion(true, "phishing_question_0", new string[]{ "phishing_answer_0_0", "phishing_answer_0_1", "phishing_answer_0_2" }, null, 0),
-            new QuizQuestion(true, "phishing_question_1", new string[]{ "phishing_answer_1_0", "phishing_answer_1_1", "phishing_answer_1_2" }, null, 0),
-            new QuizQuestion(true, "phishing_question_2", new string[]{ "phishing_answer_2_0", "phishing_answer_2_1", "phishing_answer_2_2" }, null, 2),
-            new QuizQuestion(true, "phishing_question_3", new string[]{ "phishing_answer_3_0", "phishing_answer_3_1", "phishing_answer_3_2" }, null, 0),
-            new QuizQuestion(true, "phishing_question_4", new string[]{ "phishing_answer_4_0", "phishing_answer_4_1", "phishing_answer_4_2" }, null, 1),
+            new QuizQuestion(true, "phishing_question_0", new string[]{ "phishing_answer_0_0", "phishing_answer_0_1", "phishing_answer_0_2" }, null),
+            new QuizQuestion(true, "phishing_question_1", new string[]{ "phishing_answer_1_0", "phishing_answer_1_1", "phishing_answer_1_2" }, null),
+            new QuizQuestion(true, "phishing_question_2", new string[]{ "phishing_answer_2_0", "phishing_answer_2_1", "phishing_answer_2_2" }, null),
+            new QuizQuestion(true, "phishing_question_3", new string[]{ "phishing_answer_3_0", "phishing_answer_3_1", "phishing_answer_3_2" }, null),
+            new QuizQuestion(true, "phishing_question_4", new string[]{ "phishing_answer_4_0", "phishing_answer_4_1", "phishing_answer_4_2" }, null),
         }},
         { Store.Quiz.Cookies , new QuizQuestion[]{
-            new QuizQuestion(true, "cookies_question_0", new string[]{ "cookies_answer_0_0", "cookies_answer_0_1", "cookies_answer_0_2" }, null, 1),
-            new QuizQuestion(true, "cookies_question_1", new string[]{ "cookies_answer_1_0", "cookies_answer_1_1", "cookies_answer_1_2" }, null, 0),
-            new QuizQuestion(true, "cookies_question_2", new string[]{ "cookies_answer_2_0", "cookies_answer_2_1", "cookies_answer_2_2" }, null, 1),
-            new QuizQuestion(true, "cookies_question_3", new string[]{ "cookies_answer_3_0", "cookies_answer_3_1", "cookies_answer_3_2" }, null, 1),
-            new QuizQuestion(true, "cookies_question_4", new string[]{ "cookies_answer_4_0", "cookies_answer_4_1", "cookies_answer_4_2" }, null, 0),
+            new QuizQuestion(true, "cookies_question_0", new string[]{ "cookies_answer_0_0", "cookies_answer_0_1", "cookies_answer_0_2" }, null),
+            new QuizQuestion(true, "cookies_question_1", new string[]{ "cookies_answer_1_0", "cookies_answer_1_1", "cookies_answer_1_2" }, null),
+            new QuizQuestion(true, "cookies_question_2", new string[]{ "cookies_answer_2_0", "cookies_answer_2_1", "cookies_answer_2_2" }, null),
+            new QuizQuestion(true, "cookies_question_3", new string[]{ "cookies_answer_3_0", "cookies_answer_3_1", "cookies_answer_3_2" }, null),
+            new QuizQuestion(true, "cookies_question_4", new string[]{ "cookies_answer_4_0", "cookies_answer_4_1", "cookies_answer_4_2" }, null),
         }},
         { Store.Quiz.Phone , new QuizQuestion[]{
-            new QuizQuestion(true, "phone_question_0", new string[]{ "phone_answer_0_0", "phone_answer_0_1", "phone_answer_0_2" }, null, 0),
-            new QuizQuestion(true, "phone_question_1", new string[]{ "phone_answer_1_0", "phone_answer_1_1", "phone_answer_1_2" }, null, 1),
-            new QuizQuestion(true, "phone_question_2", new string[]{ "phone_answer_2_0", "phone_answer_2_1", "phone_answer_2_2" }, null, 0),
-            new QuizQuestion(true, "phone_question_3", new string[]{ "phone_answer_3_0", "phone_answer_3_1", "phone_answer_3_2" }, null, 1),
-            new QuizQuestion(true, "phone_question_4", new string[]{ "phone_answer_4_0", "phone_answer_4_1", "phone_answer_4_2" }, null, 0),
+            new QuizQuestion(true, "phone_question_0", new string[]{ "phone_answer_0_0", "phone_answer_0_1", "phone_answer_0_2" }, null),
+            new QuizQuestion(true, "phone_question_1", new string[]{ "phone_answer_1_0", "phone_answer_1_1", "phone_answer_1_2" }, null),
+            new QuizQuestion(true, "phone_question_2", new string[]{ "phone_answer_2_0", "phone_answer_2_1", "phone_answer_2_2" }, null),
+            new QuizQuestion(true, "phone_question_3", new string[]{ "phone_answer_3_0", "phone_answer_3_1", "phone_answer_3_2" }, null),
+            new QuizQuestion(true, "phone_question_4", new string[]{ "phone_answer_4_0", "phone_answer_4_1", "phone_answer_4_2" }, null),
         }},
         { Store.Quiz.AI , new QuizQuestion[]{
-            new QuizQuestion(true, "ai_question_0", new string[]{ "ai_answer_0_0", "ai_answer_0_1", "ai_answer_0_2" }, null, 1),
-            new QuizQuestion(true, "ai_question_1", new string[]{ "ai_answer_1_0", "ai_answer_1_1", "ai_answer_1_2" }, null, 0),
-            new QuizQuestion(true, "ai_question_2", new string[]{ "ai_answer_2_0", "ai_answer_2_1", "ai_answer_2_2" }, null, 1),
-            new QuizQuestion(true, "ai_question_3", new string[]{ "ai_answer_3_0", "ai_answer_3_1", "ai_answer_3_2" }, null, 1),
-            new QuizQuestion(true, "ai_question_4", new string[]{ "ai_answer_4_0", "ai_answer_4_1", "ai_answer_4_2" }, null, 0),
+            new QuizQuestion(true, "ai_question_0", new string[]{ "ai_answer_0_0", "ai_answer_0_1", "ai_answer_0_2" }, null),
+            new QuizQuestion(true, "ai_question_1", new string[]{ "ai_answer_1_0", "ai_answer_1_1", "ai_answer_1_2" }, null),
+            new QuizQuestion(true, "ai_question_2", new string[]{ "ai_answer_2_0", "ai_answer_2_1", "ai_answer_2_2" }, null),
+            new QuizQuestion(true, "ai_question_3", new string[]{ "ai_answer_3_0", "ai_answer_3_1", "ai_answer_3_2" }, null),
+            new QuizQuestion(true, "ai_question_4", new string[]{ "ai_answer_4_0", "ai_answer_4_1", "ai_answer_4_2" }, null),
         }},
         { Store.Quiz.Passwords , new QuizQuestion[]{
-            new QuizQuestion(true, "passwords_question_0", new string[]{ "passwords_answer_0_0", "passwords_answer_0_1", "passwords_answer_0_2" }, null, 0),
-            new QuizQuestion(true, "passwords_question_1", new string[]{ "passwords_answer_1_0", "passwords_answer_1_1", "passwords_answer_1_2" }, null, 0),
-            new QuizQuestion(true, "passwords_question_2", new string[]{ "passwords_answer_2_0", "passwords_answer_2_1", "passwords_answer_2_2" }, null, 0),
-            new QuizQuestion(true, "passwords_question_3", new string[]{ "passwords_answer_3_0", "passwords_answer_3_1", "passwords_answer_3_2" }, null, 1),
-            new QuizQuestion(true, "passwords_question_4", new string[]{ "passwords_answer_4_0", "passwords_answer_4_1", "passwords_answer_4_2" }, null, 1),
+            new QuizQuestion(true, "passwords_question_0", new string[]{ "passwords_answer_0_0", "passwords_answer_0_1", "passwords_answer_0_2" }, null),
+            new QuizQuestion(true, "passwords_question_1", new string[]{ "passwords_answer_1_0", "passwords_answer_1_1", "passwords_answer_1_2" }, null),
+            new QuizQuestion(true, "passwords_question_2", new string[]{ "passwords_answer_2_0", "passwords_answer_2_1", "passwords_answer_2_2" }, null),
+            new QuizQuestion(true, "passwords_question_3", new string[]{ "passwords_answer_3_0", "passwords_answer_3_1", "passwords_answer_3_2" }, null),
+            new QuizQuestion(true, "passwords_question_4", new string[]{ "passwords_answer_4_0", "passwords_answer_4_1", "passwords_answer_4_2" }, null),
         }},
         { Store.Quiz.TFA , new QuizQuestion[]{
-            new QuizQuestion(true, "tfa_question_0", new string[]{ "tfa_answer_0_0", "tfa_answer_0_1", "tfa_answer_0_2" }, null, 0),
-            new QuizQuestion(true, "tfa_question_1", new string[]{ "tfa_answer_1_0", "tfa_answer_1_1", "tfa_answer_1_2" }, null, 1),
-            new QuizQuestion(true, "tfa_question_2", new string[]{ "tfa_answer_2_0", "tfa_answer_2_1", "tfa_answer_2_2" }, null, 1),
-            new QuizQuestion(true, "tfa_question_3", new string[]{ "tfa_answer_3_0", "tfa_answer_3_1", "tfa_answer_3_2" }, null, 1),
-            new QuizQuestion(false, "tfa_question_4", null, new int[]{2, 3}, 1),
+            new QuizQuestion(true, "tfa_question_0", new string[]{ "tfa_answer_0_0", "tfa_answer_0_1", "tfa_answer_0_2" }, null),
+            new QuizQuestion(true, "tfa_question_1", new string[]{ "tfa_answer_1_0", "tfa_answer_1_1", "tfa_answer_1_2" }, null),
+            new QuizQuestion(true, "tfa_question_2", new string[]{ "tfa_answer_2_0", "tfa_answer_2_1", "tfa_answer_2_2" }, null),
+            new QuizQuestion(true, "tfa_question_3", new string[]{ "tfa_answer_3_0", "tfa_answer_3_1", "tfa_answer_3_2" }, null),
+            new QuizQuestion(false, "tfa_question_4", null, new int[]{2, 3}),
         }},
     };
 }

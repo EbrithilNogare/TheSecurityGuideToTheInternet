@@ -27,11 +27,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 208189292544
-    m_Localized: A sport involving catching fish
+    m_Localized: "It\u2019s a safe way to share passwords"
     m_Metadata:
       m_Items: []
   - m_Id: 223829852160
-    m_Localized: A method to clean computer systems
+    m_Localized: A method of cleaning computer systems from viruses
     m_Metadata:
       m_Items: []
   - m_Id: 32896019365888
@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 32994208022528
-    m_Localized: It has no spelling or grammatical errors
+    m_Localized: It has no text, only an attachment
     m_Metadata:
       m_Items: []
   - m_Id: 33068774359040
@@ -55,7 +55,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 33121685504000
-    m_Localized: Reply to the sender asking for clarification
+    m_Localized: Do not click on any links and report the email
     m_Metadata:
       m_Items: []
   - m_Id: 33140689895424
@@ -63,7 +63,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 33150194188288
-    m_Localized: Do not click on any links and report the email
+    m_Localized: Reply to email, asking for clarification
     m_Metadata:
       m_Items: []
   - m_Id: 33209048662016
@@ -71,11 +71,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 33266334466048
-    m_Localized: Banking details, passwords, or social security numbers
+    m_Localized: Bank details, passwords, and other access information
     m_Metadata:
       m_Items: []
   - m_Id: 33290019700736
-    m_Localized: General feedback about a product
+    m_Localized: Your home address so they can rob you
     m_Metadata:
       m_Items: []
   - m_Id: 33300807450624
@@ -87,15 +87,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 33371120762880
-    m_Localized: www.facebook.com/add-credit-card
-    m_Metadata:
-      m_Items: []
-  - m_Id: 33389647003648
     m_Localized: www.faceb00k.com/login
     m_Metadata:
       m_Items: []
+  - m_Id: 33389647003648
+    m_Localized: www.facebook.com/add-credit-card
+    m_Metadata:
+      m_Items: []
   - m_Id: 33398299852800
-    m_Localized: www.app.en.facebook.com/pay
+    m_Localized: www.app.facebook.com/pay
     m_Metadata:
       m_Items: []
   - m_Id: 1778581081194496
@@ -103,7 +103,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778629256970240
-    m_Localized: Software designed to protect your computer
+    m_Localized: Software designed to damage or misuse a computer
     m_Metadata:
       m_Items: []
   - m_Id: 1779040160350208
@@ -111,32 +111,32 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779203281027072
-    m_Localized: To speed up internet browsing
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1779223325605888
     m_Localized: Monitor and block incoming and outgoing network traffic
     m_Metadata:
       m_Items: []
+  - m_Id: 1779223325605888
+    m_Localized: Block malware downloads (computer viruses)
+    m_Metadata:
+      m_Items: []
   - m_Id: 1779231412224000
-    m_Localized: To increase the storage capacity of your device
+    m_Localized: Store passwords securely on the computer behind a virtual wall
     m_Metadata:
       m_Items: []
   - m_Id: 1779301276745728
-    m_Localized: Which type of firewall inspects data packets and allows or blocks
-      them based on rules?
+    m_Localized: What is the disadvantage of a firewall?
     m_Metadata:
       m_Items: []
   - m_Id: 1779395141074944
-    m_Localized: Physical firewall
+    m_Localized: "It can\u2019t protect against viruses and malware downloaded by
+      the user"
     m_Metadata:
       m_Items: []
   - m_Id: 1779425356840960
-    m_Localized: Packet filtering firewall
+    m_Localized: "It\u2019s only for large companies and servers"
     m_Metadata:
       m_Items: []
   - m_Id: 1779435033100288
-    m_Localized: Network extender
+    m_Localized: It significantly slows down the internet by analyzing it
     m_Metadata:
       m_Items: []
   - m_Id: 1779607012147200
@@ -152,7 +152,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779716303126528
-    m_Localized: Low Wi-Fi signal strength
+    m_Localized: Phishing emails
     m_Metadata:
       m_Items: []
   - m_Id: 1779807424380928
@@ -180,15 +180,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1780399345532928
-    m_Localized: A delicious snack you eat while browsing
+    m_Localized: Text with user data sent to a server
     m_Metadata:
       m_Items: []
   - m_Id: 1780433789157376
-    m_Localized: Text with user data sent to the server
+    m_Localized: A fee for internet usage for each router and server along the way
     m_Metadata:
       m_Items: []
   - m_Id: 1780446619533312
-    m_Localized: A program that protects your device from malware
+    m_Localized: A file that protects your privacy on the internet
     m_Metadata:
       m_Items: []
   - m_Id: 1780578136129536
@@ -212,11 +212,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1780837704826880
-    m_Localized: Temporary cookies
+    m_Localized: Functional cookies
     m_Metadata:
       m_Items: []
   - m_Id: 1780893648453632
-    m_Localized: Persistent cookies
+    m_Localized: Analytical cookies
     m_Metadata:
       m_Items: []
   - m_Id: 1780904075493376
@@ -228,11 +228,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781015719477248
-    m_Localized: They can overload your internet speed
+    m_Localized: Sharing your online activity with third-party companies
     m_Metadata:
       m_Items: []
   - m_Id: 1781020844916736
-    m_Localized: Sharing your online activity with third-party companies
+    m_Localized: "The website won\u2019t work properly until cookies are allowed"
     m_Metadata:
       m_Items: []
   - m_Id: 1781029661343744
@@ -277,11 +277,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781499763130368
-    m_Localized: Permissions must be enabled for the application to function properly
+    m_Localized: Deny permissions and uninstall the app
     m_Metadata:
       m_Items: []
   - m_Id: 1781527651057664
-    m_Localized: Deny permissions and uninstall the app
+    m_Localized: Permissions must be enabled for the application to function properly
     m_Metadata:
       m_Items: []
   - m_Id: 1781544633794560
@@ -297,11 +297,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781806618411008
-    m_Localized: To enhance internet signal and speed up browsing
+    m_Localized: "To check if you\u2019re home on Wi-Fi and can download large files"
     m_Metadata:
       m_Items: []
   - m_Id: 1781820946153472
-    m_Localized: To access your browsing history
+    m_Localized: "To find out where you\u2019re hiding from your parents"
     m_Metadata:
       m_Items: []
   - m_Id: 1781908821016576
@@ -309,11 +309,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781980560392192
-    m_Localized: Location access
+    m_Localized: Contact list access
     m_Metadata:
       m_Items: []
   - m_Id: 1782000651108352
-    m_Localized: Contact list access
+    m_Localized: Location access
     m_Metadata:
       m_Items: []
   - m_Id: 1782006397304832
@@ -342,11 +342,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782296106270720
-    m_Localized: Trust the AI since it is always accurate
+    m_Localized: Verify the information using trusted sources
     m_Metadata:
       m_Items: []
   - m_Id: 1782304704593920
-    m_Localized: Verify the information using trusted sources
+    m_Localized: Trust the AI since it is always accurate
     m_Metadata:
       m_Items: []
   - m_Id: 1782361067651072
@@ -359,11 +359,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782514650480640
-    m_Localized: Because AI learns from them and others may access them
+    m_Localized: Because AI learns from it and others may later access it
     m_Metadata:
       m_Items: []
   - m_Id: 1782538570596352
-    m_Localized: Because it slows down the AI's performance
+    m_Localized: Because AI would respond subjectively
     m_Metadata:
       m_Items: []
   - m_Id: 1782548200718336
@@ -376,11 +376,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1783648593149952
-    m_Localized: Your favorite hobby
+    m_Localized: Your full credit card number
     m_Metadata:
       m_Items: []
   - m_Id: 1783674765606912
-    m_Localized: Your full credit card number
+    m_Localized: Your favorite hobby
     m_Metadata:
       m_Items: []
   - m_Id: 1783683535896576
@@ -392,11 +392,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1783775533760512
-    m_Localized: Trust it and apply it as soon as possible
+    m_Localized: Check with a qualified professional before using the advice
     m_Metadata:
       m_Items: []
   - m_Id: 1783780533370880
-    m_Localized: Check with a qualified professional before using the advice
+    m_Localized: Trust it and apply it as soon as possible
     m_Metadata:
       m_Items: []
   - m_Id: 1783789672759296
@@ -404,19 +404,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1783897164382208
-    m_Localized: Why should you avoid trusting AI-generated information blindly?
+    m_Localized: What is the Turing test?
     m_Metadata:
       m_Items: []
   - m_Id: 1783941141659648
-    m_Localized: AI systems can sometimes hallucinate or provide inaccurate data
+    m_Localized: A test to see if a machine can behave like a human
     m_Metadata:
       m_Items: []
   - m_Id: 1783946959159296
-    m_Localized: AI systems are always biased against users
+    m_Localized: An intelligence test for artificial intelligence
     m_Metadata:
       m_Items: []
   - m_Id: 1783955280658432
-    m_Localized: AI systems cannot generate any useful information
+    m_Localized: A test to see if AI is better than humans
     m_Metadata:
       m_Items: []
   - m_Id: 1784748104777728
@@ -432,7 +432,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1784782791671808
-    m_Localized: To share your passwords with other users easily
+    m_Localized: A tool that steals passwords from public computers
     m_Metadata:
       m_Items: []
   - m_Id: 1784932167614464
@@ -472,11 +472,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1785266365562880
-    m_Localized: As readable text in the website's database
+    m_Localized: As encrypted text in the website's database
     m_Metadata:
       m_Items: []
   - m_Id: 1785271650385920
-    m_Localized: As encrypted text in the website's database
+    m_Localized: As readable text in the website's database
     m_Metadata:
       m_Items: []
   - m_Id: 1785281372782592
@@ -489,11 +489,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1785726619123712
-    m_Localized: Forgetting one password means losing all access
+    m_Localized: A breach of one account could expose all other accounts
     m_Metadata:
       m_Items: []
   - m_Id: 1785740862980096
-    m_Localized: A breach of one account could expose all other accounts
+    m_Localized: Forgetting one password means losing all access
     m_Metadata:
       m_Items: []
   - m_Id: 1785743807381504
@@ -501,8 +501,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786024746057728
-    m_Localized: Which of the following is an example of a second factor in 2FA (two
-      factor authentization)??
+    m_Localized: What is the primary purpose of two-factor authentication (2FA)?
     m_Metadata:
       m_Items: []
   - m_Id: 1786025857548288
@@ -514,19 +513,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786028424462336
-    m_Localized: To share login credentials across multiple devices
+    m_Localized: To be a backup password if I lose or forget the main password
     m_Metadata:
       m_Items: []
   - m_Id: 1786168958812160
-    m_Localized: Which of the following is an example of a second factor in 2FA?
+    m_Localized: Which of the following is an example of a second factor in 2FA (two
+      factor authentization)?
     m_Metadata:
       m_Items: []
   - m_Id: 1786173182476288
-    m_Localized: A security question answer
+    m_Localized: A one-time code sent to your phone
     m_Metadata:
       m_Items: []
   - m_Id: 1786174960861184
-    m_Localized: A one-time code sent to your phone
+    m_Localized: A security question answer
     m_Metadata:
       m_Items: []
   - m_Id: 1786176156237824
@@ -539,33 +539,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786434751856640
-    m_Localized: You are permanently locked out of your account
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1786436320526336
     m_Localized: You can use backup codes or alternative recovery options
     m_Metadata:
       m_Items: []
+  - m_Id: 1786436320526336
+    m_Localized: You are permanently locked out of your account
+    m_Metadata:
+      m_Items: []
   - m_Id: 1786437486542848
-    m_Localized: You can log in with just your password, 2FA is optional
+    m_Localized: You can just sign in with the main password, 2FA is optional
     m_Metadata:
       m_Items: []
   - m_Id: 1786600338784256
-    m_Localized: Which of the following is NOT true about phishing websites and 2FA?
+    m_Localized: What is the disadvantage of 2FA?
     m_Metadata:
       m_Items: []
   - m_Id: 1786680026365952
-    m_Localized: SSO (single sign on) is more secure because it does not use text
-      code that can be stolen
+    m_Localized: "2FA doesn\u2019t protect against phishing"
     m_Metadata:
       m_Items: []
   - m_Id: 1786683562164224
-    m_Localized: Users must verify the location to ensure the authenticity of the
-      website
+    m_Localized: The user must remember two passwords instead of one
     m_Metadata:
       m_Items: []
   - m_Id: 1786686225547264
-    m_Localized: Authentication apps only work when connected to the internet
+    m_Localized: Authenticators only work when connected to the internet
     m_Metadata:
       m_Items: []
   - m_Id: 1786803464732672
@@ -605,11 +603,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778671241953280
-    m_Localized: Malicious software intended to harm or exploit computer
+    m_Localized: Software designed to protect your computer
     m_Metadata:
       m_Items: []
   - m_Id: 1778706188894208
-    m_Localized: An antivirus program
+    m_Localized: Software used to back up files
     m_Metadata:
       m_Items: []
   - m_Id: 1778806176907264
@@ -617,15 +615,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778824417935360
-    m_Localized: Your computer automatically updates without permission
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1778841941737472
     m_Localized: Add pop-ups, slower performance, or unauthorized changes
     m_Metadata:
       m_Items: []
+  - m_Id: 1778841941737472
+    m_Localized: Your computer automatically updates without permission
+    m_Metadata:
+      m_Items: []
   - m_Id: 1778852410720256
-    m_Localized: The internet connection becomes faster than usual
+    m_Localized: A skull with crossed bones appears on the screen with creepy laughter
     m_Metadata:
       m_Items: []
   - m_Id: 1778873109610496
@@ -633,7 +631,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778891426136064
-    m_Localized: Through updates from trusted sources
+    m_Localized: By downloading email attachments or software from unverified sources
     m_Metadata:
       m_Items: []
   - m_Id: 1778897155555328
@@ -641,7 +639,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778907280605184
-    m_Localized: By downloading email attachments or software from unverified sources
+    m_Localized: Through updates from trusted sources
     m_Metadata:
       m_Items: []
   - m_Id: 1778919179845632
@@ -649,15 +647,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778936187748352
-    m_Localized: Ignoring pop-ups and antivirus notifications
+    m_Localized: Avoiding unverified downloads
     m_Metadata:
       m_Items: []
   - m_Id: 1778958287536128
-    m_Localized: Using strong passwords and avoiding unverified downloads
+    m_Localized: Disconnecting the computer from the internet overnight
     m_Metadata:
       m_Items: []
   - m_Id: 1778968299339776
-    m_Localized: Allow sending software usage reports
+    m_Localized: Installing two antivirus programs at once
     m_Metadata:
       m_Items: []
   - m_Id: 1778982102794240

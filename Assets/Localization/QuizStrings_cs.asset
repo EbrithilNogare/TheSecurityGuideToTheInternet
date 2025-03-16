@@ -28,11 +28,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 208189292544
-    m_Localized: "Sport spo\u010D\xEDvaj\xEDc\xED v chyt\xE1n\xED ryb"
+    m_Localized: "Je to bezpe\u010Dn\xFD zp\u016Fsob sd\xEDlen\xED hesel"
     m_Metadata:
       m_Items: []
   - m_Id: 223829852160
-    m_Localized: "Metoda \u010Di\u0161t\u011Bn\xED po\u010D\xEDta\u010Dov\xFDch syst\xE9m\u016F"
+    m_Localized: "Metoda \u010Di\u0161t\u011Bn\xED po\u010D\xEDta\u010Dov\xFDch syst\xE9m\u016F
+      od virusu"
     m_Metadata:
       m_Items: []
   - m_Id: 32896019365888
@@ -50,16 +51,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 32994208022528
-    m_Localized: "Nem\xE1 \u017E\xE1dn\xE9 pravopisn\xE9 ani gramatick\xE9 chyby"
+    m_Localized: "Nem\xE1 \u017E\xE1dn\xFD text, jen p\u0159\xEDlohu"
     m_Metadata:
       m_Items: []
   - m_Id: 33068774359040
-    m_Localized: "Co d\u011Blat, pokud m\xE1te podez\u0159en\xED, \u017Ee e-mail
-      je phishingov\xFD?"
+    m_Localized: "Co d\u011Blat, pokud m\xE1te podez\u0159en\xED, \u017Ee email je
+      phishingov\xFD?"
     m_Metadata:
       m_Items: []
   - m_Id: 33121685504000
-    m_Localized: "Odpov\u011Bd\u011Bt odes\xEDlateli a po\u017E\xE1dat o vysv\u011Btlen\xED"
+    m_Localized: "Neklikat na \u017E\xE1dn\xE9 odkazy a nahl\xE1sit e-mail"
     m_Metadata:
       m_Items: []
   - m_Id: 33140689895424
@@ -67,7 +68,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 33150194188288
-    m_Localized: "Neklikat na \u017E\xE1dn\xE9 odkazy a nahl\xE1sit e-mail"
+    m_Localized: "Odpov\u011Bd\u011Bt na email a po\u017E\xE1dat o vysv\u011Btlen\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 33209048662016
@@ -76,12 +77,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 33266334466048
-    m_Localized: "Bankovn\xED \xFAdaje, hesla nebo \u010D\xEDsla soci\xE1ln\xEDho
-      poji\u0161t\u011Bn\xED"
+    m_Localized: "Bankovn\xED \xFAdaje nebo hesla a jin\xE9 p\u0159\xEDstupov\xE9
+      \xFAdaje"
     m_Metadata:
       m_Items: []
   - m_Id: 33290019700736
-    m_Localized: "N\xE1zor na specifick\xFD produkt"
+    m_Localized: "Fyzickou adresu va\u0161eho bydli\u0161t\u011B, aby v\xE1s mohli
+      vykr\xE1st"
     m_Metadata:
       m_Items: []
   - m_Id: 33300807450624
@@ -94,15 +96,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 33371120762880
-    m_Localized: www.facebook.cz/pridat-platebni-kartu
+    m_Localized: www.faceb00k.com/prihlaseni
     m_Metadata:
       m_Items: []
   - m_Id: 33389647003648
-    m_Localized: www.faceb00k.cz/prihlaseni
+    m_Localized: www.facebook.com/pridat-platebni-kartu
     m_Metadata:
       m_Items: []
   - m_Id: 33398299852800
-    m_Localized: www.app.en.facebook.cz/zaplatit
+    m_Localized: www.app.facebook.com/zaplatit
     m_Metadata:
       m_Items: []
   - m_Id: 1778581081194496
@@ -110,7 +112,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778629256970240
-    m_Localized: "Software navr\u017Een\xFD k ochran\u011B va\u0161eho po\u010D\xEDta\u010De"
+    m_Localized: "Software ur\u010Den\xFD k po\u0161kozen\xED nebo zneu\u017E\xEDv\xE1n\xED
+      po\u010D\xEDta\u010De"
     m_Metadata:
       m_Items: []
   - m_Id: 1805767444037632
@@ -146,12 +149,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778671241953280
-    m_Localized: "Zlovoln\xFD software ur\u010Den\xFD k po\u0161kozen\xED nebo zneu\u017E\xEDv\xE1n\xED
-      po\u010D\xEDta\u010De"
+    m_Localized: "Software navr\u017Een\xFD k ochran\u011B va\u0161eho po\u010D\xEDta\u010De"
     m_Metadata:
       m_Items: []
   - m_Id: 1778706188894208
-    m_Localized: "Antivirov\xFD program"
+    m_Localized: "Software pou\u017E\xEDvan\xFD k z\xE1lohov\xE1n\xED soubor\u016F"
     m_Metadata:
       m_Items: []
   - m_Id: 1778806176907264
@@ -160,17 +162,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778824417935360
-    m_Localized: "Po\u010D\xEDta\u010D se automaticky aktualizuje bez povolen\xED"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1778841941737472
     m_Localized: "Vyskakuj\xEDc\xED reklama, pomalej\u0161\xED v\xFDkon nebo neautorizovan\xE9
       zm\u011Bny"
     m_Metadata:
       m_Items: []
+  - m_Id: 1778841941737472
+    m_Localized: "Po\u010D\xEDta\u010D se automaticky aktualizuje bez povolen\xED"
+    m_Metadata:
+      m_Items: []
   - m_Id: 1778852410720256
-    m_Localized: "Internetov\xE9 p\u0159ipojen\xED je rychlej\u0161\xED ne\u017E
-      obvykle"
+    m_Localized: "Na obrazovce se objev\xED lebka se zk\u0159\xED\u017Een\xFDmi hn\xE1ty
+      a ozve se stra\u0161ideln\xFD sm\xEDch"
     m_Metadata:
       m_Items: []
   - m_Id: 1778873109610496
@@ -178,7 +180,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778891426136064
-    m_Localized: "P\u0159es aktualizace z d\u016Fv\u011Bryhodn\xFDch zdroj\u016F"
+    m_Localized: "Sta\u017Een\xEDm p\u0159\xEDloh mailu nebo softwaru z neov\u011B\u0159en\xFDch
+      zdroj\u016F"
     m_Metadata:
       m_Items: []
   - m_Id: 1778897155555328
@@ -187,8 +190,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778907280605184
-    m_Localized: "Sta\u017Een\xEDm p\u0159\xEDloh mailu nebo softwaru z neov\u011B\u0159en\xFDch
-      zdroj\u016F"
+    m_Localized: "P\u0159es aktualizace z d\u016Fv\u011Bryhodn\xFDch zdroj\u016F"
     m_Metadata:
       m_Items: []
   - m_Id: 1778919179845632
@@ -197,17 +199,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778936187748352
-    m_Localized: "Ignorov\xE1n\xED vyskakovac\xEDch oken a upozorn\u011Bn\xED antivirov\xE9ho
-      programu"
+    m_Localized: "Vyh\xFDb\xE1n\xED se neov\u011B\u0159en\xFDm stahov\xE1n\xEDm"
     m_Metadata:
       m_Items: []
   - m_Id: 1778958287536128
-    m_Localized: "Pou\u017E\xEDv\xE1n\xED siln\xFDch hesel a vyh\xFDb\xE1n\xED se
-      neov\u011B\u0159en\xFDm stahov\xE1n\xEDm"
+    m_Localized: "Odpojovat po\u010D\xEDta\u010D od internetu p\u0159es noc"
     m_Metadata:
       m_Items: []
   - m_Id: 1778968299339776
-    m_Localized: "Povolit zas\xEDlan\xED zpr\xE1v o pou\u017E\xEDv\xE1n\xED softwaru"
+    m_Localized: "Nainstalovat si 2 antivirov\xE9 programy najednou"
     m_Metadata:
       m_Items: []
   - m_Id: 1778982102794240
@@ -234,34 +234,35 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779203281027072
-    m_Localized: "Zrychlit prohl\xED\u017Een\xED internetu"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1779223325605888
     m_Localized: "Monitorovat a blokovat p\u0159\xEDchoz\xED a odchoz\xED s\xED\u0165ov\xFD
       provoz"
     m_Metadata:
       m_Items: []
+  - m_Id: 1779223325605888
+    m_Localized: "Blokovat stahov\xE1n\xED malwaru (po\u010D\xEDta\u010Dov\xE9ho
+      viru)"
+    m_Metadata:
+      m_Items: []
   - m_Id: 1779231412224000
-    m_Localized: "Zv\xFD\u0161it kapacitu \xFAlo\u017Ei\u0161t\u011B va\u0161eho
-      za\u0159\xEDzen\xED"
+    m_Localized: "Uchov\xE1vat hesla bezpe\u010Dn\u011B v po\u010D\xEDta\u010Di za
+      virtu\xE1ln\xED zd\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 1779301276745728
-    m_Localized: "Jak\xFD typ firewallu prozkoum\xE1v\xE1 datov\xE9 pakety a na z\xE1klad\u011B
-      pravidel je povoluje nebo blokuje?"
+    m_Localized: "Jak\xE1 je nev\xFDhoda firewallu?"
     m_Metadata:
       m_Items: []
   - m_Id: 1779395141074944
-    m_Localized: "Fyzick\xFD firewall"
+    m_Localized: "Nem\u016F\u017Ee ochr\xE1nit p\u0159ed viry a malwarem sta\u017Een\xFDm
+      u\u017Eivatelem"
     m_Metadata:
       m_Items: []
   - m_Id: 1779425356840960
-    m_Localized: "Firewall pro filtrov\xE1n\xED paket\u016F"
+    m_Localized: "Je jen pro velk\xE9 spole\u010Dnosti a  servery"
     m_Metadata:
       m_Items: []
   - m_Id: 1779435033100288
-    m_Localized: "Roz\u0161\xED\u0159en\xED s\xEDt\u011B"
+    m_Localized: "Z\xE1sadn\u011B zpomaluje internet t\xEDm, \u017Ee jej analyzuje"
     m_Metadata:
       m_Items: []
   - m_Id: 1779607012147200
@@ -277,7 +278,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779716303126528
-    m_Localized: "Slab\xFDm sign\xE1lem Wi-Fi"
+    m_Localized: "Phishingov\xFDmi emaily"
     m_Metadata:
       m_Items: []
   - m_Id: 1779807424380928
@@ -305,17 +306,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1780399345532928
-    m_Localized: "N\xE1zev pro sva\u010Dinu, kter\xE1 se j\xED p\u0159i pou\u017E\xEDv\xE1n\xED
-      internetu"
+    m_Localized: "Text s u\u017Eivatelsk\xFDmi daty odes\xEDlan\xFD na server"
     m_Metadata:
       m_Items: []
   - m_Id: 1780433789157376
-    m_Localized: "Text s u\u017Eivatelsk\xFDmi daty odes\xEDlan\xFD na server."
+    m_Localized: "Poplatek za pou\u017Eit\xED internetu pro ka\u017Ed\xFD router
+      a server po cest\u011B"
     m_Metadata:
       m_Items: []
   - m_Id: 1780446619533312
-    m_Localized: "Program, kter\xFD chr\xE1n\xED tvoje za\u0159\xEDzen\xED p\u0159ed
-      malwarem"
+    m_Localized: "Soubor, kter\xFD chr\xE1n\xED tvoje soukrom\xED v internetu"
     m_Metadata:
       m_Items: []
   - m_Id: 1780578136129536
@@ -342,11 +342,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1780837704826880
-    m_Localized: "Do\u010Dasn\xE9 cookies"
+    m_Localized: "Funk\u010Dn\xED cookies"
     m_Metadata:
       m_Items: []
   - m_Id: 1780893648453632
-    m_Localized: "Trval\xE9 cookies"
+    m_Localized: "Analytick\xE9 cookies"
     m_Metadata:
       m_Items: []
   - m_Id: 1780904075493376
@@ -358,12 +358,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781015719477248
-    m_Localized: "Mohou zpomalit internetov\xE9 p\u0159ipojen\xED"
+    m_Localized: "Sd\xEDleni tvoj\xED online aktivity se spole\u010Dnostmi t\u0159et\xEDch
+      stran"
     m_Metadata:
       m_Items: []
   - m_Id: 1781020844916736
-    m_Localized: "Sd\xEDleni tvoj\xED online aktivity s spole\u010Dnostmi t\u0159et\xEDch
-      stran"
+    m_Localized: "Webov\xE1 str\xE1nka nefunguje korektn\u011B dokud se nepovol\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 1781029661343744
@@ -410,11 +410,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781499763130368
-    m_Localized: "Opr\xE1vn\u011Bn\xED ji povolit, aby aplikace spr\xE1vn\u011B fungovala"
+    m_Localized: "Odm\xEDtnout opr\xE1vn\u011Bn\xED a aplikaci odinstalovat"
     m_Metadata:
       m_Items: []
   - m_Id: 1781527651057664
-    m_Localized: "Odm\xEDtnout opr\xE1vn\u011Bn\xED a aplikaci odinstalovat"
+    m_Localized: "Opr\xE1vn\u011Bn\xED ji povolit, aby aplikace spr\xE1vn\u011B fungovala"
     m_Metadata:
       m_Items: []
   - m_Id: 1781544633794560
@@ -431,24 +431,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1781806618411008
-    m_Localized: "Pro zlep\u0161en\xED internetov\xE9ho sign\xE1lu a zrychlen\xED
-      prohl\xED\u017Een\xED"
+    m_Localized: "Pro zji\u0161t\u011Bn\xED jestli jsi doma na wi-fi a m\u016F\u017Ee
+      stahovat velk\xE9 soubory"
     m_Metadata:
       m_Items: []
   - m_Id: 1781820946153472
-    m_Localized: "Pro p\u0159\xEDstup k historii prohl\xED\u017Een\xED"
+    m_Localized: "Aby zjistila, kde se schov\xE1v\xE1\u0161 p\u0159ed rodi\u010Di"
     m_Metadata:
       m_Items: []
   - m_Id: 1781908821016576
-    m_Localized: "Kter\xE9 opr\xE1vn\u011Bn\xED nen\xED vhodn\xE9 pro aplikaci po\u010Das\xED?"
+    m_Localized: "Kter\xE9 opr\xE1vn\u011Bn\xED NEN\xCD vhodn\xE9 pro aplikaci po\u010Das\xED?"
     m_Metadata:
       m_Items: []
   - m_Id: 1781980560392192
-    m_Localized: "P\u0159\xEDstup k poloze"
+    m_Localized: "P\u0159\xEDstup k seznamu kontakt\u016F"
     m_Metadata:
       m_Items: []
   - m_Id: 1782000651108352
-    m_Localized: "P\u0159\xEDstup k seznamu kontakt\u016F"
+    m_Localized: "P\u0159\xEDstup k poloze"
     m_Metadata:
       m_Items: []
   - m_Id: 1782006397304832
@@ -479,12 +479,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782296106270720
-    m_Localized: "D\u016Fv\u011B\u0159ovat AI, proto\u017Ee m\xE1 v\u017Edy pravdu"
+    m_Localized: "Ov\u011B\u0159it informace pomoc\xED d\u016Fv\u011Bryhodn\xFDch
+      zdroj\u016F"
     m_Metadata:
       m_Items: []
   - m_Id: 1782304704593920
-    m_Localized: "Ov\u011B\u0159it informace pomoc\xED d\u016Fv\u011Bryhodn\xFDch
-      zdroj\u016F"
+    m_Localized: "D\u016Fv\u011B\u0159ovat AI, proto\u017Ee m\xE1 v\u017Edy pravdu"
     m_Metadata:
       m_Items: []
   - m_Id: 1782361067651072
@@ -498,12 +498,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782514650480640
-    m_Localized: "Proto\u017Ee AI se z nich u\u010D\xED a mohou je z\xEDskat i ciz\xED
-      osoby"
+    m_Localized: "Proto\u017Ee AI se z nich u\u010D\xED a mohou je n\xE1sledn\u011B
+      z\xEDskat i ciz\xED osoby"
     m_Metadata:
       m_Items: []
   - m_Id: 1782538570596352
-    m_Localized: "Proto\u017Ee to sn\xED\u017E\xED v\xFDkon AI"
+    m_Localized: "Proto\u017Ee AI by odpov\xEDdalo neobjektivn\u011B"
     m_Metadata:
       m_Items: []
   - m_Id: 1782548200718336
@@ -516,11 +516,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1783648593149952
-    m_Localized: "Va\u0161e obl\xEDben\xE1 z\xE1liba"
+    m_Localized: "Cel\xE9 \u010D\xEDslo va\u0161\xED kreditn\xED karty"
     m_Metadata:
       m_Items: []
   - m_Id: 1783674765606912
-    m_Localized: "Cel\xE9 \u010D\xEDslo va\u0161\xED kreditn\xED karty"
+    m_Localized: "Va\u0161e obl\xEDben\xE1 z\xE1liba"
     m_Metadata:
       m_Items: []
   - m_Id: 1783683535896576
@@ -533,12 +533,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1783775533760512
-    m_Localized: "D\u016Fv\u011B\u0159ovat ji a aplikovat ji, co nejd\u0159\xEDve"
+    m_Localized: "Ov\u011B\u0159it si radu s kvalifikovan\xFDm odborn\xEDkem p\u0159ed
+      jej\xEDm pou\u017Eit\xEDm"
     m_Metadata:
       m_Items: []
   - m_Id: 1783780533370880
-    m_Localized: "Ov\u011B\u0159it si radu s kvalifikovan\xFDm odborn\xEDkem p\u0159ed
-      jej\xEDm pou\u017Eit\xEDm"
+    m_Localized: "D\u016Fv\u011B\u0159ovat ji a aplikovat ji, co nejd\u0159\xEDve"
     m_Metadata:
       m_Items: []
   - m_Id: 1783789672759296
@@ -546,22 +546,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1783897164382208
-    m_Localized: "Pro\u010D byste se m\u011Bli vyhnout slep\xE9mu d\u016Fv\u011B\u0159ov\xE1n\xED
-      informac\xED generovan\xFDm AI?"
+    m_Localized: "Co je Turing\u016Fv test?"
     m_Metadata:
       m_Items: []
   - m_Id: 1783941141659648
-    m_Localized: "AI syst\xE9my mohou ob\u010Das halucinovat nebo poskytovat nep\u0159esn\xE9
-      \xFAdaje"
+    m_Localized: "Test jestli se stroj dok\xE1\u017Ee chovat jako \u010Dlov\u011Bk"
     m_Metadata:
       m_Items: []
   - m_Id: 1783946959159296
-    m_Localized: "AI syst\xE9my jsou v\u017Edy zaujat\xE9 proti u\u017Eivatel\u016Fm"
+    m_Localized: "Test inteligence pro um\u011Blou inteligenci"
     m_Metadata:
       m_Items: []
   - m_Id: 1783955280658432
-    m_Localized: "AI syst\xE9my nemohou generovat \u017E\xE1dn\xE9 u\u017Eite\u010Dn\xE9
-      informace"
+    m_Localized: "Test jestli je um\u011Bl\xE1 inteligence \u0161ikovn\u011Bj\u0161\xED
+      ne\u017E \u010Dlov\u011Bk"
     m_Metadata:
       m_Items: []
   - m_Id: 1784748104777728
@@ -578,7 +576,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1784782791671808
-    m_Localized: "Snadno sd\xEDlet hesla s ostatn\xEDmi u\u017Eivateli"
+    m_Localized: "N\xE1stroj kter\xFD krade hesla z ve\u0159ejn\xFDch po\u010D\xEDta\u010D\u016F"
     m_Metadata:
       m_Items: []
   - m_Id: 1784932167614464
@@ -621,11 +619,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1785266365562880
-    m_Localized: "Jako \u010Diteln\xFD text v datab\xE1zi dan\xE9ho webu"
+    m_Localized: "Jako za\u0161ifrovan\xFD text v datab\xE1zi dan\xE9ho webu"
     m_Metadata:
       m_Items: []
   - m_Id: 1785271650385920
-    m_Localized: "Jako za\u0161ifrovan\xFD text v datab\xE1zi dan\xE9ho webu"
+    m_Localized: "Jako \u010Diteln\xFD text v datab\xE1zi dan\xE9ho webu"
     m_Metadata:
       m_Items: []
   - m_Id: 1785281372782592
@@ -638,12 +636,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1785726619123712
-    m_Localized: "Zapomenut\xEDm jednoho hesla p\u0159ijdu o v\u0161echny p\u0159\xEDstupy"
+    m_Localized: "Prolomen\xED hesla jednoho \xFA\u010Dtu m\u016F\u017Ee odhalit
+      v\u0161echny ostatn\xED \xFA\u010Dty"
     m_Metadata:
       m_Items: []
   - m_Id: 1785740862980096
-    m_Localized: "Prolomen\xED hesla jednoho \xFA\u010Dtu m\u016F\u017Ee odhalit
-      v\u0161echny ostatn\xED \xFA\u010Dty"
+    m_Localized: "Zapomenut\xEDm jednoho hesla p\u0159ijdu o v\u0161echny p\u0159\xEDstupy"
     m_Metadata:
       m_Items: []
   - m_Id: 1785743807381504
@@ -665,7 +663,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786028424462336
-    m_Localized: "Sd\xEDlet p\u0159ihla\u0161ovac\xED \xFAdaje mezi v\xEDce za\u0159\xEDzen\xEDmi"
+    m_Localized: "Z\xE1lo\u017En\xED heslo, pokud ztrat\xEDm nebo zapomenu hlavn\xED
+      heslo"
     m_Metadata:
       m_Items: []
   - m_Id: 1786168958812160
@@ -674,11 +673,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786173182476288
-    m_Localized: "Odpov\u011B\u010F na bezpe\u010Dnostn\xED ot\xE1zku"
+    m_Localized: "Jednor\xE1zov\xFD k\xF3d zaslan\xFD na v\xE1\u0161 telefon"
     m_Metadata:
       m_Items: []
   - m_Id: 1786174960861184
-    m_Localized: "Jednor\xE1zov\xFD k\xF3d zaslan\xFD na v\xE1\u0161 telefon"
+    m_Localized: "Odpov\u011B\u010F na bezpe\u010Dnostn\xED ot\xE1zku"
     m_Metadata:
       m_Items: []
   - m_Id: 1786176156237824
@@ -691,36 +690,33 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786434751856640
-    m_Localized: "Budete trvale zablokov\xE1ni z va\u0161eho \xFA\u010Dtu"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1786436320526336
     m_Localized: "M\u016F\u017Eete pou\u017E\xEDt z\xE1lo\u017En\xED k\xF3dy nebo
       alternativn\xED mo\u017Enosti obnoven\xED"
     m_Metadata:
       m_Items: []
+  - m_Id: 1786436320526336
+    m_Localized: "Budete trvale zablokov\xE1ni z va\u0161eho \xFA\u010Dtu"
+    m_Metadata:
+      m_Items: []
   - m_Id: 1786437486542848
-    m_Localized: "M\u016F\u017Eete se p\u0159ihl\xE1sit jenom heslem, 2FA je voliteln\xFD"
+    m_Localized: "Sta\u010D\xED se p\u0159ihl\xE1sit hlavn\xEDm heslem, 2FA je voliteln\xFD"
     m_Metadata:
       m_Items: []
   - m_Id: 1786600338784256
-    m_Localized: "Kter\xE9 z n\xE1sleduj\xEDc\xEDch nen\xED pravda o phishingov\xFDch
-      webech a 2FA?"
+    m_Localized: "Co je nev\xFDhoda 2FA?"
     m_Metadata:
       m_Items: []
   - m_Id: 1786680026365952
-    m_Localized: "SSO (single sign on) je bezpe\u010Dn\u011Bj\u0161\xED, proto\u017Ee
-      nepou\u017E\xEDv\xE1 textov\xFD k\xF3d, kter\xFD m\u016F\u017Ee b\xFDt ukraden"
+    m_Localized: "2FA nechr\xE1n\xED p\u0159ed phishingem"
     m_Metadata:
       m_Items: []
   - m_Id: 1786683562164224
-    m_Localized: "U\u017Eivatel\xE9 mus\xED ov\u011B\u0159it m\xEDsto, aby zajistili
-      autenticitu webu"
+    m_Localized: "U\u017Eivatel si mus\xED pamatovat 2 hesla nam\xEDsto jednoho"
     m_Metadata:
       m_Items: []
   - m_Id: 1786686225547264
-    m_Localized: "Aplika\u010Dn\xED autentifik\xE1tory funguj\xED pouze p\u0159i
-      p\u0159ipojen\xED k internetu"
+    m_Localized: "Autentifik\xE1tory funguj\xED pouze p\u0159i p\u0159ipojen\xED
+      k internetu"
     m_Metadata:
       m_Items: []
   - m_Id: 1786803464732672

@@ -3511,8 +3511,8 @@ MonoBehaviour:
   quizSprites:
   - {fileID: 21300000, guid: 9267d56719803fd4c9895776434588f6, type: 3}
   - {fileID: 21300000, guid: ee7f8e55614c6184297e8a0e164e6bc0, type: 3}
-  - {fileID: 21300000, guid: 37d3a235b6dfb534e96248c80272aa18, type: 3}
   - {fileID: 21300000, guid: be101974cc41e4242bf6ada88f30e6ac, type: 3}
+  - {fileID: 21300000, guid: 37d3a235b6dfb534e96248c80272aa18, type: 3}
   correctAnswerColor: {r: 0.41251338, g: 0.8490566, b: 0.43416515, a: 1}
   incorrectAnswerColor: {r: 0.9150943, g: 0.45323068, b: 0.4987726, a: 1}
   quizProgress: {fileID: 275233912}
