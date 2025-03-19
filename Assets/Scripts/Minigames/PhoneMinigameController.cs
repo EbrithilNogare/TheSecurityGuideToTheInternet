@@ -82,14 +82,6 @@ public class PhoneMinigameController : MonoBehaviour
         });
     }
 
-    public void Finish(int score)
-    {
-        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Phone minigame completed\",\"score\":" + score + "}");
-        Store.Instance.quizToLoad = Store.Quiz.Phone;
-
-        DOVirtual.DelayedCall(2, () => SceneManager.LoadScene("Quiz"));
-    }
-
     public int EvaluateMove()
     {
         bool isUsingCorrectPieces = true;
@@ -115,7 +107,7 @@ public class PhoneMinigameController : MonoBehaviour
         int toReturn = isUsingCorrectPieces && noEmptyCells ? isInsideOfBoard ? 2 : 1 : 0;
 
         if (toReturn == 2)
-            Finish(toReturn); // todo do it better
+            FinishMinigame(toReturn); // todo do it better
 
         return toReturn;
     }
@@ -131,6 +123,16 @@ public class PhoneMinigameController : MonoBehaviour
                 boardBagroundPiecesparent.transform.GetChild(y * 7 + x).GetComponent<UnityEngine.UI.Image>().color = currentLevel.board[y, x] == 1 ? boardBagroundPieceColorFree : boardBagroundPieceColorWall;
             }
         }
+    }
+    public void FinishMinigame(int score)
+    {
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Phone minigame completed\",\"score\":" + score + "}");
+        Store.Instance.minigameScore = score;
+        int scoreForStore = score == 0 ? 0b000 : score == 1 ? 0b100 : 0b110;
+        Store.Instance.SetLevelScore((int)Store.Level.Phone, scoreForStore);
+        Store.Instance.quizToLoad = Store.Quiz.Phone;
+
+        DOVirtual.DelayedCall(2, () => SceneManager.LoadScene("Quiz"));
     }
 
     public Dictionary<PieceType, List<Vector2>> pieceShapes = new Dictionary<PieceType, List<Vector2>>()

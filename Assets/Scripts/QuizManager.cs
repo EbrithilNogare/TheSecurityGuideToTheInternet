@@ -49,9 +49,11 @@ public class QuizManager : MonoBehaviour
     private StringTable stringTable;
     private QuizQuestion[] currentQuiz;
     private string currentQuizCategory;
+    private Store.Quiz currentQuizCategoryIndex;
     private int currentQuestionIndex;
     private bool isEvaluatingInProgress;
     private int score;
+    private int correctAnswers;
     private float defaultTimeToRespond = 30f;
     private float timeToRespond;
     private bool allQuizesMode = false;
@@ -84,6 +86,7 @@ public class QuizManager : MonoBehaviour
     {
         currentQuiz = allQuizes[quizName];
         currentQuizCategory = "";
+        currentQuizCategoryIndex = quizName;
 
         switch (quizName)
         {
@@ -128,11 +131,19 @@ public class QuizManager : MonoBehaviour
             verticalAnswersContainer.transform.DOMoveY(verticalAnswersContainer.transform.position.y - 1000, duration).From(verticalAnswersContainer.transform.position.y).SetEase(Ease.InBack);
         else
             horizontalAnswersContainer.transform.DOMoveY(horizontalAnswersContainer.transform.position.y - 1000, duration).From(horizontalAnswersContainer.transform.position.y).SetEase(Ease.InBack);
-        quizQuestionText.transform.DOMoveY(quizQuestionText.transform.position.y - 1000, duration).From(quizQuestionText.transform.position.y).SetEase(Ease.InBack).OnComplete(() =>
+        quizQuestionText.transform.DOMoveY(quizQuestionText.transform.position.y - 1000, duration).From(quizQuestionText.transform.position.y).SetEase(Ease.InBack).OnComplete(FinishQuiz);
+    }
+
+    private void FinishQuiz()
+    {
+        if (!allQuizesMode)
         {
+            int scoreForStore = correctAnswers >= 5 ? 0b001 : 0b000;
+            Store.Instance.SetLevelScore((int)currentQuizCategoryIndex, scoreForStore);
             Store.Instance.quizScore = score;
-            SceneManager.LoadScene("LevelSelection");
-        });
+        }
+
+        SceneManager.LoadScene("LevelSelection");
     }
 
     private void HandleEndOfQuiz()
@@ -151,14 +162,21 @@ public class QuizManager : MonoBehaviour
 
     private void DoParticlesAnimation(RectTransform buttonPosition, float duration)
     {
+        int particlesCount = Store.Instance.qualityLevel switch
+        {
+            0 => particleContainer.transform.childCount / 4,
+            1 => particleContainer.transform.childCount / 2,
+            _ => particleContainer.transform.childCount,
+        };
+
         for (int i = 0; i < particleContainer.transform.childCount; i++)
         {
             Transform particle = particleContainer.transform.GetChild(i);
             particle.gameObject.SetActive(true);
-            particle.position = buttonPosition.position + new Vector3(Random.Range(buttonPosition.rect.width / 2, -buttonPosition.rect.width / 2), Random.Range(buttonPosition.rect.height / 2, -buttonPosition.rect.height / 2), 0);
+            particle.position = buttonPosition.position + Vector3.Scale(buttonPosition.transform.lossyScale, new Vector3(Random.Range(buttonPosition.rect.width / 2, -buttonPosition.rect.width / 2), Random.Range(buttonPosition.rect.height / 2, -buttonPosition.rect.height / 2), 0));
             var endPosition = scoreCounterPosition.position;
             particle
-                .DOMove(endPosition, Random.Range(duration * .9f, duration * 1.1f))
+                .DOMove(endPosition, Random.Range(duration * .9f, duration * 1.2f))
                 .SetEase(Ease.InCubic)
                 .OnComplete(() => particle.gameObject.SetActive(false));
         }
@@ -176,6 +194,7 @@ public class QuizManager : MonoBehaviour
         int numAnswers = currentQuestion.isVertialLayouot ? currentQuestion.textAnswers.Length : currentQuestion.imageAnswerIndices.Length;
         int realIndex = (answerIndex + currentAnswersOffset) % numAnswers;
         bool isCorrectAnswer = realIndex == CORRECT_ANSWER_INDEX;
+        correctAnswers += isCorrectAnswer ? 1 : 0;
 
         LoggingService.Log(LoggingService.LogCategory.Quiz, $"{{category:{currentQuizCategory},questionIndex:{currentQuestionIndex},answerIndex:{realIndex},isCorrectAnswer:{isCorrectAnswer},timeToRespond:{Mathf.Floor(timeToRespond)}}}");
 

@@ -9,7 +9,7 @@ public record LevelData
 
 public class Store : MonoBehaviour
 {
-    public enum Quiz { None = -2, All = -1, Malware, Firewall, Phishing, Cookies, Phone, AI, Passwords, TFA }
+    public enum Quiz { None = -2, All = -1, Malware = 0, Firewall = 1, Phishing = 2, Cookies = 3, Phone = 4, AI = 5, Passwords = 6, TFA = 7 }
     public enum Level { Malware = 0, Firewall = 1, Phishing = 2, Cookies = 3, Phone = 4, AI = 5, Passwords = 6, TFA = 7 }
 
     [HideInInspector] public static Store Instance { get; private set; }
@@ -20,6 +20,7 @@ public class Store : MonoBehaviour
     [NonSerialized] public int minigameScore = 0;
     [NonSerialized] public int quizScore = 0;
     [NonSerialized] public int[] levelStars = new int[] { 0b000, 0b000, 0b000, 0b000, 0b000, 0b000, 0b000, 0b000 }; // level, level, quiz;
+    [NonSerialized] public int qualityLevel = 2;
 
     private void Awake()
     {
@@ -39,7 +40,7 @@ public class Store : MonoBehaviour
     {
         LoggingService.LogStartGame();
 
-        ApplyQualityLevel(PlayerPrefs.GetInt("QualityLevel", 2));
+        ApplyQualityLevel(PlayerPrefs.GetInt("QualityLevel", qualityLevel));
         if (PlayerPrefs.HasKey("LevelUnlocked"))
         {
             var levelUnlockedFromPlayerPref = JSON.FromJson<bool>(PlayerPrefs.GetString("LevelUnlocked"));
@@ -63,9 +64,8 @@ public class Store : MonoBehaviour
 
     public void SetLevelScore(int level, int score)
     {
-        // todo make it as OR
         LoggingService.Log(LoggingService.LogCategory.Store, "Level: " + level + ", score set: " + score);
-        levelStars[level] = score;
+        levelStars[level] |= score;
         PlayerPrefs.SetString("LevelStars", JSON.ArrayToJson(levelStars));
     }
 
@@ -78,6 +78,7 @@ public class Store : MonoBehaviour
 
     private void ApplyQualityLevel(int level)
     {
+        qualityLevel = level;
         QualitySettings.vSyncCount = 1;
         switch (level)
         {
