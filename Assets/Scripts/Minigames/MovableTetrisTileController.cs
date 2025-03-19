@@ -2,8 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MovableTetrisTileController : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
-{
+public class MovableTetrisTileController : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
     public PhoneMinigameController.PieceType pieceType;
 
     private GameObject parent;
@@ -14,8 +13,7 @@ public class MovableTetrisTileController : MonoBehaviour, IBeginDragHandler, IDr
 
     private const float CELL_SIZE = 64.0f;
 
-    void Start()
-    {
+    void Start() {
         parent = transform.parent.gameObject;
         parentRectTransform = parent.GetComponent<RectTransform>();
         parentCanvasGroup = parent.GetComponent<CanvasGroup>() != null ? parent.GetComponent<CanvasGroup>() : parent.AddComponent<CanvasGroup>();
@@ -23,27 +21,23 @@ public class MovableTetrisTileController : MonoBehaviour, IBeginDragHandler, IDr
         defaultDropZone = parent.transform.parent.transform;
     }
 
-    public void OnBeginDrag(PointerEventData eventData)
-    {
+    public void OnBeginDrag(PointerEventData eventData) {
         parent.transform.SetParent(phoneMinigameController.dragAndDropTemporaryParent.transform);
         parentCanvasGroup.blocksRaycasts = false;
         parentCanvasGroup.alpha = 0.7f;
     }
 
-    public void OnDrag(PointerEventData eventData)
-    {
+    public void OnDrag(PointerEventData eventData) {
         parentRectTransform.anchoredPosition += eventData.delta / (new Vector2(parentRectTransform.lossyScale.x, parentRectTransform.lossyScale.y));
     }
 
-    public void OnEndDrag(PointerEventData eventData)
-    {
+    public void OnEndDrag(PointerEventData eventData) {
         parentCanvasGroup.blocksRaycasts = true;
         parentCanvasGroup.alpha = 1f;
         EvaluateDrop();
     }
 
-    private void EvaluateDrop()
-    {
+    private void EvaluateDrop() {
         Vector3 parentPosition = parent.transform.position;
         Vector3 parentScale = parent.transform.lossyScale;
         Vector3 parentInverseScale = new(1f / parentScale.x, 1f / parentScale.y, 1f / parentScale.z);
@@ -62,10 +56,8 @@ public class MovableTetrisTileController : MonoBehaviour, IBeginDragHandler, IDr
         Vector2Int boardPosition = new Vector2Int(Mathf.RoundToInt(diff.x / CELL_SIZE), -Mathf.RoundToInt(diff.y / CELL_SIZE));
 
         // Clean up previous position
-        for (int x = 0; x < 7; x++)
-        {
-            for (int y = 0; y < 7; y++)
-            {
+        for (int x = 0; x < 7; x++) {
+            for (int y = 0; y < 7; y++) {
                 if (phoneMinigameController.currentBooard[y, x] == pieceType)
                     phoneMinigameController.currentBooard[y, x] = PhoneMinigameController.PieceType.None;
             }
@@ -73,30 +65,25 @@ public class MovableTetrisTileController : MonoBehaviour, IBeginDragHandler, IDr
 
         bool isValidlyOverBoard = true;
         List<Vector2> shapeOffsets = phoneMinigameController.pieceShapes[pieceType];
-        foreach (var offset in shapeOffsets)
-        {
+        foreach (var offset in shapeOffsets) {
             int x = (int)(boardPosition.x + offset.x);
             int y = (int)(boardPosition.y + offset.y);
 
-            if (x < 0 || x >= 7 || y < 0 || y >= 7 || (phoneMinigameController.currentBooard[x, y] != PhoneMinigameController.PieceType.None))
-            {
+            if (x < 0 || x >= 7 || y < 0 || y >= 7 || (phoneMinigameController.currentBooard[x, y] != PhoneMinigameController.PieceType.None)) {
                 isValidlyOverBoard = false;
                 break;
             }
         }
 
-        if (!isValidlyOverBoard)
-        {
+        if (!isValidlyOverBoard) {
             parent.transform.SetParent(defaultDropZone);
             parentRectTransform.anchoredPosition = Vector2.zero;
         }
-        else
-        {
+        else {
             parent.transform.SetParent(phoneMinigameController.mainDropZone);
             parentRectTransform.anchoredPosition = new Vector2(boardPosition.x * CELL_SIZE - mainDropZoneOffset.x + parentOffset.x, -boardPosition.y * CELL_SIZE - mainDropZoneOffset.y + parentOffset.y);
 
-            foreach (var offset in shapeOffsets)
-            {
+            foreach (var offset in shapeOffsets) {
                 int x = (int)(boardPosition.x + offset.x);
                 int y = (int)(boardPosition.y + offset.y);
                 phoneMinigameController.currentBooard[x, y] = pieceType; // reversed visualisation

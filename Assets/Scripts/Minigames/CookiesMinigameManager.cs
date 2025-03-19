@@ -4,16 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public enum CookieIngredient
-{
+public enum CookieIngredient {
     Chocolate1, Chocolate2, Chocolate3,
     Egg1, Egg2, Egg3,
     Flour1, Flour2, Flour3,
     Milk1, Milk2, Milk3,
 }
 
-public class CookiesMinigameManager : MonoBehaviour
-{
+public class CookiesMinigameManager : MonoBehaviour {
     public GameObject dropZone;
     public GameObject draggingParent;
     public Button finishAndBakeButton;
@@ -31,18 +29,15 @@ public class CookiesMinigameManager : MonoBehaviour
         new CookieIngredient[] { CookieIngredient.Milk3, CookieIngredient.Egg3, CookieIngredient.Flour1, CookieIngredient.Chocolate2 },
     };
 
-    void Start()
-    {
+    void Start() {
         RestartIngredients();
     }
 
-    public void CookieAddedToBowl(CookiesMinigameDragable cookieIngredient)
-    {
+    public void CookieAddedToBowl(CookiesMinigameDragable cookieIngredient) {
         Debug.Log("CookieAddedToBowl: " + cookieIngredient.cookieIngredient);
         cookieIngredientsInBowl.Add(cookieIngredient);
 
-        switch (cookieIngredient.cookieIngredient)
-        {
+        switch (cookieIngredient.cookieIngredient) {
             case CookieIngredient.Milk1:
             case CookieIngredient.Milk2:
             case CookieIngredient.Milk3:
@@ -68,21 +63,17 @@ public class CookiesMinigameManager : MonoBehaviour
         finishAndBakeButton.interactable = cookieIngredientsInBowl.Count >= 4;
     }
 
-    public void RestartIngredients()
-    {
-        foreach (var item in cookieIngredientsInBowl)
-        {
+    public void RestartIngredients() {
+        foreach (var item in cookieIngredientsInBowl) {
             item.Reset();
         }
         cookieIngredientsInBowl.Clear();
 
-        foreach (var bowlIngredient in bowlIngredients)
-        {
+        foreach (var bowlIngredient in bowlIngredients) {
             bowlIngredient.SetActive(false);
         }
 
-        foreach (var bowlLabel in bowlLabels)
-        {
+        foreach (var bowlLabel in bowlLabels) {
             bowlLabel.SetActive(false);
         }
         bowlLabels[currentCookieCategoryIndex].SetActive(true);
@@ -90,36 +81,29 @@ public class CookiesMinigameManager : MonoBehaviour
         finishAndBakeButton.interactable = cookieIngredientsInBowl.Count >= 4;
     }
 
-    public void StartAgain()
-    {
+    public void StartAgain() {
         RestartIngredients();
     }
 
-    public void FinishAndBake()
-    {
+    public void FinishAndBake() {
         // check if the ingredients are correct
         bool correct = true;
-        for (int i = 0; i < cookieIngredientsInBowl.Count; i++)
-        {
-            if (cookieIngredientsInBowl[i].cookieIngredient != correctIngredients[currentCookieCategoryIndex][i])
-            {
+        for (int i = 0; i < cookieIngredientsInBowl.Count; i++) {
+            if (cookieIngredientsInBowl[i].cookieIngredient != correctIngredients[currentCookieCategoryIndex][i]) {
                 correct = false;
                 break;
             }
         }
 
-        if (correct)
-        {
+        if (correct) {
             correctCookiesFinished += 1;
             cookieScoreImages[currentCookieCategoryIndex].color = Color.green;
         }
-        else
-        {
+        else {
             cookieScoreImages[currentCookieCategoryIndex].color = Color.red;
         }
 
-        if (currentCookieCategoryIndex + 1 >= cookieScoreImages.Count)
-        {
+        if (currentCookieCategoryIndex + 1 >= cookieScoreImages.Count) {
             FinishMinigame();
             return;
         }
@@ -130,8 +114,7 @@ public class CookiesMinigameManager : MonoBehaviour
     }
 
 
-    public void FinishMinigame()
-    {
+    public void FinishMinigame() {
         int score = correctCookiesFinished == 0 ? 0 : correctCookiesFinished < 2 ? 1 : 2;
         LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Cookie minigame completed\",\"correctCookiessFinished\":" + correctCookiesFinished + ",\"score\":" + score + "}");
         Store.Instance.minigameScore = score;

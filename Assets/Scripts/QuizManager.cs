@@ -6,18 +6,15 @@ using UnityEngine.Localization.Tables;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class QuizManager : MonoBehaviour
-{
-    public struct QuizQuestion
-    {
+public class QuizManager : MonoBehaviour {
+    public struct QuizQuestion {
         public bool isVertialLayouot;
         public string textQuestion;
         public string[] textAnswers;
         public int[] imageAnswerIndices;
 
 #nullable enable
-        public QuizQuestion(bool isVertialLayouot, string textQuestion, string[]? textAnswers, int[]? imageAnswerIndices)
-        {
+        public QuizQuestion(bool isVertialLayouot, string textQuestion, string[]? textAnswers, int[]? imageAnswerIndices) {
             this.isVertialLayouot = isVertialLayouot;
             this.textQuestion = textQuestion;
             this.textAnswers = textAnswers ?? new string[0];
@@ -62,8 +59,7 @@ public class QuizManager : MonoBehaviour
     //private Store.Quiz[] allQuizesList = new Store.Quiz[] { Store.Quiz.Phishing, Store.Quiz.Cookies, Store.Quiz.Phone, Store.Quiz.AI };
     private Store.Quiz[] allQuizesList = new Store.Quiz[] { Store.Quiz.Malware, Store.Quiz.Firewall, Store.Quiz.Phishing, Store.Quiz.Cookies, Store.Quiz.Phone, Store.Quiz.AI, Store.Quiz.Passwords, Store.Quiz.TFA };
 
-    void Start()
-    {
+    void Start() {
         stringTable = LocalizationSettings.StringDatabase.GetTable("QuizStrings");
         Store.Instance.quizScore = 0;
 
@@ -72,8 +68,7 @@ public class QuizManager : MonoBehaviour
         if (quizCategoryFromStore == Store.Quiz.None)
             quizCategoryFromStore = Store.Quiz.Phishing; // for development purposes
 
-        if (quizCategoryFromStore == Store.Quiz.All)
-        {
+        if (quizCategoryFromStore == Store.Quiz.All) {
             allQuizesMode = true;
             quizCategoryFromStore = allQuizesList[0]; // full quiz
         }
@@ -84,14 +79,12 @@ public class QuizManager : MonoBehaviour
         DoWelcomeAnimation();
     }
 
-    private void StartQuizCategory(Store.Quiz quizName)
-    {
+    private void StartQuizCategory(Store.Quiz quizName) {
         currentQuiz = allQuizes[quizName];
         currentQuizCategory = "";
         currentQuizCategoryIndex = quizName;
 
-        switch (quizName)
-        {
+        switch (quizName) {
             case Store.Quiz.Malware: currentQuizCategory = "malwareCategory"; break;
             case Store.Quiz.Firewall: currentQuizCategory = "firewallCategory"; break;
             case Store.Quiz.Phishing: currentQuizCategory = "phishingCategory"; break;
@@ -111,14 +104,12 @@ public class QuizManager : MonoBehaviour
         quizProgress.text = $"{currentQuestionIndex + 1} / {currentQuiz.Length}";
     }
 
-    private void Update()
-    {
+    private void Update() {
         timeToRespond += Time.deltaTime;
         countdown.fillAmount = Mathf.Clamp(1f - timeToRespond / defaultTimeToRespond, 0f, 1f);
     }
 
-    private void DoWelcomeAnimation()
-    {
+    private void DoWelcomeAnimation() {
         float duration = 1f;
         quizQuestionText.transform.DOMoveY(quizQuestionText.transform.position.y, duration).From(quizQuestionText.transform.position.y - 300).SetEase(Ease.OutBack);
         if (currentQuiz[currentQuestionIndex].isVertialLayouot)
@@ -126,8 +117,7 @@ public class QuizManager : MonoBehaviour
         else
             horizontalAnswersContainer.transform.DOMoveY(horizontalAnswersContainer.transform.position.y, duration).From(horizontalAnswersContainer.transform.position.y - 300).SetEase(Ease.OutBack);
     }
-    private void DoEndAnimation()
-    {
+    private void DoEndAnimation() {
         float duration = 1.5f;
         if (currentQuiz[currentQuestionIndex - 1].isVertialLayouot)
             verticalAnswersContainer.transform.DOMoveY(verticalAnswersContainer.transform.position.y - 1000, duration).From(verticalAnswersContainer.transform.position.y).SetEase(Ease.InBack);
@@ -136,10 +126,8 @@ public class QuizManager : MonoBehaviour
         quizQuestionText.transform.DOMoveY(quizQuestionText.transform.position.y - 1000, duration).From(quizQuestionText.transform.position.y).SetEase(Ease.InBack).OnComplete(FinishQuiz);
     }
 
-    private void FinishQuiz()
-    {
-        if (!allQuizesMode)
-        {
+    private void FinishQuiz() {
+        if (!allQuizesMode) {
             int scoreForStore = correctAnswers >= 5 ? 0b001 : 0b000;
             Store.Instance.SetLevelScore((int)currentQuizCategoryIndex, scoreForStore);
             Store.Instance.quizScore = score;
@@ -148,31 +136,25 @@ public class QuizManager : MonoBehaviour
         SceneManager.LoadScene("LevelSelection");
     }
 
-    private void HandleEndOfQuiz()
-    {
-        if (allQuizesMode && allQuizesList.Length > allQuizesModeIndex + 1)
-        {
+    private void HandleEndOfQuiz() {
+        if (allQuizesMode && allQuizesList.Length > allQuizesModeIndex + 1) {
             Store.Instance.quizScore += score;
             allQuizesModeIndex++;
             StartQuizCategory(allQuizesList[allQuizesModeIndex]);
         }
-        else
-        {
+        else {
             DoEndAnimation();
         }
     }
 
-    private void DoParticlesAnimation(RectTransform buttonPosition, float duration)
-    {
-        int particlesCount = Store.Instance.qualityLevel switch
-        {
+    private void DoParticlesAnimation(RectTransform buttonPosition, float duration) {
+        int particlesCount = Store.Instance.qualityLevel switch {
             0 => particleContainer.transform.childCount / 4,
             1 => particleContainer.transform.childCount / 2,
             _ => particleContainer.transform.childCount,
         };
 
-        for (int i = 0; i < particleContainer.transform.childCount; i++)
-        {
+        for (int i = 0; i < particleContainer.transform.childCount; i++) {
             Transform particle = particleContainer.transform.GetChild(i);
             particle.gameObject.SetActive(true);
             particle.position = buttonPosition.position + Vector3.Scale(buttonPosition.transform.lossyScale, new Vector3(Random.Range(buttonPosition.rect.width / 2, -buttonPosition.rect.width / 2), Random.Range(buttonPosition.rect.height / 2, -buttonPosition.rect.height / 2), 0));
@@ -186,8 +168,7 @@ public class QuizManager : MonoBehaviour
         score = score + Mathf.Clamp((int)(100f - timeToRespond + defaultTimeToRespond), 0, 100);
         DOTween.To(() => currentAmount, x => scoreCounterText.text = x.ToString(), score, duration / 2).SetDelay(duration / 2);
     }
-    public void ChooseAnswer(int answerIndex)
-    {
+    public void ChooseAnswer(int answerIndex) {
         if (isEvaluatingInProgress)
             return;
 
@@ -206,8 +187,7 @@ public class QuizManager : MonoBehaviour
         Color targetColor = isCorrectAnswer ? correctAnswerColor : incorrectAnswerColor;
         Color originalColor = answerButton.GetComponent<Image>().color;
 
-        if (!isCorrectAnswer)
-        {
+        if (!isCorrectAnswer) {
             int correctButtonIndex = (numAnswers - currentAnswersOffset) % numAnswers;
             GameObject correctAnswerButton = currentQuestion.isVertialLayouot
                 ? verticalQuestionGameObjects[correctButtonIndex]
@@ -219,77 +199,65 @@ public class QuizManager : MonoBehaviour
             DOTween.Sequence()
                 .Append(correctAnswerButton.GetComponent<Image>().DOColor(targetColorOfCorrectAnswer, 0.2f))
                 .AppendInterval(3f)
-                .OnComplete(() =>
-                {
+                .OnComplete(() => {
                     correctAnswerButton.GetComponent<Image>().color = originalColorOfCorrectAnswer;
                 });
         }
 
         Sequence sequence = DOTween.Sequence()
             .Append(answerButton.GetComponent<Image>().DOColor(targetColor, 0.2f))
-            .AppendCallback(() =>
-            {
+            .AppendCallback(() => {
                 if (isCorrectAnswer)
                     DoParticlesAnimation(answerButton.GetComponent<RectTransform>(), 1f);
             })
             .AppendInterval(isCorrectAnswer ? 1f : 3f)
-            .OnComplete(() =>
-            {
+            .OnComplete(() => {
                 answerButton.GetComponent<Image>().color = originalColor;
 
                 currentQuestionIndex++;
 
-                if (currentQuestionIndex < currentQuiz.Length)
-                {
+                if (currentQuestionIndex < currentQuiz.Length) {
                     isEvaluatingInProgress = false;
                     quizProgress.text = $"{currentQuestionIndex + 1} / {currentQuiz.Length}";
                     DisplayQuestion(currentQuiz[currentQuestionIndex]);
                 }
-                else
-                {
+                else {
                     HandleEndOfQuiz();
                 }
             });
     }
 
-    void DisplayQuestion(QuizQuestion quizQuestion)
-    {
+    void DisplayQuestion(QuizQuestion quizQuestion) {
         timeToRespond = 0;
         quizQuestionText.text = stringTable.GetEntry(quizQuestion.textQuestion).GetLocalizedString();
 
-        if (quizQuestion.isVertialLayouot)
-        {
+        if (quizQuestion.isVertialLayouot) {
             verticalAnswersContainer.SetActive(true);
             horizontalAnswersContainer.SetActive(false);
 
             currentAnswersOffset = Random.Range(0, quizQuestion.textAnswers.Length);
-            for (int i = 0; i < quizQuestion.textAnswers.Length; i++)
-            {
+            for (int i = 0; i < quizQuestion.textAnswers.Length; i++) {
                 int answerIndex = (i + currentAnswersOffset) % quizQuestion.textAnswers.Length;
                 verticalQuestionGameObjects[i].SetActive(true);
                 verticalQuestionTexts[i].text = stringTable.GetEntry(quizQuestion.textAnswers[answerIndex]).GetLocalizedString();
             }
 
-            for (int i = quizQuestion.textAnswers.Length; i < verticalQuestionGameObjects.Length; i++)
-            {
+            for (int i = quizQuestion.textAnswers.Length; i < verticalQuestionGameObjects.Length; i++) {
                 verticalQuestionGameObjects[i].SetActive(false);
             }
         }
-        else
-        {
+        else {
             verticalAnswersContainer.SetActive(false);
             horizontalAnswersContainer.SetActive(true);
 
             currentAnswersOffset = Random.Range(0, quizQuestion.imageAnswerIndices.Length);
-            for (int i = 0; i < quizQuestion.imageAnswerIndices.Length; i++)
-            {
+            for (int i = 0; i < quizQuestion.imageAnswerIndices.Length; i++) {
                 int answerIndex = (i + currentAnswersOffset) % quizQuestion.imageAnswerIndices.Length;
                 horizontalQuestionGameObjects[i].SetActive(true);
                 horizontalQuestionImages[i].sprite = quizSprites[quizQuestion.imageAnswerIndices[answerIndex]];
             }
 
-            for (int i = quizQuestion.imageAnswerIndices.Length; i < horizontalQuestionGameObjects.Length; i++)
-            {
+            for (int i = quizQuestion.imageAnswerIndices.Length; i < horizontalQuestionGameObjects.Length; i++) {
                 horizontalQuestionGameObjects[i].SetActive(false);
             }
         }

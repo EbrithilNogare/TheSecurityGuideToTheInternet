@@ -4,8 +4,7 @@ using UnityEngine.SceneManagement;
 
 public enum TransitionType { None, MoveUp, MoveDown, MoveRight, MoveLeft, FadeIn }
 
-public class SlideTransitionManager : MonoBehaviour
-{
+public class SlideTransitionManager : MonoBehaviour {
     [SerializeField] private Canvas canvas;
     [SerializeField] private float duration;
     [SerializeField] private string sceneBeforePresentation;
@@ -15,8 +14,7 @@ public class SlideTransitionManager : MonoBehaviour
     private int currentSlideIndex;
     private bool isTransitioning;
 
-    void Awake()
-    {
+    void Awake() {
         currentSlideIndex = 0;
         for (int i = 0; i < slides.Length; i++)
             slides[i].SetActive(false);
@@ -25,48 +23,41 @@ public class SlideTransitionManager : MonoBehaviour
         LoggingService.Log(LoggingService.LogCategory.Presentation, "{\"action\":\"Awake\",\"sceneAfterPresentation\":\"" + sceneAfterPresentation + "\",\"destination\":0}");
     }
 
-    public void NextSlide()
-    {
-        LoggingService.Log(LoggingService.LogCategory.Presentation, "{\"action\":\"NextSlide\",\"sceneAfterPresentation\":\"" + sceneAfterPresentation + "\",\"destination\":" + (currentSlideIndex + 1).ToString()+"}");
+    public void NextSlide() {
+        LoggingService.Log(LoggingService.LogCategory.Presentation, "{\"action\":\"NextSlide\",\"sceneAfterPresentation\":\"" + sceneAfterPresentation + "\",\"destination\":" + (currentSlideIndex + 1).ToString() + "}");
 
         if (isTransitioning || currentSlideIndex >= slides.Length) return;
 
-        if (currentSlideIndex < slides.Length - 1)
-        {
+        if (currentSlideIndex < slides.Length - 1) {
             AnimateTransition(
                 transitions[currentSlideIndex % transitions.Length],
                 slides[currentSlideIndex],
                 slides[currentSlideIndex + 1], false);
             currentSlideIndex++;
         }
-        else
-        {
+        else {
             HandleBeyondLastSlide();
         }
     }
 
-    public void PreviousSlide()
-    {
-        LoggingService.Log(LoggingService.LogCategory.Presentation, "{\"action\":\"PreviousSlide\",\"sceneAfterPresentation\":\"" + sceneAfterPresentation + "\",\"destination\":" + (currentSlideIndex - 1).ToString()+"}");
+    public void PreviousSlide() {
+        LoggingService.Log(LoggingService.LogCategory.Presentation, "{\"action\":\"PreviousSlide\",\"sceneAfterPresentation\":\"" + sceneAfterPresentation + "\",\"destination\":" + (currentSlideIndex - 1).ToString() + "}");
 
         if (isTransitioning || currentSlideIndex < 0) return;
 
-        if (currentSlideIndex > 0)
-        {
+        if (currentSlideIndex > 0) {
             AnimateTransition(
                 transitions[(currentSlideIndex - 1) % transitions.Length],
                 slides[currentSlideIndex],
                 slides[currentSlideIndex - 1], true);
             currentSlideIndex--;
         }
-        else
-        {
+        else {
             HandleBeforeFirstSlide();
         }
     }
 
-    private void AnimateTransition(TransitionType transitionType, GameObject currentSlide, GameObject nextSlide, bool reverse)
-    {
+    private void AnimateTransition(TransitionType transitionType, GameObject currentSlide, GameObject nextSlide, bool reverse) {
         isTransitioning = true;
         if (transitionType == TransitionType.FadeIn)
             AnimateFadeTransition(currentSlide, nextSlide);
@@ -74,8 +65,7 @@ public class SlideTransitionManager : MonoBehaviour
             AnimateMoveTransition(transitionType, currentSlide, nextSlide, reverse);
     }
 
-    private void AnimateMoveTransition(TransitionType transitionType, GameObject currentSlide, GameObject nextSlide, bool reverse)
-    {
+    private void AnimateMoveTransition(TransitionType transitionType, GameObject currentSlide, GameObject nextSlide, bool reverse) {
         RectTransform currentRect = currentSlide.GetComponent<RectTransform>();
         RectTransform nextRect = nextSlide.GetComponent<RectTransform>();
 
@@ -89,8 +79,7 @@ public class SlideTransitionManager : MonoBehaviour
         float canvasHeight = canvasRect.rect.height;
         float canvasWidth = canvasRect.rect.width;
 
-        switch (transitionType)
-        {
+        switch (transitionType) {
             case TransitionType.MoveUp:
                 startPosition = reverse ? Vector2.down * canvasHeight : Vector2.up * canvasHeight;
                 break;
@@ -110,15 +99,13 @@ public class SlideTransitionManager : MonoBehaviour
         Sequence sequence = DOTween.Sequence();
         sequence.Join(currentRect.DOAnchorPos(-startPosition, duration).SetEase(Ease.InOutQuad));
         sequence.Join(nextRect.DOAnchorPos(targetPosition, duration).SetEase(Ease.InOutQuad));
-        sequence.OnComplete(() =>
-        {
+        sequence.OnComplete(() => {
             currentSlide.SetActive(false);
             isTransitioning = false;
         });
     }
 
-    private void AnimateFadeTransition(GameObject currentSlide, GameObject nextSlide)
-    {
+    private void AnimateFadeTransition(GameObject currentSlide, GameObject nextSlide) {
         CanvasGroup currentCanvas = currentSlide.GetComponent<CanvasGroup>();
         CanvasGroup nextCanvas = nextSlide.GetComponent<CanvasGroup>();
 
@@ -130,20 +117,17 @@ public class SlideTransitionManager : MonoBehaviour
         Sequence sequence = DOTween.Sequence();
         sequence.Join(currentCanvas.DOFade(0f, duration).From(1f));
         sequence.Join(nextCanvas.DOFade(1f, duration).From(0f));
-        sequence.OnComplete(() =>
-        {
+        sequence.OnComplete(() => {
             currentSlide.SetActive(false);
             isTransitioning = false;
         });
     }
 
-    private void HandleBeforeFirstSlide()
-    {
+    private void HandleBeforeFirstSlide() {
         SceneManager.LoadScene(sceneBeforePresentation);
     }
 
-    private void HandleBeyondLastSlide()
-    {
+    private void HandleBeyondLastSlide() {
         SceneManager.LoadScene(sceneAfterPresentation);
     }
 }

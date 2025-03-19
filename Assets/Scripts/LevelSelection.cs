@@ -3,8 +3,7 @@ using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.SceneManagement;
 
-public class LevelSelection : MonoBehaviour
-{
+public class LevelSelection : MonoBehaviour {
     public static readonly List<string> LevelCategories = new List<string> {
         "Malware-1", "Privacy-1", "Encryption-1", "Phone-1", "AI-1",
         "Malware-2", "Privacy-2", "Encryption-2",
@@ -12,26 +11,21 @@ public class LevelSelection : MonoBehaviour
 
     public List<LevelSelectionCard> levelCards;
 
-    private void Awake()
-    {
-        for (int i = 0; i < levelCards.Count; i++)
-        {
+    private void Awake() {
+        for (int i = 0; i < levelCards.Count; i++) {
             levelCards[i].Render(Store.Instance.levelUnlocked[i], Store.Instance.levelStars[i]);
         }
     }
 
-    public void GoToLevelMenu()
-    {
+    public void GoToLevelMenu() {
         SceneManager.LoadScene("LevelSelection");
     }
 
-    public void LoadLevel(string level)
-    {
+    public void LoadLevel(string level) {
         LoggingService.Log(LoggingService.LogCategory.Navigation, "Navigated to level: " + level);
         Assert.IsTrue(LevelCategories.Contains(level), "Unknown level: " + level);
 
-        switch (level)
-        {
+        switch (level) {
             case "Malware-1":
                 Store.Instance.quizToLoad = Store.Quiz.Malware;
                 SceneManager.LoadScene("Malware_Presentation");

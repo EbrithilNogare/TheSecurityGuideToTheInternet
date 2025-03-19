@@ -5,8 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PhishingMinigameManager : MonoBehaviour
-{
+public class PhishingMinigameManager : MonoBehaviour {
     public GameObject urlTabContainer;
     public GameObject fieldTabContainer;
     public GameObject imageTabContainer;
@@ -35,23 +34,20 @@ public class PhishingMinigameManager : MonoBehaviour
 
     private List<System.Tuple<Vector2, itemName, Color>> objectsInTemplate;
 
-    public enum itemName
-    {
+    public enum itemName {
         Url,
         Pet, Flower, Plane, Beer, Game, Pool,
         Username, Email, SocialNumber, CardNumber, Password, Submit
     }
 
-    void Start()
-    {
+    void Start() {
         SpawnObjectsInTemplate();
         setActiveTab(0);
         changeColorOfButtons();
         ChangeColor(0);
     }
 
-    void SpawnObjectsInTemplate()
-    {
+    void SpawnObjectsInTemplate() {
         objectsInTemplate = new List<System.Tuple<Vector2, itemName, Color>>();
 
         // Image 1
@@ -70,15 +66,13 @@ public class PhishingMinigameManager : MonoBehaviour
         SpawnObjectInTemplate(new Vector2(0, -138), 5, false);
     }
 
-    void SpawnObjectInTemplate(Vector3 position, int index, bool image)
-    {
+    void SpawnObjectInTemplate(Vector3 position, int index, bool image) {
         GameObject instance = Instantiate(image ? images[index] : fields[index], templateContainer.transform);
         var rectTransform = instance.GetComponent<RectTransform>();
         var phishingMinigameDragable = instance.GetComponent<PhishingMinigameDragable>();
 
         instance.transform.localPosition = position;
-        if (image)
-        {
+        if (image) {
             instance.GetComponent<Image>().color = colors[Random.Range(0, colors.Length)];
         }
         phishingMinigameDragable.enabled = false;
@@ -93,26 +87,20 @@ public class PhishingMinigameManager : MonoBehaviour
 
     }
 
-    public void ChangeColor(int colorIndex)
-    {
-        foreach (var item in dragableIcons)
-        {
+    public void ChangeColor(int colorIndex) {
+        foreach (var item in dragableIcons) {
             item.GetComponent<Image>().color = colors[colorIndex];
         }
     }
 
-    public void changeColorOfButtons()
-    {
-        for (int i = 0; i < colorChangeButtons.Length; i++)
-        {
+    public void changeColorOfButtons() {
+        for (int i = 0; i < colorChangeButtons.Length; i++) {
             colorChangeButtons[i].color = colors[i];
         }
     }
 
-    public void setActiveTab(int tabIndex)
-    {
-        switch (tabIndex)
-        {
+    public void setActiveTab(int tabIndex) {
+        switch (tabIndex) {
             case 0:
                 imageTabContainer.SetActive(true);
                 colorSelectorContainer.SetActive(true);
@@ -143,8 +131,7 @@ public class PhishingMinigameManager : MonoBehaviour
         }
     }
 
-    public void SubmitSolution()
-    {
+    public void SubmitSolution() {
         int percentage = int.Parse(scoreText.text.Replace("%", ""));
         int score = percentage >= 96 ? 2 : 1;
         LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Phishing minigame completed\",\"PhishingMinigamePercentage\":" + percentage + ",\"score\":" + score + "}");
@@ -156,32 +143,27 @@ public class PhishingMinigameManager : MonoBehaviour
         DOVirtual.DelayedCall(2, () => SceneManager.LoadScene("Quiz"));
     }
 
-    public void EvaluateTemplate()
-    {
+    public void EvaluateTemplate() {
         float urlScore = 0;
         int childrensNotAactive = 0;
         float[] scoreTablePerComponent = new float[objectsInTemplate.Count];
-        for (int webpageChildIndex = 0; webpageChildIndex < websiteContainer.transform.childCount; webpageChildIndex++)
-        {
+        for (int webpageChildIndex = 0; webpageChildIndex < websiteContainer.transform.childCount; webpageChildIndex++) {
             var websiteChild = websiteContainer.transform.GetChild(webpageChildIndex);
             var dragableComponent = websiteChild?.GetComponent<PhishingMinigameDragable>();
 
-            if (dragableComponent == null || !dragableComponent.isActiveAndEnabled)
-            {
+            if (dragableComponent == null || !dragableComponent.isActiveAndEnabled) {
                 childrensNotAactive++;
                 continue;
             }
 
-            if (dragableComponent.objectName == itemName.Url)
-            {
+            if (dragableComponent.objectName == itemName.Url) {
                 urlScore = .8f;
                 continue;
             }
 
             float scoreOfBestComponent = 0;
             int indexOfBestComponent = 0;
-            for (int templateChild = 0; templateChild < objectsInTemplate.Count; templateChild++)
-            {
+            for (int templateChild = 0; templateChild < objectsInTemplate.Count; templateChild++) {
                 System.Tuple<Vector2, itemName, Color> item = objectsInTemplate[templateChild];
                 float distance = 1f - Mathf.Clamp((Vector2.Distance(websiteChild.transform.localPosition, item.Item1) - 20) / 200f, 0f, 1f);
                 float type = dragableComponent.objectName == item.Item2 ? 1 : 0;
@@ -191,8 +173,7 @@ public class PhishingMinigameManager : MonoBehaviour
                     ? 1
                     : 0;
                 float scoreOfThisComponent = (distance + type + color) / 3f;
-                if (scoreOfBestComponent < scoreOfThisComponent)
-                {
+                if (scoreOfBestComponent < scoreOfThisComponent) {
                     scoreOfBestComponent = scoreOfThisComponent;
                     indexOfBestComponent = templateChild;
                 }
@@ -206,24 +187,20 @@ public class PhishingMinigameManager : MonoBehaviour
 
         progressBar.fillAmount = finalScore / 100f;
         scoreText.text = ((int)finalScore).ToString() + "%";
-        if (finalScore >= 85)
-        {
+        if (finalScore >= 85) {
             TutorialGameObject.SetActive(false);
             SubmitGameObject.SetActive(true);
             scoreStars[0].sprite = scoreStarFilled;
         }
-        else
-        {
+        else {
             TutorialGameObject.SetActive(true);
             SubmitGameObject.SetActive(false);
             scoreStars[0].sprite = scoreStarEmpty;
         }
-        if ((int)finalScore >= 96)
-        {
+        if ((int)finalScore >= 96) {
             scoreStars[1].sprite = scoreStarFilled;
         }
-        else
-        {
+        else {
             scoreStars[1].sprite = scoreStarEmpty;
         }
 

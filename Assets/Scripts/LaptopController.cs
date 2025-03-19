@@ -1,27 +1,22 @@
 using UnityEngine;
 
-public class LaptopController : MonoBehaviour
-{
+public class LaptopController : MonoBehaviour {
 
     public CameraOperator CameraOperator;
 
-    void Start()
-    {
+    void Start() {
 
     }
 
-    void Update()
-    {
+    void Update() {
 
     }
 
-    public void LockPC()
-    {
+    public void LockPC() {
         CameraOperator.FocusOnRoom();
     }
 
-    public void FocusOnMonitor()
-    {
+    public void FocusOnMonitor() {
         CameraOperator.FocusOnMonitor();
     }
 }

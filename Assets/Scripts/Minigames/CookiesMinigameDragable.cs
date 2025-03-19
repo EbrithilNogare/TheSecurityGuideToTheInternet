@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CookiesMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
-{
+public class CookiesMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
     public CookieIngredient cookieIngredient;
 
     Canvas canvas;
@@ -14,8 +13,7 @@ public class CookiesMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragHa
     Vector2 originalPosition;
     Transform originalParent;
 
-    void Awake()
-    {
+    void Awake() {
         canvas = GetComponentInParent<Canvas>();
         canvasGroup = GetComponent<CanvasGroup>() != null ? GetComponent<CanvasGroup>() : gameObject.AddComponent<CanvasGroup>();
         rectTransform = GetComponent<RectTransform>();
@@ -25,38 +23,32 @@ public class CookiesMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragHa
         originalParent = rectTransform.parent;
     }
 
-    public void Reset()
-    {
+    public void Reset() {
         rectTransform.localPosition = originalPosition;
         transform.SetParent(originalParent);
         gameObject.SetActive(true);
     }
 
-    public void OnBeginDrag(PointerEventData eventData)
-    {
+    public void OnBeginDrag(PointerEventData eventData) {
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.8f;
         originalPosition = rectTransform.localPosition;
         rectTransform.SetParent(draggingParent);
     }
 
-    public void OnDrag(PointerEventData eventData)
-    {
+    public void OnDrag(PointerEventData eventData) {
         rectTransform.anchoredPosition += eventData.delta / (new Vector2(rectTransform.lossyScale.x, rectTransform.lossyScale.y));
     }
 
-    public void OnEndDrag(PointerEventData eventData)
-    {
+    public void OnEndDrag(PointerEventData eventData) {
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
         transform.SetParent(originalParent);
         EvaluateDrop();
     }
 
-    private void EvaluateDrop()
-    {
-        if (RectTransformUtility.RectangleContainsScreenPoint(dropZone, Input.mousePosition, canvas.worldCamera))
-        {
+    private void EvaluateDrop() {
+        if (RectTransformUtility.RectangleContainsScreenPoint(dropZone, Input.mousePosition, canvas.worldCamera)) {
             // droped in drop zone
             rectTransform.localPosition = originalPosition;
             gameObject.SetActive(false);
@@ -64,8 +56,7 @@ public class CookiesMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragHa
             // send information to controller
             cookiesMinigameController.CookieAddedToBowl(this);
         }
-        else
-        {
+        else {
             // droped somewhere else
             rectTransform.localPosition = originalPosition;
         }
