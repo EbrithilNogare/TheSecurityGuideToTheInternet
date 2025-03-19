@@ -73,12 +73,18 @@ public class PhishingMinigameManager : MonoBehaviour
     void SpawnObjectInTemplate(Vector3 position, int index, bool image)
     {
         GameObject instance = Instantiate(image ? images[index] : fields[index], templateContainer.transform);
+        var rectTransform = instance.GetComponent<RectTransform>();
+        var phishingMinigameDragable = instance.GetComponent<PhishingMinigameDragable>();
+
         instance.transform.localPosition = position;
-        if (image) { instance.GetComponent<Image>().color = colors[Random.Range(0, colors.Length)]; }
-        instance.GetComponent<PhishingMinigameDragable>().enabled = false;
-        instance.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
-        instance.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0);
-        instance.GetComponent<RectTransform>().sizeDelta = image ? new Vector2(200, 200) : new Vector2(350, 80);
+        if (image)
+        {
+            instance.GetComponent<Image>().color = colors[Random.Range(0, colors.Length)];
+        }
+        phishingMinigameDragable.enabled = false;
+        rectTransform.anchorMin = new Vector2(0, 0);
+        rectTransform.anchorMax = new Vector2(0, 0);
+        rectTransform.sizeDelta = image ? new Vector2(200, 200) : new Vector2(350, 80);
         objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(
             position,
             instance.GetComponent<PhishingMinigameDragable>().objectName,
