@@ -59,6 +59,8 @@ public class QuizManager : MonoBehaviour
     private bool allQuizesMode = false;
     private int allQuizesModeIndex = 0;
     private int currentAnswersOffset = 0;
+    //private Store.Quiz[] allQuizesList = new Store.Quiz[] { Store.Quiz.Phishing, Store.Quiz.Cookies, Store.Quiz.Phone, Store.Quiz.AI };
+    private Store.Quiz[] allQuizesList = new Store.Quiz[] { Store.Quiz.Malware, Store.Quiz.Firewall, Store.Quiz.Phishing, Store.Quiz.Cookies, Store.Quiz.Phone, Store.Quiz.AI, Store.Quiz.Passwords, Store.Quiz.TFA };
 
     void Start()
     {
@@ -73,7 +75,7 @@ public class QuizManager : MonoBehaviour
         if (quizCategoryFromStore == Store.Quiz.All)
         {
             allQuizesMode = true;
-            quizCategoryFromStore = Store.Quiz.Malware; // full quiz
+            quizCategoryFromStore = allQuizesList[0]; // full quiz
         }
 
 
@@ -148,11 +150,11 @@ public class QuizManager : MonoBehaviour
 
     private void HandleEndOfQuiz()
     {
-        if (allQuizesMode && System.Enum.IsDefined(typeof(Store.Quiz), allQuizesModeIndex + 1))
+        if (allQuizesMode && allQuizesList.Length > allQuizesModeIndex + 1)
         {
             Store.Instance.quizScore += score;
             allQuizesModeIndex++;
-            StartQuizCategory((Store.Quiz)allQuizesModeIndex);
+            StartQuizCategory(allQuizesList[allQuizesModeIndex]);
         }
         else
         {
