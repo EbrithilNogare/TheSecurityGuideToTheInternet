@@ -264,6 +264,707 @@ MonoBehaviour:
     m_Key: Settings/Canvas/Language selection/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 53969937660411904
+    m_Key: AI_Presentation/Canvas/Slides/Slide (3)/Content/Chat/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53969948611739648
+    m_Key: AI_Presentation/Canvas/Slides/Slide (3)/Content/Chat/Block (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53969960842330112
+    m_Key: AI_Presentation/Canvas/Slides/Slide (3)/Content/Block (2)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53969971885932544
+    m_Key: AI_Presentation/Canvas/Slides/Slide (3)/Content/Block (4)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012843311104
+    m_Key: AI_Presentation/Canvas/Slides/Slide example/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012876865536
+    m_Key: AI_Presentation/Canvas/Slides/Slide (1)/Content/parrot/parrot label/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012897837056
+    m_Key: AI_Presentation/Canvas/Slides/Slide (1)/Content/text 4/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012918808576
+    m_Key: AI_Presentation/Canvas/Slides/Slide (1)/Content/text 2/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012939780096
+    m_Key: AI_Presentation/Canvas/Slides/Slide (1)/Content/text 3/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012956557312
+    m_Key: AI_Presentation/Canvas/Slides/Slide (1)/Content/info/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012981723136
+    m_Key: AI_Presentation/Canvas/Slides/Slide (5)/Content/Block (3)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013006888960
+    m_Key: AI_Presentation/Canvas/Slides/Slide (2)/Content/Block (5)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013027860480
+    m_Key: AI_Presentation/Canvas/Slides/Slide (5)/Content/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013048832000
+    m_Key: AI_Presentation/Canvas/Slides/Slide (5)/Content/Block (2)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013073997824
+    m_Key: AI_Presentation/Canvas/Slides/Slide (2)/Content/Block (4)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013094969344
+    m_Key: AI_Presentation/Canvas/Slides/Slide (2)/Content/Block (12)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013115940864
+    m_Key: AI_Presentation/Canvas/Slides/Slide (2)/Content/Block (8)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013136912384
+    m_Key: AI_Presentation/Canvas/Slides/Slide (1)/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013157883904
+    m_Key: AI_Presentation/Canvas/Slides/Slide (4)/Content (1)/Chat/Block (1)/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013178855424
+    m_Key: AI_Presentation/Canvas/Slides/Slide/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013199826944
+    m_Key: AI_Presentation/Canvas/Slides/Slide (4)/Content (1)/Block (5)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013229187072
+    m_Key: AI_Presentation/Canvas/Slides/Slide (6)/Title (1)/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013250158592
+    m_Key: AI_Presentation/Canvas/Slides/Slide (2)/Content/Block (15)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013275324416
+    m_Key: AI_Presentation/Canvas/Slides/Slide example/Content/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013296295936
+    m_Key: AI_Presentation/Canvas/Slides/Slide (3)/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013325656064
+    m_Key: AI_Presentation/Canvas/Slides/Slide (5)/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013342433280
+    m_Key: AI_Presentation/Canvas/Slides/Slide (2)/Content/Block (13)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013371793408
+    m_Key: AI_Presentation/Canvas/Slides/Slide (4)/Content (1)/Chat/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013396959232
+    m_Key: AI_Presentation/Canvas/Slides/Slide (2)/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013417930752
+    m_Key: AI_Presentation/Canvas/Slides/Slide (5)/Content/Block (4)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013447290880
+    m_Key: AI_Presentation/Canvas/Slides/Slide (6)/Content (1)/Block (4)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013468262400
+    m_Key: AI_Presentation/Canvas/Slides/Slide (6)/Content (1)/Block (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013493428224
+    m_Key: AI_Presentation/Canvas/Slides/Slide (6)/Content (1)/Block (3)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013514399744
+    m_Key: AI_Presentation/Canvas/Slides/Slide (4)/Content (1)/Block (4)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013539565568
+    m_Key: AI_Presentation/Canvas/Slides/Slide (2)/Content/Block (11)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013560537088
+    m_Key: AI_Presentation/Canvas/Slides/Slide (2)/Content/Block (14)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013581508608
+    m_Key: AI_Presentation/Canvas/Slides/Slide (6)/Content (1)/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013602480128
+    m_Key: AI_Presentation/Canvas/Slides/Slide (4)/Title (1)/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013627645952
+    m_Key: AI_Presentation/Canvas/Slides/Slide (2)/Content/Block (9)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013661200384
+    m_Key: AI_Presentation/Canvas/Slides/Slide (3)/Content/Block (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013694754816
+    m_Key: AI_Presentation/Canvas/Slides/Slide (4)/Content (1)/Chat (1)/Block (1)/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013732503552
+    m_Key: AI_Presentation/Canvas/Slides/Slide (4)/Content (1)/Chat (1)/Block/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013761863680
+    m_Key: AI_Presentation/Canvas/Slides/Slide (1)/Content/text 5/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013799612416
+    m_Key: AI_Presentation/Canvas/Slides/Slide (6)/Content (1)/Block (2)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013833166848
+    m_Key: AI_Presentation/Canvas/Slides/Slide (2)/Content/Block (6)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013862526976
+    m_Key: AI_Presentation/Canvas/Slides/Slide (2)/Content/Block (7)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013891887104
+    m_Key: AI_Presentation/Canvas/Slides/Slide (5)/Content/Block (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444059705344
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (3)/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444084871168
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (5)/Content/Block (1)/Text (TMP)
+      (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444105842688
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (4)/Adorments/cookie 2/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444122619904
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (2)/Adorments/box 1/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444143591424
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (6)/Content/Block (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444160368640
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (3)/Adorments/cookie 2/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444189728768
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (1)/Content/Block (2)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444210700288
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (6)/Content/Block (3)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444227477504
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (4)/Adorments/box 2/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444248449024
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (3)/Content/Block (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444265226240
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (6)/Adorments/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444286197760
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444302974976
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide example/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444323946496
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (6)/Content/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444344918016
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (6)/Adorments/Block/Block (2)/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444361695232
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (2)/Content/Block (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444382666752
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (6)/Content/Block (2)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444403638272
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (1)/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444424609792
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (5)/Content/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444437192704
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (4)/Content/Block (2)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444462358528
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (2)/Adorments/cookie 3/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444479135744
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (2)/Adorments/box 2/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444500107264
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (4)/Adorments/cookie 4/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444521078784
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (4)/Adorments/cookie 1/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444542050304
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (5)/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444563021824
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (3)/Adorments/cookie 3/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444583993344
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (1)/Content/Block (4)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444613353472
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (3)/Adorments/cookie 4/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444625936384
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (1)/Content/Block (3)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444646907904
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (2)/Adorments/cookie 4/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444676268032
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (5)/Adorments/Image/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444697239552
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (5)/Content/Block (2)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444718211072
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (2)/Adorments/cookie 2/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444739182592
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (5)/Content/Block (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444760154112
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (6)/Adorments/Block/Block (1)/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444781125632
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide example/Content/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444802097152
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (3)/Adorments/cookie 1/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444823068672
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (4)/Adorments/cookie 3/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444844040192
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (2)/Content/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444865011712
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (5)/Content/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444890177536
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (4)/Adorments/box 1/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444911149056
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (4)/Content/Block (3)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444927926272
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (3)/Adorments/box 2/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444953092096
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (6)/Adorments/Image/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444974063616
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (4)/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444999229440
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (3)/Adorments/box 1/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970445016006656
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (4)/Content/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970445041172480
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (2)/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970445066338304
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (2)/Adorments/cookie 1/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970445087309824
+    m_Key: Cookies_Presentation/Canvas/Slides/Slide (3)/Content/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016531869696
+    m_Key: Phone_Presentation/Canvas/Slides/Slide example/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016565424128
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (3)/Content/Block (4)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016603172864
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (1)/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016624144384
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (4)/Content/Block (6)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016653504512
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (3)/Content/Block (3)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016682864640
+    m_Key: Phone_Presentation/Canvas/Slides/Slide/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016712224768
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (4)/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016737390592
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (2)/Content/Block (2)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016766750720
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (2)/Content/Block (3)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016791916544
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (4)/Adorments/Tavern (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016817082368
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (1)/Content/Block (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016846442496
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (4)/Content/Block (4)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016875802624
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (2)/Adorments/treasure unsecured/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016900968448
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (2)/Content/Block (4)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016938717184
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (4)/Adorments/Tavern/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016963883008
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (2)/Adorments/treasure unsecured
+      (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016993243136
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (1)/Content/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017018408960
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (4)/Content/Block (3)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017043574784
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (4)/Content/Block (5)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017068740608
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (3)/Content/Block (6)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017098100736
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (2)/Adorments/Sign/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017123266560
+    m_Key: Phone_Presentation/Canvas/Slides/Slide example/Content/Block/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017148432384
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (2)/Content/Block (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017173598208
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (3)/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017198764032
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (2)/Title/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017223929856
+    m_Key: Phone_Presentation/Canvas/Slides/Slide/Content/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017253289984
+    m_Key: Phone_Presentation/Canvas/Slides/Slide (3)/Content/Block (5)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375616389120
+    m_Key: Antivirus/Canvas/Source row/File/Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375654137856
+    m_Key: Antivirus/Canvas/Source row/File/Label 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375687692288
+    m_Key: Antivirus/Canvas/Source row/File/Label 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375721246720
+    m_Key: Antivirus/Canvas/Source row/File/Label 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375750606848
+    m_Key: Antivirus/Canvas/Source row/File/Label 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375779966976
+    m_Key: Antivirus/Canvas/Source row/File/Label 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375809327104
+    m_Key: Antivirus/Canvas/Source row/File/Label 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375838687232
+    m_Key: Antivirus/Canvas/More information/ClickAway/Dialog/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375863853056
+    m_Key: Antivirus/Canvas/Evaluate/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375893213184
+    m_Key: Antivirus/Canvas/Level info/Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375922573312
+    m_Key: Antivirus/Canvas/More information/ShowMoreInfo/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375947739136
+    m_Key: Antivirus/Canvas/Deposit Scan/ScanProgressInfo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375977099264
+    m_Key: Antivirus/Canvas/More information/ClickAway/Dialog/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850281578496
+    m_Key: Cookies/Canvas/Cabinet/Label/Image (9)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850310938624
+    m_Key: Cookies/Canvas/Finish and bake/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850336104448
+    m_Key: Cookies/Canvas/Start again/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850365464576
+    m_Key: Cookies/Canvas/Cabinet/Label/Image (2)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850390630400
+    m_Key: Cookies/Canvas/Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850419990528
+    m_Key: Cookies/Canvas/Cabinet/Label/Image/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850445156352
+    m_Key: Cookies/Canvas/Cabinet/Label/Image (3)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850474516480
+    m_Key: Cookies/Canvas/Cabinet/Label/Image (11)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850499682304
+    m_Key: Cookies/Canvas/Cabinet/Label/Image (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850524848128
+    m_Key: Cookies/Canvas/Cabinet/Label/Image (7)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850554208256
+    m_Key: Cookies/Canvas/Drop zone/label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850579374080
+    m_Key: Cookies/Canvas/Drop zone/Bowl/Labels/Third-party
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850604539904
+    m_Key: Cookies/Canvas/Cookies/Category functional/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850633900032
+    m_Key: Cookies/Canvas/Drop zone/Bowl/Labels/Analytics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850663260160
+    m_Key: Cookies/Canvas/Cabinet/Label/Image (8)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850684231680
+    m_Key: Cookies/Canvas/Cabinet/Label/Image (4)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850709397504
+    m_Key: Cookies/Canvas/Cabinet/Label/Image (5)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850742951936
+    m_Key: Cookies/Canvas/Cabinet/Label/Image (10)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850763923456
+    m_Key: Cookies/Canvas/Cookies/Category advertising/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850797477888
+    m_Key: Cookies/Canvas/Drop zone/Bowl/Labels/Functional
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850822643712
+    m_Key: Cookies/Canvas/Cabinet/Label/Image (6)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850852003840
+    m_Key: Cookies/Canvas/Cookies/Category analytics/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972930682191872
+    m_Key: Phishing/Canvas/Template/Url bar/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197528006656
+    m_Key: Phone/Canvas/Right pieces/PieceDropZone 7/Permission label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197565755392
+    m_Key: Phone/Canvas/Board selection/Buttons/Button (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197595115520
+    m_Key: Phone/Canvas/Board selection/Buttons/Button (2)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197624475648
+    m_Key: Phone/Canvas/Left pieces/PieceDropZone 3/Permission label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197658030080
+    m_Key: Phone/Canvas/Right pieces/PieceDropZone 6/Permission label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197691584512
+    m_Key: Phone/Canvas/Right pieces/PieceDropZone 8/Permission label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197720944640
+    m_Key: Phone/Canvas/Top title/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197758693376
+    m_Key: Phone/Canvas/Left pieces/PieceDropZone 2/Permission label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197788053504
+    m_Key: Phone/Canvas/Left pieces/PieceDropZone 1/Permission label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197817413632
+    m_Key: Phone/Canvas/Left pieces/PieceDropZone 4/Permission label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197846773760
+    m_Key: Phone/Canvas/Board selection/Buttons/Button/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197880328192
+    m_Key: Phone/Canvas/Bottom pieces/PieceDropZone 0/Permission label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197909688320
+    m_Key: Phone/Canvas/Right pieces/PieceDropZone 5/Permission label
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

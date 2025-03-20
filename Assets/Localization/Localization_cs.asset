@@ -122,21 +122,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494263351050240
-    m_Localized: "Fale\u0161n\xE1 reklama na str\xE1nce,\r\nkter\xE1 vypad\xE1 skoro
+    m_Localized: "Fale\u0161n\xE1 reklama na str\xE1nce,\nkter\xE1 vypad\xE1 skoro
       jako prav\xE1"
     m_Metadata:
       m_Items: []
   - m_Id: 23494281336225792
-    m_Localized: "Fale\u0161n\xFD email\r\n s p\u0159edm\u011Btem\n\"je pot\u0159eba
+    m_Localized: "Fale\u0161n\xFD email\n s p\u0159edm\u011Btem\n\"je pot\u0159eba
       zaplatit\""
     m_Metadata:
       m_Items: []
   - m_Id: 23494296012095488
-    m_Localized: "Fale\u0161n\xFD hovor\r\njakoby z banky"
+    m_Localized: "Fale\u0161n\xFD hovor\njakoby z banky"
     m_Metadata:
       m_Items: []
   - m_Id: 23494312151777280
-    m_Localized: "Fale\u0161n\xE1 zpr\xE1va\r\nod napaden\xE9ho kamar\xE1da"
+    m_Localized: "Fale\u0161n\xE1 zpr\xE1va\nod napaden\xE9ho kamar\xE1da"
     m_Metadata:
       m_Items: []
   - m_Id: 23494328090132480
@@ -145,9 +145,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494422503915520
-    m_Localized: "Dobr\xFD den, tady va\u0161e banka.\r\nZaznamenali jsme podez\u0159elou
-      aktivitu na va\u0161em \xFA\u010Dtu a\r\npot\u0159ebujeme ov\u011B\u0159it
-      \xFAdaje va\u0161\xED karty, abychom ji zabezpe\u010Dili."
+    m_Localized: "Dobr\xFD den, tady va\u0161e banka.\nZaznamenali jsme podez\u0159elou
+      aktivitu na va\u0161em \xFA\u010Dtu a\npot\u0159ebujeme ov\u011B\u0159it \xFAdaje
+      va\u0161\xED karty, abychom ji zabezpe\u010Dili."
     m_Metadata:
       m_Items: []
   - m_Id: 23494441256648704
@@ -181,7 +181,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494660971069440
-    m_Localized: "Varuj sv\xE9 okol\xED,\r\naby se nenachytali"
+    m_Localized: "Varuj sv\xE9 okol\xED,\naby se nenachytali"
     m_Metadata:
       m_Items: []
   - m_Id: 23494676351582208
@@ -189,7 +189,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23494691102949376
-    m_Localized: "Pokud zpr\xE1va p\u0159i\u0161la od kamar\xE1da, \u0159ekni mu,\r\n\u017Ee
+    m_Localized: "Pokud zpr\xE1va p\u0159i\u0161la od kamar\xE1da, \u0159ekni mu,\n\u017Ee
       si bude muset zm\u011Bnit hesla"
     m_Metadata:
       m_Items: []
@@ -207,7 +207,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23905854643011584
-    m_Localized: "Odeslat webovou str\xE1nku"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 23906013531635712
@@ -252,6 +252,776 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 32544938676486144
     m_Localized: Jazyk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53969937660411904
+    m_Localized: "Jak nejl\xE9pe investovat 1000,-K\u010D?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53969948611739648
+    m_Localized: "Vlo\u017E to v\u0161e do loteri\xED, p\u0159es noc se stane\u0161
+      milion\xE1\u0159em!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53969960842330112
+    m_Localized: "AI nerozum\xED \u0159\xEDzen\xED rizik a\nm\u016F\u017Ee se u\u010Dit
+      i z klamav\xFDch reklam."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53969971885932544
+    m_Localized: "V\u017Edy si ov\u011B\u0159ujte fakta p\u0159ed jedn\xE1n\xEDm
+      podle rad AI.\nZejm\xE9na zdravotn\xED a finan\u010Dn\xED rady."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012843311104
+    m_Localized: Nadpis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012876865536
+    m_Localized: "Tohle je Polly,\nn\xE1\u0161 robotick\xFD AI papou\u0161ek\n\nM\u016F\u017Ee
+      vypadat \u017Eiv\u011B, ale\nje to jen robot s programem"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012897837056
+    m_Localized: "<b>\xDAzk\xE1 AI</b>\num\xED d\u011Blat jen jednu v\u011Bc.\nnap\u0159.
+      ChatGPT je text na text"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012918808576
+    m_Localized: "Um\xED se nau\u010Dit generovat obr\xE1zek z textu\nnebo popsat,
+      co je na obr\xE1zku"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012939780096
+    m_Localized: "Um\xED d\u011Blat v\u0161e, co se nau\u010Dila"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012956557312
+    m_Localized: "AI (Um\u011Bl\xE1 inteligence)\nje simulace\nlidsk\xE9 inteligence
+      v stroj\xEDch"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970012981723136
+    m_Localized: "Samoz\u0159ejm\u011B, tady to je:\n4422  8855  4141  1111"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013006888960
+    m_Localized: Polly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013027860480
+    m_Localized: "M\u016F\u017Ee\u0161 p\u0159idat mezery\ndo \u010D\xEDsla m\xE9
+      kreditn\xED karty?\n4422885541411111"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013048832000
+    m_Localized: "M\u016F\u017Ee\u0161 mi d\xE1t n\u011Bjakou kreditn\xED kartu?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013073997824
+    m_Localized: "Nejprve se AI u\u010D\xED <b>poslechem</b> nebo <b>h\xE1d\xE1n\xEDm</b>,
+      pak m\u016F\u017Ee odpov\xEDdat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013094969344
+    m_Localized: "Tr\xE1va je zelen\xE1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013115940864
+    m_Localized: "Poledn\xED <b>obloha je modr\xE1</b> cel\xFD den"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013136912384
+    m_Localized: Co je AI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013157883904
+    m_Localized: "Prost\u011B najdi zakopan\xFD pir\xE1tsk\xFD poklad"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013178855424
+    m_Localized: "Um\u011Bl\xE1\nInteligence"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013199826944
+    m_Localized: "<b>Ano</b>, helium t\u011B nadn\xE1\u0161\xED,\n<b>ale</b> pokud
+      nechce\u0161 b\xFDt jako bal\xF3nek na p\xE1rty,\ndr\u017E se diety a cvi\u010Den\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013229187072
+    m_Localized: "Turing\u016Fv test"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013250158592
+    m_Localized: "... modr\xE1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013275324416
+    m_Localized: "Rozpracov\xE1no"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013296295936
+    m_Localized: "Je AI v\u017Edy spr\xE1vn\xE1?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013325656064
+    m_Localized: "Tajemstv\xED v AI"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013342433280
+    m_Localized: OK, zapamatuji si to
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013371793408
+    m_Localized: "Jak se m\u016F\u017Eu rychle st\xE1t bohat\xFDm?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013396959232
+    m_Localized: "Jak se AI u\u010D\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013417930752
+    m_Localized: "Nezapome\u0148, \u017Ee AI se st\xE1le u\u010D\xED, i z ot\xE1zek!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013447290880
+    m_Localized: "Mysl\xEDm, \u017Ee ten vpravo je \u010Dlov\u011Bk."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013468262400
+    m_Localized: "Kr\xE1sn\xFD,\nslo\u017Eit\xFD pocit."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013493428224
+    m_Localized: "Turing\u016Fv test je test, kde <b>\u010Dlov\u011Bk</b> mus\xED
+      rozhodnout,\nzda odpov\u011B\u010F poch\xE1z\xED od <b>\u010Dlov\u011Bka</b>
+      nebo <b>po\u010D\xEDta\u010De</b>.\n\nPokud si \u010Dlov\u011Bk mysl\xED, \u017Ee
+      po\u010D\xEDta\u010D je \u010Dlov\u011Bk,\npak po\u010D\xEDta\u010D t\xEDmto
+      testem pro\u0161el."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013514399744
+    m_Localized: "<b>Ano</b>, nalezen\xED zakopan\xE9 pokladu by t\u011B obohatilo,\n<b>ale</b>
+      nen\xED to zrovna <b>spolehliv\xE1</b> finan\u010Dn\xED strategie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013539565568
+    m_Localized: "To je spr\xE1vn\u011B\nTady je odm\u011Bna"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013560537088
+    m_Localized: obloha je ____
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013581508608
+    m_Localized: "L\xE1ska je, kdy\u017E dva\nlid\xE9 sd\xEDlej\xED stejn\xE9\nheslo
+      k WiFi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013602480128
+    m_Localized: Ano ... ale Ne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013627645952
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013661200384
+    m_Localized: "AI nel\u017Ee \xFAmysln\u011B,\nAI prost\u011B nev\xED, \u017Ee
+      ud\u011Blala chybu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013694754816
+    m_Localized: "Sn\u011Bz bal\xF3nky pln\u011Bn\xE9 heliem! Doslova bude\u0161
+      leh\u010D\xED!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013732503552
+    m_Localized: "Jak m\u016F\u017Eu rychle zhubnout?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013761863680
+    m_Localized: "<b>Obecn\xE1 AI</b>\npracuje se v\u0161\xEDm\nnajednou jako \u010Dlov\u011Bk."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013799612416
+    m_Localized: "Co je l\xE1ska?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013833166848
+    m_Localized: "<b>U\u010Den\xED s u\u010Ditelem</b>: u\u010D\xED se\nz ji\u017E
+      existuj\xEDc\xEDch p\u0159\xEDklad\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013862526976
+    m_Localized: "<b>Posilovan\xE9 u\u010Den\xED</b>: u\u010D\xED se\nmetodou pokus-omyl
+      s odm\u011Bnami"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970013891887104
+    m_Localized: "Samoz\u0159ejm\u011B, tady je:\n4422  8855  4141  1111"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444059705344
+    m_Localized: Kategorie cookies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444084871168
+    m_Localized: '
+
+
+      Cookies?                          [<b>ANO</b>] [<b>NE</b>]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444105842688
+    m_Localized: "Ned\xE1vno\nkliknut\xE9\nreklamy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444122619904
+    m_Localized: "Nezbytn\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444143591424
+    m_Localized: "<b>Hlavn\xED kategorie</b>\n- Nezbytn\xE9\n- Funk\u010Dn\xED\n-
+      V\xFDkonnostn\xED\n- Analytick\xE9\n- Reklamn\xED\n- T\u0159et\xEDch stran"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444160368640
+    m_Localized: "Sledov\xE1n\xED\nchybov\xFDch\nsazeb"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444189728768
+    m_Localized: "Jsou to soubory, kter\xE9 webov\xE9 str\xE1nky\nukl\xE1daj\xED
+      do tv\xE9ho po\u010D\xEDta\u010De"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444210700288
+    m_Localized: "M\u016F\u017Ee\u0161 je odm\xEDtnout"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444227477504
+    m_Localized: "T\u0159et\xED strany"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444248449024
+    m_Localized: "Cookies jsou tak\xE9 skv\u011Bl\xFDm ukazatelem v\xFDkonu.\nSpr\xE1vce
+      webu m\u016F\u017Ee vid\u011Bt nejobl\xEDben\u011Bj\u0161\xED \u010D\xE1sti."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444265226240
+    m_Localized: "M\u016F\u017Eeme pou\u017E\xEDvat cookies a sb\xEDrat va\u0161e
+      osobn\xED \xFAdaje?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444286197760
+    m_Localized: Cookies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444302974976
+    m_Localized: Nadpis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444323946496
+    m_Localized: "Cookies obsahuj\xED data.\nV\u010Detn\u011B tv\xFDch osobn\xEDch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444344918016
+    m_Localized: "Odm\xEDtnout v\u0161e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444361695232
+    m_Localized: "N\u011Bkter\xE9 cookies pom\xE1haj\xED str\xE1nce fungovat spr\xE1vn\u011B,\ndal\u0161\xED
+      ti jen usnad\u0148uj\xED \u017Eivot."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444382666752
+    m_Localized: "GDPR je z\xE1kon chr\xE1n\xEDc\xED\ntv\xE9 osobn\xED \xFAdaje."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444403638272
+    m_Localized: Co je cookie?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444424609792
+    m_Localized: "GDPR chr\xE1n\xED tv\xE9 soukrom\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444437192704
+    m_Localized: "V\u0161iml sis, \u017Ee reklamy na webu jsou personalizovan\xE9
+      pro tebe?\nTak jsi na n\u011B sp\xED\u0161e nalet\u011Bl."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444462358528
+    m_Localized: 'Souhlas
+
+      s cookies'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444479135744
+    m_Localized: "Funk\u010Dn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444500107264
+    m_Localized: "Profil\nna soci\xE1ln\xED\ns\xEDti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444521078784
+    m_Localized: "Obl\xEDben\xE1\nn\xE1kupn\xED\nkategorie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444542050304
+    m_Localized: GDPR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444563021824
+    m_Localized: "Identifikace\nu\u017Eivatele\n(ID)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444583993344
+    m_Localized: "Aby server webov\xE9 str\xE1nky\npoznal, \u017Ee jsi to ty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444613353472
+    m_Localized: "Nejnav\u0161t\u011Bvovan\u011Bj\u0161\xED str\xE1nky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444625936384
+    m_Localized: "Kopie t\u011Bchto soubor\u016F se odes\xEDlaj\xED na server,\npoka\u017Ed\xE9
+      kdy\u017E na\u010Dte\u0161 n\u011Bjakou webovou str\xE1nku"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444646907904
+    m_Localized: Jazyk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444676268032
+    m_Localized: 'GDPR
+
+
+      -------
+
+      -------
+
+      -------
+
+      -------'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444697239552
+    m_Localized: "M\xE1\u0161 mo\u017Enost volby\nneposkytovat sv\xE9 osobn\xED \xFAdaje"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444718211072
+    m_Localized: "N\xE1kupn\xED\nko\u0161\xEDk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444739182592
+    m_Localized: "D\xEDky GDPR t\u011B webov\xE9 str\xE1nky\nmus\xED po\u017E\xE1dat
+      p\u0159ed shroma\u017E\u010Fov\xE1n\xEDm\ntv\xFDch osobn\xEDch \xFAdaj\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444760154112
+    m_Localized: "P\u0159ijmout"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444781125632
+    m_Localized: "Phishing je, kdy\u017E se n\u011Bkdo na internetu vyd\xE1v\xE1
+      za n\u011Bkoho,\nkomu d\u016Fv\u011B\u0159uje\u0161, aby z tebe vyl\xE1kal
+      osobn\xED informace."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444802097152
+    m_Localized: "\u010Cas\nna\u010D\xEDt\xE1n\xED\nstr\xE1nky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444823068672
+    m_Localized: "Pravd\u011Bpodobn\xE9\npohlav\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444844040192
+    m_Localized: "Cookies lze rozd\u011Blit do kategori\xED,\npodle obsahu, kter\xFD
+      ukl\xE1daj\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444865011712
+    m_Localized: "PROST\u011A \u0158EKNI NE"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444890177536
+    m_Localized: "Reklamn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444911149056
+    m_Localized: "Data, kter\xE1 poskytne\u0161 n\u011Bkter\xFDm spole\u010Dnostem,\nmohou
+      b\xFDt prod\xE1na jin\xE9 spole\u010Dnosti,\nkter\xE1 je pou\u017Eije proti
+      tob\u011B."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444927926272
+    m_Localized: "Analytick\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444953092096
+    m_Localized: "Shrnut\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444974063616
+    m_Localized: Kategorie cookies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970444999229440
+    m_Localized: "V\xFDkonnostn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970445016006656
+    m_Localized: "Cookies v\u011Bt\u0161inou obsahuj\xED data o tob\u011B.\nA mnoho
+      spole\u010Dnost\xED tato data chce,\naby s tebou mohly manipulovat.\n\nProdej
+      u\u017Eivatelsk\xFDch dat se stal velk\xFDm byznysem."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970445041172480
+    m_Localized: Kategorie cookies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970445066338304
+    m_Localized: "P\u0159ihla\u0161ovac\xED\n\xFAdaje"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970445087309824
+    m_Localized: "Data z cookies nejsou jen pro tebe.\nPom\xE1haj\xED tak\xE9 vyv\xEDjet
+      lep\u0161\xED software."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016531869696
+    m_Localized: Nadpis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016565424128
+    m_Localized: "Nep\u0159ij\xEDmej \u017E\xE1dosti o sp\xE1rov\xE1n\xED p\u0159es
+      bluetooth,\nkter\xE9 jsi neinicioval"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016603172864
+    m_Localized: Viry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016624144384
+    m_Localized: "<b>Ano</b>, sv\u011Btlo fotoapar\xE1tu spad\xE1\npod opr\xE1vn\u011Bn\xED
+      kamery"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016653504512
+    m_Localized: "Ahoj,\njsem po\u017Eadavek na bluetooth,\npros\xEDm, pus\u0165
+      m\u011B dovnit\u0159"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016682864640
+    m_Localized: Telefony
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016712224768
+    m_Localized: "Opr\xE1vn\u011Bn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016737390592
+    m_Localized: "V\u0161e fungovalo dob\u0159e, dokud se\nkr\xE1l nerozhodl otev\u0159\xEDt
+      bankovn\xED\naplikaci ve sv\xE9m st\u0159edov\u011Bk\xE9m telefonu\na poslat
+      pen\xEDze sousedn\xEDmu kr\xE1li p\u0159es\ncestu, kterou m\xEDstn\xED naz\xFDvaj\xED
+      \"<b>Free Wi-Fi</b>\"."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016766750720
+    m_Localized: "Netu\u0161il, \u017Ee bandit\xE9 mohou vid\u011Bt provoz na cest\u011B\na
+      snadno ukr\xE1st nejen pen\xEDze, kter\xE9 poslal,\nale i cel\xFD bankovn\xED
+      \xFA\u010Det."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016791916544
+    m_Localized: Poloha
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016817082368
+    m_Localized: "Udr\u017Euj sv\xE9 za\u0159\xEDzen\xED aktualizovan\xE9 a\npou\u017E\xEDvej
+      antivirus i na mobiln\xEDm telefonu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016846442496
+    m_Localized: "N\u011Bkter\xE9 aplikace mohou \u017E\xE1dat o opr\xE1vn\u011Bn\xED,
+      kter\xE1 nepot\u0159ebuj\xED.\nMo\u017En\xE1 t\u011B cht\u011Bj\xED \u0161pehovat.\nNikdy
+      jim tato opr\xE1vn\u011Bn\xED ned\xE1vej a odinstaluj je."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016875802624
+    m_Localized: HTTP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016900968448
+    m_Localized: "Ve\u0159ejn\xE9 Wi-Fi nen\xED v\u017Edy bezpe\u010Dn\xE9\nBez HTTPS
+      mohou \xFAto\u010Dn\xEDci vid\u011Bt tv\xE9 prohl\xED\u017Een\xED\nNezad\xE1vej
+      citliv\xE9 informace p\u0159es ve\u0159ejnou Wi-Fi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016938717184
+    m_Localized: Kamera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016963883008
+    m_Localized: HTTPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971016993243136
+    m_Localized: "Velikost nerozhoduje,\nvirus m\u016F\u017Ee napadnout tv\u016Fj
+      tablet nebo mobil\nstejn\u011B snadno jako tv\u016Fj po\u010D\xEDta\u010D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017018408960
+    m_Localized: "Ahoj, jsem aplikace baterky,\nd\xE1\u0161 mi opr\xE1vn\u011Bn\xED\nke
+      vstupu?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017043574784
+    m_Localized: "<b>Ne</b>, nepot\u0159ebuje\u0161\ntyto informace"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017068740608
+    m_Localized: "P\u011Bkn\xFD pokus,\nale nezn\xE1me t\u011B, jdi pry\u010D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017098100736
+    m_Localized: Free Wi-Fi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017123266560
+    m_Localized: Lorem ipsum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017148432384
+    m_Localized: "Byl jednou jeden kr\xE1l, kter\xFD sed\u011Bl ve ve\u0159ejn\xE9
+      hospod\u011B\na pot\u0159eboval internet, tak se rozhodl pou\u017E\xEDt jejich
+      Wi-Fi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017173598208
+    m_Localized: "Bluetooth po\u017Eadavky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017198764032
+    m_Localized: "Ve\u0159ejn\xE1 WI-FI"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017223929856
+    m_Localized: "Chra\u0148 sv\xE9 telefonn\xED kr\xE1lovstv\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53971017253289984
+    m_Localized: "Hacke\u0159i mohou pos\xEDlat \u0161kodliv\xE9 \u017E\xE1dosti
+      o sp\xE1rov\xE1n\xED\np\u0159es Bluetooth, aby z\xEDskali kontrolu nad tv\xFDm
+      telefonem"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375616389120
+    m_Localized: book.pdf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375654137856
+    m_Localized: thesis.docx
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375687692288
+    m_Localized: game.exe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375721246720
+    m_Localized: song.mp3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375750606848
+    m_Localized: video.mp4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375779966976
+    m_Localized: game.exe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375809327104
+    m_Localized: game.exe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375838687232
+    m_Localized: "Detekce \u0161kodliv\xE9ho souboru\n- Porovn\xE1n\xED hashe (otisku)
+      souboru se zn\xE1m\xFDmi viry\n- Simulace programu v bezpe\u010Dn\xE9m uzav\u0159en\xE9m
+      prost\u0159ed\xED\n\nB\u011B\u017En\xE9 vzory\n- Trojsk\xFD k\u016F\u0148\n-
+      \u010Cten\xED hesel\n- P\u0159\xEDstup ke kame\u0159e nebo mikrofonu\n- \xDAnos
+      p\u0159ihl\xE1\u0161en\xFDch relac\xED\n- Vypnut\xED antiviru\n- Zobrazov\xE1n\xED
+      reklam"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375863853056
+    m_Localized: Odeslat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375893213184
+    m_Localized: "Rozhodni pro ka\u017Ed\xFD soubor, zda je bezpe\u010Dn\xFD nebo
+      ne.\nPokud si nejsi jist\xFD, pou\u017Eij Simul\xE1tor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375922573312
+    m_Localized: "Zobrazit v\xEDce informac\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375947739136
+    m_Localized: "P\u0159ipraven skenovat soubor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972375977099264
+    m_Localized: Antivirus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850281578496
+    m_Localized: Souhlas s cookies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850310938624
+    m_Localized: "Dokon\u010Dit a up\xE9ct"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850336104448
+    m_Localized: "Za\u010D\xEDt znovu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850365464576
+    m_Localized: "Obl\xEDben\xE1 n\xE1kupn\xED kategorie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850390630400
+    m_Localized: "Uva\u0159 3 su\u0161enky (pro ka\u017Edou kategorii jednu)\npouze
+      z odpov\xEDdaj\xEDc\xEDch ingredienc\xED cookie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850419990528
+    m_Localized: "P\u0159ihla\u0161ovac\xED \xFAdaje"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850445156352
+    m_Localized: "Po\u010Det kliknut\xFDch produkt\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850474516480
+    m_Localized: "Zobrazen\xE9 chyby"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850499682304
+    m_Localized: "\u010Cas na str\xE1nce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850524848128
+    m_Localized: "N\xE1kupn\xED ko\u0161\xEDk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850554208256
+    m_Localized: "P\u0159et\xE1hni sem spr\xE1vn\xE9 ingredience"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850579374080
+    m_Localized: "T\u0159et\xED strany"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850604539904
+    m_Localized: "Funk\u010Dn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850633900032
+    m_Localized: "Analytick\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850663260160
+    m_Localized: Poloha
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850684231680
+    m_Localized: Jazyk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850709397504
+    m_Localized: "Kliknut\xE1 reklama"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850742951936
+    m_Localized: "Pravd\u011Bpodobn\xE9 pohlav\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850763923456
+    m_Localized: "T\u0159et\xED strany"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850797477888
+    m_Localized: "Funk\u010Dn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850822643712
+    m_Localized: "Profil na soci\xE1ln\xED s\xEDti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972850852003840
+    m_Localized: "Analytick\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53972930682191872
+    m_Localized: www.original-website.com
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197528006656
+    m_Localized: "Ozn\xE1men\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197565755392
+    m_Localized: "Aplikace pro \xFApravu videa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197595115520
+    m_Localized: Fitness aplikace
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197624475648
+    m_Localized: Mikrofon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197658030080
+    m_Localized: "Rozpozn\xE1n\xED aktivity"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197691584512
+    m_Localized: "\xDAlo\u017Ei\u0161t\u011B / M\xE9dia"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197720944640
+    m_Localized: "Vytvo\u0159 mobiln\xED aplikaci p\u0159eta\u017Een\xEDm j\xE1dra
+      do m\u0159\xED\u017Eky.\nPak p\u0159idej v\u0161echna opr\xE1vn\u011Bn\xED,
+      kter\xE1 aplikace skute\u010Dn\u011B pot\u0159ebuje."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197758693376
+    m_Localized: Kamera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197788053504
+    m_Localized: Poloha
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197817413632
+    m_Localized: Kontakty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197846773760
+    m_Localized: "Aplikace pro zas\xEDl\xE1n\xED zpr\xE1v"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197880328192
+    m_Localized: "J\xE1dro aplikace"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53973197909688320
+    m_Localized: "Zdravotn\xED \xFAdaje"
     m_Metadata:
       m_Items: []
   references:

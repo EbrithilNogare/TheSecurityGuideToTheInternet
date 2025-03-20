@@ -2891,11 +2891,11 @@ MonoBehaviour:
     easeType: 3
     duration: 5.5
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 1
     targetValue: {x: 300, y: 0, z: 0}
     relative: 1
-    originalValue: {x: 0, y: 1345.6665, z: 0}
 --- !u!1 &455671287
 GameObject:
   m_ObjectHideFlags: 0
@@ -2991,11 +2991,11 @@ MonoBehaviour:
     easeType: 0
     duration: 10
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 2
     targetValue: {x: 0, y: 0, z: -180}
     relative: 0
-    originalValue: {x: -0, y: 0, z: 0}
 --- !u!1 &459267354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3732,11 +3732,11 @@ MonoBehaviour:
     easeType: 3
     duration: 6
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 1
     targetValue: {x: -300, y: 0, z: 0}
     relative: 1
-    originalValue: {x: 0, y: 1385.6665, z: 0}
 --- !u!1 &585154805
 GameObject:
   m_ObjectHideFlags: 0
@@ -4484,22 +4484,22 @@ MonoBehaviour:
     easeType: 3
     duration: 2
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 1
     targetValue: {x: 20, y: 100, z: 0}
     relative: 1
-    originalValue: {x: -726, y: -250, z: 0}
   - tweenName: Rotate
     autoStart: 1
     tweenType: 2
     easeType: 3
     duration: 2
     delay: 1
+    loopDelay: 0
     loop: 1
     loopType: 1
     targetValue: {x: 0, y: 0, z: -5}
     relative: 0
-    originalValue: {x: -0, y: 0, z: 5.0000014}
 --- !u!1 &686209527
 GameObject:
   m_ObjectHideFlags: 0
@@ -6687,11 +6687,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 8
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!225 &899354576
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7189,11 +7189,11 @@ MonoBehaviour:
     easeType: 0
     duration: 0.15
     delay: 3
+    loopDelay: 0
     loop: 0
     loopType: 1
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!114 &981279013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7892,11 +7892,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 4
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!1 &1050840987
 GameObject:
   m_ObjectHideFlags: 0
@@ -9493,11 +9493,11 @@ MonoBehaviour:
     easeType: 2
     duration: 3
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 1
     targetValue: {x: 50, y: 0, z: 0}
     relative: 1
-    originalValue: {x: -333, y: -628, z: 0}
 --- !u!1 &1363407610
 GameObject:
   m_ObjectHideFlags: 0
@@ -9686,11 +9686,11 @@ MonoBehaviour:
     easeType: 0
     duration: 1
     delay: 10
+    loopDelay: 0
     loop: 0
     loopType: 0
     targetValue: {x: 1, y: 0, z: 0}
     relative: 0
-    originalValue: {x: 0, y: 0, z: 0}
 --- !u!1 &1382859005
 GameObject:
   m_ObjectHideFlags: 0
@@ -10011,11 +10011,11 @@ MonoBehaviour:
     easeType: 4
     duration: 8
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 1
     targetValue: {x: 0, y: 100, z: 0}
     relative: 1
-    originalValue: {x: 1043, y: -162, z: 0}
 --- !u!1 &1456182905
 GameObject:
   m_ObjectHideFlags: 0
@@ -10145,11 +10145,11 @@ MonoBehaviour:
     easeType: 3
     duration: 7
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 1
     targetValue: {x: 300, y: 0, z: 0}
     relative: 1
-    originalValue: {x: 0, y: 1425.6666, z: 0}
 --- !u!1 &1489164029
 GameObject:
   m_ObjectHideFlags: 0
@@ -11255,11 +11255,11 @@ MonoBehaviour:
     easeType: 0
     duration: 0.15
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 1
     targetValue: {x: 0, y: 0, z: 4}
     relative: 1
-    originalValue: {x: 0, y: 0, z: 358}
 --- !u!114 &1627747149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11355,11 +11355,11 @@ MonoBehaviour:
     easeType: 3
     duration: 5
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 1
     targetValue: {x: 0, y: -50, z: 0}
     relative: 1
-    originalValue: {x: 41.99994, y: -657.5, z: 0}
 --- !u!1 &1649619060
 GameObject:
   m_ObjectHideFlags: 0
@@ -13043,11 +13043,11 @@ MonoBehaviour:
     easeType: 3
     duration: 5
     delay: 0
+    loopDelay: 0
     loop: 1
     loopType: 1
     targetValue: {x: -300, y: 0, z: 0}
     relative: 1
-    originalValue: {x: 0, y: 1305.6665, z: 0}
 --- !u!1 &1989679221
 GameObject:
   m_ObjectHideFlags: 0
