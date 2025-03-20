@@ -50,10 +50,14 @@ public class MovableTetrisTileController : MonoBehaviour, IBeginDragHandler, IDr
         Vector3 mainDropZoneInverseScale = new(1f / mainDropZoneScale.x, 1f / mainDropZoneScale.y, 1f / mainDropZoneScale.z);
         Vector3 mainDropZoneScalePosition = Vector3.Scale(mainDropZonePosition, mainDropZoneInverseScale);
         Vector3 mainDropZoneOffset = new(phoneMinigameController.mainDropZone.rect.width / 2f, -phoneMinigameController.mainDropZone.rect.height / 2f, 0);
-        Vector3 mainDropZonePositionWithOffset = mainDropZonePosition - mainDropZoneOffset;
+        Vector3 mainDropZonePositionWithOffset = mainDropZoneScalePosition - mainDropZoneOffset;
 
         Vector3 diff = parentPositionWithOffset - mainDropZonePositionWithOffset;
         Vector2Int boardPosition = new Vector2Int(Mathf.RoundToInt(diff.x / CELL_SIZE), -Mathf.RoundToInt(diff.y / CELL_SIZE));
+
+        //Debug.DrawLine(parentPosition, parentPositionWithOffset, Color.red, 2000f, false);
+        //Debug.DrawLine(mainDropZonePosition, mainDropZonePositionWithOffset, Color.green, 2000f, false);
+        //Debug.DrawLine(parentPositionWithOffset, mainDropZonePositionWithOffset, Color.blue, 2000f, false);
 
         // Clean up previous position
         for (int x = 0; x < 7; x++) {
