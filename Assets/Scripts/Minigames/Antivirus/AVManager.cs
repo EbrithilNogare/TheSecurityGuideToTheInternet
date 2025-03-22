@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using System.Collections;
 using System.Linq;
@@ -103,6 +104,17 @@ public class AVManager : MonoBehaviour {
     private void DisplaySuccessMessage() {
         feedbackMessageText.color = Color.green;
         feedbackMessageText.text = "You did a great job!";
-        StartCoroutine(DelayCoroutine(1.0f, () => SceneManager.UnloadSceneAsync("Antivirus")));
+        FinishMinigame();
+    }
+
+    public void FinishMinigame() {
+        int score = 2; // todo do it better
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Malware minigame completed\",\"score\":" + score + "}");
+        Store.Instance.minigameScore = score;
+        int scoreForStore = score == 0 ? 0b000 : score == 1 ? 0b100 : 0b110;
+        Store.Instance.SetLevelScore((int)Store.Level.Malware, scoreForStore);
+        Store.Instance.quizToLoad = Store.Quiz.Phone;
+
+        DOVirtual.DelayedCall(2, () => SceneManager.LoadScene("Quiz"));
     }
 }

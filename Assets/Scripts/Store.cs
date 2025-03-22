@@ -52,9 +52,9 @@ public class Store : MonoBehaviour {
         PlayerPrefs.SetString("LevelUnlocked", JSON.ArrayToJson(levelUnlocked));
     }
 
-    public void SetLevelScore(int level, int score) {
-        LoggingService.Log(LoggingService.LogCategory.Store, "Level: " + level + ", score set: " + score);
-        levelStars[level] |= score;
+    public void SetLevelScore(Store.Level level, int score) {
+        LoggingService.Log(LoggingService.LogCategory.Store, "Level: " + (int)level + ", score set: " + score);
+        levelStars[(int)level] |= score;
         PlayerPrefs.SetString("LevelStars", JSON.ArrayToJson(levelStars));
     }
 

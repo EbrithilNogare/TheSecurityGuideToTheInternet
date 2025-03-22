@@ -137,7 +137,7 @@ public class PhishingMinigameManager : MonoBehaviour {
         LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Phishing minigame completed\",\"PhishingMinigamePercentage\":" + percentage + ",\"score\":" + score + "}");
         Store.Instance.minigameScore = score;
         int scoreForStore = score == 0 ? 0b000 : score == 1 ? 0b100 : 0b110;
-        Store.Instance.SetLevelScore((int)Store.Level.Phishing, scoreForStore);
+        Store.Instance.SetLevelScore(Store.Level.Phishing, scoreForStore);
         Store.Instance.quizToLoad = Store.Quiz.Phishing;
 
         DOVirtual.DelayedCall(2, () => SceneManager.LoadScene("Quiz"));

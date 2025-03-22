@@ -129,7 +129,7 @@ public class QuizManager : MonoBehaviour {
     private void FinishQuiz() {
         if (!allQuizesMode) {
             int scoreForStore = correctAnswers >= 5 ? 0b001 : 0b000;
-            Store.Instance.SetLevelScore((int)currentQuizCategoryIndex, scoreForStore);
+            Store.Instance.SetLevelScore((Store.Level)currentQuizCategoryIndex, scoreForStore);
             Store.Instance.quizScore = score;
         }
 

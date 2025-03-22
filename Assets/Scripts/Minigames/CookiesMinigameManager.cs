@@ -119,7 +119,7 @@ public class CookiesMinigameManager : MonoBehaviour {
         LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Cookie minigame completed\",\"correctCookiessFinished\":" + correctCookiesFinished + ",\"score\":" + score + "}");
         Store.Instance.minigameScore = score;
         int scoreForStore = score == 0 ? 0b000 : score == 1 ? 0b100 : 0b110;
-        Store.Instance.SetLevelScore((int)Store.Level.Cookies, scoreForStore);
+        Store.Instance.SetLevelScore(Store.Level.Cookies, scoreForStore);
         Store.Instance.quizToLoad = Store.Quiz.Cookies;
 
         DOVirtual.DelayedCall(2, () => SceneManager.LoadScene("Quiz"));
