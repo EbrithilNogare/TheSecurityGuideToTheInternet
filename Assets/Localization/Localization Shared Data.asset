@@ -965,6 +965,42 @@ MonoBehaviour:
     m_Key: Phone/Canvas/Right pieces/PieceDropZone 5/Permission label
     m_Metadata:
       m_Items: []
+  - m_Id: 54555587392602112
+    m_Key: LevelSelection/Canvas/Levels/Cookies/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587430350848
+    m_Key: LevelSelection/Canvas/Levels/Phishing/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587463905280
+    m_Key: LevelSelection/Canvas/Levels/AI/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587493265408
+    m_Key: LevelSelection/Canvas/Levels/Firewall/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587526819840
+    m_Key: LevelSelection/Canvas/Levels/Passwords/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587556179968
+    m_Key: LevelSelection/Canvas/Levels/Phone/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587581345792
+    m_Key: LevelSelection/Canvas/Levels/Malware/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587610705920
+    m_Key: LevelSelection/Canvas/Levels/2FA/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587644260352
+    m_Key: LevelSelection/Canvas/Navigation/Level selection
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

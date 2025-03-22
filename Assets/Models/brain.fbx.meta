@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Brain
+    second: {fileID: 2100000, guid: 81da0129537a5c94ba12d43bd5f03781, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Glass
     second: {fileID: 2100000, guid: e09032613e5ecca40a23e3f15be46e9a, type: 2}
   materials:

@@ -259,7 +259,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53969948611739648
-    m_Localized: "Vlo\u017E to v\u0161e do loteri\xED, p\u0159es noc se stane\u0161
+    m_Localized: "Vsa\u010F to v\u0161echno do loterie, p\u0159es noc se stane\u0161
       milion\xE1\u0159em!"
     m_Metadata:
       m_Items: []
@@ -269,7 +269,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53969971885932544
-    m_Localized: "V\u017Edy si ov\u011B\u0159ujte fakta p\u0159ed jedn\xE1n\xEDm
+    m_Localized: "V\u017Edycky si ov\u011B\u0159 fakta ne\u017E bude\u0161 jednat
       podle rad AI.\nZejm\xE9na zdravotn\xED a finan\u010Dn\xED rady."
     m_Metadata:
       m_Items: []
@@ -401,8 +401,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970013514399744
-    m_Localized: "<b>Ano</b>, nalezen\xED zakopan\xE9 pokladu by t\u011B obohatilo,\n<b>ale</b>
-      nen\xED to zrovna <b>spolehliv\xE1</b> finan\u010Dn\xED strategie"
+    m_Localized: "<b>Ano</b>, nalezen\xED zakopan\xE9 pokladu by t\u011B obohatilo,\n<b>ale
+      nen\xED</b> to zrovna spolehliv\xE1 finan\u010Dn\xED strategie"
     m_Metadata:
       m_Items: []
   - m_Id: 53970013539565568
@@ -698,7 +698,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 53971016565424128
     m_Localized: "Nep\u0159ij\xEDmej \u017E\xE1dosti o sp\xE1rov\xE1n\xED p\u0159es
-      bluetooth,\nkter\xE9 jsi neinicioval"
+      bluetooth,\nkter\xE9 nejsou tvoje"
     m_Metadata:
       m_Items: []
   - m_Id: 53971016603172864
@@ -747,8 +747,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 53971016846442496
     m_Localized: "N\u011Bkter\xE9 aplikace mohou \u017E\xE1dat o opr\xE1vn\u011Bn\xED,
-      kter\xE1 nepot\u0159ebuj\xED.\nMo\u017En\xE1 t\u011B cht\u011Bj\xED \u0161pehovat.\nNikdy
-      jim tato opr\xE1vn\u011Bn\xED ned\xE1vej a odinstaluj je."
+      kter\xE1 nepot\u0159ebuj\xED.\nMo\u017En\xE1 t\u011B cht\u011Bj\xED \u0161pehovat.\nNed\xE1vej
+      jim tato opr\xE1vn\u011Bn\xED a rad\u011Bji je hned odinstaluj."
     m_Metadata:
       m_Items: []
   - m_Id: 53971016875802624
@@ -756,9 +756,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53971016900968448
-    m_Localized: "Ve\u0159ejn\xE9 Wi-Fi nen\xED v\u017Edy bezpe\u010Dn\xE9\nBez HTTPS
-      mohou \xFAto\u010Dn\xEDci vid\u011Bt tv\xE9 prohl\xED\u017Een\xED\nNezad\xE1vej
-      citliv\xE9 informace p\u0159es ve\u0159ejnou Wi-Fi"
+    m_Localized: "Ve\u0159ejna Wi-Fi nen\xED v\u017Edycky bezpe\u010Dn\xE1\nBez HTTPS
+      mohou \xFAto\u010Dn\xEDci vid\u011Bt tvou aktivitu\nNezad\xE1vej citliv\xE9
+      informace p\u0159es ve\u0159ejnou Wi-Fi"
     m_Metadata:
       m_Items: []
   - m_Id: 53971016938717184
@@ -820,19 +820,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53972375616389120
-    m_Localized: book.pdf
+    m_Localized: kniha.pdf
     m_Metadata:
       m_Items: []
   - m_Id: 53972375654137856
-    m_Localized: thesis.docx
+    m_Localized: dokument.docx
     m_Metadata:
       m_Items: []
   - m_Id: 53972375687692288
-    m_Localized: game.exe
+    m_Localized: hra.exe
     m_Metadata:
       m_Items: []
   - m_Id: 53972375721246720
-    m_Localized: song.mp3
+    m_Localized: hudba.mp3
     m_Metadata:
       m_Items: []
   - m_Id: 53972375750606848
@@ -840,11 +840,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53972375779966976
-    m_Localized: game.exe
+    m_Localized: hra.exe
     m_Metadata:
       m_Items: []
   - m_Id: 53972375809327104
-    m_Localized: game.exe
+    m_Localized: hra.exe
     m_Metadata:
       m_Items: []
   - m_Id: 53972375838687232
@@ -995,9 +995,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53973197720944640
-    m_Localized: "Vytvo\u0159 mobiln\xED aplikaci p\u0159eta\u017Een\xEDm j\xE1dra
-      do m\u0159\xED\u017Eky.\nPak p\u0159idej v\u0161echna opr\xE1vn\u011Bn\xED,
-      kter\xE1 aplikace skute\u010Dn\u011B pot\u0159ebuje."
+    m_Localized: "Sestav aplikaci p\u0159eta\u017Een\xEDm j\xE1dra aplikace do m\u0159\xED\u017Eky
+      a\npak p\u0159idej ta opr\xE1vn\u011Bn\xED, kter\xE1 aplikace skute\u010Dn\u011B
+      pot\u0159ebuje."
     m_Metadata:
       m_Items: []
   - m_Id: 53973197758693376
@@ -1022,6 +1022,42 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 53973197909688320
     m_Localized: "Zdravotn\xED \xFAdaje"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587392602112
+    m_Localized: Cookie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587430350848
+    m_Localized: Phishing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587463905280
+    m_Localized: "Um\u011Bl\xE1 inteligence"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587493265408
+    m_Localized: Firewall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587526819840
+    m_Localized: Hesla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587556179968
+    m_Localized: Telefon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587581345792
+    m_Localized: Malware
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587610705920
+    m_Localized: "Dvouf\xE1zov\xE9 ov\u011B\u0159en\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587644260352
+    m_Localized: "V\xFDb\u011Br levelu"
     m_Metadata:
       m_Items: []
   references:

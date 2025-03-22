@@ -1206,9 +1206,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53973197720944640
-    m_Localized: 'Create mobile app, by dragging core into grid.
+    m_Localized: 'Create mobile app, by dragging core into grid and
 
-      Then add
+      then add
       all permisions app really needs.'
     m_Metadata:
       m_Items: []
@@ -1234,6 +1234,42 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 53973197909688320
     m_Localized: Health data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587392602112
+    m_Localized: Cookies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587430350848
+    m_Localized: Phishing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587463905280
+    m_Localized: AI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587493265408
+    m_Localized: Firewall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587526819840
+    m_Localized: Passwords
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587556179968
+    m_Localized: Phone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587581345792
+    m_Localized: Malware
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587610705920
+    m_Localized: 2FA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54555587644260352
+    m_Localized: Level selection
     m_Metadata:
       m_Items: []
   references:
