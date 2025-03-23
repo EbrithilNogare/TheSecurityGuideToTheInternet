@@ -790,6 +790,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -124.38
       objectReference: {fileID: 0}
+    - target: {fileID: 5987278262195784450, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: minigameName
+      value: Phishing
+      objectReference: {fileID: 0}
     - target: {fileID: 6191862427478248743, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
       propertyPath: m_SizeDelta.x
