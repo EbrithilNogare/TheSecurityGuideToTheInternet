@@ -51,7 +51,7 @@ public class QuizManager : MonoBehaviour {
     private bool isEvaluatingInProgress;
     private int score;
     private int correctAnswers;
-    private float defaultTimeToRespond = 30f;
+    private float defaultTimeToRespond = 60f;
     private float timeToRespond;
     private bool allQuizesMode = false;
     private int allQuizesModeIndex = 0;
@@ -167,7 +167,7 @@ public class QuizManager : MonoBehaviour {
                 .OnComplete(() => particle.gameObject.SetActive(false));
         }
         int currentAmount = score;
-        score = score + Mathf.Clamp((int)(100f - timeToRespond + defaultTimeToRespond), 0, 100);
+        score = score + Mathf.Clamp((int)(100f - timeToRespond), 10, 100);
         DOTween.To(() => currentAmount, x => scoreCounterText.text = x.ToString(), score, duration / 2).SetDelay(duration / 2);
     }
     public void ChooseAnswer(int answerIndex) {
