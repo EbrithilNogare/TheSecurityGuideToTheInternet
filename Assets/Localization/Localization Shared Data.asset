@@ -797,10 +797,6 @@ MonoBehaviour:
     m_Key: Antivirus/Canvas/Source row/File/Label 6
     m_Metadata:
       m_Items: []
-  - m_Id: 53972375838687232
-    m_Key: Antivirus/Canvas/More information/ClickAway/Dialog/Text
-    m_Metadata:
-      m_Items: []
   - m_Id: 53972375863853056
     m_Key: Antivirus/Canvas/Evaluate/Text (TMP)
     m_Metadata:
@@ -809,16 +805,8 @@ MonoBehaviour:
     m_Key: Antivirus/Canvas/Level info/Tutorial
     m_Metadata:
       m_Items: []
-  - m_Id: 53972375922573312
-    m_Key: Antivirus/Canvas/More information/ShowMoreInfo/Text (TMP)
-    m_Metadata:
-      m_Items: []
   - m_Id: 53972375947739136
     m_Key: Antivirus/Canvas/Deposit Scan/ScanProgressInfo
-    m_Metadata:
-      m_Items: []
-  - m_Id: 53972375977099264
-    m_Key: Antivirus/Canvas/More information/ClickAway/Dialog/Title
     m_Metadata:
       m_Items: []
   - m_Id: 53972850281578496
@@ -999,6 +987,30 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 54555587644260352
     m_Key: LevelSelection/Canvas/Navigation/Level selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54943373400506368
+    m_Key: Cookies/Canvas/Tutorial/Tutorial dialog/Tutorial textbox/TextBox/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54943878331793408
+    m_Key: Antivirus/Canvas/Tutorial/Tutorial dialog/Tutorial textbox/TextBox/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54944298122903552
+    m_Key: Tutorial/Prefab Mode in Context/Tutorial/Tutorial dialog/Close tutorial/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54946100411138048
+    m_Key: Phishing/Canvas/Tutorial/Tutorial dialog/Tutorial textbox/TextBox/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54954069030895616
+    m_Key: Phone/Canvas/Tutorial/Tutorial dialog/Tutorial textbox/TextBox/Text (TMP)
     m_Metadata:
       m_Items: []
   m_Metadata:

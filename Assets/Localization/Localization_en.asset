@@ -1036,33 +1036,6 @@ MonoBehaviour:
     m_Localized: game.exe
     m_Metadata:
       m_Items: []
-  - m_Id: 53972375838687232
-    m_Localized: 'Detecting the file is harmful
-
-      - Comparing hash (fingerprint)
-      of file with already known viruses.
-
-      - Simulating program in safe enclosed
-      environment
-
-
-      Common patterns
-
-      - Trojan horse
-
-      - Reading
-      passwords
-
-      - Accessing camera or microphone
-
-      - Hijacking loged-in
-      sessions
-
-      - Turning off antivirus
-
-      - Showing ads'
-    m_Metadata:
-      m_Items: []
   - m_Id: 53972375863853056
     m_Localized: Submit
     m_Metadata:
@@ -1074,16 +1047,8 @@ MonoBehaviour:
       sure, use Simulator to decide.'
     m_Metadata:
       m_Items: []
-  - m_Id: 53972375922573312
-    m_Localized: Show more info
-    m_Metadata:
-      m_Items: []
   - m_Id: 53972375947739136
     m_Localized: Ready to scan file.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 53972375977099264
-    m_Localized: Antivirus
     m_Metadata:
       m_Items: []
   - m_Id: 53972850281578496
@@ -1270,6 +1235,61 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 54555587644260352
     m_Localized: Level selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54943373400506368
+    m_Localized: 'Drag the correct ingredients into the bowl, based
+
+      on the
+      cookie category (it is writen on the bowl).
+
+      Use exactly one ingredient
+      of each type.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54943878331793408
+    m_Localized: 'Drag the file to one of the areas.
+
+
+      The <color=#6562D7>blue
+      area simulates</color> the program''s behavior to determine if the file is
+      safe.
+
+      If it is safe, drag it to the <color=#62D665>green pile of safe
+      files</color>.
+
+      Otherwise, drag it to the <color=#D66265>red pile of
+      dangerous files</color>.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54944298122903552
+    m_Localized: Close tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54946100411138048
+    m_Localized: 'Create a fake imitation of the page.
+
+      Drag the images and
+      the form fields so they are as accurate as possible to the original.
+
+      Pay
+      attention to the colors.
+
+      Finally, add a fake URL, you can''t use the
+      original, so find one that is very similar.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54954069030895616
+    m_Localized: 'Create application that you choosed.
+
+      Every application must
+      have own functionality, its core, start with that.
+
+      Then drag permissions
+      the app should need and drop them into the app.
+
+      Do not add permision
+      the app doesn''t need, but add all necesssary.'
     m_Metadata:
       m_Items: []
   references:

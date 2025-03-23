@@ -847,15 +847,6 @@ MonoBehaviour:
     m_Localized: hra.exe
     m_Metadata:
       m_Items: []
-  - m_Id: 53972375838687232
-    m_Localized: "Detekce \u0161kodliv\xE9ho souboru\n- Porovn\xE1n\xED hashe (otisku)
-      souboru se zn\xE1m\xFDmi viry\n- Simulace programu v bezpe\u010Dn\xE9m uzav\u0159en\xE9m
-      prost\u0159ed\xED\n\nB\u011B\u017En\xE9 vzory\n- Trojsk\xFD k\u016F\u0148\n-
-      \u010Cten\xED hesel\n- P\u0159\xEDstup ke kame\u0159e nebo mikrofonu\n- \xDAnos
-      p\u0159ihl\xE1\u0161en\xFDch relac\xED\n- Vypnut\xED antiviru\n- Zobrazov\xE1n\xED
-      reklam"
-    m_Metadata:
-      m_Items: []
   - m_Id: 53972375863853056
     m_Localized: Odeslat
     m_Metadata:
@@ -865,16 +856,8 @@ MonoBehaviour:
       ne.\nPokud si nejsi jist\xFD, pou\u017Eij Simul\xE1tor."
     m_Metadata:
       m_Items: []
-  - m_Id: 53972375922573312
-    m_Localized: "Zobrazit v\xEDce informac\xED"
-    m_Metadata:
-      m_Items: []
   - m_Id: 53972375947739136
     m_Localized: "P\u0159ipraven skenovat soubor."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 53972375977099264
-    m_Localized: Antivirus
     m_Metadata:
       m_Items: []
   - m_Id: 53972850281578496
@@ -1058,6 +1041,41 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 54555587644260352
     m_Localized: "V\xFDb\u011Br levelu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54943373400506368
+    m_Localized: "P\u0159et\xE1hni spr\xE1vn\xE9 suroviny do misky podle\nkategorie
+      cookie (je napsan\xE1 na misce).  \r\nPou\u017Eij p\u0159esn\u011B jednu surovinu
+      od ka\u017Ed\xE9ho typu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54943878331793408
+    m_Localized: "P\u0159et\xE1hni soubor do jedn\xE9 z oblast\xED.\n\n<color=#6562D7>Modr\xE1
+      oblast simuluje</color> chov\xE1n\xED programu pro ur\u010Den\xED, zda je soubor
+      bezpe\u010Dn\xFD.\nPokud je bezpe\u010Dn\xFD, p\u0159et\xE1hni ho na <color=#62D665>zelenou
+      hromadu bezpe\u010Dn\xFDch soubor\u016F</color>.\nV opa\u010Dn\xE9m p\u0159\xEDpad\u011B
+      ho p\u0159et\xE1hni na <color=#D66265>\u010Dervenou hromadu nebezpe\u010Dn\xFDch
+      soubor\u016F</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54944298122903552
+    m_Localized: "Zav\u0159\xEDt tutori\xE1l"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54946100411138048
+    m_Localized: "Vytvo\u0159 fale\u0161nou napodobeninu str\xE1nky.\nP\u0159et\xE1hni
+      obr\xE1zky a formul\xE1\u0159ov\xE1 pole tak, aby byly co nejp\u0159esn\u011Bj\u0161\xED
+      k origin\xE1lu.\nDej si pozor na barvy.\nNakonec p\u0159idej fale\u0161nou
+      URL, origin\xE1ln\xED nem\u016F\u017Ee\u0161 pou\u017E\xEDt, tak\u017Ee najdi
+      n\u011Bjakou hodn\u011B podobnou."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54954069030895616
+    m_Localized: "Vytvo\u0159 aplikaci, kterou jsi vybral.\nKa\u017Ed\xE1 aplikace
+      mus\xED m\xEDt svou vlastn\xED funkcionalitu, neboli jej\xED j\xE1dro, za\u010Dni
+      t\xEDm.\nPak p\u0159et\xE1hni opr\xE1vn\u011Bn\xED, kter\xE1 aplikace bude
+      pot\u0159ebovat, a p\u0159idej je do aplikace.\nNep\u0159id\xE1vej opr\xE1vn\u011Bn\xED,
+      kter\xE1 aplikace nepot\u0159ebuje, ale p\u0159idej v\u0161echna pot\u0159ebn\xE1."
     m_Metadata:
       m_Items: []
   references:
