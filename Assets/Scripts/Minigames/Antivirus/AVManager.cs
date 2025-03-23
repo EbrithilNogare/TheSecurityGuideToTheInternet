@@ -1,8 +1,5 @@
 using DG.Tweening;
-using System;
-using System.Collections;
 using System.Linq;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,7 +13,8 @@ public class AVManager : MonoBehaviour {
     public RectTransform dropZoneNotOK;
     public RectTransform dropZoneNotOKRow;
     public GameObject submitButton;
-    public TextMeshProUGUI feedbackMessageText;
+    public GameObject feedbackMessageTextOK;
+    public GameObject feedbackMessageTextFail;
     public GameObject dragAndDropTemporaryParent;
 
     public Canvas canvas;
@@ -79,10 +77,6 @@ public class AVManager : MonoBehaviour {
 
         item.transform.SetParent(sourceRow, false);
     }
-    private IEnumerator DelayCoroutine(float delay, Action action) {
-        yield return new WaitForSeconds(delay);
-        action?.Invoke();
-    }
 
     public void Submit() {
         bool OKDropZOneIsCorrect = dropZoneOKRow.GetComponentsInChildren<AVFileStructure>().All(item => !item.isVirus);
@@ -97,13 +91,13 @@ public class AVManager : MonoBehaviour {
     }
 
     private void DisplayErrorMessage() {
-        feedbackMessageText.color = Color.red;
-        feedbackMessageText.text = "Some files are still incorectly categorized!";
+        feedbackMessageTextOK.SetActive(false);
+        feedbackMessageTextFail.SetActive(true);
     }
 
     private void DisplaySuccessMessage() {
-        feedbackMessageText.color = Color.green;
-        feedbackMessageText.text = "You did a great job!";
+        feedbackMessageTextOK.SetActive(true);
+        feedbackMessageTextFail.SetActive(false);
         FinishMinigame();
     }
 

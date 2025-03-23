@@ -3,50 +3,50 @@ using TMPro;
 using UnityEngine;
 
 public class AVScanManager : MonoBehaviour {
-    public TextMeshProUGUI dropZoneScanProgressInfo;
     public bool isScanning = false;
 
-    private string scanProgressReady = "Ready for simulation.";
-    private string scanProgressScanning = "Simulating ";
-    private string scanProgressOk = "File is safe.";
-    private string scanProgressError1 = "Reading passwords!!!";
-    private string scanProgressError2 = "Accessing webcam.";
+    public GameObject scanProgressReady;
+    public GameObject scanProgressScanning;
+    public GameObject scanProgressOk;
+    public GameObject scanProgressError1;
+    public GameObject scanProgressError2;
+    public TextMeshProUGUI scanProgressScanningText;
 
     private Tweener currentTween;
 
+
     void Awake() {
-        dropZoneScanProgressInfo.SetText(scanProgressReady);
+        ShowDropZoneText(scanProgressReady);
     }
 
     public void StartScanning(AVFileStructure item) {
         isScanning = true;
-        dropZoneScanProgressInfo.SetText(scanProgressScanning + ".....");
-        dropZoneScanProgressInfo.maxVisibleCharacters = scanProgressScanning.Length;
+        ShowDropZoneText(scanProgressScanning);
+
 
         if (currentTween.IsActive()) { currentTween.Kill(); }
 
-        currentTween = DOTween.To(() => dropZoneScanProgressInfo.maxVisibleCharacters,
-                 x => dropZoneScanProgressInfo.maxVisibleCharacters = x,
-                 dropZoneScanProgressInfo.text.Length,
-                 0.3f).SetLoops(3, LoopType.Restart).OnComplete(() => {
-                     EvaluateScanFinish(item);
-                 });
-
+        currentTween = DOTween.To(() => 0,
+                x => scanProgressScanningText.maxVisibleCharacters = scanProgressScanningText.text.Length - 5 + x,
+                5,
+                0.3f)
+            .SetLoops(3, LoopType.Restart)
+            .OnComplete(() => { EvaluateScanFinish(item); });
     }
 
     private void EvaluateScanFinish(AVFileStructure item) {
         isScanning = false;
-        dropZoneScanProgressInfo.maxVisibleCharacters = int.MaxValue;
+        scanProgressScanningText.maxVisibleCharacters = int.MaxValue;
         if (item.isVirus) {
             switch (Random.Range(0, 2)) {
                 case 0:
-                    dropZoneScanProgressInfo.SetText(scanProgressError1); break;
+                    ShowDropZoneText(scanProgressError1); break;
                 case 1:
-                    dropZoneScanProgressInfo.SetText(scanProgressError2); break;
+                    ShowDropZoneText(scanProgressError2); break;
             }
         }
         else {
-            dropZoneScanProgressInfo.SetText(scanProgressOk);
+            ShowDropZoneText(scanProgressOk);
         }
     }
 
@@ -54,8 +54,15 @@ public class AVScanManager : MonoBehaviour {
         isScanning = false;
         if (currentTween != null && currentTween.IsActive()) {
             currentTween.Kill();
-            dropZoneScanProgressInfo.maxVisibleCharacters = int.MaxValue;
-            dropZoneScanProgressInfo.SetText(scanProgressReady);
         }
+        ShowDropZoneText(scanProgressReady);
+    }
+
+    private void ShowDropZoneText(GameObject textToEnable) {
+        scanProgressReady.SetActive(scanProgressReady == textToEnable);
+        scanProgressScanning.SetActive(scanProgressScanning == textToEnable);
+        scanProgressOk.SetActive(scanProgressOk == textToEnable);
+        scanProgressError1.SetActive(scanProgressError1 == textToEnable);
+        scanProgressError2.SetActive(scanProgressError2 == textToEnable);
     }
 }

@@ -300,9 +300,10 @@ MonoBehaviour:
 
       our robotic AI Parrot
 
+      
 
-      It may seems
-      alive, but
+      It
+      may seems alive, but
 
       it is only robot with a program'
     m_Metadata:
@@ -443,12 +444,13 @@ MonoBehaviour:
   - m_Id: 53970013493428224
     m_Localized: 'Turing test is test where <b>human</b> must decide,
 
-      if response
-      is from <b>human</b> or <b>computer</b>.
+      if
+      response is from <b>human</b> or <b>computer</b>.
 
+      
 
-      If human thinks computer is
-      human,
+      If human
+      thinks computer is human,
 
       thet computer passes this test.'
     m_Metadata:
@@ -506,8 +508,8 @@ MonoBehaviour:
 
       work with everything
 
-      at once as
-      human.'
+      at once
+      as human.'
     m_Metadata:
       m_Items: []
   - m_Id: 53970013799612416
@@ -541,8 +543,10 @@ MonoBehaviour:
   - m_Id: 53970444084871168
     m_Localized: '
 
+      
 
-      Cookies?                          [<b>YES</b>] [<b>NO</b>]'
+      Cookies?                          [<b>YES</b>]
+      [<b>NO</b>]'
     m_Metadata:
       m_Items: []
   - m_Id: 53970444105842688
@@ -626,8 +630,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444361695232
-    m_Localized: "Some cookies help page work properly, \nother just makes your life
-      easier."
+    m_Localized: "Some cookies help page work properly, \r\nother just makes your
+      life easier."
     m_Metadata:
       m_Items: []
   - m_Id: 53970444382666752
@@ -713,6 +717,7 @@ MonoBehaviour:
   - m_Id: 53970444676268032
     m_Localized: 'GDPR
 
+      
 
       -------
 
@@ -819,9 +824,10 @@ MonoBehaviour:
 
       so they can manipulate with you.
 
+      
 
-      It become
-      large busines to sell user data.'
+      It
+      become large busines to sell user data.'
     m_Metadata:
       m_Items: []
   - m_Id: 53970445041172480
@@ -837,8 +843,8 @@ MonoBehaviour:
   - m_Id: 53970445087309824
     m_Localized: 'Data from cookies aren''t just for you.
 
-      They also help develop
-      better software.'
+      They also help
+      develop better software.'
     m_Metadata:
       m_Items: []
   - m_Id: 53971016531869696
@@ -848,8 +854,8 @@ MonoBehaviour:
   - m_Id: 53971016565424128
     m_Localized: 'Do not accept bluetooth pairing
 
-      requests, that you did not
-      initialized'
+      requests, that you did
+      not initialized'
     m_Metadata:
       m_Items: []
   - m_Id: 53971016603172864
@@ -1043,8 +1049,8 @@ MonoBehaviour:
   - m_Id: 53972375893213184
     m_Localized: 'Decide for every file if it is safe or not.
 
-      If you are not
-      sure, use Simulator to decide.'
+      If you are
+      not sure, use Simulator to decide.'
     m_Metadata:
       m_Items: []
   - m_Id: 53972375947739136
@@ -1173,8 +1179,8 @@ MonoBehaviour:
   - m_Id: 53973197720944640
     m_Localized: 'Create mobile app, by dragging core into grid and
 
-      then add
-      all permisions app really needs.'
+      then
+      add all permisions app really needs.'
     m_Metadata:
       m_Items: []
   - m_Id: 53973197758693376
@@ -1250,6 +1256,7 @@ MonoBehaviour:
   - m_Id: 54943878331793408
     m_Localized: 'Drag the file to one of the areas.
 
+      
 
       The <color=#6562D7>blue
       area simulates</color> the program''s behavior to determine if the file is
@@ -1282,8 +1289,8 @@ MonoBehaviour:
   - m_Id: 54954069030895616
     m_Localized: 'Create application that you choosed.
 
-      Every application must
-      have own functionality, its core, start with that.
+      Every application
+      must have own functionality, its core, start with that.
 
       Then drag permissions
       the app should need and drop them into the app.
@@ -1308,6 +1315,179 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 54995488848248832
     m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55026887026311168
+    m_Localized: Accessing webcam!!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55026887055671296
+    m_Localized: Reading passwords!!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55026887072448512
+    m_Localized: File is safe.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55026887093420032
+    m_Localized: Simulating .....
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55026887110197248
+    m_Localized: Ready for simulation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55026941871030272
+    m_Localized: You did a great job!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55026951991885824
+    m_Localized: Some files are still incorectly categorized!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841098895360
+    m_Localized: Plugging-in unknown USB drives
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841174392832
+    m_Localized: Computer Viruses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841191170048
+    m_Localized: How to Avoid Viruses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841220530176
+    m_Localized: Adware
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841241501696
+    m_Localized: What Can a Virus Do
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841258278912
+    m_Localized: Regularly update your operating system and applications
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841283444736
+    m_Localized: Fake twins of popular apps
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841300221952
+    m_Localized: Steal personal information, passwords, or financial details
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841316999168
+    m_Localized: 'Phishing is when someone pretends to be someone you trust online
+
+      to
+      trick you into sharing your information.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841337970688
+    m_Localized: Ransomware
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841354747904
+    m_Localized: Cryptojackers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841375719424
+    m_Localized: How Viruses Spread
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841392496640
+    m_Localized: Email attachments ( .exe, .docx ...)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841417662464
+    m_Localized: Download software only from official or trusted websites
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841434439680
+    m_Localized: Malware
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841455411200
+    m_Localized: Avoid opening email attachments from unknown sources
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841472188416
+    m_Localized: Remove or quarantine the infected files as per antivirus instructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841488965632
+    m_Localized: 'Spyware, Keyloggers '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841514131456
+    m_Localized: <b>.bat/.cmd/.vbs</b> - Script files that can alter your system.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841530908672
+    m_Localized: Cause your device to behave erratically or slow down
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841551880192
+    m_Localized: Downloads from suspicious websites
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841568657408
+    m_Localized: Run a full system scan using your antivirus software
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841589628928
+    m_Localized: <b>.exe</b> - Executable files are the most dangerous.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841610600448
+    m_Localized: Common File Extensions to Watch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841631571968
+    m_Localized: Immediately disconnect from the internet to prevent spreading or
+      further damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841652543488
+    m_Localized: Encrypt your files and demand payment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841669320704
+    m_Localized: What to Do If You Have a Virus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841690292224
+    m_Localized: Restore your system using a clean backup if necessary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841711263744
+    m_Localized: <b>.docx/.xlsm</b> - Can contain malicious macros or scripts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841732235264
+    m_Localized: <b>Icons can be changed</b> - Don't trust any file or icon just
+      by its appearance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841753206784
+    m_Localized: Use antivirus software and keep it updated
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841774178304
+    m_Localized: It can spread through files, downloads, or even USB drives, much
+      like a digital disease.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841795149824
+    m_Localized: A computer virus is a malicious program designed to infect your
+      device, steal information, or cause damage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55038841816121344
+    m_Localized: Adds advertisements as pop-ups or included in web pages
     m_Metadata:
       m_Items: []
   references:
