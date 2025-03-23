@@ -1078,6 +1078,22 @@ MonoBehaviour:
       kter\xE1 aplikace nepot\u0159ebuje, ale p\u0159idej v\u0161echna pot\u0159ebn\xE1."
     m_Metadata:
       m_Items: []
+  - m_Id: 54995325782097920
+    m_Localized: "Level dokon\u010Den"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54995407575220224
+    m_Localized: Minihra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54995444225048576
+    m_Localized: "Kv\xEDz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54995488848248832
+    m_Localized: "Pokra\u010Dovat"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

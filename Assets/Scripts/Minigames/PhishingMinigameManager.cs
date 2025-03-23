@@ -135,7 +135,7 @@ public class PhishingMinigameManager : MonoBehaviour {
         int percentage = int.Parse(scoreText.text.Replace("%", ""));
         int score = percentage >= 96 ? 2 : 1;
         LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Phishing minigame completed\",\"PhishingMinigamePercentage\":" + percentage + ",\"score\":" + score + "}");
-        Store.Instance.minigameScore = score;
+        Store.Instance.minigameStars = score;
         int scoreForStore = score == 0 ? 0b000 : score == 1 ? 0b100 : 0b110;
         Store.Instance.SetLevelScore(Store.Level.Phishing, scoreForStore);
         Store.Instance.quizToLoad = Store.Quiz.Phishing;

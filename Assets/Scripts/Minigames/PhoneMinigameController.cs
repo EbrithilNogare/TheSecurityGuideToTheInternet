@@ -109,7 +109,7 @@ public class PhoneMinigameController : MonoBehaviour {
     }
     public void FinishMinigame(int score) {
         LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Phone minigame completed\",\"score\":" + score + "}");
-        Store.Instance.minigameScore = score;
+        Store.Instance.minigameStars = score;
         int scoreForStore = score == 0 ? 0b000 : score == 1 ? 0b100 : 0b110;
         Store.Instance.SetLevelScore(Store.Level.Phone, scoreForStore);
         Store.Instance.quizToLoad = Store.Quiz.Phone;

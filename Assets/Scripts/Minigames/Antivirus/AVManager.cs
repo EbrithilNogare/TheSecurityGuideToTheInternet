@@ -110,7 +110,7 @@ public class AVManager : MonoBehaviour {
     public void FinishMinigame() {
         int score = 2; // todo do it better
         LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Malware minigame completed\",\"score\":" + score + "}");
-        Store.Instance.minigameScore = score;
+        Store.Instance.minigameStars = score;
         int scoreForStore = score == 0 ? 0b000 : score == 1 ? 0b100 : 0b110;
         Store.Instance.SetLevelScore((int)Store.Level.Malware, scoreForStore);
         Store.Instance.quizToLoad = Store.Quiz.Phone;

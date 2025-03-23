@@ -1013,6 +1013,22 @@ MonoBehaviour:
     m_Key: Phone/Canvas/Tutorial/Tutorial dialog/Tutorial textbox/TextBox/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 54995325782097920
+    m_Key: LevelSelection/Canvas/LevelCompleted/Dialog/Level completed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54995407575220224
+    m_Key: LevelSelection/Canvas/LevelCompleted/Dialog/Minigame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54995444225048576
+    m_Key: LevelSelection/Canvas/LevelCompleted/Dialog/Quiz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54995488848248832
+    m_Key: LevelSelection/Canvas/LevelCompleted/Dialog/Continue/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

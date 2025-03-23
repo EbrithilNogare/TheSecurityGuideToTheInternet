@@ -15,10 +15,12 @@ public class Store : MonoBehaviour {
     public bool[] levelUnlocked;
 
     [NonSerialized] public Quiz quizToLoad = Quiz.None;
-    [NonSerialized] public int minigameScore = 0;
+    [NonSerialized] public int minigameStars = 0;
+    [NonSerialized] public int quizStars = 0;
     [NonSerialized] public int quizScore = 0;
     [NonSerialized] public int[] levelStars = new int[] { 0b000, 0b000, 0b000, 0b000, 0b000, 0b000, 0b000, 0b000 }; // level, level, quiz;
     [NonSerialized] public int qualityLevel = 2;
+    [NonSerialized] public bool shouldOpenLevelCompletedDialog = false;
 
     private void Awake() {
         if (Instance == null) {

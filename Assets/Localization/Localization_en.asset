@@ -1292,6 +1292,24 @@ MonoBehaviour:
       the app doesn''t need, but add all necesssary.'
     m_Metadata:
       m_Items: []
+  - m_Id: 54995325782097920
+    m_Localized: Level completed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54995407575220224
+    m_Localized: 'Minigame
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54995444225048576
+    m_Localized: Quiz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54995488848248832
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

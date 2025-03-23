@@ -131,6 +131,8 @@ public class QuizManager : MonoBehaviour {
             int scoreForStore = correctAnswers >= 5 ? 0b001 : 0b000;
             Store.Instance.SetLevelScore((Store.Level)currentQuizCategoryIndex, scoreForStore);
             Store.Instance.quizScore = score;
+            Store.Instance.shouldOpenLevelCompletedDialog = true;
+            Store.Instance.quizStars = scoreForStore;
         }
 
         SceneManager.LoadScene("LevelSelection");
