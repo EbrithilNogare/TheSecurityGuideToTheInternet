@@ -26,10 +26,16 @@ public class LevelCompletedDialogController : MonoBehaviour {
 
     private void OpenDialog() {
         gameObject.SetActive(true);
-        minigameStar0.color = Store.Instance.minigameStars >= 1 ? enabledStar : disabledStar;
-        minigameStar1.color = Store.Instance.minigameStars >= 2 ? enabledStar : disabledStar;
+        var minigameStars = Store.Instance.minigameStars;
+        var quizStars = Store.Instance.quizStars;
+        var quizScore = Store.Instance.quizScore;
+
+        LoggingService.Log(LoggingService.LogCategory.Navigation, "{\"message\":\"Displayed level completed dialog\",\"minigameStars\":" + minigameStars + ",\"quizStars\":" + quizStars + ",\"quizScore\":" + quizScore + "}");
+
+        minigameStar0.color = minigameStars >= 1 ? enabledStar : disabledStar;
+        minigameStar1.color = minigameStars >= 2 ? enabledStar : disabledStar;
         quizStar.color = Store.Instance.quizStars >= 1 ? enabledStar : disabledStar;
-        quizScoreText.text = Store.Instance.quizScore.ToString();
+        quizScoreText.text = quizScore.ToString();
     }
 
     public void CloseDialog() {
