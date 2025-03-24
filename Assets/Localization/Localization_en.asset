@@ -1494,9 +1494,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 55406196731707392
-    m_Localized: 'Save and
-
-      return to menu'
+    m_Localized: Save and return to menu
     m_Metadata:
       m_Items: []
   - m_Id: 55406374851215360
@@ -1529,6 +1527,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 55406691164651520
     m_Localized: I agree to the processing of my personal data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55407172523950080
+    m_Localized: Class
     m_Metadata:
       m_Items: []
   references:

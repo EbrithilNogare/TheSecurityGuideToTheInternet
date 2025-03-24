@@ -1253,6 +1253,10 @@ MonoBehaviour:
     m_Key: Settings/Canvas/User details/Toggle/Label
     m_Metadata:
       m_Items: []
+  - m_Id: 55407172523950080
+    m_Key: Settings/Canvas/User details/Class/Label
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

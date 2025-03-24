@@ -12,7 +12,6 @@ public static class LoggingService {
 
     private static string sessionId;
     private static Environment environment;
-    private static bool permissionToLogPersonalDetails;
 
     private enum LogLevel { Info, Warning, Error }
     private enum Environment { Development, Production }
@@ -21,7 +20,6 @@ public static class LoggingService {
     static LoggingService() {
         ApiKey = Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXUwMXh4MDlkNWJjMWJiZmIzYjAxNDA2NGM3ZmMyMDNGRkZGTlJBTA==")); // key is visible in request anyway
         sessionId = System.Guid.NewGuid().ToString();
-        permissionToLogPersonalDetails = false;
         environment = Debug.isDebugBuild ? Environment.Development : Environment.Production;
 
         Application.logMessageReceived += (message, stackTrace, type) => {
@@ -87,10 +85,6 @@ public static class LoggingService {
         }
     }
 
-    public static void GrandPermissionToTrack(bool permission) {
-        permissionToLogPersonalDetails = permission;
-    }
-
     public static void Log(LogCategory category, string description) {
         SendLogsAsync(LogLevel.Info, category, description);
     }
@@ -98,8 +92,13 @@ public static class LoggingService {
     public async static void LogStartGame() {
         var moreData = new Dictionary<string, string>();
 
-        if (permissionToLogPersonalDetails) {
+        if (Store.Instance.PersonalDataConcent) {
             // personal data, that need permisions (GDPR)
+            moreData.Add("personalDataName", Store.Instance.PersonalDataName);
+            moreData.Add("personalDataAge", Store.Instance.PersonalDataAge);
+            moreData.Add("personalDataGender", Store.Instance.PersonalDataGender == 1 ? "Man" : Store.Instance.PersonalDataGender == 2 ? "Woman" : "");
+            moreData.Add("personalDataClass", Store.Instance.PersonalDataClass);
+            moreData.Add("personalDataRegion", Store.Instance.PersonalDataRegion);
         }
 
         var languageHandle = LocalizationSettings.SelectedLocaleAsync;

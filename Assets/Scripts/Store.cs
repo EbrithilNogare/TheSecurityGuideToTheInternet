@@ -22,6 +22,65 @@ public class Store : MonoBehaviour {
     [NonSerialized] public int qualityLevel = 2;
     [NonSerialized] public bool shouldOpenLevelCompletedDialog = false;
 
+    // Settings - personal data
+    [NonSerialized] private string _personalDataName = "";
+    [NonSerialized] private string _personalDataAge = "";
+    [NonSerialized] private int _personalDataGender = 0;
+    [NonSerialized] private string _personalDataClass = "";
+    [NonSerialized] private string _personalDataRegion = "";
+    [NonSerialized] private bool _personalDataConcent = false;
+
+    public string PersonalDataName {
+        get => _personalDataName;
+        set { _personalDataName = value; SavePersonalData(); }
+    }
+
+    public string PersonalDataAge {
+        get => _personalDataAge;
+        set { _personalDataAge = value; SavePersonalData(); }
+    }
+
+    public int PersonalDataGender {
+        get => _personalDataGender;
+        set { _personalDataGender = value; SavePersonalData(); }
+    }
+
+    public string PersonalDataClass {
+        get => _personalDataClass;
+        set { _personalDataClass = value; SavePersonalData(); }
+    }
+
+    public string PersonalDataRegion {
+        get => _personalDataRegion;
+        set { _personalDataRegion = value; SavePersonalData(); }
+    }
+
+    public bool PersonalDataConcent {
+        get => _personalDataConcent;
+        set { _personalDataConcent = value; SavePersonalData(); }
+    }
+
+    private void SavePersonalData() {
+        PlayerPrefs.SetString("PersonalDataName", _personalDataName);
+        PlayerPrefs.SetString("PersonalDataAge", _personalDataAge);
+        PlayerPrefs.SetInt("PersonalDataGender", _personalDataGender);
+        PlayerPrefs.SetString("PersonalDataClass", _personalDataClass);
+        PlayerPrefs.SetString("PersonalDataRegion", _personalDataRegion);
+        PlayerPrefs.SetInt("PersonalDataConcent", _personalDataConcent ? 1 : 0);
+        PlayerPrefs.Save();
+    }
+
+    public void LoadPersonalData() {
+        _personalDataName = PlayerPrefs.GetString("PersonalDataName", "");
+        _personalDataAge = PlayerPrefs.GetString("PersonalDataAge", "");
+        _personalDataGender = PlayerPrefs.GetInt("PersonalDataGender", 0);
+        _personalDataClass = PlayerPrefs.GetString("PersonalDataClass", "");
+        _personalDataRegion = PlayerPrefs.GetString("PersonalDataRegion", "");
+        _personalDataConcent = PlayerPrefs.GetInt("PersonalDataConcent", 0) == 1;
+    }
+
+    // Init
+
     private void Awake() {
         if (Instance == null) {
             Instance = this;
@@ -34,6 +93,7 @@ public class Store : MonoBehaviour {
     }
 
     private void Init() {
+        LoadPersonalData();
         LoggingService.LogStartGame();
 
         ApplyQualityLevel(PlayerPrefs.GetInt("QualityLevel", qualityLevel));
@@ -48,6 +108,8 @@ public class Store : MonoBehaviour {
         }
     }
 
+    // Level selection
+
     public void SetLevelUnlocked(int level, bool unlocked) {
         LoggingService.Log(LoggingService.LogCategory.Store, "Level: " + level + ", unlocked: " + unlocked);
         levelUnlocked[level] = unlocked;
@@ -59,6 +121,8 @@ public class Store : MonoBehaviour {
         levelStars[(int)level] |= score;
         PlayerPrefs.SetString("LevelStars", JSON.ArrayToJson(levelStars));
     }
+
+    // Quality settings
 
     public void SetQualityLevel(int level) {
         LoggingService.Log(LoggingService.LogCategory.Settings, "Quality changed to: " + level);

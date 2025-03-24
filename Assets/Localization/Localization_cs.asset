@@ -1282,7 +1282,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 55406196731707392
-    m_Localized: "Ulo\u017Eit a vr\xE1tit\nse do menu"
+    m_Localized: "Ulo\u017Eit a vr\xE1tit se do menu"
     m_Metadata:
       m_Items: []
   - m_Id: 55406374851215360
@@ -1315,6 +1315,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 55406691164651520
     m_Localized: "Souhlas\xEDm se zpracov\xE1n\xEDm sv\xFDch osobn\xEDch \xFAdaj\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55407172523950080
+    m_Localized: "T\u0159\xEDda"
     m_Metadata:
       m_Items: []
   references:

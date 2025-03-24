@@ -1,0 +1,70 @@
+using System.Security;
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+public class PersonalDataController : MonoBehaviour {
+
+    public TMP_InputField nameInput;
+    public TMP_InputField ageInput;
+    public TMP_Dropdown genderDropdown;
+    public TMP_InputField classInput;
+    public TMP_InputField regionInput;
+    public Toggle concentToggle;
+
+    private void Start() {
+        nameInput.text = Store.Instance.PersonalDataName;
+        ageInput.text = Store.Instance.PersonalDataAge;
+        genderDropdown.value = Store.Instance.PersonalDataGender;
+        classInput.text = Store.Instance.PersonalDataClass;
+        regionInput.text = Store.Instance.PersonalDataRegion;
+        concentToggle.isOn = Store.Instance.PersonalDataConcent;
+    }
+
+    public void SetName(string value) {
+        Store.Instance.PersonalDataName = value;
+    }
+
+    public void SetAge(string value) {
+        Store.Instance.PersonalDataAge = value;
+    }
+
+    public void SetGender(int value) {
+        Store.Instance.PersonalDataGender = value;
+    }
+
+    public void SetClass(string value) {
+        Store.Instance.PersonalDataClass = value;
+    }
+
+    public void SetRegion(string value) {
+        Store.Instance.PersonalDataRegion = value;
+    }
+
+    public void SetPersonalDataConcent(bool value) {
+        Store.Instance.PersonalDataConcent = value;
+    }
+
+    public void SaveAndExit() {
+        if (Store.Instance.PersonalDataConcent) {
+            string jsonLog = "{" +
+                "\"message\":\"Saved settings with values and concent\"," +
+                "\"name\":\"" + SecurityElement.Escape(Store.Instance.PersonalDataName) + "\"," +
+                "\"age\":\"" + SecurityElement.Escape(Store.Instance.PersonalDataAge) + "\"," +
+                "\"gender\":\"" + Store.Instance.PersonalDataGender + "\"," +
+                "\"class\":\"" + SecurityElement.Escape(Store.Instance.PersonalDataClass) + "\"," +
+                "\"region\":\"" + SecurityElement.Escape(Store.Instance.PersonalDataRegion) + "\"," +
+                "\"concent\":\"" + Store.Instance.PersonalDataConcent + "\"" +
+            "}";
+            LoggingService.Log(LoggingService.LogCategory.Settings, jsonLog);
+        }
+        else {
+            LoggingService.Log(LoggingService.LogCategory.Settings, "Saved settings, but user did not concent to save personal data");
+        }
+
+        LoggingService.Log(LoggingService.LogCategory.Navigation, "Navigated to MainMenu");
+        SceneManager.LoadScene("MainMenu");
+    }
+
+}
