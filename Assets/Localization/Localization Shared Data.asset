@@ -1213,6 +1213,46 @@ MonoBehaviour:
       (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 55391599324856320
+    m_Key: Settings/Canvas/User details/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406196731707392
+    m_Key: Settings/Canvas/Menu/Back to menu/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406374851215360
+    m_Key: Settings/Canvas/User details/Name/Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406395243921408
+    m_Key: Settings/Canvas/User details/Age/Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406471513145344
+    m_Key: Settings/Canvas/User details/Gender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406487568941056
+    m_Key: Settings/Canvas/User details/Gender 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406500374151168
+    m_Key: Settings/Canvas/User details/Gender 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406541369278464
+    m_Key: Settings/Canvas/User details/Gender/Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406572679757824
+    m_Key: Settings/Canvas/User details/Region/Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406691164651520
+    m_Key: Settings/Canvas/User details/Toggle/Label
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

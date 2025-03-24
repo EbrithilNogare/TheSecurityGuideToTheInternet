@@ -300,10 +300,10 @@ MonoBehaviour:
 
       our robotic AI Parrot
 
-      
 
-      It
-      may seems alive, but
+
+      It may seems
+      alive, but
 
       it is only robot with a program'
     m_Metadata:
@@ -444,13 +444,13 @@ MonoBehaviour:
   - m_Id: 53970013493428224
     m_Localized: 'Turing test is test where <b>human</b> must decide,
 
-      if
-      response is from <b>human</b> or <b>computer</b>.
+      if response
+      is from <b>human</b> or <b>computer</b>.
 
-      
 
-      If human
-      thinks computer is human,
+
+      If human thinks computer
+      is human,
 
       thet computer passes this test.'
     m_Metadata:
@@ -508,8 +508,8 @@ MonoBehaviour:
 
       work with everything
 
-      at once
-      as human.'
+      at once as
+      human.'
     m_Metadata:
       m_Items: []
   - m_Id: 53970013799612416
@@ -543,10 +543,9 @@ MonoBehaviour:
   - m_Id: 53970444084871168
     m_Localized: '
 
-      
 
-      Cookies?                          [<b>YES</b>]
-      [<b>NO</b>]'
+
+      Cookies?                          [<b>YES</b>] [<b>NO</b>]'
     m_Metadata:
       m_Items: []
   - m_Id: 53970444105842688
@@ -717,7 +716,7 @@ MonoBehaviour:
   - m_Id: 53970444676268032
     m_Localized: 'GDPR
 
-      
+
 
       -------
 
@@ -824,10 +823,10 @@ MonoBehaviour:
 
       so they can manipulate with you.
 
-      
 
-      It
-      become large busines to sell user data.'
+
+      It become
+      large busines to sell user data.'
     m_Metadata:
       m_Items: []
   - m_Id: 53970445041172480
@@ -843,8 +842,8 @@ MonoBehaviour:
   - m_Id: 53970445087309824
     m_Localized: 'Data from cookies aren''t just for you.
 
-      They also help
-      develop better software.'
+      They also help develop
+      better software.'
     m_Metadata:
       m_Items: []
   - m_Id: 53971016531869696
@@ -854,8 +853,8 @@ MonoBehaviour:
   - m_Id: 53971016565424128
     m_Localized: 'Do not accept bluetooth pairing
 
-      requests, that you did
-      not initialized'
+      requests, that you did not
+      initialized'
     m_Metadata:
       m_Items: []
   - m_Id: 53971016603172864
@@ -1049,8 +1048,8 @@ MonoBehaviour:
   - m_Id: 53972375893213184
     m_Localized: 'Decide for every file if it is safe or not.
 
-      If you are
-      not sure, use Simulator to decide.'
+      If you are not
+      sure, use Simulator to decide.'
     m_Metadata:
       m_Items: []
   - m_Id: 53972375947739136
@@ -1179,8 +1178,8 @@ MonoBehaviour:
   - m_Id: 53973197720944640
     m_Localized: 'Create mobile app, by dragging core into grid and
 
-      then
-      add all permisions app really needs.'
+      then add
+      all permisions app really needs.'
     m_Metadata:
       m_Items: []
   - m_Id: 53973197758693376
@@ -1256,7 +1255,7 @@ MonoBehaviour:
   - m_Id: 54943878331793408
     m_Localized: 'Drag the file to one of the areas.
 
-      
+
 
       The <color=#6562D7>blue
       area simulates</color> the program''s behavior to determine if the file is
@@ -1289,8 +1288,8 @@ MonoBehaviour:
   - m_Id: 54954069030895616
     m_Localized: 'Create application that you choosed.
 
-      Every application
-      must have own functionality, its core, start with that.
+      Every application must
+      have own functionality, its core, start with that.
 
       Then drag permissions
       the app should need and drop them into the app.
@@ -1488,6 +1487,48 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 55038841816121344
     m_Localized: Adds advertisements as pop-ups or included in web pages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55391599324856320
+    m_Localized: Personal details
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406196731707392
+    m_Localized: 'Save and
+
+      return to menu'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406374851215360
+    m_Localized: Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406395243921408
+    m_Localized: Age
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406471513145344
+    m_Localized: Not Provided
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406487568941056
+    m_Localized: Man
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406500374151168
+    m_Localized: Woman
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406541369278464
+    m_Localized: Gender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406572679757824
+    m_Localized: Region
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55406691164651520
+    m_Localized: I agree to the processing of my personal data
     m_Metadata:
       m_Items: []
   references:
