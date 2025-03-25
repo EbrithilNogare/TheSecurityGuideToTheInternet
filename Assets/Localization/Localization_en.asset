@@ -586,7 +586,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444189728768
-    m_Localized: 'They are files websites
+    m_Localized: 'They are text files websites
 
       leave on your computer'
     m_Metadata:
@@ -603,7 +603,7 @@ MonoBehaviour:
     m_Localized: 'Cookies are also great performance indicator.
 
       Maintainer
-      of website can see most popular parts.'
+      of website can see most popular pages.'
     m_Metadata:
       m_Items: []
   - m_Id: 53970444265226240
@@ -625,7 +625,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444344918016
-    m_Localized: Reject all
+    m_Localized: Reject all except necessary
     m_Metadata:
       m_Items: []
   - m_Id: 53970444361695232
@@ -651,7 +651,7 @@ MonoBehaviour:
     m_Localized: 'Did you noticed that ads on web are personalized to you?
 
       So
-      you fall for them more likely.'
+      that you want to click on them.'
     m_Metadata:
       m_Items: []
   - m_Id: 53970444462358528
@@ -703,10 +703,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444625936384
-    m_Localized: 'Copy of these files are sent to server,
+    m_Localized: 'The files content is sent to the server
 
-      everytime you load
-      some website'
+      every time you load
+      the webpage.'
     m_Metadata:
       m_Items: []
   - m_Id: 53970444646907904
@@ -840,10 +840,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970445087309824
-    m_Localized: 'Data from cookies aren''t just for you.
+    m_Localized: 'But data from cookies aren''t just for you.
 
-      They also help develop
-      better software.'
+      They also help
+      develop better software.'
     m_Metadata:
       m_Items: []
   - m_Id: 53971016531869696
@@ -1022,7 +1022,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53972375687692288
-    m_Localized: game.exe
+    m_Localized: song.mp3.exe
     m_Metadata:
       m_Items: []
   - m_Id: 53972375721246720

@@ -2761,7 +2761,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 57d18050f3fd7ca408d94072dd7421a6,
+      objectReference: {fileID: 21300000, guid: cbb1e1328c8e7604abb48b67666ec5d8,
         type: 3}
     - target: {fileID: 5134930703438424026, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
@@ -2786,12 +2786,12 @@ PrefabInstance:
     - target: {fileID: 7445666349372468545, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_text
-      value: game.exe
+      value: song.mp3.exe
       objectReference: {fileID: 0}
     - target: {fileID: 7445666349372468545, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 23.85
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2875,10 +2875,10 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 34.6
+          value: 23.85
         - localeIdentifier:
             m_Code: cs
-          value: 72
+          value: 21.85
 --- !u!1 &1357102547
 GameObject:
   m_ObjectHideFlags: 0

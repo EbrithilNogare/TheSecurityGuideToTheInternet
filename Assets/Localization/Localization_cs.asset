@@ -283,8 +283,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970012897837056
-    m_Localized: "<b>\xDAzk\xE1 AI</b>\r\num\xED d\u011Blat jen jednu v\u011Bc.\r\nnap\u0159.
-      ChatGPT je text na text"
+    m_Localized: "<b>\xDAzce zam\u011B\u0159en\xE1 AI</b>\r\num\xED d\u011Blat jen
+      jednu v\u011Bc.\r\nnap\u0159. ChatGPT je text na text"
     m_Metadata:
       m_Items: []
   - m_Id: 53970012918808576
@@ -298,7 +298,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 53970012956557312
     m_Localized: "AI (Um\u011Bl\xE1 inteligence)\r\nje simulace\r\nlidsk\xE9 inteligence
-      v stroj\xEDch"
+      strojem"
     m_Metadata:
       m_Items: []
   - m_Id: 53970012981723136
@@ -361,7 +361,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970013296295936
-    m_Localized: "Je AI v\u017Edy spr\xE1vn\xE1?"
+    m_Localized: "M\xE1 AI v\u017Edy pravdu?"
     m_Metadata:
       m_Items: []
   - m_Id: 53970013325656064
@@ -494,7 +494,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444189728768
-    m_Localized: "Jsou to soubory, kter\xE9 webov\xE9 str\xE1nky\r\nukl\xE1daj\xED
+    m_Localized: "Jsou to textov\xE9 soubory, kter\xE9 webov\xE9\nstr\xE1nky ukl\xE1daj\xED
       do tv\xE9ho po\u010D\xEDta\u010De"
     m_Metadata:
       m_Items: []
@@ -508,7 +508,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 53970444248449024
     m_Localized: "Cookies jsou tak\xE9 skv\u011Bl\xFDm ukazatelem v\xFDkonu.\r\nSpr\xE1vce
-      webu m\u016F\u017Ee vid\u011Bt nejobl\xEDben\u011Bj\u0161\xED \u010D\xE1sti."
+      webu m\u016F\u017Ee vid\u011Bt nejobl\xEDben\u011Bj\u0161\xED str\xE1nky."
     m_Metadata:
       m_Items: []
   - m_Id: 53970444265226240
@@ -529,7 +529,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444344918016
-    m_Localized: "Odm\xEDtnout v\u0161e"
+    m_Localized: "Odm\xEDtnout v\u0161e krom\u011B nezbytn\xFDch"
     m_Metadata:
       m_Items: []
   - m_Id: 53970444361695232
@@ -550,8 +550,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444437192704
-    m_Localized: "V\u0161iml sis, \u017Ee reklamy na webu jsou personalizovan\xE9
-      pro tebe?\r\nTak jsi na n\u011B sp\xED\u0161e nalet\u011Bl."
+    m_Localized: "V\u0161iml sis, \u017Ee reklamy na webu jsou p\u0159izp\u016Fseben\xE9
+      pro tebe?\r\nTak aby jsi na n\u011B cht\u011Bl kliknout."
     m_Metadata:
       m_Items: []
   - m_Id: 53970444462358528
@@ -581,7 +581,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444583993344
-    m_Localized: "Aby server webov\xE9 str\xE1nky\r\npoznal, \u017Ee jsi to ty"
+    m_Localized: "Server webov\xE9 str\xE1nky\ntak pozn\xE1, \u017Ee jsi to ty"
     m_Metadata:
       m_Items: []
   - m_Id: 53970444613353472
@@ -589,8 +589,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444625936384
-    m_Localized: "Kopie t\u011Bchto soubor\u016F se odes\xEDlaj\xED na server,\r\npoka\u017Ed\xE9
-      kdy\u017E na\u010Dte\u0161 n\u011Bjakou webovou str\xE1nku"
+    m_Localized: "Obsah tohoto souboru se ode\u0161le na server,\r\npoka\u017Ed\xE9
+      kdy\u017E na\u010Dte\u0161 webovou str\xE1nku"
     m_Metadata:
       m_Items: []
   - m_Id: 53970444646907904
@@ -693,8 +693,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970445087309824
-    m_Localized: "Data z cookies nejsou jen pro tebe.\r\nPom\xE1haj\xED tak\xE9 vyv\xEDjet
-      lep\u0161\xED software."
+    m_Localized: "Data z cookies ale nejsou jen pro tebe.\r\nPom\xE1haj\xED tak\xE9
+      vyv\xEDjet lep\u0161\xED software."
     m_Metadata:
       m_Items: []
   - m_Id: 53971016531869696
@@ -780,8 +780,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53971017018408960
-    m_Localized: "Ahoj, jsem aplikace baterky,\r\nd\xE1\u0161 mi opr\xE1vn\u011Bn\xED\r\nke
-      vstupu?"
+    m_Localized: "Ahoj, jsem aplikace sv\xEDitilny,\r\nd\xE1\u0161 mi opr\xE1vn\u011Bn\xED
+      ke vstupu?"
     m_Metadata:
       m_Items: []
   - m_Id: 53971017043574784
@@ -833,7 +833,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53972375687692288
-    m_Localized: hra.exe
+    m_Localized: hudba.mp3.exe
     m_Metadata:
       m_Items: []
   - m_Id: 53972375721246720

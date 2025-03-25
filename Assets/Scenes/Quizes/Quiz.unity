@@ -3720,7 +3720,6 @@ GameObject:
   - component: {fileID: 1285396880}
   - component: {fileID: 1285396879}
   - component: {fileID: 1285396878}
-  - component: {fileID: 1285396877}
   m_Layer: 5
   m_Name: Back to menu
   m_TagString: Untagged
@@ -3748,18 +3747,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: -5}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 1, y: 1}
---- !u!114 &1285396877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1285396875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeacdf5b80dcd4747b0d18acbdfcb365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1285396878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3804,9 +3791,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1285396877}
-        m_TargetAssemblyTypeName: Navigation, Assembly-CSharp
-        m_MethodName: GoToMainMenu
+      - m_Target: {fileID: 1562661652}
+        m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
+        m_MethodName: ExitPrematurely
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

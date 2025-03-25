@@ -126,6 +126,10 @@ public class QuizManager : MonoBehaviour {
         quizQuestionText.transform.DOMoveY(quizQuestionText.transform.position.y - 1000, duration).From(quizQuestionText.transform.position.y).SetEase(Ease.InBack).OnComplete(FinishQuiz);
     }
 
+    public void ExitPrematurely() {
+        DoEndAnimation();
+    }
+
     private void FinishQuiz() {
         if (!allQuizesMode) {
             int scoreForStore = correctAnswers >= 5 ? 0b001 : 0b000;
