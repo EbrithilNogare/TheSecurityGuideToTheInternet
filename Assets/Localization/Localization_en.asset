@@ -578,11 +578,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444160368640
-    m_Localized: 'Monitoring
+    m_Localized: 'Tracking
 
-      error
-
-      rates'
+      errors'
     m_Metadata:
       m_Items: []
   - m_Id: 53970444189728768

@@ -1,5 +1,6 @@
 using DG.Tweening;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -34,7 +35,7 @@ public class CookiesMinigameManager : MonoBehaviour {
     }
 
     public void CookieAddedToBowl(CookiesMinigameDragable cookieIngredient) {
-        Debug.Log("CookieAddedToBowl: " + cookieIngredient.cookieIngredient);
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Cookie added to the bowl\",\"cookieIngredient\":\"" + cookieIngredient.cookieIngredient.ToString() + "\",\"currentCookieCategoryIndex\":" + currentCookieCategoryIndex.ToString() + ",\"correct\":" + (correctIngredients[currentCookieCategoryIndex].Contains(cookieIngredient.cookieIngredient) ? "1" : "0") + "}");
         cookieIngredientsInBowl.Add(cookieIngredient);
 
         switch (cookieIngredient.cookieIngredient) {
@@ -64,6 +65,8 @@ public class CookiesMinigameManager : MonoBehaviour {
     }
 
     public void RestartIngredients() {
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Cooking restarted\"}");
+
         foreach (var item in cookieIngredientsInBowl) {
             item.Reset();
         }
@@ -86,10 +89,11 @@ public class CookiesMinigameManager : MonoBehaviour {
     }
 
     public void FinishAndBake() {
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Cooking finished\"}");
         // check if the ingredients are correct
         bool correct = true;
         for (int i = 0; i < cookieIngredientsInBowl.Count; i++) {
-            if (cookieIngredientsInBowl[i].cookieIngredient != correctIngredients[currentCookieCategoryIndex][i]) {
+            if (!correctIngredients[currentCookieCategoryIndex].Contains(cookieIngredientsInBowl[i].cookieIngredient)) {
                 correct = false;
                 break;
             }

@@ -1,8 +1,19 @@
 using UnityEngine;
 
 public class TutorialManager : MonoBehaviour {
-    public string minigameName;
+    public Store.Level minigame;
     public GameObject tutorialDialog;
+    private string minigameName;
+
+
+    public void Start() {
+        if (!Store.Instance.IsTutorialDisplayed(minigame)) {
+            Store.Instance.SetTutorialDisplayed(minigame);
+            ShowTutorialDialog();
+            return;
+        }
+        minigameName = minigame.ToString();
+    }
 
     public void ShowTutorialDialog() {
         LoggingService.Log(LoggingService.LogCategory.Minigame, "Tutorial dialog opened in minigame: " + minigameName);

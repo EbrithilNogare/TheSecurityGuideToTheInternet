@@ -4602,6 +4602,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5987278262195784450, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
+      propertyPath: minigame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987278262195784450, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
       propertyPath: minigameName
       value: Malware
       objectReference: {fileID: 0}

@@ -19,6 +19,8 @@ public class AVManager : MonoBehaviour {
 
     public Canvas canvas;
 
+    private bool wonWithoutMistake = true;
+
     public void EvaluateDrop(AVFileStructure item) {
         if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneOK, Input.mousePosition, canvas.worldCamera)) {
             HandleDropOnOK(item);
@@ -83,6 +85,7 @@ public class AVManager : MonoBehaviour {
         bool NotOKDropZOneIsCorrect = dropZoneNotOKRow.GetComponentsInChildren<AVFileStructure>().All(item => item.isVirus);
 
         if (!OKDropZOneIsCorrect || !NotOKDropZOneIsCorrect) {
+            wonWithoutMistake = false;
             DisplayErrorMessage();
             return;
         }
@@ -102,10 +105,10 @@ public class AVManager : MonoBehaviour {
     }
 
     public void FinishMinigame() {
-        int score = 2; // todo do it better
+        int score = wonWithoutMistake ? 2 : 1;
         LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Malware minigame completed\",\"score\":" + score + "}");
         Store.Instance.minigameStars = score;
-        int scoreForStore = score == 0 ? 0b000 : score == 1 ? 0b100 : 0b110;
+        int scoreForStore = score == 1 ? 0b100 : 0b110;
         Store.Instance.SetLevelScore(Store.Level.Malware, scoreForStore);
         Store.Instance.quizToLoad = Store.Quiz.Malware;
 

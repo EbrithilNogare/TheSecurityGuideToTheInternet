@@ -79,6 +79,35 @@ public class Store : MonoBehaviour {
         _personalDataConcent = PlayerPrefs.GetInt("PersonalDataConcent", 0) == 1;
     }
 
+    // Tutorial
+
+    [NonSerialized] private bool[] _tutorialDisplayed = new bool[Enum.GetNames(typeof(Level)).Length];
+    private void SaveTutorialDisplayed() {
+        int value = 0;
+        for (int i = 0; i < _tutorialDisplayed.Length; i++) {
+            if (_tutorialDisplayed[i])
+                value |= (1 << i);
+        }
+        PlayerPrefs.SetInt("TutorialDisplayed", value);
+        PlayerPrefs.Save();
+    }
+
+    private void LoadTutorialDisplayed() {
+        int value = PlayerPrefs.GetInt("TutorialDisplayed", 0);
+        for (int i = 0; i < _tutorialDisplayed.Length; i++) {
+            _tutorialDisplayed[i] = (value & (1 << i)) != 0;
+        }
+    }
+
+    public bool IsTutorialDisplayed(Level level) {
+        return _tutorialDisplayed[(int)level];
+    }
+
+    public void SetTutorialDisplayed(Level level) {
+        _tutorialDisplayed[(int)level] = true;
+        SaveTutorialDisplayed();
+    }
+
     // Init
 
     private void Awake() {
@@ -94,6 +123,7 @@ public class Store : MonoBehaviour {
 
     private void Init() {
         LoadPersonalData();
+        LoadTutorialDisplayed();
         LoggingService.LogStartGame();
 
         ApplyQualityLevel(PlayerPrefs.GetInt("QualityLevel", qualityLevel));
