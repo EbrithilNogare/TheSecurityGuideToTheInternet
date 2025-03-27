@@ -365,7 +365,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970013094969344
-    m_Localized: Grass is green
+    m_Localized: Afternoon sky is blue
     m_Metadata:
       m_Items: []
   - m_Id: 53970013115940864
@@ -527,7 +527,7 @@ MonoBehaviour:
     m_Localized: '<b>Reinforcement Learning</b>: learns
 
       by trial and error
-      with rewards'
+      with rewards and punishments'
     m_Metadata:
       m_Items: []
   - m_Id: 53970013891887104
@@ -598,10 +598,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444248449024
-    m_Localized: 'Cookies are also great performance indicator.
+    m_Localized: 'Cookies are also helpful
 
-      Maintainer
-      of website can see most popular pages.'
+      for performance measurements'
     m_Metadata:
       m_Items: []
   - m_Id: 53970444265226240
@@ -642,7 +641,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444424609792
-    m_Localized: GDPR protects your privacy
+    m_Localized: 'GDPR is a rule that protects
+
+      your personal data on the internet'
     m_Metadata:
       m_Items: []
   - m_Id: 53970444437192704
@@ -768,9 +769,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444823068672
-    m_Localized: 'Probable
+    m_Localized: 'Probable age
 
-      gender'
+      by Google'
     m_Metadata:
       m_Items: []
   - m_Id: 53970444844040192
@@ -1166,7 +1167,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53973197658030080
-    m_Localized: Activity recognition
+    m_Localized: Physical activity recognition
     m_Metadata:
       m_Items: []
   - m_Id: 53973197691584512
@@ -1461,7 +1462,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 55038841711263744
-    m_Localized: <b>.docx/.xlsm</b> - Can contain malicious macros or scripts.
+    m_Localized: <b>.docx/.xlsm</b> - Can contain malicious scripts (programs).
     m_Metadata:
       m_Items: []
   - m_Id: 55038841732235264
@@ -1529,6 +1530,17 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 55407172523950080
     m_Localized: Class
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56426849635172352
+    m_Localized: 'and also makes possible for
+
+      web maintainer to see popular
+      pages'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56429354171531264
+    m_Localized: Choose which app do you want to develop
     m_Metadata:
       m_Items: []
   references:

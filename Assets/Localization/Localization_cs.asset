@@ -324,7 +324,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970013094969344
-    m_Localized: "Tr\xE1va je zelen\xE1"
+    m_Localized: "Ve\u010Dern\xED obloha je modr\xE1"
     m_Metadata:
       m_Items: []
   - m_Id: 53970013115940864
@@ -455,8 +455,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970013862526976
-    m_Localized: "<b>Posilovan\xE9 u\u010Den\xED</b>: u\u010D\xED se\r\nmetodou pokus-omyl
-      s odm\u011Bnami"
+    m_Localized: "<b>Zp\u011Btnovazebn\xED u\u010Den\xED</b>: u\u010D\xED se\r\nmetodou
+      pokus-omyl s odm\u011Bnami a tresty"
     m_Metadata:
       m_Items: []
   - m_Id: 53970013891887104
@@ -507,8 +507,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444248449024
-    m_Localized: "Cookies jsou tak\xE9 skv\u011Bl\xFDm ukazatelem v\xFDkonu.\r\nSpr\xE1vce
-      webu m\u016F\u017Ee vid\u011Bt nejobl\xEDben\u011Bj\u0161\xED str\xE1nky."
+    m_Localized: "Cookies tak\xE9 pom\xE1haj\xED\nu m\u011B\u0159en\xED v\xFDkonu
+      webu\r"
     m_Metadata:
       m_Items: []
   - m_Id: 53970444265226240
@@ -546,7 +546,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444424609792
-    m_Localized: "GDPR chr\xE1n\xED tv\xE9 soukrom\xED"
+    m_Localized: "GDPR je pravidlo, kter\xE9\nchr\xE1n\xED tvoje osobn\xED \xFAdaje
+      na internetu"
     m_Metadata:
       m_Items: []
   - m_Id: 53970444437192704
@@ -585,7 +586,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444613353472
-    m_Localized: "Nejnav\u0161t\u011Bvovan\u011Bj\u0161\xED str\xE1nky"
+    m_Localized: "Popul\xE1rn\xED\nstr\xE1nky"
     m_Metadata:
       m_Items: []
   - m_Id: 53970444625936384
@@ -636,11 +637,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444802097152
-    m_Localized: "\u010Cas\r\nna\u010D\xEDt\xE1n\xED\r\nstr\xE1nky"
+    m_Localized: "Rychlost\r\nna\u010D\xEDt\xE1n\xED\r\nstr\xE1nky"
     m_Metadata:
       m_Items: []
   - m_Id: 53970444823068672
-    m_Localized: "Pravd\u011Bpodobn\xE9\r\npohlav\xED"
+    m_Localized: "V\u011Bk\ntipovan\xFD\nGooglem"
     m_Metadata:
       m_Items: []
   - m_Id: 53970444844040192
@@ -975,7 +976,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53973197658030080
-    m_Localized: "Rozpozn\xE1n\xED aktivity"
+    m_Localized: "Detekce fyzick\xE9 aktivity"
     m_Metadata:
       m_Items: []
   - m_Id: 53973197691584512
@@ -1248,8 +1249,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 55038841711263744
-    m_Localized: "<b>.docx/.xlsm</b> - Mohou obsahovat \u0161kodliv\xE9 makro nebo
-      skripty."
+    m_Localized: "<b>.docx/.xlsm</b> - Mohou obsahovat \u0161kodliv\xE9 skripty (programy)."
     m_Metadata:
       m_Items: []
   - m_Id: 55038841732235264
@@ -1319,6 +1319,15 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 55407172523950080
     m_Localized: "T\u0159\xEDda"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56426849635172352
+    m_Localized: "nebo umo\u017E\u0148uj\xED spr\xE1vci webu\nzjistit nejobl\xEDben\u011Bj\u0161\xED
+      str\xE1nky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56429354171531264
+    m_Localized: "Vyber si kterou aplikaci chce\u0161 vytvo\u0159it"
     m_Metadata:
       m_Items: []
   references:
