@@ -626,8 +626,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970444361695232
-    m_Localized: "Some cookies help page work properly, \r\nother just makes your
-      life easier."
+    m_Localized: "Some cookies help page work properly, \nother just makes your life
+      easier."
     m_Metadata:
       m_Items: []
   - m_Id: 53970444382666752
@@ -1397,7 +1397,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 55038841392496640
-    m_Localized: Email attachments ( .exe, .docx ...)
+    m_Localized: Opening an email attachment
     m_Metadata:
       m_Items: []
   - m_Id: 55038841417662464
@@ -1417,11 +1417,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 55038841488965632
-    m_Localized: 'Spyware, Keyloggers '
+    m_Localized: 'Spyware & Keyloggers '
     m_Metadata:
       m_Items: []
   - m_Id: 55038841514131456
-    m_Localized: <b>.bat/.cmd/.vbs</b> - Script files that can alter your system.
+    m_Localized: "<b>.bat & .cmd</b>\n\tScript files that can alter your system."
     m_Metadata:
       m_Items: []
   - m_Id: 55038841530908672
@@ -1429,7 +1429,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 55038841551880192
-    m_Localized: Downloads from suspicious websites
+    m_Localized: By downloading from suspicious websites
     m_Metadata:
       m_Items: []
   - m_Id: 55038841568657408
@@ -1437,11 +1437,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 55038841589628928
-    m_Localized: <b>.exe</b> - Executable files are the most dangerous.
+    m_Localized: "<b>.exe</b>\n\tExecutable files are the most dangerous."
     m_Metadata:
       m_Items: []
   - m_Id: 55038841610600448
-    m_Localized: Common File Extensions to Watch
+    m_Localized: Potentially harmful file extensions
     m_Metadata:
       m_Items: []
   - m_Id: 55038841631571968
@@ -1462,7 +1462,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 55038841711263744
-    m_Localized: <b>.docx/.xlsm</b> - Can contain malicious scripts (programs).
+    m_Localized: "<b>.docx & .xlsm</b>\n        Can contain malicious scripts (programs)."
     m_Metadata:
       m_Items: []
   - m_Id: 55038841732235264
@@ -1471,12 +1471,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 55038841753206784
-    m_Localized: Use antivirus software and keep it updated
+    m_Localized: Use exactly one antivirus software and keep it updated
     m_Metadata:
       m_Items: []
   - m_Id: 55038841774178304
-    m_Localized: It can spread through files, downloads, or even USB drives, much
-      like a digital disease.
+    m_Localized: As a file it can spread downloads or USB drives, much like a digital
+      disease.
     m_Metadata:
       m_Items: []
   - m_Id: 55038841795149824
@@ -1541,6 +1541,11 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 56429354171531264
     m_Localized: Choose which app do you want to develop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58225467346157568
+    m_Localized: "<b>.zip & .rar</b>\n\tPackages, that may contain previously mentioned
+      files."
     m_Metadata:
       m_Items: []
   references:

@@ -127,6 +127,7 @@ public class QuizManager : MonoBehaviour {
     }
 
     public void ExitPrematurely() {
+        currentQuestionIndex++;
         DoEndAnimation();
     }
 
