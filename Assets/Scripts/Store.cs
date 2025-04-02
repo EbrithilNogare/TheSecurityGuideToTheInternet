@@ -12,7 +12,17 @@ public class Store : MonoBehaviour {
 
     [HideInInspector] public static Store Instance { get; private set; }
 
-    public bool[] levelUnlocked;
+    [NonSerialized]
+    public bool[] levelUnlocked = new[] {
+        true,  // Malware
+        false, // Firewall
+        true,  // Phishing
+        true,  // Cookies
+        true,  // Phone
+        false, // AI
+        false, // Passwords
+        false  // TFA
+    };
 
     [NonSerialized] public Quiz quizToLoad = Quiz.None;
     [NonSerialized] public int minigameStars = 0;

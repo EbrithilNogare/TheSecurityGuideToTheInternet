@@ -154,11 +154,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 733755379}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1340, y: -112}
-  m_SizeDelta: {x: 512, y: 512}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 64, y: 11}
+  m_SizeDelta: {x: 1024, y: 1024}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &41733291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +179,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "!\"#$'(),-./01234578:<>?ABCDEFGHIJKLMNOPQRSTUVWYZ[]_abcdefghijklmnopqrstuvwxyz\xCD\xDA\xE1\xE9\xED\xF3\xFA\xFD\u010C\u010D\u010F\u011A\u011B\u0148\u0158\u0159\u0160\u0161\u0165\u016F\u017D\u017E\u2019"
+  m_text: "English Alphabet:\nABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz\n\nCzech
+    Alphabet:\nA\xC1BC\u010CD\u010EE\xC9\u011AFGHCHI\xCDJKLMN\u0147O\xD3PQR\u0158S\u0160T\u0164U\xDA\u016EVWXY\xDDZ\u017D\r\na\xE1bc\u010Dd\u010Fe\xE9\u011Bfghchi\xEDjklmn\u0148o\xF3pqr\u0159s\u0161t\u0165u\xFA\u016Fvwxy\xFDz\u017E\n\nNumbers
+    and chars:\n0123456789+-()=~`'\";,./|?!><:{}[]@#$%^&*()_\n\nUsed:\n!\"#$&'(),-./012345678:<=>?ABCDEFGHIJKLMNOPQRSTUVWYZ[]_abcdefghijklmnopqrstuvwxyz\xCD\xDA\xE1\xE9\xED\xF3\xFA\xFD\u010C\u010D\u010F\u011A\u011B\u0148\u0158\u0159\u0160\u0161\u0165\u016F\u017D\u017E\u2019"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4df05822f15a2584f9901b75eb26ebe2, type: 2}
   m_sharedMaterial: {fileID: -628191379978384950, guid: 4df05822f15a2584f9901b75eb26ebe2,
