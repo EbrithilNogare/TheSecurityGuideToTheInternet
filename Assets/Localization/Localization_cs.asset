@@ -1335,6 +1335,14 @@ MonoBehaviour:
       uveden\xFDch v\xFD\u0161e"
     m_Metadata:
       m_Items: []
+  - m_Id: 58969557239103488
+    m_Localized: Vydat aplikaci tak, jak je
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58969719948738560
+    m_Localized: Vydat hotovou aplikaci
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

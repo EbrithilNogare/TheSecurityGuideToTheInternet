@@ -94,6 +94,13 @@ public class MovableTetrisTileController : MonoBehaviour, IBeginDragHandler, IDr
             }
         }
 
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "{" +
+                "\"message\":\"Phone minigame piece dropped\"," +
+                "\"piece\":\"" + pieceType.ToString() + "\"," +
+                "\"isValidlyOverBoard\":" + isValidlyOverBoard.ToString() + "," +
+                "\"currentLevelName\":\"" + phoneMinigameController.currentLevel.levelNameTextKey + "\"" +
+            "}");
+
         phoneMinigameController.EvaluateMove();
     }
 }

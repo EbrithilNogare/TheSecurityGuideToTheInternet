@@ -19,7 +19,7 @@ public class PhoneMinigameController : MonoBehaviour {
         None
     }
 
-    private struct PhoneTetrisLevelDescription {
+    public struct PhoneTetrisLevelDescription {
         public string levelNameTextKey;
         public PieceType[] correctpieces;
         public int[,] board;
@@ -34,11 +34,13 @@ public class PhoneMinigameController : MonoBehaviour {
     public GameObject BoardSelection;
     public GameObject[] BoardCards;
     public TMPro.TextMeshProUGUI appNameLabel;
+    public GameObject submitButtonFull;
+    public GameObject submitButtonPartial;
 
     [HideInInspector]
     public PieceType[,] currentBooard;
 
-    private PhoneTetrisLevelDescription currentLevel;
+    [NonSerialized] public PhoneTetrisLevelDescription currentLevel;
 
 
     void Start() {
@@ -55,7 +57,6 @@ public class PhoneMinigameController : MonoBehaviour {
     public void SelectBoard(int boardIndex) {
         LoggingService.Log(LoggingService.LogCategory.Minigame, "Phone Minigame: selected board: " + boardIndex);
 
-
         foreach (var card in BoardCards) {
             if (card != BoardCards[boardIndex]) {
                 card.GetComponent<Button>().interactable = false;
@@ -71,31 +72,33 @@ public class PhoneMinigameController : MonoBehaviour {
         });
     }
 
-    public int EvaluateMove() {
+    public void EvaluateMove() {
         bool isUsingCorrectPieces = true;
         bool isInsideOfBoard = true;
-        bool noEmptyCells = true;
+        int piecesCount = 0;
 
         for (int x = 0; x < 7; x++) {
             for (int y = 0; y < 7; y++) {
                 if (currentLevel.board[y, x] == 0 && currentBooard[x, y] != PieceType.None)
                     isInsideOfBoard = false;
 
-                if (currentLevel.board[y, x] == 1 && currentBooard[x, y] == PieceType.None)
-                    noEmptyCells = false;
-
                 if (currentBooard[x, y] != PieceType.None && !Array.Exists(currentLevel.correctpieces, piece => piece == currentBooard[x, y]))
                     isUsingCorrectPieces = false;
+
+                if (currentBooard[x, y] != PieceType.None)
+                    piecesCount++;
             }
         }
 
+        bool correctPiecesCount = piecesCount == currentLevel.correctpieces.Length * 4;
+        int toReturn = isUsingCorrectPieces && correctPiecesCount ? isInsideOfBoard ? 2 : 1 : 0;
 
-        int toReturn = isUsingCorrectPieces && noEmptyCells ? isInsideOfBoard ? 2 : 1 : 0;
+        RenderSubmitButtons(toReturn);
+    }
 
-        if (toReturn == 2)
-            FinishMinigame(toReturn); // todo do it better
-
-        return toReturn;
+    private void RenderSubmitButtons(int variant) {
+        submitButtonFull.SetActive(variant == 2);
+        submitButtonPartial.SetActive(variant == 1);
     }
 
     private void InitBoard() {
@@ -110,11 +113,11 @@ public class PhoneMinigameController : MonoBehaviour {
     public void FinishMinigame(int score) {
         LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Phone minigame completed\",\"score\":" + score + "}");
         Store.Instance.minigameStars = score;
-        int scoreForStore = score == 0 ? 0b000 : score == 1 ? 0b100 : 0b110;
+        int scoreForStore = score == 1 ? 0b100 : 0b110;
         Store.Instance.SetLevelScore(Store.Level.Phone, scoreForStore);
         Store.Instance.quizToLoad = Store.Quiz.Phone;
 
-        DOVirtual.DelayedCall(2, () => SceneManager.LoadScene("Quiz"));
+        DOVirtual.DelayedCall(.5f, () => SceneManager.LoadScene("Quiz"));
     }
 
     public Dictionary<PieceType, List<Vector2>> pieceShapes = new Dictionary<PieceType, List<Vector2>>()

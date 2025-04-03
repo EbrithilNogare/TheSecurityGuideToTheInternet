@@ -1270,6 +1270,14 @@ MonoBehaviour:
       (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 58969557239103488
+    m_Key: Phone/Canvas/Center board/Submit group/Partial/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58969719948738560
+    m_Key: Phone/Canvas/Center board/Submit group/Full/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
