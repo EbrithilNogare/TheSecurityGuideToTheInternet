@@ -100,6 +100,7 @@ jobs:
           buildName: ${{ github.event.repository.name }}
           versioning: Semantic
           targetPlatform: ${{ matrix.targetPlatform }}
+          androidTargetSdkVersion: AndroidApiLevel24
 
       - name: Get disk space usage
         run: df -ah /
