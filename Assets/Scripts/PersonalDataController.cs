@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PersonalDataController : MonoBehaviour {
+public class PersonalDataController : MonoBehaviour
+{
 
     public TMP_InputField nameInput;
     public TMP_InputField ageInput;
@@ -15,7 +16,8 @@ public class PersonalDataController : MonoBehaviour {
 
     private bool shouldSave = false;
 
-    private void Start() {
+    private void Start()
+    {
         nameInput.text = Store.Instance.PersonalDataName;
         ageInput.text = Store.Instance.PersonalDataAge;
         genderDropdown.value = Store.Instance.PersonalDataGender;
@@ -25,39 +27,48 @@ public class PersonalDataController : MonoBehaviour {
         shouldSave = false; // must be set after setting the values
     }
 
-    public void SetName(string value) {
+    public void SetName(string value)
+    {
         shouldSave = true;
         Store.Instance.PersonalDataName = value;
     }
 
-    public void SetAge(string value) {
+    public void SetAge(string value)
+    {
         shouldSave = true;
         Store.Instance.PersonalDataAge = value;
     }
 
-    public void SetGender(int value) {
+    public void SetGender(int value)
+    {
         shouldSave = true;
         Store.Instance.PersonalDataGender = value;
     }
 
-    public void SetClass(string value) {
+    public void SetClass(string value)
+    {
         shouldSave = true;
         Store.Instance.PersonalDataClass = value;
     }
 
-    public void SetRegion(string value) {
+    public void SetRegion(string value)
+    {
         shouldSave = true;
         Store.Instance.PersonalDataRegion = value;
     }
 
-    public void SetPersonalDataConcent(bool value) {
+    public void SetPersonalDataConcent(bool value)
+    {
         shouldSave = true;
         Store.Instance.PersonalDataConcent = value;
     }
 
-    public void SaveAndExit() {
-        if (shouldSave) {
-            if (Store.Instance.PersonalDataConcent) {
+    public void SaveAndExit()
+    {
+        if (shouldSave)
+        {
+            if (Store.Instance.PersonalDataConcent)
+            {
                 string jsonLog = "{" +
                     "\"message\":\"Saved settings with values and concent\"," +
                     "\"name\":\"" + SecurityElement.Escape(Store.Instance.PersonalDataName) + "\"," +
@@ -69,11 +80,13 @@ public class PersonalDataController : MonoBehaviour {
                 "}";
                 LoggingService.Log(LoggingService.LogCategory.Settings, jsonLog);
             }
-            else {
+            else
+            {
                 LoggingService.Log(LoggingService.LogCategory.Settings, "Saved settings, but user did not concent to save personal data");
             }
         }
-        else {
+        else
+        {
             LoggingService.Log(LoggingService.LogCategory.Settings, "Exited settings without changes");
         }
         LoggingService.Log(LoggingService.LogCategory.Navigation, "Navigated to MainMenu");

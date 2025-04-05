@@ -1,12 +1,15 @@
 using UnityEngine;
 
-public class MarkerParent : MonoBehaviour {
+public class MarkerParent : MonoBehaviour
+{
     private AIMinigameCensorable[] allCensorableObjects;
 
-    private void Awake() {
+    private void Awake()
+    {
         allCensorableObjects = FindObjectsOfType<AIMinigameCensorable>();
 
-        foreach (AIMinigameCensorable censorable in allCensorableObjects) {
+        foreach (AIMinigameCensorable censorable in allCensorableObjects)
+        {
             censorable.markerParent = censorable.markerParent != null ? censorable.markerParent : gameObject;
         }
     }

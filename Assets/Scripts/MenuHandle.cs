@@ -1,7 +1,8 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class MenuHandler : MonoBehaviour {
+public class MenuHandler : MonoBehaviour
+{
     public GameObject targetObject;
     public float duration = 0.5f;
 
@@ -10,13 +11,15 @@ public class MenuHandler : MonoBehaviour {
     private Vector3 revealedPosition;
     private RectTransform rectTransform;
 
-    void Start() {
+    void Start()
+    {
         rectTransform = targetObject.GetComponent<RectTransform>();
         revealedPosition = rectTransform.localPosition;
         hiddenPosition = revealedPosition + new Vector3(rectTransform.rect.width, 0, 0);
     }
 
-    public void ToggleObject() {
+    public void ToggleObject()
+    {
         if (isHidden)
             rectTransform.DOLocalMove(revealedPosition, duration);
         else

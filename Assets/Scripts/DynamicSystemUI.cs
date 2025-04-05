@@ -3,12 +3,14 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-public class DynamicSystemUI : MonoBehaviour {
+public class DynamicSystemUI : MonoBehaviour
+{
     public enum TweenType { Move, Scale, Rotate, Fade }
     public enum EaseType { Linear, EaseIn, EaseOut, EaseInOut, Elastic, Bounce }
 
     [Serializable]
-    public class TweenSettings {
+    public class TweenSettings
+    {
         public string tweenName = "New Tween";
         public bool autoStart = true;
         public TweenType tweenType = TweenType.Move;
@@ -37,7 +39,8 @@ public class DynamicSystemUI : MonoBehaviour {
     private float defaultAlpha;
     private bool initialized = false;
 
-    private void Start() {
+    private void Start()
+    {
         defaultPosition = transform.localPosition;
         defaultRotation = transform.localEulerAngles;
         defaultScale = transform.localScale;
@@ -47,35 +50,42 @@ public class DynamicSystemUI : MonoBehaviour {
         AutoStartTweens();
     }
 
-    private void OnEnable() {
+    private void OnEnable()
+    {
         if (!initialized) return;
         AutoStartTweens();
     }
-    private void OnDisable() {
+    private void OnDisable()
+    {
         if (!initialized) return;
         Cleanup();
     }
 
-    private void OnDestroy() {
+    private void OnDestroy()
+    {
         if (!initialized) return;
         Cleanup();
 
     }
 
-    private void AutoStartTweens() {
+    private void AutoStartTweens()
+    {
         foreach (var tween in tweenSettings)
             if (tween.autoStart)
                 StartTween(tween);
     }
 
-    public void StartTweens() {
+    public void StartTweens()
+    {
         foreach (var tween in tweenSettings)
             if (!tween.autoStart)
                 StartTween(tween);
     }
 
-    public void Cleanup() {
-        foreach (var tween in tweenSettings) {
+    public void Cleanup()
+    {
+        foreach (var tween in tweenSettings)
+        {
             StopTween(tween);
         }
 
@@ -86,10 +96,12 @@ public class DynamicSystemUI : MonoBehaviour {
             canvasGroup.alpha = defaultAlpha;
     }
 
-    public void StartTween(TweenSettings settings) {
+    public void StartTween(TweenSettings settings)
+    {
         StopTween(settings);
 
-        switch (settings.tweenType) {
+        switch (settings.tweenType)
+        {
             case TweenType.Move:
                 StartSuperTween(settings, TweenType.Move);
                 break;
@@ -105,17 +117,21 @@ public class DynamicSystemUI : MonoBehaviour {
         }
     }
 
-    public void StopTween(TweenSettings settings) {
+    public void StopTween(TweenSettings settings)
+    {
         settings.tweener?.Kill();
         settings.sequence?.Kill();
     }
 
-    private void StartSuperTween(TweenSettings settings, TweenType tweenType) {
-        if (tweenType == TweenType.Fade && !canvasGroup) {
+    private void StartSuperTween(TweenSettings settings, TweenType tweenType)
+    {
+        if (tweenType == TweenType.Fade && !canvasGroup)
+        {
             canvasGroup = GetComponent<CanvasGroup>() != null ? GetComponent<CanvasGroup>() : gameObject.AddComponent<CanvasGroup>();
         }
 
-        void tweenCreator() {
+        void tweenCreator()
+        {
             settings.sequence = DOTween.Sequence()
             .Append(
                 tweenType == TweenType.Move ? transform
@@ -144,8 +160,10 @@ public class DynamicSystemUI : MonoBehaviour {
                     .OnComplete(tweenCreator);
     }
 
-    private void StartFadeTween(TweenSettings settings) {
-        if (!canvasGroup) {
+    private void StartFadeTween(TweenSettings settings)
+    {
+        if (!canvasGroup)
+        {
             canvasGroup = GetComponent<CanvasGroup>() != null ? GetComponent<CanvasGroup>() : gameObject.AddComponent<CanvasGroup>();
         }
 
@@ -155,8 +173,10 @@ public class DynamicSystemUI : MonoBehaviour {
             .SetLoops(settings.loop ? -1 : 0, settings.loopType);
     }
 
-    private Ease GetEase(EaseType ease) {
-        return ease switch {
+    private Ease GetEase(EaseType ease)
+    {
+        return ease switch
+        {
             EaseType.Linear => Ease.Linear,
             EaseType.EaseIn => Ease.InSine,
             EaseType.EaseOut => Ease.OutSine,
@@ -170,26 +190,33 @@ public class DynamicSystemUI : MonoBehaviour {
 
 #if UNITY_EDITOR
 [CustomEditor(typeof(DynamicSystemUI))]
-public class DynamicSystemUIEditor : Editor {
+public class DynamicSystemUIEditor : Editor
+{
     private SerializedProperty tweenSettings;
 
-    private void OnEnable() {
+    private void OnEnable()
+    {
         tweenSettings = serializedObject.FindProperty("tweenSettings");
     }
 
-    public override void OnInspectorGUI() {
+    public override void OnInspectorGUI()
+    {
         serializedObject.Update();
 
         EditorGUILayout.PropertyField(tweenSettings, true);
 
-        if (GUILayout.Button("Start All Tweens")) {
-            if (Application.isPlaying) {
+        if (GUILayout.Button("Start All Tweens"))
+        {
+            if (Application.isPlaying)
+            {
                 var script = (DynamicSystemUI)target;
-                foreach (var tween in script.tweenSettings) {
+                foreach (var tween in script.tweenSettings)
+                {
                     script.StartTween(tween);
                 }
             }
-            else {
+            else
+            {
                 Debug.LogWarning("StartTween can only be called in Play Mode.");
             }
         }

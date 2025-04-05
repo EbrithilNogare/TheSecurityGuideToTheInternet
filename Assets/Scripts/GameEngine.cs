@@ -2,7 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameEngine : MonoBehaviour {
+public class GameEngine : MonoBehaviour
+{
     [Header("UI Elements")]
     public GameObject levelCompletedPopUp;
     public TextMeshProUGUI task1Text;
@@ -47,19 +48,23 @@ public class GameEngine : MonoBehaviour {
     private MalwareLevelScript malwareLevelScript;
 
 
-    void Start() {
+    void Start()
+    {
         malwareLevelScript = new MalwareLevelScript(this);
         malwareLevelScript.Init();
     }
 
-    public void SetTasks(string task1, string task2, string task3) {
+    public void SetTasks(string task1, string task2, string task3)
+    {
         task1Text.SetText(task1);
         task2Text.SetText(task2);
         task3Text.SetText(task3);
     }
 
-    public void SetTaskDone(int index) {
-        switch (index) {
+    public void SetTaskDone(int index)
+    {
+        switch (index)
+        {
             case 1:
                 task1Icon.sprite = taskDoneImage;
                 break;
@@ -72,7 +77,8 @@ public class GameEngine : MonoBehaviour {
         }
     }
 
-    public void levelCompletedSetStars(bool task1completed, bool task2completed, bool optionalTaskCompleted) {
+    public void levelCompletedSetStars(bool task1completed, bool task2completed, bool optionalTaskCompleted)
+    {
         levelCompletedStar1.sprite = task1completed ? filledStarIcon : outlineStarIcon;
         levelCompletedStar2.sprite = task2completed ? filledStarIcon : outlineStarIcon;
         levelCompletedStar3.sprite = optionalTaskCompleted ? filledStarIcon : outlineStarIcon;

@@ -3,7 +3,8 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class AVManager : MonoBehaviour {
+public class AVManager : MonoBehaviour
+{
     public RectTransform sourceRow;
     public RectTransform dropZoneOK;
     public RectTransform dropZoneOKRow;
@@ -21,24 +22,31 @@ public class AVManager : MonoBehaviour {
 
     private bool wonWithoutMistake = true;
 
-    public void EvaluateDrop(AVFileStructure item) {
-        if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneOK, Input.mousePosition, canvas.worldCamera)) {
+    public void EvaluateDrop(AVFileStructure item)
+    {
+        if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneOK, Input.mousePosition, canvas.worldCamera))
+        {
             HandleDropOnOK(item);
         }
-        else if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneScan, Input.mousePosition, canvas.worldCamera)) {
+        else if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneScan, Input.mousePosition, canvas.worldCamera))
+        {
             HandleDropOnScan(item);
         }
-        else if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneNotOK, Input.mousePosition, canvas.worldCamera)) {
+        else if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneNotOK, Input.mousePosition, canvas.worldCamera))
+        {
             HandleDropOnNotOK(item);
         }
-        else {
+        else
+        {
             ReturnToSource(item);
         }
 
-        if (sourceRow.childCount == 0 && dropZoneScanRow.childCount == 0) {
+        if (sourceRow.childCount == 0 && dropZoneScanRow.childCount == 0)
+        {
             ShowSubmitButton();
         }
-        else {
+        else
+        {
             HideSubmitButton();
         }
 
@@ -46,19 +54,24 @@ public class AVManager : MonoBehaviour {
             dropZoneScanManager.OnFileRemoved();
     }
 
-    private void ShowSubmitButton() {
+    private void ShowSubmitButton()
+    {
         submitButton.SetActive(true);
     }
-    private void HideSubmitButton() {
+    private void HideSubmitButton()
+    {
         submitButton.SetActive(false);
     }
 
-    public void HandleDropOnOK(AVFileStructure item) {
+    public void HandleDropOnOK(AVFileStructure item)
+    {
         item.transform.SetParent(dropZoneOKRow, false);
     }
 
-    public void HandleDropOnScan(AVFileStructure item) {
-        if (dropZoneScanRow.childCount > 0) {
+    public void HandleDropOnScan(AVFileStructure item)
+    {
+        if (dropZoneScanRow.childCount > 0)
+        {
             ReturnToSource(item);
             return;
         }
@@ -69,22 +82,26 @@ public class AVManager : MonoBehaviour {
         dropZoneScanManager.StartScanning(item);
     }
 
-    public void HandleDropOnNotOK(AVFileStructure item) {
+    public void HandleDropOnNotOK(AVFileStructure item)
+    {
         item.transform.SetParent(dropZoneNotOKRow, false);
     }
 
-    public void ReturnToSource(AVFileStructure item) {
+    public void ReturnToSource(AVFileStructure item)
+    {
         if (transform.parent == sourceRow)
             return;
 
         item.transform.SetParent(sourceRow, false);
     }
 
-    public void Submit() {
+    public void Submit()
+    {
         bool OKDropZOneIsCorrect = dropZoneOKRow.GetComponentsInChildren<AVFileStructure>().All(item => !item.isVirus);
         bool NotOKDropZOneIsCorrect = dropZoneNotOKRow.GetComponentsInChildren<AVFileStructure>().All(item => item.isVirus);
 
-        if (!OKDropZOneIsCorrect || !NotOKDropZOneIsCorrect) {
+        if (!OKDropZOneIsCorrect || !NotOKDropZOneIsCorrect)
+        {
             wonWithoutMistake = false;
             DisplayErrorMessage();
             return;
@@ -93,18 +110,21 @@ public class AVManager : MonoBehaviour {
         DisplaySuccessMessage();
     }
 
-    private void DisplayErrorMessage() {
+    private void DisplayErrorMessage()
+    {
         feedbackMessageTextOK.SetActive(false);
         feedbackMessageTextFail.SetActive(true);
     }
 
-    private void DisplaySuccessMessage() {
+    private void DisplaySuccessMessage()
+    {
         feedbackMessageTextOK.SetActive(true);
         feedbackMessageTextFail.SetActive(false);
         FinishMinigame();
     }
 
-    public void FinishMinigame() {
+    public void FinishMinigame()
+    {
         int score = wonWithoutMistake ? 2 : 1;
         LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Malware minigame completed\",\"score\":" + score + "}");
         Store.Instance.minigameStars = score;

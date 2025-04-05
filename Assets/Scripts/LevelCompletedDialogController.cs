@@ -2,7 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LevelCompletedDialogController : MonoBehaviour {
+public class LevelCompletedDialogController : MonoBehaviour
+{
 
     public Color enabledStar;
     public Color disabledStar;
@@ -13,18 +14,22 @@ public class LevelCompletedDialogController : MonoBehaviour {
     public TextMeshProUGUI quizScoreText;
 
 
-    private void Awake() {
+    private void Awake()
+    {
         bool shouldOpenLevelCompletedDialog = Store.Instance.shouldOpenLevelCompletedDialog;
-        if (shouldOpenLevelCompletedDialog) {
+        if (shouldOpenLevelCompletedDialog)
+        {
             Store.Instance.shouldOpenLevelCompletedDialog = false;
             OpenDialog();
         }
-        else {
+        else
+        {
             gameObject.SetActive(false);
         }
     }
 
-    private void OpenDialog() {
+    private void OpenDialog()
+    {
         gameObject.SetActive(true);
         var minigameStars = Store.Instance.minigameStars;
         var quizStars = Store.Instance.quizStars;
@@ -38,7 +43,8 @@ public class LevelCompletedDialogController : MonoBehaviour {
         quizScoreText.text = quizScore.ToString();
     }
 
-    public void CloseDialog() {
+    public void CloseDialog()
+    {
         gameObject.SetActive(false);
     }
 }

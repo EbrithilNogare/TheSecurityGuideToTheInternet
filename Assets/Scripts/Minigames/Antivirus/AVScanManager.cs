@@ -2,7 +2,8 @@ using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
-public class AVScanManager : MonoBehaviour {
+public class AVScanManager : MonoBehaviour
+{
     public bool isScanning = false;
 
     public GameObject scanProgressReady;
@@ -15,11 +16,13 @@ public class AVScanManager : MonoBehaviour {
     private Tweener currentTween;
 
 
-    void Awake() {
+    void Awake()
+    {
         ShowDropZoneText(scanProgressReady);
     }
 
-    public void StartScanning(AVFileStructure item) {
+    public void StartScanning(AVFileStructure item)
+    {
         isScanning = true;
         ShowDropZoneText(scanProgressScanning);
 
@@ -34,31 +37,38 @@ public class AVScanManager : MonoBehaviour {
             .OnComplete(() => { EvaluateScanFinish(item); });
     }
 
-    private void EvaluateScanFinish(AVFileStructure item) {
+    private void EvaluateScanFinish(AVFileStructure item)
+    {
         isScanning = false;
         scanProgressScanningText.maxVisibleCharacters = int.MaxValue;
-        if (item.isVirus) {
-            switch (Random.Range(0, 2)) {
+        if (item.isVirus)
+        {
+            switch (Random.Range(0, 2))
+            {
                 case 0:
                     ShowDropZoneText(scanProgressError1); break;
                 case 1:
                     ShowDropZoneText(scanProgressError2); break;
             }
         }
-        else {
+        else
+        {
             ShowDropZoneText(scanProgressOk);
         }
     }
 
-    public void OnFileRemoved() {
+    public void OnFileRemoved()
+    {
         isScanning = false;
-        if (currentTween != null && currentTween.IsActive()) {
+        if (currentTween != null && currentTween.IsActive())
+        {
             currentTween.Kill();
         }
         ShowDropZoneText(scanProgressReady);
     }
 
-    private void ShowDropZoneText(GameObject textToEnable) {
+    private void ShowDropZoneText(GameObject textToEnable)
+    {
         scanProgressReady.SetActive(scanProgressReady == textToEnable);
         scanProgressScanning.SetActive(scanProgressScanning == textToEnable);
         scanProgressOk.SetActive(scanProgressOk == textToEnable);
