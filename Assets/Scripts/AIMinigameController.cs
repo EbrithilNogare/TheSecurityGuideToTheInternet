@@ -16,7 +16,6 @@ public class AIMinigameController : MonoBehaviour {
         bool visibleValid = true;
         bool censoredValid = true;
 
-
         for (int i = 0; i < mustBeVisible.Length; i++) {
             if (mustBeVisible[i].isCensored) {
                 visibleValid = false;
@@ -29,8 +28,8 @@ public class AIMinigameController : MonoBehaviour {
             }
         }
 
-        Debug.Log("Visible Valid: " + visibleValid);
-        Debug.Log("Censored Valid: " + censoredValid);
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Submit button pressed\",\"visibleValid\":" + visibleValid.ToString() + ",\"censoredValid\":" + censoredValid.ToString() + "}");
+
     }
 
     public void FinishMinigame() {

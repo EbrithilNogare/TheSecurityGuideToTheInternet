@@ -261,7 +261,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (11)
+      value: FeeLabel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -395,7 +395,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (10)
+      value: DeliveryAddressValue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -923,7 +923,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (22)
+      value: CompanyLabel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1163,7 +1163,7 @@ GameObject:
   - component: {fileID: 259475396}
   - component: {fileID: 259475395}
   m_Layer: 5
-  m_Name: Header 3
+  m_Name: PriceHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1298,7 +1298,7 @@ GameObject:
   - component: {fileID: 293581544}
   - component: {fileID: 293581543}
   m_Layer: 5
-  m_Name: Sum
+  m_Name: SumLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1509,7 +1509,7 @@ GameObject:
   - component: {fileID: 303403213}
   - component: {fileID: 303403212}
   m_Layer: 5
-  m_Name: Header 2
+  m_Name: DiscountHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1758,7 +1758,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (18)
+      value: Price5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1892,7 +1892,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (4)
+      value: OrderItem1Value
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2001,8 +2001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -45, y: 0}
-  m_SizeDelta: {x: 64, y: 64}
+  m_AnchoredPosition: {x: -50, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &521732953
 MonoBehaviour:
@@ -2168,7 +2168,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (13)
+      value: Price2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2307,7 +2307,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (12)
+      value: Price1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2441,7 +2441,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (8)
+      value: StudentDiscountValue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2594,7 +2594,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (25)
+      value: Role
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2873,7 +2873,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (16)
+      value: Price4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3032,7 +3032,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (18)
+      value: NameLabel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3171,7 +3171,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (16)
+      value: Discount5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3360,7 +3360,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (24)
+      value: Expiration
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3407,7 +3407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -32.000122, y: 0}
+  m_AnchoredPosition: {x: -32, y: 0}
   m_SizeDelta: {x: -86, y: -22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &884992494
@@ -3634,7 +3634,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (15)
+      value: Price3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3918,7 +3918,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Sum count
+      value: SumCount
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4057,7 +4057,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (12)
+      value: Discount1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4216,7 +4216,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (21)
+      value: AddressValue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4497,7 +4497,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (9)
+      value: DeliveryAddressLabel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4726,7 +4726,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (23)
+      value: CompanyValue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5007,7 +5007,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (6)
+      value: OrderItem2Value
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5050,7 +5050,7 @@ GameObject:
   - component: {fileID: 1311643222}
   - component: {fileID: 1311643221}
   m_Layer: 5
-  m_Name: Header 1
+  m_Name: NameHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5359,7 +5359,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (15)
+      value: Discount4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5498,7 +5498,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (13)
+      value: Discount2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6045,7 +6045,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (5)
+      value: OrderItem2Label
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6064,7 +6064,7 @@ GameObject:
   - component: {fileID: 1864651443}
   - component: {fileID: 1864651442}
   m_Layer: 5
-  m_Name: invoice
+  m_Name: Invoice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6313,7 +6313,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (14)
+      value: Discount3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6459,7 +6459,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (7)
+      value: StudentDiscountLabel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6665,7 +6665,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (12)
+      value: CreditCardValue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6818,7 +6818,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (20)
+      value: AddressLabel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7083,7 +7083,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (19)
+      value: NameValue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7466,7 +7466,7 @@ PrefabInstance:
     - target: {fileID: 8950901950896199233, guid: 93c2b0f9dd3503a48a17c50e8f1a14d4,
         type: 3}
       propertyPath: m_Name
-      value: Text (TMP) (3)
+      value: OrderItem1Label
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
