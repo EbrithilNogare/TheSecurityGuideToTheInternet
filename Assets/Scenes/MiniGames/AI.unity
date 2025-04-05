@@ -1015,6 +1015,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2119888179}
     m_Modifications:
+    - target: {fileID: 5987278262195784450, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: minigame
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6750237185935178934, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7208,13 +7213,13 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 136621984}
   - {fileID: 957504081}
   - {fileID: 1605356797}
   - {fileID: 1370780750}
   - {fileID: 2072848652}
   - {fileID: 299907777}
   - {fileID: 1105795853}
+  - {fileID: 136621984}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

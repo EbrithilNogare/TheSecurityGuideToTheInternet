@@ -207,7 +207,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23905854643011584
-    m_Localized: 
+    m_Localized: "Pou\u017E\xEDt str\xE1nku"
     m_Metadata:
       m_Items: []
   - m_Id: 23906013531635712
@@ -1066,8 +1066,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 54946100411138048
-    m_Localized: "Vytvo\u0159 fale\u0161nou napodobeninu str\xE1nky.\nP\u0159et\xE1hni
-      obr\xE1zky a formul\xE1\u0159ov\xE1 pole tak, aby byly co nejp\u0159esn\u011Bj\u0161\xED
+    m_Localized: "Vytvo\u0159en\xED fale\u0161n\xE9 napodobeniny str\xE1nky nen\xED
+      v\u016Fbec t\u011B\u017Ek\xE9, vyzkou\u0161ej si to.\nP\u0159et\xE1hni obr\xE1zky
+      a formul\xE1\u0159ov\xE1 pole tak, aby byly co nejp\u0159esn\u011Bj\u0161\xED
       k origin\xE1lu.\nDej si pozor na barvy.\nNakonec p\u0159idej fale\u0161nou
       URL, origin\xE1ln\xED nem\u016F\u017Ee\u0161 pou\u017E\xEDt, tak\u017Ee najdi
       n\u011Bjakou hodn\u011B podobnou."

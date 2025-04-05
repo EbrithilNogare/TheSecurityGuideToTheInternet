@@ -754,11 +754,16 @@ PrefabInstance:
     - target: {fileID: 3800453124221224968, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
       propertyPath: m_text
-      value: "Vytvo\u0159 fale\u0161nou napodobeninu str\xE1nky.\nP\u0159et\xE1hni
-        obr\xE1zky a formul\xE1\u0159ov\xE1 pole tak, aby byly co nejp\u0159esn\u011Bj\u0161\xED
-        k origin\xE1lu.\nDej si pozor na barvy.\nNakonec p\u0159idej fale\u0161nou
-        URL, origin\xE1ln\xED nem\u016F\u017Ee\u0161 pou\u017E\xEDt, tak\u017Ee najdi
-        n\u011Bjakou hodn\u011B podobnou."
+      value: 'Creating a fake imitation of the page is super easy, try it yourself.
+
+        Drag
+        the images and the form fields so they are as accurate as possible to the
+        original.
+
+        Pay attention to the colors.
+
+        Finally, add a fake
+        URL, you can''t use the original, so find one that is very similar.'
       objectReference: {fileID: 0}
     - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
@@ -773,7 +778,7 @@ PrefabInstance:
     - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1499.24
+      value: 1499.29
       objectReference: {fileID: 0}
     - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
@@ -783,7 +788,7 @@ PrefabInstance:
     - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 789.62
+      value: 789.645
       objectReference: {fileID: 0}
     - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
@@ -803,7 +808,7 @@ PrefabInstance:
     - target: {fileID: 6191862427478248743, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1791.24
+      value: 1791.29
       objectReference: {fileID: 0}
     - target: {fileID: 6191862427478248743, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}

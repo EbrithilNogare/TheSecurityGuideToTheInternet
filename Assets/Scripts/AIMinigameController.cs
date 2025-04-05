@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class AIMinigameController : MonoBehaviour
 {
-
     public GameObject responseOK;
     public GameObject responseBad;
     public GameObject prompt;
@@ -37,10 +36,33 @@ public class AIMinigameController : MonoBehaviour
 
         LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Submit button pressed\",\"visibleValid\":" + visibleValid.ToString() + ",\"censoredValid\":" + censoredValid.ToString() + "}");
 
+        if (visibleValid)
+        {
+            ContinueWithPrompt();
+        }
+        else
+        {
+            ShowBadResponse();
+        }
+
     }
 
     public void FinishMinigame()
     {
 
     }
+
+    private void ShowBadResponse()
+    {
+        responseBad.SetActive(true);
+    }
+
+    private void ContinueWithPrompt()
+    {
+        responseOK.SetActive(true);
+        responseBad.SetActive(false);
+
+        prompt.SetActive(true);
+    }
+
 }
