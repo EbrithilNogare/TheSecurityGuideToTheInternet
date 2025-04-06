@@ -204,12 +204,15 @@ public class Store : MonoBehaviour
         {
             case 0:
                 Application.targetFrameRate = 30;
+                Application.runInBackground = false;
                 break;
             case 1:
                 Application.targetFrameRate = 60;
+                Application.runInBackground = true;
                 break;
             case 2:
                 Application.targetFrameRate = 240;
+                Application.runInBackground = true;
                 break;
         }
 
