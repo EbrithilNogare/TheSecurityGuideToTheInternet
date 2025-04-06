@@ -50,8 +50,6 @@ public class AIMinigameCensorable : MonoBehaviour
         var markerRect = marker.GetComponent<RectTransform>();
         float censoringDuration = fieldWithSensitiveData.rect.width / censoringSpeed;
 
-        // todo make it in front of everything
-
         marker.transform.DOMoveX(markerRect.position.x + fieldWithSensitiveData.rect.width, censoringDuration).SetEase(Ease.OutCubic).OnComplete(() =>
         {
             Destroy(marker);
