@@ -475,7 +475,7 @@ PrefabInstance:
     - target: {fileID: 5134930703438424026, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_Name
-      value: File
+      value: Game_exe
       objectReference: {fileID: 0}
     - target: {fileID: 7369804776236132864, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
@@ -1849,7 +1849,7 @@ PrefabInstance:
     - target: {fileID: 5134930703438424026, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_Name
-      value: File
+      value: Game_exe
       objectReference: {fileID: 0}
     - target: {fileID: 7369804776236132864, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
@@ -2131,7 +2131,7 @@ PrefabInstance:
     - target: {fileID: 5134930703438424026, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_Name
-      value: File
+      value: Document_docx
       objectReference: {fileID: 0}
     - target: {fileID: 7369804776236132864, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
@@ -2766,7 +2766,7 @@ PrefabInstance:
     - target: {fileID: 5134930703438424026, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_Name
-      value: File
+      value: Songmp3_exe
       objectReference: {fileID: 0}
     - target: {fileID: 5134930703438424026, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
@@ -3555,7 +3555,7 @@ PrefabInstance:
     - target: {fileID: 5134930703438424026, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_Name
-      value: File
+      value: Song_mp3
       objectReference: {fileID: 0}
     - target: {fileID: 7369804776236132864, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
@@ -3775,7 +3775,7 @@ PrefabInstance:
     - target: {fileID: 5134930703438424026, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_Name
-      value: File
+      value: Book_pdf
       objectReference: {fileID: 0}
     - target: {fileID: 7369804776236132864, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
@@ -4903,7 +4903,7 @@ PrefabInstance:
     - target: {fileID: 5134930703438424026, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_Name
-      value: File
+      value: Video_mp4
       objectReference: {fileID: 0}
     - target: {fileID: 7369804776236132864, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}

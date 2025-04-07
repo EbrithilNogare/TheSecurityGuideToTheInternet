@@ -5063,7 +5063,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 34.95
   m_fontSizeBase: 50.5
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5475,7 +5475,7 @@ MonoBehaviour:
           value: 27.45
         - localeIdentifier:
             m_Code: cs
-          value: 28
+          value: 25.6
 --- !u!1 &1247628213
 GameObject:
   m_ObjectHideFlags: 0
@@ -5672,7 +5672,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 34.95
   m_fontSizeBase: 50.5
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7981,7 +7981,7 @@ MonoBehaviour:
           value: 26.6
         - localeIdentifier:
             m_Code: cs
-          value: 28
+          value: 22.7
 --- !u!1 &1917499662
 GameObject:
   m_ObjectHideFlags: 0
@@ -8068,7 +8068,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 34.95
   m_fontSizeBase: 50.5
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9441,7 +9441,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.85
+  m_fontSize: 23.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

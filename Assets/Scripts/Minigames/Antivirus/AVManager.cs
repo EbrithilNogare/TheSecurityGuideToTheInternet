@@ -26,18 +26,22 @@ public class AVManager : MonoBehaviour
     {
         if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneOK, Input.mousePosition, canvas.worldCamera))
         {
+            LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Antivirus file dropped\",\"file\":\"" + item.gameObject.name + "\",\"droppedWhere\":\"OK\"}");
             HandleDropOnOK(item);
         }
         else if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneScan, Input.mousePosition, canvas.worldCamera))
         {
+            LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Antivirus file dropped\",\"file\":\"" + item.gameObject.name + "\",\"droppedWhere\":\"Scan\"}");
             HandleDropOnScan(item);
         }
         else if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneNotOK, Input.mousePosition, canvas.worldCamera))
         {
+            LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Antivirus file dropped\",\"file\":\"" + item.gameObject.name + "\",\"droppedWhere\":\"NotOK\"}");
             HandleDropOnNotOK(item);
         }
         else
         {
+            LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Antivirus file dropped\",\"file\":\"" + item.gameObject.name + "\",\"droppedWhere\":\"ReturnToSource\"}");
             ReturnToSource(item);
         }
 

@@ -754,22 +754,14 @@ MonoBehaviour:
       jim tato opr\xE1vn\u011Bn\xED a rad\u011Bji je hned odinstaluj."
     m_Metadata:
       m_Items: []
-  - m_Id: 53971016875802624
-    m_Localized: HTTP
-    m_Metadata:
-      m_Items: []
   - m_Id: 53971016900968448
-    m_Localized: "Ve\u0159ejna Wi-Fi nen\xED v\u017Edycky bezpe\u010Dn\xE1\nBez HTTPS
-      mohou \xFAto\u010Dn\xEDci vid\u011Bt tvou aktivitu\nNezad\xE1vej citliv\xE9
-      informace p\u0159es ve\u0159ejnou Wi-Fi"
+    m_Localized: "Ve\u0159ejna Wi-Fi nen\xED v\u017Edycky bezpe\u010Dn\xE1\n\xDAto\u010Dn\xEDci
+      mohou vid\u011Bt tvou aktivitu\nNezad\xE1vej citliv\xE9 informace p\u0159es
+      ve\u0159ejnou Wi-Fi"
     m_Metadata:
       m_Items: []
   - m_Id: 53971016938717184
     m_Localized: Kamera
-    m_Metadata:
-      m_Items: []
-  - m_Id: 53971016963883008
-    m_Localized: HTTPS
     m_Metadata:
       m_Items: []
   - m_Id: 53971016993243136
@@ -909,15 +901,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53972850579374080
-    m_Localized: "T\u0159et\xED strany"
+    m_Localized: "Reklamn\xED &\nT\u0159et\xEDch stran"
     m_Metadata:
       m_Items: []
   - m_Id: 53972850604539904
-    m_Localized: "Funk\u010Dn\xED"
+    m_Localized: "Funk\u010Dn\xED &\nNezbytn\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 53972850633900032
-    m_Localized: "Analytick\xE9"
+    m_Localized: "Analytick\xE9 &\nV\xFDkonnostn\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 53972850663260160
@@ -937,11 +929,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53972850763923456
-    m_Localized: "T\u0159et\xED strany"
+    m_Localized: "Reklamn\xED &\nT\u0159et\xEDch stran"
     m_Metadata:
       m_Items: []
   - m_Id: 53972850797477888
-    m_Localized: "Funk\u010Dn\xED"
+    m_Localized: "Funk\u010Dn\xED &\nNezbytn\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 53972850822643712
@@ -949,7 +941,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53972850852003840
-    m_Localized: "Analytick\xE9"
+    m_Localized: "Analytick\xE9 &\nV\xFDkonnostn\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 53972930682191872

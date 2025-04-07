@@ -926,26 +926,17 @@ MonoBehaviour:
       them.'
     m_Metadata:
       m_Items: []
-  - m_Id: 53971016875802624
-    m_Localized: HTTP
-    m_Metadata:
-      m_Items: []
   - m_Id: 53971016900968448
     m_Localized: 'Public Wi-Fi isn''t always safe
 
-      Without HTTPS, attackers
-      can see your browsing
+      Attackers can see your browsing
+      activity
 
-      Do not enter sensitive information over public
-      Wi-Fi'
+      Do not enter sensitive information over public Wi-Fi'
     m_Metadata:
       m_Items: []
   - m_Id: 53971016938717184
     m_Localized: Camera
-    m_Metadata:
-      m_Items: []
-  - m_Id: 53971016963883008
-    m_Localized: HTTPS
     m_Metadata:
       m_Items: []
   - m_Id: 53971016993243136
@@ -1103,15 +1094,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53972850579374080
-    m_Localized: Third-party
+    m_Localized: 'Advertising &
+
+      Third-party'
     m_Metadata:
       m_Items: []
   - m_Id: 53972850604539904
-    m_Localized: Functional
+    m_Localized: 'Functional &
+
+      Necessary'
     m_Metadata:
       m_Items: []
   - m_Id: 53972850633900032
-    m_Localized: Analytics
+    m_Localized: 'Analytics &
+
+      Performance'
     m_Metadata:
       m_Items: []
   - m_Id: 53972850663260160
@@ -1131,11 +1128,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53972850763923456
-    m_Localized: Third-party
+    m_Localized: 'Advertising &
+
+      Third-party'
     m_Metadata:
       m_Items: []
   - m_Id: 53972850797477888
-    m_Localized: Functional
+    m_Localized: 'Functional &
+
+      Necessary'
     m_Metadata:
       m_Items: []
   - m_Id: 53972850822643712
@@ -1143,7 +1144,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53972850852003840
-    m_Localized: Analytics
+    m_Localized: 'Analytics &
+
+      Performance'
     m_Metadata:
       m_Items: []
   - m_Id: 53972930682191872
