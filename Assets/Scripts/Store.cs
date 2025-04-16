@@ -21,8 +21,8 @@ public class Store : MonoBehaviour
         true,  // Phishing
         true,  // Cookies
         true,  // Phone
-        false, // AI
-        false, // Passwords
+        true, // AI
+        true, // Passwords
         false  // TFA
     };
 

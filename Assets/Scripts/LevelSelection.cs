@@ -42,6 +42,7 @@ public class LevelSelection : MonoBehaviour
                 break;
             case "Encryption-1":
                 Store.Instance.quizToLoad = Store.Quiz.Passwords;
+                SceneManager.LoadScene("Passwords_Presentation");
                 break;
             case "Phone-1":
                 Store.Instance.quizToLoad = Store.Quiz.Phone;
@@ -60,6 +61,7 @@ public class LevelSelection : MonoBehaviour
                 break;
             case "Encryption-2":
                 Store.Instance.quizToLoad = Store.Quiz.TFA;
+                SceneManager.LoadScene("TFA_Presentation");
                 break;
             default:
                 throw new System.Exception("Unknown level: " + level);
