@@ -49,7 +49,7 @@ public class PasswordsMinigameStudent : MonoBehaviour
                     isWalking = true;
                     GoToLocation(WalkerPoints[2].position, true).OnUpdate(() =>
                     {
-                        if (coneOfView != null || !coneOfView.gameObject.activeSelf) return;
+                        if (coneOfView == null || !coneOfView.gameObject.activeSelf) return;
                         coneOfView.rotation = Quaternion.Euler(0, 0, GetAngleToPlayer());
                     }).OnComplete(PlayAnimation);
                     break;
