@@ -2385,7 +2385,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "V\xEDcefaktorov\xE9\nov\u011B\u0159ov\xE1n\xED"
+  m_text: "Dvoufaktorov\xE9\nov\u011B\u0159ov\xE1n\xED"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4df05822f15a2584f9901b75eb26ebe2, type: 2}
   m_sharedMaterial: {fileID: -628191379978384950, guid: 4df05822f15a2584f9901b75eb26ebe2,
@@ -2413,7 +2413,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
+  m_fontSize: 189.3
   m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 1
