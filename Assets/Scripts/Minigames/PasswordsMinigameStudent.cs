@@ -17,7 +17,6 @@ public class PasswordsMinigameStudent : MonoBehaviour
     private bool isWalking = false;
     private float lookAtDefault;
     private float lookLengthDefault;
-    private float lookingOnPlayerLength = .2f;
     private float timeOfOneStep = .2f;
     private float lastStepTime;
     private int animationStep = 0;

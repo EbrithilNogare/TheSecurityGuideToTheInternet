@@ -17,13 +17,13 @@ public class Store : MonoBehaviour
     [NonSerialized]
     public bool[] levelUnlocked = new[] {
         true,  // Malware
-        false, // Firewall
+        true,  // Firewall
         true,  // Phishing
         true,  // Cookies
         true,  // Phone
-        true, // AI
-        true, // Passwords
-        false  // TFA
+        true,  // AI
+        true,  // Passwords
+        true   // TFA
     };
 
     [NonSerialized] public Quiz quizToLoad = Quiz.None;

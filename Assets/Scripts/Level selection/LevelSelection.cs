@@ -54,6 +54,7 @@ public class LevelSelection : MonoBehaviour
                 break;
             case "Malware-2":
                 Store.Instance.quizToLoad = Store.Quiz.Firewall;
+                SceneManager.LoadScene("Firewall_Presentation");
                 break;
             case "Privacy-2":
                 Store.Instance.quizToLoad = Store.Quiz.Cookies;
