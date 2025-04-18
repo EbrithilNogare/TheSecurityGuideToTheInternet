@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Presentations/TFA_Presentation.unity
     guid: 51d18f0c0bea96e43aad9c9be754c4eb
   - enabled: 1
+    path: Assets/Scenes/Presentations/Firewall_Presentation.unity
+    guid: 683586a02f1187e43a2323370b4bad4b
+  - enabled: 1
     path: Assets/Scenes/MiniGames/Antivirus.unity
     guid: ff8c954adebcbc942a3bb53c83c44a63
   - enabled: 1
