@@ -7519,10 +7519,68 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1541777097}
     m_Modifications:
+    - target: {fileID: 512648947479978629, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3800453124221224968, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: m_text
+      value: "Krom\u011B 2FA kter\xE9 m\xE1 dv\u011B f\xE1ze, lze m\xEDt u velmi
+        citliv\xEDch \xFA\u010Dtu i f\xE1z\xED v\xEDce, pak se jedn\xE1 o MFA.\nPoj\u010F
+        si vyzkou\u0161et v\xEDcero mo\u017En\xFDch typ\u016F authentifikace.\nN\xE1sleduj
+        p\u0159ihla\u0161ovac\xED pokyny na obrazovce monitoru."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1425.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 126.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 752.675
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -103.285
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707725404666012524, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5987278262195784450, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
       propertyPath: minigame
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191862427478248743, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1717.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191862427478248743, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 206.57
       objectReference: {fileID: 0}
     - target: {fileID: 6750237185935178934, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
