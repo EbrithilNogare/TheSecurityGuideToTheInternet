@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &41733290
 RectTransform:
   m_ObjectHideFlags: 0
@@ -180,8 +180,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "English Alphabet:\nABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz\n\nCzech
-    Alphabet:\nA\xC1BC\u010CD\u010EE\xC9\u011AFGHCHI\xCDJKLMN\u0147O\xD3PQR\u0158S\u0160T\u0164U\xDA\u016EVWXY\xDDZ\u017D\r\na\xE1bc\u010Dd\u010Fe\xE9\u011Bfghchi\xEDjklmn\u0148o\xF3pqr\u0159s\u0161t\u0165u\xFA\u016Fvwxy\xFDz\u017E\n\nNumbers
-    and chars:\n0123456789+-()=~`'\";,./|?!><:{}[]@#$%^&*()_\n\nUsed:\n!\"#$&'(),-./012345678:<=>?ABCDEFGHIJKLMNOPQRSTUVWYZ[]_abcdefghijklmnopqrstuvwxyz\xCD\xDA\xE1\xE9\xED\xF3\xFA\xFD\u010C\u010D\u010F\u011A\u011B\u0148\u0158\u0159\u0160\u0161\u0165\u016F\u017D\u017E\u2019"
+    Alphabet:\nA\xC1BC\u010CD\u010EE\xC9\u011AFGHCHI\xCDJKLMN\u0147O\xD3PQR\u0158S\u0160T\u0164U\xDA\u016EVWXY\xDDZ\u017D\r\na\xE1bc\u010Dd\u010Fe\xE9\u011Bfghchi\xEDjklmn\u0148o\xF3pqr\u0159s\u0161t\u0165u\xFA\u016Fvwxy\xFDz\u017E\n\nSlovak
+    Alphabet:\na\xE1\xE4bc\u010Dd\u010Fe\xE9fghchi\xEDjkl\u013E\u013Amn\u0148o\xF3\xF4pqr\u0155s\u0161t\u0165u\xFAvwxy\xFDz\u017EA\xC1\xC4BC\u010CD\u010EE\xC9FGHCHI\xCDJKL\u013D\u0139MN\u0147O\xD3\xD4PQR\u0154S\u0160T\u0164U\xDAVWXY\xDDZ\u017D\n\nNumbers
+    and chars:\n0123456789+-()=~`'\";,./|?!><:{}[]@#$%^&*()_\\\uFFFD\n\nUsed:\n\t\n
+    !\"#$&'(),-./012345678:<=>?ABCDEFGHIJKLMNOPQRSTUVWYZ[]_abcdefghijklmnopqrstuvwxyz\xDA\xE1\xE9\xED\xF3\xFA\xFD\u010C\u010D\u010F\u011A\u011B\u0148\u0158\u0159\u0160\u0161\u0165\u016F\u017D\u017E\u2019"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4df05822f15a2584f9901b75eb26ebe2, type: 2}
   m_sharedMaterial: {fileID: -628191379978384950, guid: 4df05822f15a2584f9901b75eb26ebe2,
@@ -209,8 +211,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5776,6 +5778,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599967392996668711, guid: 0043b88c62df48b4eaaff96add11595e,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599967392996668711, guid: 0043b88c62df48b4eaaff96add11595e,
+        type: 3}
+      propertyPath: m_LineType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599967392996668711, guid: 0043b88c62df48b4eaaff96add11595e,
+        type: 3}
+      propertyPath: m_ContentType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599967392996668711, guid: 0043b88c62df48b4eaaff96add11595e,
+        type: 3}
+      propertyPath: m_KeyboardType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599967392996668711, guid: 0043b88c62df48b4eaaff96add11595e,
+        type: 3}
+      propertyPath: m_CharacterValidation
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6599967392996668711, guid: 0043b88c62df48b4eaaff96add11595e,
         type: 3}
