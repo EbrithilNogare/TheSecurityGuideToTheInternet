@@ -9,7 +9,7 @@
 #    - Set Workflow permissions to "Read and write permissions"
 #    - Check "Allow GitHub Actions to create and approve pull requests"
 #    - Save
-# 3️⃣ Copy this file into repo as: .github/workflows/buildGame.yml 
+# 3️⃣ Copy this file into repo as: .github/workflows/buildGame.yml
 # 4️⃣ Check all red dots 🔴 in this file to configure it properly to your needs
 # 5️⃣ If you want a webpage with WebGL, you need to set up GitHub Pages AFTER first run
 #    - Go here: https://github.com/{username}/{repo}/settings/pages
@@ -19,7 +19,7 @@
 
 # This setup will give you:
 # - Artifact (zip file) of your build (this one can be uploaded to Itch.io manually) that you find in Actions where you select the last run, and on the bottom will be artifacts
-# - Web page with your game: https://{username}.github.io/{repo}/ 
+# - Web page with your game: https://{username}.github.io/{repo}/
 # - GitHub release with latest artifacts
 # - Itchio auto-deploy
 
@@ -100,7 +100,6 @@ jobs:
           buildName: ${{ github.event.repository.name }}
           versioning: Semantic
           targetPlatform: ${{ matrix.targetPlatform }}
-          androidTargetSdkVersion: AndroidApiLevel24
 
       - name: Get disk space usage
         run: df -ah /
