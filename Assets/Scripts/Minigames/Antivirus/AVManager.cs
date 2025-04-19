@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class AVManager : MonoBehaviour
@@ -24,17 +25,19 @@ public class AVManager : MonoBehaviour
 
     public void EvaluateDrop(AVFileStructure item)
     {
-        if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneOK, Input.mousePosition, canvas.worldCamera))
+        Vector2 screenPosition = Mouse.current.position.ReadValue();
+
+        if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneOK, screenPosition, canvas.worldCamera))
         {
             LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Antivirus file dropped\",\"file\":\"" + item.gameObject.name + "\",\"droppedWhere\":\"OK\"}");
             HandleDropOnOK(item);
         }
-        else if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneScan, Input.mousePosition, canvas.worldCamera))
+        else if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneScan, screenPosition, canvas.worldCamera))
         {
             LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Antivirus file dropped\",\"file\":\"" + item.gameObject.name + "\",\"droppedWhere\":\"Scan\"}");
             HandleDropOnScan(item);
         }
-        else if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneNotOK, Input.mousePosition, canvas.worldCamera))
+        else if (RectTransformUtility.RectangleContainsScreenPoint(dropZoneNotOK, screenPosition, canvas.worldCamera))
         {
             LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Antivirus file dropped\",\"file\":\"" + item.gameObject.name + "\",\"droppedWhere\":\"NotOK\"}");
             HandleDropOnNotOK(item);

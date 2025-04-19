@@ -60,6 +60,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MiniGames/Passwords.unity
     guid: 8f359890975dfc44f9e0c4aa5b296bd5
   - enabled: 1
+    path: Assets/Scenes/MiniGames/TFA.unity
+    guid: a3ebf9408a7b9b24b8e562cceb768bc2
+  - enabled: 1
     path: Assets/Scenes/Quizes/Quiz.unity
     guid: f43ca7fdbcc96204bb2893042e3bb681
   m_configObjects:

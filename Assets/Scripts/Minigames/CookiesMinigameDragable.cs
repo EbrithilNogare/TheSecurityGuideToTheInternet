@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class CookiesMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -55,7 +56,9 @@ public class CookiesMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragHa
 
     private void EvaluateDrop()
     {
-        if (RectTransformUtility.RectangleContainsScreenPoint(dropZone, Input.mousePosition, canvas.worldCamera))
+        Vector2 screenPosition = Mouse.current.position.ReadValue();
+
+        if (RectTransformUtility.RectangleContainsScreenPoint(dropZone, screenPosition, canvas.worldCamera))
         {
             // droped in drop zone
             rectTransform.localPosition = originalPosition;

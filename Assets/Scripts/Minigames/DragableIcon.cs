@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class DragableIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -40,7 +41,9 @@ public class DragableIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
 
-        if (trashDropZone.gameObject.activeSelf && RectTransformUtility.RectangleContainsScreenPoint(trashDropZone, Input.mousePosition, Camera.main))
+        Vector2 screenPosition = Mouse.current.position.ReadValue();
+
+        if (trashDropZone.gameObject.activeSelf && RectTransformUtility.RectangleContainsScreenPoint(trashDropZone, screenPosition, Camera.main))
         {
             gameObject.SetActive(false);
         }

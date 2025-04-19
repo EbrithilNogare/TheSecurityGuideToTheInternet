@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class PhishingMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -40,10 +41,10 @@ public class PhishingMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragH
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
 
-        // drop into website container
-        if (RectTransformUtility.RectangleContainsScreenPoint(websiteContainer, Input.mousePosition, canvas.worldCamera))
-        {
+        Vector2 screenPosition = Mouse.current.position.ReadValue();
 
+        if (RectTransformUtility.RectangleContainsScreenPoint(websiteContainer, screenPosition, canvas.worldCamera))
+        {
             if (isOriginal)
             {
                 var copyForContainer = Instantiate(gameObject, websiteContainer, true);
@@ -66,8 +67,7 @@ public class PhishingMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragH
             return;
         }
 
-        // drop into trash
-        if (RectTransformUtility.RectangleContainsScreenPoint(trashDropZone, Input.mousePosition, canvas.worldCamera))
+        if (RectTransformUtility.RectangleContainsScreenPoint(trashDropZone, screenPosition, canvas.worldCamera))
         {
             if (isOriginal)
             {
@@ -81,15 +81,7 @@ public class PhishingMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragH
             return;
         }
 
-        // droped somewhere else
-        if (isOriginal)
-        {
-            rectTransform.localPosition = originalPosition;
-        }
-        else
-        {
-            rectTransform.localPosition = originalPosition;
-        }
+        rectTransform.localPosition = originalPosition;
         phishingMinigameManager.EvaluateTemplate();
     }
 }
