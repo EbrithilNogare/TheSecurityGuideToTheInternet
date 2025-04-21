@@ -28,7 +28,7 @@ public class AIMinigameCensorable : MonoBehaviour
         animationInProgress = true;
 
         string text = fieldWithSensitiveData.name;
-        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Censored field\",\"filed\":\"" + text + "\",\"isCensored\":" + (!isCensored).ToString() + "}");
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Censored field\",\"filed\":\"" + text + "\",\"isCensored\":" + (!isCensored).ToString().ToLower() + "}");
 
         if (isCensored)
         {

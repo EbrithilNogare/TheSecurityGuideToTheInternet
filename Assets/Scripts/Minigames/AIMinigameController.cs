@@ -51,7 +51,7 @@ public class AIMinigameController : MonoBehaviour
             }
         }
 
-        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Submit button pressed\",\"visibleValid\":" + visibleValid.ToString() + ",\"censoredValid\":" + censoredValid.ToString() + "}");
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Submit button pressed\",\"visibleValid\":" + visibleValid.ToString().ToLower() + ",\"censoredValid\":" + censoredValid.ToString().ToLower() + "}");
 
         if (visibleValid)
         {

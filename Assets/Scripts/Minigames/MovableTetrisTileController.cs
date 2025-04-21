@@ -110,7 +110,7 @@ public class MovableTetrisTileController : MonoBehaviour, IBeginDragHandler, IDr
         LoggingService.Log(LoggingService.LogCategory.Minigame, "{" +
                 "\"message\":\"Phone minigame piece dropped\"," +
                 "\"piece\":\"" + pieceType.ToString() + "\"," +
-                "\"isValidlyOverBoard\":" + isValidlyOverBoard.ToString() + "," +
+                "\"isValidlyOverBoard\":" + isValidlyOverBoard.ToString().ToLower() + "," +
                 "\"currentLevelName\":\"" + phoneMinigameController.currentLevel.levelNameTextKey + "\"" +
             "}");
 
