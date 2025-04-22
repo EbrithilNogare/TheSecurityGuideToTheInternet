@@ -258,7 +258,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779425356840960
-    m_Localized: "Je jen pro velk\xE9 spole\u010Dnosti a  servery"
+    m_Localized: "Je jen pro velk\xE9 spole\u010Dnosti a servery"
     m_Metadata:
       m_Items: []
   - m_Id: 1779435033100288
@@ -282,23 +282,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779807424380928
-    m_Localized: "P\u0159ed \u010D\xEDm v\xE1s firewall u\u017E neochr\xE1n\xED?"
+    m_Localized: "Jak vypad\xE1 jedno pravidlo firewallu?"
     m_Metadata:
       m_Items: []
   - m_Id: 1779840118980608
-    m_Localized: "Nezabr\xE1n\xED sta\u017Een\xED malwaru"
+    m_Localized: 'Pokud IP=192.168.0.9, port=80 a protokol=TCP -> povolit '
     m_Metadata:
       m_Items: []
   - m_Id: 1779846309773312
-    m_Localized: "Neochr\xE1n\xED v\xE1s mimo pracovn\xED dobu"
+    m_Localized: "Pokud ${data} obsahuj\xED virus -> zahodit"
     m_Metadata:
       m_Items: []
   - m_Id: 1779855868592128
-    m_Localized: "P\u0159ed sn\xED\u017Een\xEDm v\xFDkonu po\u010D\xEDta\u010De"
+    m_Localized: "Pokud heslo po\u017Eadavku je validn\xED -> povolit"
     m_Metadata:
       m_Items: []
   - m_Id: 1780033778384896
-    m_Localized: "Kter\xFD obr\xE1zek ukazuje firewall v akci?"
+    m_Localized: "Kter\xFD obr\xE1zek zn\xE1zor\u0148uje firewall?"
     m_Metadata:
       m_Items: []
   - m_Id: 1780077776633856
@@ -567,12 +567,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1784769206321152
-    m_Localized: "Vytv\xE1\u0159et a bezpe\u010Dn\u011B ukl\xE1dat siln\xE1, jedine\u010Dn\xE1
-      hesla"
+    m_Localized: "Vytv\xE1\u0159et a bezpe\u010Dn\u011B ukl\xE1dat siln\xE1 hesla"
     m_Metadata:
       m_Items: []
   - m_Id: 1784774201737216
-    m_Localized: "H\xE1dat hesla pro zapomenut\xE9 \xFA\u010Dty"
+    m_Localized: "Obnovovat zapomenut\xE1 hesla"
     m_Metadata:
       m_Items: []
   - m_Id: 1784782791671808
@@ -720,8 +719,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786803464732672
-    m_Localized: "Kter\xFD z formul\xE1\u0159\u016F n\xED\u017Ee pou\u017E\xEDv\xE1
-      2FA?"
+    m_Localized: "Kter\xFD obr\xE1zek zn\xE1zor\u0148uje MFA?"
     m_Metadata:
       m_Items: []
   references:

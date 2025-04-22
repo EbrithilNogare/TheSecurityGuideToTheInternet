@@ -59,7 +59,7 @@ public class QuizManager : MonoBehaviour
     private bool allQuizesMode = false;
     private int allQuizesModeIndex = 0;
     private int currentAnswersOffset = 0;
-    private Store.Quiz[] allQuizesList = new Store.Quiz[] { Store.Quiz.Phishing, Store.Quiz.Malware, Store.Quiz.Cookies, Store.Quiz.Phone };
+    private Store.Quiz[] allQuizesList = new Store.Quiz[] { Store.Quiz.Firewall, Store.Quiz.AI, Store.Quiz.Passwords, Store.Quiz.TFA };
     //private Store.Quiz[] allQuizesList = new Store.Quiz[] { Store.Quiz.Malware, Store.Quiz.Firewall, Store.Quiz.Phishing, Store.Quiz.Cookies, Store.Quiz.Phone, Store.Quiz.AI, Store.Quiz.Passwords, Store.Quiz.TFA };
 
     void Start()

@@ -156,23 +156,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779807424380928
-    m_Localized: What does a firewall not protect you from?
+    m_Localized: What does a single firewall rule looks like?
     m_Metadata:
       m_Items: []
   - m_Id: 1779840118980608
-    m_Localized: It cannot prevent malware from being downloaded
+    m_Localized: If IP=192.168.0.9, port=80, and protocol=TCP -> allow
     m_Metadata:
       m_Items: []
   - m_Id: 1779846309773312
-    m_Localized: It can only work during office hours
+    m_Localized: If ${data} contains a virus -> drop
     m_Metadata:
       m_Items: []
   - m_Id: 1779855868592128
-    m_Localized: It decreases the speed of your computer
+    m_Localized: If the request password is valid -> allow
     m_Metadata:
       m_Items: []
   - m_Id: 1780033778384896
-    m_Localized: Which image shows a firewall in action?
+    m_Localized: Which image represents a firewall?
     m_Metadata:
       m_Items: []
   - m_Id: 1780077776633856
@@ -428,7 +428,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1784774201737216
-    m_Localized: To guess passwords for forgotten accounts
+    m_Localized: Reset forgotten passwords
     m_Metadata:
       m_Items: []
   - m_Id: 1784782791671808
@@ -567,7 +567,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786803464732672
-    m_Localized: Which of the forms below uses 2FA?
+    m_Localized: Which picture shows usage of MFA?
     m_Metadata:
       m_Items: []
   - m_Id: 1805767444037632
