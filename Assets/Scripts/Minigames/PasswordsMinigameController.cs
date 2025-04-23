@@ -18,6 +18,10 @@ public class PasswordsMinigameController : MonoBehaviour
     public Sprite strikeOn;
     public Color strikeOffColor;
     public Color strikeOnColor;
+    public GameObject submitButton;
+    public Color strikeColorOfCone;
+    public Color defaultColorOfCone;
+    public HoldableButton writingButton;
 
     private const float coughtCooldownDuration = 1f;
 
@@ -73,7 +77,8 @@ public class PasswordsMinigameController : MonoBehaviour
         {
             isWriting = false;
             passwordFilledSuccesfully = true;
-            FinishMinigame();
+            writingButton.enabled = false;
+            submitButton.SetActive(true);
         }
     }
 
@@ -97,9 +102,12 @@ public class PasswordsMinigameController : MonoBehaviour
             var rotation = cone.rotation.eulerAngles.z;
             var diff = Mathf.Abs(angle - rotation);
 
-            if (diff < 10f)
+            if (diff < 7f)
             {
                 wasCought = true;
+                var coneImage = cone.GetComponent<Image>();
+                coneImage.color = strikeColorOfCone;
+                coneImage.DOColor(defaultColorOfCone, 0.5f);
                 //Debug.DrawLine(cone.position, player.position, Color.red);
                 break;
             }

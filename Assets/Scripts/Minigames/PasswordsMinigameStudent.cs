@@ -76,6 +76,12 @@ public class PasswordsMinigameStudent : MonoBehaviour
             }
     }
 
+    void OnDisable()
+    {
+        DOTween.Kill(this);
+        DOTween.Kill(coneOfView);
+    }
+
     void Update()
     {
         WalkingAnimation();
@@ -100,18 +106,12 @@ public class PasswordsMinigameStudent : MonoBehaviour
 
     private void LookAtPlayer()
     {
-        if (coneOfView == null || !coneOfView.gameObject.activeSelf)
-            return;
-
         float endAngle = GetAngleToPlayer();
         coneOfView.DOLocalRotate(new Vector3(0, 0, endAngle), turningSpeed).SetEase(Ease.InOutCubic).SetSpeedBased(true).OnComplete(PlayAnimation);
     }
 
     private void LookBack(bool hasContinue)
     {
-        if (coneOfView == null || !coneOfView.gameObject.activeSelf)
-            return;
-
         float endAngle = lookAtDefault;
         coneOfView.DORotate(new Vector3(0, 0, endAngle), turningSpeed * 2f).SetEase(Ease.InOutCubic).SetSpeedBased(true).OnComplete(hasContinue ? PlayAnimation : () => { });
     }

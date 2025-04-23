@@ -206,7 +206,7 @@ public class QuizManager : MonoBehaviour
         bool isCorrectAnswer = realIndex == CORRECT_ANSWER_INDEX;
         correctAnswers += isCorrectAnswer ? 1 : 0;
 
-        LoggingService.Log(LoggingService.LogCategory.Quiz, $"{{category:{currentQuizCategory},questionIndex:{currentQuestionIndex},answerIndex:{realIndex},isCorrectAnswer:{isCorrectAnswer},timeToRespond:{Mathf.Floor(timeToRespond)}}}");
+        LoggingService.Log(LoggingService.LogCategory.Quiz, $"{{category:{currentQuizCategory},questionIndex:{currentQuestionIndex},answerIndex:{realIndex},isCorrectAnswer:{isCorrectAnswer.ToString().ToLower()},timeToRespond:{Mathf.Floor(timeToRespond)}}}");
 
         GameObject answerButton = currentQuestion.isVertialLayouot
             ? verticalQuestionGameObjects[answerIndex]
