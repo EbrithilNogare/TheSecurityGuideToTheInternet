@@ -1268,6 +1268,190 @@ MonoBehaviour:
     m_Key: Phone/Canvas/Center board/Submit group/Full/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 66648543167545344
+    m_Key: AI/Canvas/Document/Personal info/AddressLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648557642088448
+    m_Key: AI/Canvas/Document/Personal info/AddressValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648569600049152
+    m_Key: AI/Canvas/Document/Personal info/CompanyLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648600197496832
+    m_Key: AI/Canvas/Document/Table/Name column/DeliveryAddressLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648626101518336
+    m_Key: AI/Canvas/Document/Table/Name column/DeliveryAddressValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648692816117760
+    m_Key: AI/Canvas/Document/Table/Discount column/DiscountHeader
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648709576556544
+    m_Key: AI/Canvas/Document/Personal info/Expiration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648719307341824
+    m_Key: AI/Canvas/Document/Table/Name column/FeeLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648735501549568
+    m_Key: AI/Canvas/Document/Invoice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648750944976896
+    m_Key: AI/Canvas/SummaryScreen/Leaked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648792086904832
+    m_Key: AI/Canvas/Document/Table/Name column/NameHeader
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648803029843968
+    m_Key: AI/Canvas/Document/Personal info/NameLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648818792038400
+    m_Key: AI/Canvas/Document/Personal info/NameValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648831978930176
+    m_Key: AI/Canvas/Document/Table/Name column/OrderItem1Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66648856045846528
+    m_Key: AI/Canvas/Document/Table/Name column/OrderItem2Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649044797915136
+    m_Key: AI/Canvas/Document/Table/Name column/OrderItem2Value
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649063202521088
+    m_Key: AI/Canvas/Document/Table/Name column/OrderItem1Value
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649079010852864
+    m_Key: AI/Canvas/Document/Table/Price column/Price1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649084224372736
+    m_Key: AI/Canvas/Document/Table/Price column/Price2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649092747198464
+    m_Key: AI/Canvas/Document/Table/Price column/Price3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649101135806464
+    m_Key: AI/Canvas/Document/Table/Price column/Price4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649108496809984
+    m_Key: AI/Canvas/Document/Table/Price column/Price5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649119708184576
+    m_Key: AI/Canvas/Document/Table/Price column/PriceHeader
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649131020222464
+    m_Key: AI/Canvas/Document/Personal info/Role
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649146199408640
+    m_Key: AI/Canvas/SummaryScreen/Safe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649158698434560
+    m_Key: AI/Canvas/Document/Table/Name column/StudentDiscountLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649167338700800
+    m_Key: AI/Canvas/Document/Table/Name column/StudentDiscountValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649178235502592
+    m_Key: AI/Canvas/Document/SumCount
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649190759694336
+    m_Key: AI/Canvas/Document/SumLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649216726630400
+    m_Key: AI/Canvas/SummaryScreen/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649224532230144
+    m_Key: AI/Canvas/Prompt/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649231150841856
+    m_Key: AI/Canvas/Response ok/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649242945224704
+    m_Key: AI/Canvas/Top title/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649294983954432
+    m_Key: AI/Canvas/Submit/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649315737370624
+    m_Key: AI/Canvas/Response bad/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649324746735616
+    m_Key: AI/Canvas/Tutorial/Tutorial dialog/Tutorial textbox/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649338483081216
+    m_Key: AI/Canvas/SummaryScreen/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649362667438080
+    m_Key: AI/Canvas/Document/Personal info/CompanyValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649410679635968
+    m_Key: AI/Canvas/Document/Table/Discount column/Discount1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649428459290624
+    m_Key: AI/Canvas/Document/Table/Discount column/Discount5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649428501233664
+    m_Key: AI/Canvas/Document/Table/Discount column/Discount3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649428551565312
+    m_Key: AI/Canvas/Document/Table/Discount column/Discount2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66649428593508352
+    m_Key: AI/Canvas/Document/Table/Discount column/Discount4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66675311349891072
+    m_Key: Settings/Canvas/Reset/reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66675823042396160
+    m_Key: Settings/Canvas/Confirm/confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66676187313504256
+    m_Key: Settings/Canvas/Reset done/done
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
