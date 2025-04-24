@@ -8,60 +8,45 @@ public class TFAMinigameController : MonoBehaviour
 {
     [Header("References")]
     public TextMeshProUGUI clockTime;
-    public GameObject phoneLockScreen;
-    public GameObject phoneAppScreen;
-    public GameObject phoneSmsScreen;
-    public GameObject phoneLocationScreen;
-    public TextMeshProUGUI phoneSmsValue;
+    public GameObject phoneLockScreen, phoneAppScreen, phoneSmsScreen, phoneLocationScreen;
+    public TextMeshProUGUI phoneSmsValue, appTimeout, appCodeField, laptopFieldValue;
     public Button biometricButton;
-    public TextMeshProUGUI appTimeout;
-    public Image appTimeoutClock;
-    public TextMeshProUGUI appCodeField;
-    public Transform hwKey;
-    public GameObject hwKeyDropZone;
-    public Transform keyDropZoneParent;
-    public TextMeshProUGUI laptopFieldValue;
-    public GameObject laptopFieldObject;
-    public Image progressBar;
-    public GameObject laptopSubmit;
-    public GameObject laptopLabelPassword;
-    public GameObject laptopLabelAppCode;
-    public GameObject laptopLabelHWKey;
-    public GameObject laptopLabelSMS;
-    public GameObject laptopLabelLocation;
-    public GameObject laptopLabelDone;
+    public Image appTimeoutClock, progressBar;
+    public Transform hwKey, keyDropZoneParent;
+    public GameObject hwKeyDropZone, laptopFieldObject, laptopSubmit;
+    public GameObject laptopLabelPassword, laptopLabelAppCode, laptopLabelHWKey, laptopLabelSMS, laptopLabelLocation, laptopLabelDone, laptopLabelFail;
 
+    const float appTimeoutDuration = 15f;
+    const int numberOfPhases = 5;
 
-    private const float appTimeoutDuration = 15f;
-    private const int numberOfPhases = 5;
-
-    private string appCode = "";
-    private string smsCode;
-    private float appTime = 16f;
-    private string laptopField = "";
-    private int phaseOfTheGame = 0;
-
+    string appCode = "", smsCode, laptopField = "";
+    float appTime = 16f;
+    int phase = 0;
+    Vector3 originalKeyPos;
+    Transform originalKeyParent;
 
     void Start()
     {
         smsCode = Random.Range(1000, 9999).ToString();
         phoneSmsValue.text = smsCode;
 
-        progressBar.fillAmount = 1 / (float)numberOfPhases;
-
+        progressBar.fillAmount = 1f / numberOfPhases;
+        originalKeyPos = hwKey.position;
+        originalKeyParent = hwKey.parent;
         hwKeyDropZone.SetActive(false);
     }
 
     void Update()
     {
         clockTime.text = System.DateTime.Now.ToString("H:mm");
-
         float newTime = Time.fixedTime % appTimeoutDuration;
+
         if (appTime > newTime)
         {
             appCode = Random.Range(1000, 9999).ToString();
             appCodeField.text = appCode;
         }
+
         appTime = newTime;
         appTimeout.text = (15 - (int)appTime).ToString();
         appTimeoutClock.fillAmount = 1f - newTime / appTimeoutDuration;
@@ -69,28 +54,31 @@ public class TFAMinigameController : MonoBehaviour
 
     public void PhoneUnlocked()
     {
-        Debug.Log("Phone unlocked");
         biometricButton.interactable = false;
+        var pos = phoneLockScreen.transform.localPosition;
 
         phoneLockScreen.transform.DOLocalMoveY(700, .6f).SetEase(Ease.InQuart).OnComplete(() =>
         {
             phoneLockScreen.SetActive(false);
             phoneAppScreen.SetActive(true);
+            phoneLockScreen.transform.localPosition = pos;
         });
+
+        LogEvent("Phone unlocked");
     }
 
     public void KeyboardPressed(string value)
     {
-        Debug.Log("Key pressed: " + value);
-
         if (value == "Clear")
         {
             laptopField = "";
+            LogEvent("Keyboard clear");
         }
-        else if (value == "Enter" || value == "Submit")
+        else if (value is "Enter" or "Submit")
         {
-            if (CodeIsCorrect(laptopField, phaseOfTheGame))
-                GoToNextPhase();
+            LogEvent("Keyboard submit", laptopField);
+            if (IsCodeCorrect(laptopField, phase)) NextPhase();
+            else FailLogin();
 
             laptopField = "";
         }
@@ -105,107 +93,132 @@ public class TFAMinigameController : MonoBehaviour
         laptopFieldValue.text = laptopField;
     }
 
-    public void PhoneLocationConfirm(bool isItMe)
+    public void PhoneLocationConfirm(bool confirmed)
     {
-        Debug.Log("Phone location confirmed: " + isItMe);
-
-        if (isItMe)
+        LogEvent(confirmed ? "Phone location confirmed" : "Phone location not confirmed");
+        if (confirmed)
         {
-            GoToNextPhase();
+            NextPhase();
         }
         else
         {
-            // todo
+            FailLogin();
         }
     }
 
     public void HWKeyInsert()
     {
-        Debug.Log("HW key inserted");
+        LogEvent("HW key inserted");
 
         hwKeyDropZone.SetActive(false);
-        hwKey.transform.SetParent(keyDropZoneParent);
-        hwKey.DOLocalMoveX(57f, 1f).SetEase(Ease.InOutCubic).OnComplete(() =>
-        {
-            GoToNextPhase();
-        });
+        hwKey.SetParent(keyDropZoneParent);
+        hwKey.DOLocalMoveX(57f, 1f).SetEase(Ease.InOutCubic).OnComplete(NextPhase);
     }
 
-    private bool CodeIsCorrect(string code, int phase)
+    bool IsCodeCorrect(string code, int phase)
     {
+        return phase switch
+        {
+            0 => code == "1234",
+            1 => code == appCode,
+            4 => code == smsCode,
+            _ => false
+        };
+    }
+
+    public void FailLogin()
+    {
+        LogEvent("Login failed");
+
+        SetAllLabels(false);
+        laptopLabelFail.SetActive(true);
+        laptopFieldObject.SetActive(false);
+        laptopSubmit.SetActive(false);
+        phoneAppScreen.SetActive(false);
+        phoneSmsScreen.SetActive(false);
+        phoneLocationScreen.SetActive(false);
+
+        hwKey.SetParent(originalKeyParent);
+        hwKey.position = originalKeyPos;
+
+        phase = -1;
+        DOVirtual.DelayedCall(2, () => { phase = -1; NextPhase(); });
+    }
+
+    public void NextPhase()
+    {
+        phase++;
+        progressBar.DOFillAmount((phase + 1f) / (numberOfPhases + 1), 1f).SetEase(Ease.OutQuart);
+        SetAllLabels(false);
+
         switch (phase)
         {
             case 0:
-                return code == "1234"; // password on sticker note
+                laptopLabelPassword.SetActive(true);
+                phoneLockScreen.SetActive(true);
+                biometricButton.interactable = true;
+                laptopFieldObject.SetActive(true);
+                laptopSubmit.SetActive(true);
+                break;
+
             case 1:
-                return code == appCode;
-            case 2:
-                return false; // hw key
-            case 3:
-                return false; // location
-            case 4:
-                return code == smsCode;
-            default:
-                return false; // finish
-        }
-    }
-
-    public void GoToNextPhase()
-    {
-        phaseOfTheGame++;
-
-        progressBar.DOFillAmount((phaseOfTheGame + 1) / (float)(numberOfPhases + 1), 1f).SetEase(Ease.OutQuart);
-
-        switch (phaseOfTheGame)
-        {
-            case 1: // app code
-                laptopLabelPassword.SetActive(false);
                 laptopLabelAppCode.SetActive(true);
                 break;
-            case 2: // hw key
-                laptopLabelAppCode.SetActive(false);
+
+            case 2:
                 laptopLabelHWKey.SetActive(true);
                 laptopFieldObject.SetActive(false);
                 laptopSubmit.SetActive(false);
-
                 hwKeyDropZone.SetActive(true);
                 break;
-            case 3: // location
-                laptopLabelHWKey.SetActive(false);
-                laptopLabelLocation.SetActive(true);
 
+            case 3:
+                laptopLabelLocation.SetActive(true);
                 phoneAppScreen.SetActive(false);
                 phoneLocationScreen.SetActive(true);
                 break;
-            case 4: // sms code
-                laptopLabelLocation.SetActive(false);
+
+            case 4:
                 laptopLabelSMS.SetActive(true);
                 laptopFieldObject.SetActive(true);
                 laptopSubmit.SetActive(true);
-
                 phoneLocationScreen.SetActive(false);
                 phoneSmsScreen.SetActive(true);
                 break;
-            case 5: // finish
-                laptopLabelSMS.SetActive(false);
+
+            case 5:
                 laptopLabelDone.SetActive(true);
                 laptopFieldObject.SetActive(false);
                 laptopSubmit.SetActive(false);
-
-                FinishMinigame();
+                CompleteGame();
                 break;
         }
     }
 
-    private void FinishMinigame()
+    void CompleteGame()
     {
         int score = 2;
-        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"TFA minigame completed\",\"score\":" + score + "}");
+        LogEvent("TFA minigame completed", score.ToString());
         Store.Instance.minigameStars = score;
-        int scoreForStore = score == 0 ? 0b000 : score == 1 ? 0b100 : 0b110;
-        Store.Instance.SetLevelScore(Store.Level.TFA, scoreForStore);
+        Store.Instance.SetLevelScore(Store.Level.TFA, score == 0 ? 0b000 : score == 1 ? 0b100 : 0b110);
         Store.Instance.quizToLoad = Store.Quiz.TFA;
 
         DOVirtual.DelayedCall(2, () => SceneManager.LoadScene("Quiz"));
+    }
+
+    void SetAllLabels(bool active)
+    {
+        laptopLabelPassword.SetActive(active);
+        laptopLabelAppCode.SetActive(active);
+        laptopLabelHWKey.SetActive(active);
+        laptopLabelSMS.SetActive(active);
+        laptopLabelLocation.SetActive(active);
+        laptopLabelFail.SetActive(active);
+    }
+
+    void LogEvent(string @event, string value = "")
+    {
+        var json = $"{{\"message\":\"TFA minigame event\",\"event\":\"{@event}\"" + (value != "" ? $",\"value\":\"{value}\"" : "") + "}";
+        LoggingService.Log(LoggingService.LogCategory.Minigame, json);
     }
 }
