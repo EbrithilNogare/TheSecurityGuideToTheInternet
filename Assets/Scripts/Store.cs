@@ -12,35 +12,35 @@ public class Store : MonoBehaviour
     public enum Quiz { None = -2, All = -1, Malware = 0, Firewall = 1, Phishing = 2, Cookies = 3, Phone = 4, AI = 5, Passwords = 6, TFA = 7 }
     public enum Level { Malware = 0, Firewall = 1, Phishing = 2, Cookies = 3, Phone = 4, AI = 5, Passwords = 6, TFA = 7 }
 
-    [HideInInspector] public static Store Instance { get; private set; }
 
-    [NonSerialized]
-    public bool[] levelUnlocked = new[] {
-        true,  // Malware
-        true,  // Firewall
-        true,  // Phishing
-        true,  // Cookies
-        true,  // Phone
-        true,  // AI
-        true,  // Passwords
-        true   // TFA
-    };
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
 
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+        Init();
+    }
+
+    #region Cross scene communication
     [NonSerialized] public Quiz quizToLoad = Quiz.None;
     [NonSerialized] public int minigameStars = 0;
     [NonSerialized] public int quizStars = 0;
     [NonSerialized] public int quizScore = 0;
-    [NonSerialized] public int[] levelStars = new int[] { 0b000, 0b000, 0b000, 0b000, 0b000, 0b000, 0b000, 0b000 }; // level, level, quiz;
-    [NonSerialized] public int qualityLevel = 2;
     [NonSerialized] public bool shouldOpenLevelCompletedDialog = false;
+    #endregion
 
-    // Settings - personal data
-    [NonSerialized] private string _personalDataName = "";
-    [NonSerialized] private string _personalDataAge = "";
-    [NonSerialized] private int _personalDataGender = 0;
-    [NonSerialized] private string _personalDataClass = "";
-    [NonSerialized] private string _personalDataRegion = "";
-    [NonSerialized] private bool _personalDataConcent = false;
+    #region Personal data
+    [NonSerialized] private string _personalDataName;
+    [NonSerialized] private string _personalDataAge;
+    [NonSerialized] private int _personalDataGender;
+    [NonSerialized] private string _personalDataClass;
+    [NonSerialized] private string _personalDataRegion;
+    [NonSerialized] private bool _personalDataConcent;
 
     public string PersonalDataName
     {
@@ -98,9 +98,9 @@ public class Store : MonoBehaviour
         _personalDataRegion = PlayerPrefs.GetString("PersonalDataRegion", "");
         _personalDataConcent = PlayerPrefs.GetInt("PersonalDataConcent", 0) == 1;
     }
+    #endregion
 
-    // Tutorial
-
+    #region Tutorial
     [NonSerialized] private bool[] _tutorialDisplayed = new bool[Enum.GetNames(typeof(Level)).Length];
     private void SaveTutorialDisplayed()
     {
@@ -133,45 +133,25 @@ public class Store : MonoBehaviour
         _tutorialDisplayed[(int)level] = true;
         SaveTutorialDisplayed();
     }
+    #endregion
 
-    // Init
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            Init();
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
+    #region Init
+    [HideInInspector] public static Store Instance { get; private set; }
     private void Init()
     {
         LoadPersonalData();
         LoadTutorialDisplayed();
+        LoadLevelSelection();
+
         LoggingService.LogStartGame();
 
-        ApplyQualityLevel(PlayerPrefs.GetInt("QualityLevel", qualityLevel));
-        if (PlayerPrefs.HasKey("LevelUnlocked"))
-        {
-            var levelUnlockedFromPlayerPref = JSON.FromJson<bool>(PlayerPrefs.GetString("LevelUnlocked"));
-            for (int i = 0; i < levelUnlocked.Length; i++)
-            {
-                levelUnlocked[i] |= levelUnlockedFromPlayerPref[i];
-            }
-        }
-        if (PlayerPrefs.HasKey("LevelStars"))
-        {
-            levelStars = JSON.FromJson<int>(PlayerPrefs.GetString("LevelStars"));
-        }
+        ApplyQualityLevel(PlayerPrefs.GetInt("QualityLevel", 2));
     }
+    #endregion
 
-    // Level selection
+    #region Level selection
+    [NonSerialized] public int[] levelStars; // level, level, quiz;
+    [NonSerialized] public bool[] levelUnlocked;
 
     public void SetLevelUnlocked(int level, bool unlocked)
     {
@@ -187,7 +167,41 @@ public class Store : MonoBehaviour
         PlayerPrefs.SetString("LevelStars", JSON.ArrayToJson(levelStars));
     }
 
-    // Quality settings
+    private void LoadLevelSelection()
+    {
+        levelUnlocked = new[] {
+            true,  // Malware
+            true,  // Firewall
+            true,  // Phishing
+            true,  // Cookies
+            true,  // Phone
+            true,  // AI
+            true,  // Passwords
+            true   // TFA
+        };
+
+        if (PlayerPrefs.HasKey("LevelUnlocked"))
+        {
+            var levelUnlockedFromPlayerPref = JSON.FromJson<bool>(PlayerPrefs.GetString("LevelUnlocked"));
+            for (int i = 0; i < levelUnlocked.Length; i++)
+            {
+                levelUnlocked[i] |= levelUnlockedFromPlayerPref[i];
+            }
+        }
+
+        if (PlayerPrefs.HasKey("LevelStars"))
+        {
+            levelStars = JSON.FromJson<int>(PlayerPrefs.GetString("LevelStars"));
+        }
+        else
+        {
+            levelStars = new int[] { 0b000, 0b000, 0b000, 0b000, 0b000, 0b000, 0b000, 0b000 };
+        }
+    }
+    #endregion
+
+    #region Quality settings
+    [NonSerialized] public int qualityLevel;
 
     public void SetQualityLevel(int level)
     {
@@ -217,4 +231,14 @@ public class Store : MonoBehaviour
         }
 
     }
+    #endregion
+
+    #region Player prefs reset
+    public void ResetAllSettingsAndProgress()
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+        Init();
+    }
+    #endregion
 }

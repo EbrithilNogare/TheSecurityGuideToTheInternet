@@ -92,4 +92,9 @@ public class PersonalDataController : MonoBehaviour
         LoggingService.Log(LoggingService.LogCategory.Navigation, "Navigated to MainMenu");
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void TriggerProgressReset()
+    {
+        Store.Instance.ResetAllSettingsAndProgress();
+    }
 }
