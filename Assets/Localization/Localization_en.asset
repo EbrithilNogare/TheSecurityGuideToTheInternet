@@ -1688,7 +1688,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 66649242945224704
-    m_Localized: Censor the document before sending it to the AI
+    m_Localized: Censor sensitive information before submitting the document.
     m_Metadata:
       m_Items: []
   - m_Id: 66649294983954432
@@ -1700,19 +1700,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 66649324746735616
-    m_Localized: '<b>Welcome to the AI Data Censorship</b>
+    m_Localized: 'AI learns from everything you send it,
+
+      so if you include
+      private data, it could end up in the wrong hands.
+
+      That''s why you must
+      remove all <b>personal or sensitive information</b>
+
+      before submitting
+      documents to AI for processing.
 
 
-      Before sending
-      documents to the AI for processing,
-
-      you must remove all <b>personal
-      or sensitive information</b>.
-
-      The AI learns from everything you send,
-      so if you include private data,
-
-      it could end up in the wrong hands.'
+      Clicking on the text will black it
+      out, and clicking again will reveal it.'
     m_Metadata:
       m_Items: []
   - m_Id: 66649338483081216

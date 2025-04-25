@@ -1465,7 +1465,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 66649242945224704
-    m_Localized: "Cenzuruj dokument p\u0159ed odesl\xE1n\xEDm AI"
+    m_Localized: "Za\u010Derni citliv\xE9 informace p\u0159ed odesl\xE1n\xEDm dokumentu
+      do AI"
     m_Metadata:
       m_Items: []
   - m_Id: 66649294983954432
@@ -1477,11 +1478,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 66649324746735616
-    m_Localized: "<b>V\xEDtej v AI cenzurov\xE1n\xED dat</b>\n\nP\u0159ed odesl\xE1n\xEDm
-      dokument\u016F AI ke zpracov\xE1n\xED mus\xED\u0161 odstranit ve\u0161ker\xE9
-      <b>osobn\xED nebo citliv\xE9 informace</b>.\nAI se u\u010D\xED ze v\u0161eho,
-      co j\xED po\u0161le\u0161, tak\u017Ee pokud zahrne\u0161 soukrom\xE1 data,
-      mohou se dostat do nespr\xE1vn\xFDch rukou.\n"
+    m_Localized: "AI se u\u010D\xED ze v\u0161eho, co j\xED po\u0161le\u0161, tak\u017Ee
+      pokud zahrne\u0161 soukrom\xE1 data,\nmohou se dostat do nespr\xE1vn\xFDch
+      rukou.\nProto p\u0159ed odesl\xE1n\xEDm dokument\u016F AI ke zpracov\xE1n\xED\nmus\xED\u0161
+      odstranit ve\u0161ker\xE9 <b>osobn\xED nebo citliv\xE9 informace</b>.\n\nKliknut\xEDm
+      na text jej za\u010Dern\xED\u0161 a pokud klikne\u0161 znovu, tak jej op\u011Bt
+      uk\xE1\u017Ee\u0161."
     m_Metadata:
       m_Items: []
   - m_Id: 66649338483081216

@@ -1200,6 +1200,16 @@ PrefabInstance:
 
         it could end up in the wrong hands.'
       objectReference: {fileID: 0}
+    - target: {fileID: 3800453124221224968, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 3800453124221224968, guid: a1ee67da85bb5584f838fead46775b86,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1213,7 +1223,7 @@ PrefabInstance:
     - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1103.29
+      value: 1117.37
       objectReference: {fileID: 0}
     - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
@@ -1223,7 +1233,7 @@ PrefabInstance:
     - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 591.645
+      value: 598.685
       objectReference: {fileID: 0}
     - target: {fileID: 4164302166089150708, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
@@ -1238,7 +1248,7 @@ PrefabInstance:
     - target: {fileID: 6191862427478248743, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1395.29
+      value: 1409.37
       objectReference: {fileID: 0}
     - target: {fileID: 6191862427478248743, guid: a1ee67da85bb5584f838fead46775b86,
         type: 3}

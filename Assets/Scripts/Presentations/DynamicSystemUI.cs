@@ -41,6 +41,9 @@ public class DynamicSystemUI : MonoBehaviour
 
     private void Start()
     {
+        if (tweenSettings.Length == 0)
+            return; // die fast
+
         defaultPosition = transform.localPosition;
         defaultRotation = transform.localEulerAngles;
         defaultScale = transform.localScale;
@@ -65,7 +68,6 @@ public class DynamicSystemUI : MonoBehaviour
     {
         if (!initialized) return;
         Cleanup();
-
     }
 
     private void AutoStartTweens()
