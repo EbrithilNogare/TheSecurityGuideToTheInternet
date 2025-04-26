@@ -42,7 +42,10 @@ public class DynamicSystemUI : MonoBehaviour
     private void Start()
     {
         if (tweenSettings.Length == 0)
-            return; // die fast
+        {
+            this.enabled = false;
+            return; // die fast and save resources
+        }
 
         defaultPosition = transform.localPosition;
         defaultRotation = transform.localEulerAngles;

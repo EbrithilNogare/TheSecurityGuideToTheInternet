@@ -36,6 +36,7 @@ public class PasswordsHashingAnimator : MonoBehaviour
         if (!initialized) return;
         StartFade();
     }
+
     private void OnDisable()
     {
         if (!initialized) return;
