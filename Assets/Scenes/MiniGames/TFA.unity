@@ -736,7 +736,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Authentika\u010Dn\xED k\xF3d z aplikace"
+  m_text: "Autentiza\u010Dn\xED k\xF3d z aplikace"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4df05822f15a2584f9901b75eb26ebe2, type: 2}
   m_sharedMaterial: {fileID: -628191379978384950, guid: 4df05822f15a2584f9901b75eb26ebe2,
@@ -864,16 +864,16 @@ MonoBehaviour:
   phoneSmsScreen: {fileID: 1254335091}
   phoneLocationScreen: {fileID: 799527317}
   phoneSmsValue: {fileID: 1057309465}
-  biometricButton: {fileID: 1842771325}
   appTimeout: {fileID: 2025843116}
-  appTimeoutClock: {fileID: 1331315758}
   appCodeField: {fileID: 1874805768}
-  hwKey: {fileID: 1742920390}
-  hwKeyDropZone: {fileID: 1910938206}
-  keyDropZoneParent: {fileID: 1276889459}
   laptopFieldValue: {fileID: 1653055113}
-  laptopFieldObject: {fileID: 494305696}
+  biometricButton: {fileID: 1842771325}
+  appTimeoutClock: {fileID: 1331315758}
   progressBar: {fileID: 1746188149}
+  hwKey: {fileID: 1742920390}
+  keyDropZoneParent: {fileID: 1276889459}
+  hwKeyDropZone: {fileID: 1910938206}
+  laptopFieldObject: {fileID: 494305696}
   laptopSubmit: {fileID: 486480742}
   laptopLabelPassword: {fileID: 7926086}
   laptopLabelAppCode: {fileID: 194652432}

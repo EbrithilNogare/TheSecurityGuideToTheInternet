@@ -342,15 +342,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782296106270720
-    m_Localized: Verify the information using trusted sources
+    m_Localized: Verify the information using trusted sources.
     m_Metadata:
       m_Items: []
   - m_Id: 1782304704593920
-    m_Localized: Trust the AI since it is always accurate
+    m_Localized: Trust the AI since it is always accurate.
     m_Metadata:
       m_Items: []
   - m_Id: 1782361067651072
-    m_Localized: Ask AI again, and if it confirms, trust it
+    m_Localized: Ask AI again, and if it confirms, trust it.
     m_Metadata:
       m_Items: []
   - m_Id: 1782489258164224
@@ -359,15 +359,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1782514650480640
-    m_Localized: Because AI learns from it and others may later access it
+    m_Localized: Because AI learns from it and others may later access it.
     m_Metadata:
       m_Items: []
   - m_Id: 1782538570596352
-    m_Localized: Because AI would respond subjectively
+    m_Localized: Because AI would respond subjectively.
     m_Metadata:
       m_Items: []
   - m_Id: 1782548200718336
-    m_Localized: Because AI will exploit them to its advantage
+    m_Localized: Because AI will exploit them to its advantage.
     m_Metadata:
       m_Items: []
   - m_Id: 1783592704049152
@@ -392,15 +392,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1783775533760512
-    m_Localized: Check with a qualified professional before using the advice
+    m_Localized: Verify advice with an expert (e.g., a doctor) before applying it.
     m_Metadata:
       m_Items: []
   - m_Id: 1783780533370880
-    m_Localized: Trust it and apply it as soon as possible
+    m_Localized: Trust it and apply it as soon as possible.
     m_Metadata:
       m_Items: []
   - m_Id: 1783789672759296
-    m_Localized: Share the advice with others as reliable
+    m_Localized: Share the advice with others as reliable.
     m_Metadata:
       m_Items: []
   - m_Id: 1783897164382208
@@ -424,15 +424,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1784769206321152
-    m_Localized: To create and store strong, unique passwords securely
+    m_Localized: To create and store strong, unique passwords securely.
     m_Metadata:
       m_Items: []
   - m_Id: 1784774201737216
-    m_Localized: Reset forgotten passwords
+    m_Localized: Reset forgotten passwords.
     m_Metadata:
       m_Items: []
   - m_Id: 1784782791671808
-    m_Localized: A tool that steals passwords from public computers
+    m_Localized: A tool that steals passwords from public computers.
     m_Metadata:
       m_Items: []
   - m_Id: 1784932167614464
@@ -456,15 +456,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1785126569410560
-    m_Localized: Change it immediately to a strong, unique password
+    m_Localized: Change it immediately to a strong, unique password.
     m_Metadata:
       m_Items: []
   - m_Id: 1785143241768960
-    m_Localized: Ignore it if the account seems fine
+    m_Localized: Ignore it if the account seems fine.
     m_Metadata:
       m_Items: []
   - m_Id: 1785156160225280
-    m_Localized: Change it to the same password with slight modifications
+    m_Localized: Change it to the same password with slight modifications.
     m_Metadata:
       m_Items: []
   - m_Id: 1785224615460864
@@ -489,15 +489,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1785726619123712
-    m_Localized: A breach of one account could expose all other accounts
+    m_Localized: A breach of one account could expose all other accounts.
     m_Metadata:
       m_Items: []
   - m_Id: 1785740862980096
-    m_Localized: Forgetting one password means losing all access
+    m_Localized: Forgetting one password means losing all access.
     m_Metadata:
       m_Items: []
   - m_Id: 1785743807381504
-    m_Localized: Whenever I change a password, I must update it everywhere
+    m_Localized: Whenever I change a password, I must update it everywhere.
     m_Metadata:
       m_Items: []
   - m_Id: 1786024746057728
@@ -505,15 +505,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786025857548288
-    m_Localized: To provide an additional layer of security beyond just a password
+    m_Localized: To provide an additional layer of security beyond just a password.
     m_Metadata:
       m_Items: []
   - m_Id: 1786027459772416
-    m_Localized: To replace the need for passwords altogether
+    m_Localized: To replace the need for passwords altogether.
     m_Metadata:
       m_Items: []
   - m_Id: 1786028424462336
-    m_Localized: To be a backup password if I lose or forget the main password
+    m_Localized: To be a backup password if I lose or forget the main password.
     m_Metadata:
       m_Items: []
   - m_Id: 1786168958812160
@@ -522,15 +522,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786173182476288
-    m_Localized: A one-time code sent to your phone
+    m_Localized: A one-time code sent to your phone.
     m_Metadata:
       m_Items: []
   - m_Id: 1786174960861184
-    m_Localized: A security question answer
+    m_Localized: A security question answer.
     m_Metadata:
       m_Items: []
   - m_Id: 1786176156237824
-    m_Localized: Remembering the second password aside from the first
+    m_Localized: Remembering the second password aside from the first.
     m_Metadata:
       m_Items: []
   - m_Id: 1786309904203776
@@ -539,15 +539,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786434751856640
-    m_Localized: You can use backup codes or alternative recovery options
+    m_Localized: You can use backup codes or alternative recovery options.
     m_Metadata:
       m_Items: []
   - m_Id: 1786436320526336
-    m_Localized: You are permanently locked out of your account
+    m_Localized: You are permanently locked out of your account.
     m_Metadata:
       m_Items: []
   - m_Id: 1786437486542848
-    m_Localized: You can just sign in with the main password, 2FA is optional
+    m_Localized: You can just sign in with the main password, 2FA is optional.
     m_Metadata:
       m_Items: []
   - m_Id: 1786600338784256
@@ -555,15 +555,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1786680026365952
-    m_Localized: "2FA doesn\u2019t protect against phishing"
+    m_Localized: "2FA doesn\u2019t protect against phishing."
     m_Metadata:
       m_Items: []
   - m_Id: 1786683562164224
-    m_Localized: The user must remember two passwords instead of one
+    m_Localized: The user must remember two passwords instead of one.
     m_Metadata:
       m_Items: []
   - m_Id: 1786686225547264
-    m_Localized: Authenticators only work when connected to the internet
+    m_Localized: Authenticators only work when connected to the internet.
     m_Metadata:
       m_Items: []
   - m_Id: 1786803464732672

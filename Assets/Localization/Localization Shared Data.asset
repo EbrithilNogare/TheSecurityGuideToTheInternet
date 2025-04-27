@@ -1452,6 +1452,10 @@ MonoBehaviour:
     m_Key: Settings/Canvas/Reset done/done
     m_Metadata:
       m_Items: []
+  - m_Id: 67709413100388352
+    m_Key: AI_Presentation/Canvas/Slides/Slide (1)/Content/text 5 (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

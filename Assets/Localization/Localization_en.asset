@@ -1762,6 +1762,10 @@ MonoBehaviour:
       done'
     m_Metadata:
       m_Items: []
+  - m_Id: 67709413100388352
+    m_Localized: We divide AI into two categories based on capabilities
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

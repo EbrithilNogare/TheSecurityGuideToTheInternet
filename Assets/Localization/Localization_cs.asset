@@ -255,17 +255,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53969937660411904
-    m_Localized: "Jak nejl\xE9pe investovat 1000,-K\u010D?"
+    m_Localized: "M\xE1m t\u0159\xEDsku v prstu, co m\xE1m d\u011Blat?"
     m_Metadata:
       m_Items: []
   - m_Id: 53969948611739648
-    m_Localized: "Vsa\u010F to v\u0161echno do loterie, p\u0159es noc se stane\u0161
-      milion\xE1\u0159em!"
+    m_Localized: "U\u0159\xEDzni si ruku, pak u\u017E t\u011B nebude tr\xE1pit t\u0159\xEDska."
     m_Metadata:
       m_Items: []
   - m_Id: 53969960842330112
-    m_Localized: "AI nerozum\xED \u0159\xEDzen\xED rizik a\nm\u016F\u017Ee se u\u010Dit
-      i z klamav\xFDch reklam."
+    m_Localized: "AI se m\u016F\u017Ee u\u010Dit i od vtip\xE1lk\u016F na internetu\na
+      ch\xE1pat to jako pravdu."
     m_Metadata:
       m_Items: []
   - m_Id: 53969971885932544
@@ -336,7 +335,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970013157883904
-    m_Localized: "Prost\u011B najdi zakopan\xFD pir\xE1tsk\xFD poklad"
+    m_Localized: "Prost\u011B najdi zakopan\xFD pir\xE1tsk\xFD poklad."
     m_Metadata:
       m_Items: []
   - m_Id: 53970013178855424
@@ -344,8 +343,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970013199826944
-    m_Localized: "<b>Ano</b>, helium t\u011B nadn\xE1\u0161\xED,\n<b>ale</b> pokud
-      nechce\u0161 b\xFDt jako bal\xF3nek na p\xE1rty,\ndr\u017E se diety a cvi\u010Den\xED"
+    m_Localized: "<b>Ano</b>, draci jsou fajn,\n<b>ale</b> rozhodn\u011B ne\u017Eij\xED
+      v na\u0161em sv\u011Bt\u011B."
     m_Metadata:
       m_Items: []
   - m_Id: 53970013229187072
@@ -381,7 +380,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970013417930752
-    m_Localized: "Nezapome\u0148, \u017Ee AI se st\xE1le u\u010D\xED, i z ot\xE1zek!"
+    m_Localized: "Nezapome\u0148, \u017Ee AI se st\xE1le u\u010D\xED, i z ot\xE1zek!\nTak\u017Ee
+      tam nevl\xE1kej \u017E\xE1dn\xE9 citliv\xE9 \xFAdaje!"
     m_Metadata:
       m_Items: []
   - m_Id: 53970013447290880
@@ -395,14 +395,15 @@ MonoBehaviour:
   - m_Id: 53970013493428224
     m_Localized: "Turing\u016Fv test je test, kde <b>\u010Dlov\u011Bk</b> mus\xED
       rozhodnout,\nzda odpov\u011B\u010F poch\xE1z\xED od <b>\u010Dlov\u011Bka</b>
-      nebo <b>po\u010D\xEDta\u010De</b>.\n\nPokud si \u010Dlov\u011Bk mysl\xED, \u017Ee
-      po\u010D\xEDta\u010D je \u010Dlov\u011Bk,\npak po\u010D\xEDta\u010D t\xEDmto
-      testem pro\u0161el."
+      nebo <b>po\u010D\xEDta\u010De</b>.\n\nPokud je po\u010D\xEDta\u010D tak dobr\xFD,
+      \u017Ee i \u010Dlov\u011Bka oklame t\xEDm,\n\u017Ee si bude myslet, \u017Ee
+      komunikuje s dal\u0161\xEDm \u010Dlov\u011Bkem,\npak po\u010D\xEDta\u010D testem
+      \xFAsp\u011B\u0161n\u011B pro\u0161el."
     m_Metadata:
       m_Items: []
   - m_Id: 53970013514399744
     m_Localized: "<b>Ano</b>, nalezen\xED zakopan\xE9 pokladu by t\u011B obohatilo,\n<b>ale
-      nen\xED</b> to zrovna spolehliv\xE1 finan\u010Dn\xED strategie"
+      nen\xED</b> to zrovna spolehliv\xE1 finan\u010Dn\xED strategie."
     m_Metadata:
       m_Items: []
   - m_Id: 53970013539565568
@@ -432,12 +433,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970013694754816
-    m_Localized: "Sn\u011Bz bal\xF3nky pln\u011Bn\xE9 heliem! Doslova bude\u0161
-      leh\u010D\xED!"
+    m_Localized: "Drak, proto\u017Ee m\xE1 spot\u0159ebu 2 ovce na 100 km."
     m_Metadata:
       m_Items: []
   - m_Id: 53970013732503552
-    m_Localized: "Jak m\u016F\u017Eu rychle zhubnout?"
+    m_Localized: "Kter\xFD dopravn\xED prost\u0159edek spot\u0159ebuje nejm\xE9n\u011B
+      paliva?"
     m_Metadata:
       m_Items: []
   - m_Id: 53970013761863680
@@ -454,8 +455,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970013862526976
-    m_Localized: "<b>Zp\u011Btnovazebn\xED u\u010Den\xED</b>: u\u010D\xED se\nmetodou
-      pokus-omyl s odm\u011Bnami a tresty"
+    m_Localized: "<b>U\u010Den\xED z chyb a \xFAsp\u011Bch\u016F</b>: u\u010D\xED
+      se\nmetodou pokus-omyl s odm\u011Bnami a tresty"
     m_Metadata:
       m_Items: []
   - m_Id: 53970013891887104
@@ -1524,6 +1525,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 66676187313504256
     m_Localized: "Reset\nhotov\xFD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67709413100388352
+    m_Localized: "AI rozd\u011Blujeme do 2 kategori\xED podle schopnost\xED"
     m_Metadata:
       m_Items: []
   references:

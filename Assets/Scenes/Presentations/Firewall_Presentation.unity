@@ -3035,7 +3035,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Firewall se star\xE1 o bezpe\u010D\xED komunikace na z\xE1klad\u011B vn\u011Bj\u0161\xEDho
-    pohledu,\nnekouk\xE1 se na obsah komunikace, jen na to pro / od koho je."
+    pohledu.\nNerozbaluje ho, zaj\xEDm\xE1 ho jen pro nebo od koho je."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4df05822f15a2584f9901b75eb26ebe2, type: 2}
   m_sharedMaterial: {fileID: -628191379978384950, guid: 4df05822f15a2584f9901b75eb26ebe2,
@@ -7589,8 +7589,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Tak\u017Ee pokud u\u017Eivatel dobrovoln\u011B za\u010Dne stahovat virus,\ntak
     mu v tom br\xE1nit nebude, p\u0159eci jenom to chce u\u017Eivatel.\n\nNaopak,
-    pokud by ti n\u011Bkdo cht\u011Bl poslat ne\u0161kodn\xFD soubor,\ntak jej zablokuje,
-    proto\u017Ee to nen\xED iniciativa u\u017Eivatele."
+    pokud by ti n\u011Bkdo cht\u011Bl poslat i ne\u0161kodn\xFD soubor,\nani\u017E
+    by jsi o to po\u017E\xE1dal, tak jej zablokuje."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4df05822f15a2584f9901b75eb26ebe2, type: 2}
   m_sharedMaterial: {fileID: -628191379978384950, guid: 4df05822f15a2584f9901b75eb26ebe2,
