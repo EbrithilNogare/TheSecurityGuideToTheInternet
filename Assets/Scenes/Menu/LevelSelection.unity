@@ -3788,7 +3788,7 @@ PrefabInstance:
     - target: {fileID: 4243531934131056540, guid: cc33a33e2dd9d2c4698cf09c86768d4a,
         type: 3}
       propertyPath: m_text
-      value: 2FA
+      value: "Dvoufaktorov\xE9\nov\u011B\u0159en\xED"
       objectReference: {fileID: 0}
     - target: {fileID: 4243531934131056540, guid: cc33a33e2dd9d2c4698cf09c86768d4a,
         type: 3}
