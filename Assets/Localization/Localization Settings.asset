@@ -24,7 +24,8 @@ MonoBehaviour:
   m_StringDatabase:
     rid: 6812718600701083701
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 8905651121111171208
   m_ProjectLocaleIdentifier:
     m_Code: en
   m_PreloadBehavior: 2
@@ -232,3 +233,15 @@ MonoBehaviour:
         asm: Unity.Localization}
       data:
         m_PlayerPreferenceKey: selected-locale
+    - rid: 8905651121111171208
+      type: {class: AppInfo, ns: UnityEngine.Localization.Platform.Android, asm: Unity.Localization}
+      data:
+        m_DisplayName:
+          m_TableReference:
+            m_TableCollectionName: GUID:6d85f9d2b6f8e5045a27a77e7f99058e
+          m_TableEntryReference:
+            m_KeyId: 5705072640
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
