@@ -100,7 +100,14 @@ jobs:
           buildName: ${{ github.event.repository.name }}
           versioning: Semantic
           targetPlatform: ${{ matrix.targetPlatform }}
-
+          # Start of signing section: If you don't need signing, remove this section
+          androidKeystoreName: user
+          androidKeystoreBase64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          androidKeystorePass: ${{ secrets.ANDROID_KEYSTORE_PASS }}
+          androidKeyaliasName: ${{ secrets.ANDROID_KEYALIAS_NAME }}
+          androidKeyaliasPass: ${{ secrets.ANDROID_KEYALIAS_PASS }}
+          # End of signing section
+          
       - name: Get disk space usage
         run: df -ah /
 
