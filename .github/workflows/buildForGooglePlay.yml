@@ -46,9 +46,9 @@ jobs:
           androidKeystorePass: ${{ secrets.ANDROID_KEYSTORE_PASS }}
           androidKeyaliasName: ${{ secrets.ANDROID_KEYALIAS_NAME }}
           androidKeyaliasPass: ${{ secrets.ANDROID_KEYALIAS_PASS }}
-          androidTargetSdkVersion: AndroidApiLevel33
           buildName: ${{ github.event.repository.name }}
           versioning: Semantic
+          androidTargetSdkVersion: AndroidApiLevel34
 
       - name: Get disk space usage
         run: df -ah /
