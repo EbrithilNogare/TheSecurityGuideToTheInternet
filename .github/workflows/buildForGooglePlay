@@ -1,0 +1,64 @@
+name: Build Unity project for Google Play Store
+
+on:
+  push: workflow_dispatch
+
+jobs:
+  buildForGooglePlay:
+    name: Build for Google Play
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: false
+          
+      - name: Restore platform-specific cache
+        uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-Android
+          restore-keys: Library-
+
+      - name: Free disk space
+        uses: jlumbroso/free-disk-space@v1.3.1
+        with:
+          haskell: true #         free ~ 5.2 GiB in   1s
+          docker-images: true #   free ~ 3.2 GiB in   1s
+          dotnet: true #          free ~ 1.6 GiB in   1s
+          android: true #         free ~ 8.7 GiB in   5s
+          large-packages: false # free ~ 4,7 GiB in 100s
+          swap-storage: false #   free ~ 4.0 GiB in   1s
+
+      - uses: game-ci/unity-builder@v4
+        id: myBuildStep
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: Android
+          androidExportType: androidAppBundle
+          androidKeystoreName: user # This file won't exist, but this property needs to exist.
+          androidKeystoreBase64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          androidKeystorePass: ${{ secrets.ANDROID_KEYSTORE_PASS }}
+          androidKeyaliasName: ${{ secrets.ANDROID_KEYALIAS_NAME }}
+          androidKeyaliasPass: ${{ secrets.ANDROID_KEYALIAS_PASS }}
+          androidTargetSdkVersion: AndroidApiLevel33
+          buildName: ${{ github.event.repository.name }}
+          versioning: Semantic
+
+      - name: Get disk space usage
+        run: df -ah /
+
+      - name: Remove DoNotShip folder
+        run: |
+          sudo find ./build/Android -maxdepth 1 -type d -name "*DoNotShip*" -exec rm -rf {} +
+          sudo find ./build/Android -maxdepth 1 -type d -name "*ButDontShipItWithYourGame*" -exec rm -rf {} +
+        
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ github.event.repository.name }}-Android
+          path: build/Android
