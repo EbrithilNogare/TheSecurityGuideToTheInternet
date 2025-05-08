@@ -1,6 +1,7 @@
 name: Build Unity project for Google Play Store
 
-on: workflow_dispatch
+on:
+  workflow_dispatch
 
 jobs:
   buildForGooglePlay:
