@@ -70,7 +70,7 @@ public class FirewallMinigameController : MonoBehaviour
         Store.Instance.SetLevelScore(Store.Level.Firewall, scoreForStore);
         Store.Instance.quizToLoad = Store.Quiz.Firewall;
 
-        DOVirtual.DelayedCall(1.0f, () => SceneManager.LoadScene("Quiz"));
+        DOVirtual.DelayedCall(.2f, () => SceneManager.LoadScene("Quiz"));
     }
 
     public void EvaluatePackageDrop(bool isCorectlySorted)

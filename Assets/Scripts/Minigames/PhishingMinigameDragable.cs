@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 
 public class PhishingMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -41,7 +40,8 @@ public class PhishingMinigameDragable : MonoBehaviour, IBeginDragHandler, IDragH
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
 
-        Vector2 screenPosition = Mouse.current.position.ReadValue();
+        Vector2 screenPosition = eventData.position;
+        Debug.Log("Screen position: " + screenPosition);
 
         if (RectTransformUtility.RectangleContainsScreenPoint(websiteContainer, screenPosition, canvas.worldCamera))
         {

@@ -102,13 +102,16 @@ public class PasswordsMinigameController : MonoBehaviour
             var rotation = cone.rotation.eulerAngles.z;
             var diff = Mathf.Abs(angle - rotation);
 
-            if (diff < 7f)
+            float distance = Vector2.Distance(player.position, cone.position);
+            float lengthOfCone = cone.transform.lossyScale.y * cone.sizeDelta.y;
+
+
+            if (diff < 9f && distance < lengthOfCone)
             {
                 wasCought = true;
                 var coneImage = cone.GetComponent<Image>();
                 coneImage.color = strikeColorOfCone;
                 coneImage.DOColor(defaultColorOfCone, 0.5f);
-                //Debug.DrawLine(cone.position, player.position, Color.red);
                 break;
             }
         }
@@ -130,7 +133,7 @@ public class PasswordsMinigameController : MonoBehaviour
 
         if (strikesCount >= strikeImages.Length)
         {
-            LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Passwords minigame game over\",\"timeOfWriting\":" + timeOfWriting + ",\"timeOfNotWriting\":" + timeOfNotWriting + "}");
+            LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Passwords minigame game over\",\"timeOfWriting\":" + (int)timeOfWriting + ",\"timeOfNotWriting\":" + (int)timeOfNotWriting + "}");
             GameRestart();
             return;
         }
@@ -159,7 +162,7 @@ public class PasswordsMinigameController : MonoBehaviour
     {
         int score = strikesCount <= 1 ? 2 : 1;
 
-        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Passwords minigame completed\",\"score\":" + score + ",\"timeOfWriting\":" + timeOfWriting + ",\"timeOfNotWriting\":" + timeOfNotWriting + ",\"strikes\":" + strikesCount + "}");
+        LoggingService.Log(LoggingService.LogCategory.Minigame, "{\"message\":\"Passwords minigame completed\",\"score\":" + score + ",\"timeOfWriting\":" + (int)timeOfWriting + ",\"timeOfNotWriting\":" + (int)timeOfNotWriting + ",\"strikes\":" + strikesCount + "}");
         Store.Instance.minigameStars = score;
         int scoreForStore = score == 1 ? 0b100 : 0b110;
         Store.Instance.SetLevelScore(Store.Level.Passwords, scoreForStore);

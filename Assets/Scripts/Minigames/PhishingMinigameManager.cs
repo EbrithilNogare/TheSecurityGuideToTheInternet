@@ -55,19 +55,19 @@ public class PhishingMinigameManager : MonoBehaviour
         objectsInTemplate = new List<System.Tuple<Vector2, itemName, Color>>();
 
         // Image 1
-        SpawnObjectInTemplate(new Vector2(-400, -138), Random.Range(0, images.Length), true);
+        SpawnObjectInTemplate(new Vector3(-400, -138, 0), Random.Range(0, images.Length), true);
 
         // Image 2
-        SpawnObjectInTemplate(new Vector2(400, -138), Random.Range(0, images.Length), true);
+        SpawnObjectInTemplate(new Vector3(400, -138, 0), Random.Range(0, images.Length), true);
 
         // Field 1
-        SpawnObjectInTemplate(new Vector2(0, 62), Random.Range(0, 3), false);
+        SpawnObjectInTemplate(new Vector3(0, 62, 0), Random.Range(0, 3), false);
 
         // Field 2
-        SpawnObjectInTemplate(new Vector2(0, -38), Random.Range(3, 5), false);
+        SpawnObjectInTemplate(new Vector3(0, -38, 0), Random.Range(3, 5), false);
 
         // Field 3
-        SpawnObjectInTemplate(new Vector2(0, -138), 5, false);
+        SpawnObjectInTemplate(new Vector3(0, -138, 0), 5, false);
     }
 
     void SpawnObjectInTemplate(Vector3 position, int index, bool image)
@@ -76,7 +76,6 @@ public class PhishingMinigameManager : MonoBehaviour
         var rectTransform = instance.GetComponent<RectTransform>();
         var phishingMinigameDragable = instance.GetComponent<PhishingMinigameDragable>();
 
-        instance.transform.localPosition = position;
         if (image)
         {
             instance.GetComponent<Image>().color = colors[Random.Range(0, colors.Length)];
@@ -85,6 +84,7 @@ public class PhishingMinigameManager : MonoBehaviour
         rectTransform.anchorMin = new Vector2(0, 0);
         rectTransform.anchorMax = new Vector2(0, 0);
         rectTransform.sizeDelta = image ? new Vector2(200, 200) : new Vector2(350, 80);
+        instance.transform.localPosition = position;
         objectsInTemplate.Add(new System.Tuple<Vector2, itemName, Color>(
             position,
             instance.GetComponent<PhishingMinigameDragable>().objectName,
