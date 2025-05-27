@@ -100,12 +100,13 @@ jobs:
           buildName: ${{ github.event.repository.name }}
           versioning: Semantic
           targetPlatform: ${{ matrix.targetPlatform }}
-          androidExportType: ${{ matrix.targetPlatform == 'Android' && true && 'androidAppBundle' || '' }}
+          androidExportType: ${{ matrix.targetPlatform == 'Android' && true && 'androidAppBundle' || '' }} # 🔴 true for .aab file, false for .apk file in Android build
           androidKeystoreName: ${{ matrix.targetPlatform == 'Android' && 'user' || '' }}
           androidKeystoreBase64: ${{ matrix.targetPlatform == 'Android' && secrets.ANDROID_KEYSTORE_BASE64 || '' }}
           androidKeystorePass: ${{ matrix.targetPlatform == 'Android' && secrets.ANDROID_KEYSTORE_PASS || '' }}
           androidKeyaliasName: ${{ matrix.targetPlatform == 'Android' && secrets.ANDROID_KEYALIAS_NAME || '' }}
-          androidKeyaliasPass: ${{ matrix.targetPlatform == 'Android' && secrets.ANDROID_KEYALIAS_PASSS || '' }}
+          androidKeyaliasPass: ${{ matrix.targetPlatform == 'Android' && secrets.ANDROID_KEYALIAS_PASS || '' }}
+          androidTargetSdkVersion: AndroidApiLevel34 # Chooose here: https://apilevels.com/
           
       - name: Get disk space usage
         run: df -ah /
