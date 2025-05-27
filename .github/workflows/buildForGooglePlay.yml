@@ -1,7 +1,14 @@
 name: Build Unity project for Google Play Store
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      apiVersion:
+        type: choice
+        options: 
+        - AndroidApiLevel34
+        - AndroidApiLevel35
+        - AndroidApiLevel36
 
 jobs:
   buildForGooglePlay:
@@ -48,7 +55,7 @@ jobs:
           androidKeyaliasName: ${{ secrets.ANDROID_KEYALIAS_NAME }}
           androidKeyaliasPass: ${{ secrets.ANDROID_KEYALIAS_PASS }}
           buildName: ${{ github.event.repository.name }}
-          androidTargetSdkVersion: AndroidApiLevel34 # Chooose here: https://apilevels.com/
+          androidTargetSdkVersion: ${{ github.event.inputs.apiVersion }}
 
       - name: Get disk space usage
         run: df -ah /
