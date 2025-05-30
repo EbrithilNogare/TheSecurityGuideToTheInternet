@@ -1532,583 +1532,668 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 79678159859777536
-    m_Localized: 
+    m_Localized: "<b>Heslo je jen tvoje</b>\r\n\r\nNepi\u0161 ho na pap\xEDrek\r\na
+      nikomu ho ne\u0159\xEDkej."
     m_Metadata:
       m_Items: []
   - m_Id: 79678159926886400
-    m_Localized: 
+    m_Localized: 16
     m_Metadata:
       m_Items: []
   - m_Id: 79678159952052224
-    m_Localized: 
+    m_Localized: "\u010C\xEDsla, abeceda a speci\xE1n\xED znaky"
     m_Metadata:
       m_Items: []
   - m_Id: 79678159977218048
-    m_Localized: 
+    m_Localized: "8 m\u011Bs\xEDc\u016F"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160006578176
-    m_Localized: 
+    m_Localized: "<b>Hesla tak ochra\u0148uj\xED:</b>\r\n- tv\u016Fj profil na soci\xE1ln\xED
+      s\xEDti, aby n\u011Bkdo nepsal tv\xFDm jm\xE9nem.\r\n- telefon, aby nikdo nevid\u011Bl
+      tv\xE9 fotky\r\n- wi-fi aby ti nikdo nezpomalil internet\r\n- hern\xED profil,
+      aby ti nikdo neprodal tvoje skiny"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160035938304
-    m_Localized: 
+    m_Localized: "Kdy\u017E si vytvo\u0159\xED\u0161 \xFA\u010Det na n\u011Bjak\xE9
+      str\xE1nce, tak si i ona mus\xED to heslo ulo\u017Eit, aby pak poznala \u017Ee
+      je spr\xE1vn\xE9.\r\n\r\nAle neboj, to heslo tam je ulo\u017Een\xE9 tak aby
+      se nedalo \u010D\xEDst, je takzvan\u011B osolen\xE9 a zaha\u0161hovan\xE9."
     m_Metadata:
       m_Items: []
   - m_Id: 79678160061104128
-    m_Localized: 
+    m_Localized: "Tady ti pom\u016F\u017Ee aplikace <b>spr\xE1vce hesel</b>.\r\nTakov\xE1
+      aplikace zamkne v\u0161echna tv\xE1 hesla do trezoru\r\na zamkne je jedn\xEDm
+      siln\xFDm heslem, kter\xE9 se d\xE1 zapamatovat."
     m_Metadata:
       m_Items: []
   - m_Id: 79678160086269952
-    m_Localized: 
+    m_Localized: "Siln\xE1 hesla"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160119824384
-    m_Localized: 
+    m_Localized: hash
     m_Metadata:
       m_Items: []
   - m_Id: 79678160144990208
-    m_Localized: 
+    m_Localized: "Aby tv\xE9 heslo nikdo n\xE1hodou neuh\xE1dnul,\r\nmus\xED b\xFDt
+      takzvann\u011B siln\xE9, neboli slo\u017Eit\xE9.\r\n\r\nSiln\xE1 hesla jsou
+      dlooooooooouh\xE1,\r\nz_VelK\xE9Ho-v\xFDb\u011Bru zn&k\u016F!\r\na jsou n\xE1hodn\xE1."
     m_Metadata:
       m_Items: []
   - m_Id: 79678160174350336
-    m_Localized: 
+    m_Localized: 123456
     m_Metadata:
       m_Items: []
   - m_Id: 79678160203710464
-    m_Localized: 
+    m_Localized: "8 x st\xE1\u0159\xED vesm\xEDru"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160233070592
-    m_Localized: 
+    m_Localized: 0 s
     m_Metadata:
       m_Items: []
   - m_Id: 79678160258236416
-    m_Localized: 
+    m_Localized: 14
     m_Metadata:
       m_Items: []
   - m_Id: 79678160279207936
-    m_Localized: 
+    m_Localized: Hesla
     m_Metadata:
       m_Items: []
   - m_Id: 79678160308568064
-    m_Localized: 
+    m_Localized: "Spr\xE1vce hesel"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160337928192
-    m_Localized: 
+    m_Localized: 52 let
     m_Metadata:
       m_Items: []
   - m_Id: 79678160363094016
-    m_Localized: 
+    m_Localized: "Nejlep\u0161\xED je ale alternativa, tkz. <b>heslov\xE1 fr\xE1ze</b>.\r\nSpojen\xEDm
+      5 slov vznikne zapamatovateln\xE9 heslo,\r\nkter\xE9 je dostate\u010Dn\u011B
+      siln\xE9 i bez \u010D\xEDsel a znak\u016F.\r\n<b><color=#5FFF5D>bota-kniha-hrnek-m\xE1slo-vrabec</color></b>"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160392454144
-    m_Localized: 
+    m_Localized: 0 s
     m_Metadata:
       m_Items: []
   - m_Id: 79678160421814272
-    m_Localized: 
+    m_Localized: "Hash = jednosm\u011Brn\xFD p\u0159evod textu na j\xEDn\xFD text.\r\nTak\u017Ee
+      z hashu se p\u016Fvodn\xED heslo u\u017E nedozv\xEDme."
     m_Metadata:
       m_Items: []
   - m_Id: 79678160446980096
-    m_Localized: 
+    m_Localized: "Jak funguj\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160476340224
-    m_Localized: 
+    m_Localized: 4 minuty
     m_Metadata:
       m_Items: []
   - m_Id: 79678160505700352
-    m_Localized: 
+    m_Localized: "3 tis\xEDce let"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160535060480
-    m_Localized: 
+    m_Localized: ItpBar%$
     m_Metadata:
       m_Items: []
   - m_Id: 79678160564420608
-    m_Localized: 
+    m_Localized: "16 milion\u016F let"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160593780736
-    m_Localized: 
+    m_Localized: "400 milion\u016F let"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160618946560
-    m_Localized: 
+    m_Localized: "Prozrazen\xE1 hesla"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160648306688
-    m_Localized: 
+    m_Localized: "Tv\xE1 hesla na webu"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160677666816
-    m_Localized: 
+    m_Localized: 1 hodina
     m_Metadata:
       m_Items: []
   - m_Id: 79678160707026944
-    m_Localized: 
+    m_Localized: "M\xE1\u0161 pocit, \u017Ee zapamatovat si dlouh\xE9, n\xE1hodn\xE9\r\na
+      je\u0161t\u011B k tomu pro ka\u017Ed\xFD \xFA\u010Det j\xEDn\xE9 heslo je slo\u017Eit\xE9
+      ba nemo\u017En\xE9?"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160736387072
-    m_Localized: 
+    m_Localized: "<b>Nepou\u017E\xEDvej stejn\xE9 heslo dvakr\xE1t.</b>\r\n\r\nPokud
+      ho n\u011Bkdo ukradne a to se m\u016F\u017Ee st\xE1t,\r\ntak ho rozhodn\u011B
+      vyzkou\u0161\xED na dal\u0161\xEDch tv\xFDch \xFA\u010Dtech."
     m_Metadata:
       m_Items: []
   - m_Id: 79678160765747200
-    m_Localized: 
+    m_Localized: 12
     m_Metadata:
       m_Items: []
   - m_Id: 79678160795107328
-    m_Localized: 
+    m_Localized: "\u010C\xEDsla 0-9"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160828661760
-    m_Localized: 
+    m_Localized: "S\u016Fl = n\xE1hodn\xFD text p\u0159idan\xFD k heslu aby bylo
+      del\u0161\xED."
     m_Metadata:
       m_Items: []
   - m_Id: 79678160858021888
-    m_Localized: 
+    m_Localized: "Pokud m\xE1\u0161 podez\u0159en\xED, \u017Ee n\u011Bkdo v\xED tvoje
+      heslo - ihned ho zm\u011B\u0148!"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160883187712
-    m_Localized: 
+    m_Localized: "Cel\xE1 abeceda,\r\nmal\xE9 i velk\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160908353536
-    m_Localized: 
+    m_Localized: Heslo1234
     m_Metadata:
       m_Items: []
   - m_Id: 79678160937713664
-    m_Localized: 
+    m_Localized: "s\u016Fl"
     m_Metadata:
       m_Items: []
   - m_Id: 79678160962879488
-    m_Localized: 
+    m_Localized: heslo
     m_Metadata:
       m_Items: []
   - m_Id: 79678160992239616
-    m_Localized: 
+    m_Localized: "1. m\xEDsto\r\nza nej\u010Dast\u011Bj\u0161\xED heslo"
     m_Metadata:
       m_Items: []
   - m_Id: 79678161021599744
-    m_Localized: 
+    m_Localized: 15 s
     m_Metadata:
       m_Items: []
   - m_Id: 79678161042571264
-    m_Localized: 
+    m_Localized: "Takov\xE1 aplikace ti dokonce sama vymysl\xED siln\xE1 hesla a
+      zapamatuje si je.\r\nPokud tv\xE9 jm\xE9no a heslo n\u011Bkdo ukradne, tak
+      ti d\xE1 v\u011Bd\u011Bt, aby jsi ho mohl rychle zm\u011Bnit."
     m_Metadata:
       m_Items: []
   - m_Id: 79678161076125696
-    m_Localized: 
+    m_Localized: 10
     m_Metadata:
       m_Items: []
   - m_Id: 79678161105485824
-    m_Localized: 
+    m_Localized: 18
     m_Metadata:
       m_Items: []
   - m_Id: 79678161130651648
-    m_Localized: 
+    m_Localized: 26 minut
     m_Metadata:
       m_Items: []
   - m_Id: 79678161160011776
-    m_Localized: 
+    m_Localized: "140 tis\xEDc let"
     m_Metadata:
       m_Items: []
   - m_Id: 79678161185177600
-    m_Localized: 
+    m_Localized: "7 dn\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 79678161214537728
-    m_Localized: 
+    m_Localized: "Hesla jsou jako kl\xED\u010De od z\xE1mk\u016F,\r\nd\xEDky nim
+      m\xE1me jistotu \u017Ee z\xE1mek odemkneme jen my"
     m_Metadata:
       m_Items: []
   - m_Id: 79678161243897856
-    m_Localized: 
+    m_Localized: 0 s
     m_Metadata:
       m_Items: []
   - m_Id: 79678161269063680
-    m_Localized: 
+    m_Localized: "D\xE9lka hesla"
     m_Metadata:
       m_Items: []
   - m_Id: 79678161298423808
-    m_Localized: 
+    m_Localized: "P\u0159i h\xE1d\xE1n\xED hesel pom\xE1haj\xED po\u010D\xEDta\u010De
+      a ty hadaj\xED opravdu rychle.\r\nDok\xE1\u017E\xED vyzkou\u0161et 164 miliard
+      hesel za jednu sekundu.\r\nProto hesla mus\xED b\xFDt odoln\xE1 proti n\xE1hodn\xE9mu
+      uhodnut\xED."
     m_Metadata:
       m_Items: []
   - m_Id: 79678419185205248
-    m_Localized: 
+    m_Localized: Jak funguje
     m_Metadata:
       m_Items: []
   - m_Id: 79678419222953984
-    m_Localized: 
+    m_Localized: "Firewall je na ka\u017Ed\xE9m s\xED\u0165ov\xE9m za\u0159\xEDzen\xED.\r\nV\u010Detn\u011B
+      tv\xE9ho PC a routeru.\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 79678419252314112
-    m_Localized: 
+    m_Localized: "Firewall je po\u010D\xEDta\u010Dov\xFD program, kter\xFD dostal
+      n\xE1zev\r\nz anglick\xE9ho \"fire wall\" neboli protipo\u017E\xE1rn\xED st\u011Bna.\r\n\r\nTakov\xE1
+      st\u011Bna v budov\u011B slou\u017E\xED\r\nproti \u0161\xED\u0159en\xED po\u017E\xE1ru
+      z jedn\xE9 \u010D\xE1sti do druh\xE9."
     m_Metadata:
       m_Items: []
   - m_Id: 79678419285868544
-    m_Localized: 
+    m_Localized: A co viry
     m_Metadata:
       m_Items: []
   - m_Id: 79678419319422976
-    m_Localized: 
+    m_Localized: "Tv\u016Fj po\u010D\xEDta\u010D"
     m_Metadata:
       m_Items: []
   - m_Id: 79678419352977408
-    m_Localized: 
+    m_Localized: "Program firewallu obsahuje seznam pravidel.\r\nPravidla povoluj\xED,
+      nebo zakazuj\xED pr\u016Fchod internetov\xFDm po\u017Eadavk\u016Fm."
     m_Metadata:
       m_Items: []
   - m_Id: 79678419386531840
-    m_Localized: 
+    m_Localized: "Firewall se star\xE1 o bezpe\u010D\xED komunikace na z\xE1klad\u011B
+      vn\u011Bj\u0161\xEDho pohledu.\r\nNerozbaluje ho, zaj\xEDm\xE1 ho jen pro nebo
+      od koho je."
     m_Metadata:
       m_Items: []
   - m_Id: 79678419415891968
-    m_Localized: 
+    m_Localized: Kde jej najdeme
     m_Metadata:
       m_Items: []
   - m_Id: 79678419445252096
-    m_Localized: 
+    m_Localized: Firewall
     m_Metadata:
       m_Items: []
   - m_Id: 79678419474612224
-    m_Localized: 
+    m_Localized: "<b>Blokovan\xE9 po\u017Eadavky:\r\nIP \t\t \tProtokol  Port</b>\r\n203.0.113.5\tTCP\t\t23\r\n198.51.100.23\tTCP\t\t135\r\n192.0.2.45\t\tTCP\t\t137\r\n45.77.67.54\tTCP\t\t6667\r\n..."
     m_Metadata:
       m_Items: []
   - m_Id: 79678419503972352
-    m_Localized: 
+    m_Localized: "A stejn\u011B tak i po\u010D\xEDta\u010Dov\xFD firewall\r\nm\xE1
+      za \xFAkol nepropustit p\u0159es tuto\r\nvirtu\xE1ln\xED st\u011Bnu necht\u011Bn\xE9
+      v\u011Bci,\r\njako jsou po\u010D\xEDta\u010Dov\xE9 viry nebo\r\nsnahy o neopr\xE1vn\u011Bn\xFD
+      p\u0159\xEDstup."
     m_Metadata:
       m_Items: []
   - m_Id: 79678419529138176
-    m_Localized: 
+    m_Localized: Internet
     m_Metadata:
       m_Items: []
   - m_Id: 79678419562692608
-    m_Localized: 
+    m_Localized: Co to je
     m_Metadata:
       m_Items: []
   - m_Id: 79678419587858432
-    m_Localized: 
+    m_Localized: "Tak\u017Ee t\u011B ochr\xE1n\xED proti nebezpe\u010D\xED z internetu\r\na
+      z\xE1rove\u0148 i z tv\xE9 lok\xE1ln\xED s\xEDt\u011B."
     m_Metadata:
       m_Items: []
   - m_Id: 79678419617218560
-    m_Localized: 
+    m_Localized: Router
     m_Metadata:
       m_Items: []
   - m_Id: 79678419646578688
-    m_Localized: 
+    m_Localized: '192.168.0.12
+
+      TCP
+
+      80'
     m_Metadata:
       m_Items: []
   - m_Id: 79678419680133120
-    m_Localized: 
+    m_Localized: "Ka\u017Ed\xFD p\u0159\xEDchoz\xED nebo odchoz\xED internetov\xFD\r\nbal\xED\u010Dek
+      pak porovn\xE1 se seznamem.\r\n\r\nV seznamu se najde shoda podle:\r\n- IP
+      adresy\r\n- Protokolu\r\n- Portu\r\n- N\xE1zvu aplikace\r\n\r\nA pot\xE9 bal\xED\u010Dek\r\npust\xED,
+      nebo zahod\xED."
     m_Metadata:
       m_Items: []
   - m_Id: 79678419705298944
-    m_Localized: 
+    m_Localized: "<b>Povolen\xE9 po\u017Eadavky:\r\nIP \t\t \tProtokol  Port</b>\r\n192.168.0.0\tTCP\t\t80\r\n192.168.0.12\tTCP\t\t80\r\n74.125.200.91\tTCP\t\t443\r\n57.144.150.1\tUDP\t\t3478\r\n..."
     m_Metadata:
       m_Items: []
   - m_Id: 79678419738853376
-    m_Localized: 
+    m_Localized: "PC v lok\xE1ln\xED s\xEDti"
     m_Metadata:
       m_Items: []
   - m_Id: 79678419768213504
-    m_Localized: 
+    m_Localized: "Tak\u017Ee pokud u\u017Eivatel dobrovoln\u011B za\u010Dne stahovat
+      virus,\r\ntak mu v tom br\xE1nit nebude, p\u0159eci jenom to chce u\u017Eivatel.\r\n\r\nNaopak,
+      pokud by ti n\u011Bkdo cht\u011Bl poslat i ne\u0161kodn\xFD soubor,\r\nani\u017E
+      by jsi o to po\u017E\xE1dal, tak jej zablokuje."
     m_Metadata:
       m_Items: []
   - m_Id: 79678419797573632
-    m_Localized: 
+    m_Localized: '192.168.0.12
+
+      TCP
+
+      80'
     m_Metadata:
       m_Items: []
   - m_Id: 79678925718716416
-    m_Localized: 
+    m_Localized: "Nechce\u0161 p\u0159eci aby tvoje ve\u0161ker\xE9 pen\xEDze v bance\r\nbyly
+      chr\xE1n\u011Bn\xE9 stejn\u011B slab\u011B jako \xFA\u010Det do fastfoodu."
     m_Metadata:
       m_Items: []
   - m_Id: 79678925748076544
-    m_Localized: 
+    m_Localized: "P\u0159ilo\u017E prst\r\npro odemknut\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 79678925798408192
-    m_Localized: 
+    m_Localized: 3. faktor
     m_Metadata:
       m_Items: []
   - m_Id: 79678925831962624
-    m_Localized: 
+    m_Localized: "P\u0159ihl\xE1\u0161en\xED\r\nz lokace"
     m_Metadata:
       m_Items: []
   - m_Id: 79678925865517056
-    m_Localized: 
+    m_Localized: Telefon
     m_Metadata:
       m_Items: []
   - m_Id: 79678925894877184
-    m_Localized: 
+    m_Localized: "Heslo nesta\u010D\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 79678925928431616
-    m_Localized: 
+    m_Localized: "Aplikace kde sta\u010D\xED kliknout na ANO"
     m_Metadata:
       m_Items: []
   - m_Id: 79678925957791744
-    m_Localized: 
+    m_Localized: Jsi to ty?
     m_Metadata:
       m_Items: []
   - m_Id: 79678925991346176
-    m_Localized: 
+    m_Localized: "Dal\u0161\xED faktory"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926020706304
-    m_Localized: 
+    m_Localized: "Pod\xEDvej se do kamery\r\npro odemknut\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926050066432
-    m_Localized: 
+    m_Localized: 2. faktor
     m_Metadata:
       m_Items: []
   - m_Id: 79678926087815168
-    m_Localized: 
+    m_Localized: "Spr\xE1vce hesel"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926117175296
-    m_Localized: 
+    m_Localized: NE
     m_Metadata:
       m_Items: []
   - m_Id: 79678926150729728
-    m_Localized: 
+    m_Localized: "Dvoufaktorov\xE9\r\nov\u011B\u0159en\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926180089856
-    m_Localized: 
+    m_Localized: "<align=\"center\">Zkratky</align>\r\nMultifaktorov\xE9 ov\u011B\u0159ov\xE1n\xED:
+      <b>MFA</b>\r\nDvoufaktorov\xE9 ov\u011B\u0159ov\xE1n\xED: <b>2FA / TFA</b>"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926213644288
-    m_Localized: 
+    m_Localized: 9:12
     m_Metadata:
       m_Items: []
   - m_Id: 79678926243004416
-    m_Localized: 
+    m_Localized: "Dal\u0161\xED faktory"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926280753152
-    m_Localized: 
+    m_Localized: "V\u0161ude, kde m\xE1\u0161 velmi d\u016Fle\u017Eit\xE1 data.\r\nDal\u0161\xED
+      faktor autorizace nen\xED na \u0161kodu nikde.\r\nAle rozhodn\u011B by jsi
+      ho m\u011Bl zapnout v n\xE1sleduj\xEDcich oblastech:"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926310113280
-    m_Localized: 
+    m_Localized: "K\xF3d pro\r\np\u0159ihl\xE1\u0161en\xED je:"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926343667712
-    m_Localized: 
+    m_Localized: "Dom\xE1c\xED trezor"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926377222144
-    m_Localized: 
+    m_Localized: Email
     m_Metadata:
       m_Items: []
   - m_Id: 79678926406582272
-    m_Localized: 
+    m_Localized: "SMS s k\xF3dem, kter\xFD sta\u010D\xED opsat"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926440136704
-    m_Localized: 
+    m_Localized: "Na email poslan\xFD link, na kter\xFD sta\u010D\xED kliknout"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926473691136
-    m_Localized: 
+    m_Localized: "N\u011Bkter\xE9 \xFA\u010Dty vy\u017Eaduj\xED vy\u017E\u0161\xED
+      \xFArove\u0148 zabezpe\u010Den\xED.\r\nProto se p\u0159i p\u0159ihla\u0161ov\xE1n\xED
+      vy\u017Eaduje jak heslo tak i dal\u0161\xED faktor.\r\n\r\nTakov\xE9 \xFA\u010Dty
+      jsou pak imunn\xED v\u016F\u010Di kr\xE1de\u017Ei hesla.\r\nProto\u017Ee i
+      siln\xE9 heslo m\u016F\u017Ee\u0161 necht\u011Bn\u011B n\u011Bkomu \u0159\xEDct
+      / uk\xE1zat.\r\nS TFA by ti museli ukr\xE1st jak heslo tak i t\u0159eba telefon."
     m_Metadata:
       m_Items: []
   - m_Id: 79678926503051264
-    m_Localized: 
+    m_Localized: ANO
     m_Metadata:
       m_Items: []
   - m_Id: 79678926536605696
-    m_Localized: 
+    m_Localized: "<b>Spr\xE1vce hesel</b>\r\nV\u0161echna hesla na jednom m\xEDst\u011B.\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926565965824
-    m_Localized: 
+    m_Localized: "SMS Zpr\xE1vy"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926603714560
-    m_Localized: 
+    m_Localized: Kdy ho zapnout?
     m_Metadata:
       m_Items: []
   - m_Id: 79678926641463296
-    m_Localized: 
+    m_Localized: "Ztr\xE1ta druh\xE9ho faktoru  se d\xE1 vy\u0159e\u0161it pou\u017Eit\xEDm
+      tkz. k\xF3d\u016F pro obnoven\xED.\r\nTyto k\xF3dy dostane\u0161 p\u0159i zapnut\xED
+      MFA a je pot\u0159eba si je uschovat na bezpe\u010Dn\xE9m m\xEDst\u011B.\r\nPo
+      jejich uplatn\u011Bn\xED se druh\xFD faktor (ten ztracen\xFD) vypne a pro p\u0159ihl\xE1\u0161en\xED
+      bude sta\u010Dit jen heslo."
     m_Metadata:
       m_Items: []
   - m_Id: 79678926670823424
-    m_Localized: 
+    m_Localized: "Fyzick\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926704377856
-    m_Localized: 
+    m_Localized: "Dal\u0161\xED faktory"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926737932288
-    m_Localized: 
+    m_Localized: "<b>Banka</b>\r\nTady u\u017E nejde jen o virtu\xE1ln\xED sv\u011Bt,\r\ntady
+      u\u017E jde o re\xE1ln\xE9 pen\xEDze."
     m_Metadata:
       m_Items: []
   - m_Id: 79678926775681024
-    m_Localized: 
+    m_Localized: "Kapesn\xED USB kl\xED\u010D,\r\nsta\u010D\xED zasunout do po\u010D\xEDta\u010De"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926809235456
-    m_Localized: 
+    m_Localized: "Zapomenut\xE9 heslo se obnovuje p\u0159es email, ale co kdy\u017E
+      ztrat\xED\u0161 mobil?\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926846984192
-    m_Localized: 
+    m_Localized: "<b>Magick\xFD link</b>\r\nPro p\u0159ihl\xE1\u0161en\xED klikni
+      na:\r\n<color=blue>example.com/L/6E9A3C</color>"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926880538624
-    m_Localized: 
+    m_Localized: "<b>Verifika\u010Dn\xED k\xF3d</b>\r\nPro p\u0159ihl\xE1\u0161en\xED
+      zadej k\xF3d:\r\n<b>6E9A3C</b>"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926918287360
-    m_Localized: 
+    m_Localized: "<b>Email</b>\r\nP\u0159es email se d\xE1 obnovit heslo \r\nke v\u0161em
+      tv\xFDm \xFA\u010Dt\u016Fm."
     m_Metadata:
       m_Items: []
   - m_Id: 79678926951841792
-    m_Localized: 
+    m_Localized: "Otisk prstu (Biometrick\xE9 ov\u011B\u0159en\xED),\r\nfyzicky oskenuje
+      prst"
     m_Metadata:
       m_Items: []
   - m_Id: 79678926989590528
-    m_Localized: 
+    m_Localized: Praha
     m_Metadata:
       m_Items: []
   - m_Id: 79678927023144960
-    m_Localized: 
+    m_Localized: Heslo
     m_Metadata:
       m_Items: []
   - m_Id: 79678927056699392
-    m_Localized: 
+    m_Localized: "Na email poslan\xFD k\xF3d, kter\xFD sta\u010D\xED opsat"
     m_Metadata:
       m_Items: []
   - m_Id: 79678927090253824
-    m_Localized: 
+    m_Localized: "3D sken tv\xE1\u0159e"
     m_Metadata:
       m_Items: []
   - m_Id: 79678927128002560
-    m_Localized: 
+    m_Localized: "K\xF3dy pro obnoven\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 79681522236162048
-    m_Localized: 
+    m_Localized: "Rozhodni o ka\u017Ed\xE9m po\u017Eadavku (bal\xEDku) zda m\xE1
+      b\xFDt p\u0159eposl\xE1n, nebo zahozen a sp\xE1len.\r\nZleva p\u0159ich\xE1z\xED
+      po\u017Eadavky z internetu, vpravo odch\xE1z\xED po\u017Eadavky z tv\xE9ho
+      PC.\r\n\u0158i\u010F se pravidly na tabuli a pus\u0165 pouze takov\xE9, kter\xE9
+      tam najde\u0161.\r\nJo a je\u0161t\u011B mal\xE1 drobnost, hv\u011Bzdi\u010Dka
+      je jako \u017Eol\xEDk, ka\u017Ed\xE9 \u010D\xEDslo je spr\xE1vn\xE9."
     m_Metadata:
       m_Items: []
   - m_Id: 79681522286493696
-    m_Localized: 
+    m_Localized: "<b>Povolen\xE9 adresy</b>\r\n192.168.0.9\t21\tTCP\r\n1.1.1.1\t\t67\tTCP\r\n8.8.8.8\t\t67\tTCP\r\n
+      *.*.*.*\t\t80\tTCP\r\n *.*.*.*\t\t443\tTCP"
     m_Metadata:
       m_Items: []
   - m_Id: 79681522315853824
-    m_Localized: 
+    m_Localized: "POUZE POVOLEN\xC9\r\nPO\u017DADAVKY\r\nSM\xCD PROJ\xCDT"
     m_Metadata:
       m_Items: []
   - m_Id: 79681522349408256
-    m_Localized: 
+    m_Localized: "PRAVIDLA PRO\r\nP\u0158\xCDCHOZ\xCD PO\u017DADAVKY"
     m_Metadata:
       m_Items: []
   - m_Id: 79681522382962688
-    m_Localized: 
+    m_Localized: "PRAVIDLA PRO\r\nODCHOZ\xCD PO\u017DADAVKY"
     m_Metadata:
       m_Items: []
   - m_Id: 79681522416517120
-    m_Localized: 
+    m_Localized: "<b>Povolen\xE9 aplikace</b>\r\nchrome.exe\r\nminecraft.exe\r\nfortnite.exe\r\n<b>Povolen\xE9
+      porty</b>\r\n80\t\t\tTCP\r\n443\t\t\tTCP"
     m_Metadata:
       m_Items: []
   - m_Id: 79681884460449792
-    m_Localized: 
+    m_Localized: "Hesla zad\xE1vej v\u017Edy tak, aby je nevid\u011Bl nikdo - ani
+      \u010Dlov\u011Bk, ani kamera.\r\nProto\u017Ee i to nejsiln\u011Bj\u0161\xED
+      heslo ztr\xE1c\xED smysl, pokud ho n\u011Bkdo vid\xED nebo nato\u010D\xED.\r\n\r\nNa\u010Dasuj
+      si proto zad\xE1v\xE1n\xED hesla tak, aby t\u011B nikdo nevid\u011Bl ho ps\xE1t."
     m_Metadata:
       m_Items: []
   - m_Id: 79681884494004224
-    m_Localized: 
+    m_Localized: "P\u0159ihl\xE1sit"
     m_Metadata:
       m_Items: []
   - m_Id: 79681884527558656
-    m_Localized: 
+    m_Localized: "Dr\u017Een\xEDm zad\xE1vej heslo"
     m_Metadata:
       m_Items: []
   - m_Id: 79682695496237056
-    m_Localized: 
+    m_Localized: "Krom\u011B 2FA kter\xE9 m\xE1 dv\u011B f\xE1ze, lze m\xEDt u velmi
+      citliv\xEDch \xFA\u010Dtu i f\xE1z\xED v\xEDce.\r\nPoj\u010F si vyzkou\u0161et
+      v\xEDcero mo\u017En\xFDch typ\u016F authentifikace.\r\nN\xE1sleduj p\u0159ihla\u0161ovac\xED
+      pokyny na obrazovce monitoru."
     m_Metadata:
       m_Items: []
   - m_Id: 79682695529791488
-    m_Localized: 
+    m_Localized: 'Heslo
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 79682695563345920
-    m_Localized: 
+    m_Localized: "Autentiza\u010Dn\xED k\xF3d z aplikace"
     m_Metadata:
       m_Items: []
   - m_Id: 79682695601094656
-    m_Localized: 
+    m_Localized: Smazat
     m_Metadata:
       m_Items: []
   - m_Id: 79682695634649088
-    m_Localized: 
+    m_Localized: ANO
     m_Metadata:
       m_Items: []
   - m_Id: 79682695672397824
-    m_Localized: 
+    m_Localized: "K\xF3d pro\r\np\u0159ihl\xE1\u0161en\xED je:"
     m_Metadata:
       m_Items: []
   - m_Id: 79682695705952256
-    m_Localized: 
+    m_Localized: "P\u0159ihl\xE1\u0161en\xED\r\nz lokace"
     m_Metadata:
       m_Items: []
   - m_Id: 79682695743700992
-    m_Localized: 
+    m_Localized: "SMS Zpr\xE1vy"
     m_Metadata:
       m_Items: []
   - m_Id: 79682695781449728
-    m_Localized: 
+    m_Localized: "Autentiza\u010Dn\xED aplikace"
     m_Metadata:
       m_Items: []
   - m_Id: 79682695810809856
-    m_Localized: 
+    m_Localized: NE
     m_Metadata:
       m_Items: []
   - m_Id: 79682695852752896
-    m_Localized: 
+    m_Localized: Enter
     m_Metadata:
       m_Items: []
   - m_Id: 79682695890501632
-    m_Localized: 
+    m_Localized: Paris
     m_Metadata:
       m_Items: []
   - m_Id: 79682695924056064
-    m_Localized: 
+    m_Localized: "Opi\u0161 k\xF3d\r\nz SMS"
     m_Metadata:
       m_Items: []
   - m_Id: 79682695957610496
-    m_Localized: 
+    m_Localized: "Vlo\u017E hardwarov\xFD USB kl\xED\u010D"
     m_Metadata:
       m_Items: []
   - m_Id: 79682695995359232
-    m_Localized: 
+    m_Localized: Jsi to ty?
     m_Metadata:
       m_Items: []
   - m_Id: 79682696028913664
-    m_Localized: 
+    m_Localized: "P\u0159ihla\u0161ov\xE1n\xED\r\nse nezda\u0159ilo"
     m_Metadata:
       m_Items: []
   - m_Id: 79682696070856704
-    m_Localized: 
+    m_Localized: "Potvr\u010F v\r\ntelefonu,\r\n\u017Ee jsi to ty"
     m_Metadata:
       m_Items: []
   - m_Id: 79682696104411136
-    m_Localized: 
+    m_Localized: Odeslat
     m_Metadata:
       m_Items: []
   - m_Id: 79682696146354176
-    m_Localized: 
+    m_Localized: "Gratulujeme,\r\njsi p\u0159ihl\xE1\u0161en"
     m_Metadata:
       m_Items: []
   - m_Id: 79682696184102912
-    m_Localized: 
+    m_Localized: "P\u0159ilo\u017E prst\r\npro odemknut\xED"
     m_Metadata:
       m_Items: []
   - m_Id: 79682696226045952
-    m_Localized: 
+    m_Localized: "USB kl\xED\u010D sem"
     m_Metadata:
       m_Items: []
   references:
