@@ -26,6 +26,8 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        originalPosition = transform.position;
+        originalParent = transform.parent;
         isDragging = true;
         transform.SetParent(dragableParent);
         transform.SetAsLastSibling();
