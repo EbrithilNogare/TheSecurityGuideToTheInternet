@@ -387,12 +387,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970013199826944
-    m_Localized: '<b>Yes</b>, helium makes you float,
+    m_Localized: '<b>Yes</b>, dragons are cool,
 
-      <b>but</b> unless you
-      want to be a party decoration,
-
-      stick to diet and exercise'
+      <b>but</b> they definitely
+      don''t live in our world.'
     m_Metadata:
       m_Items: []
   - m_Id: 53970013229187072
@@ -496,11 +494,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53970013694754816
-    m_Localized: Eat helium-filled balloons! You'll literally become lighter!
+    m_Localized: Dragon, because it consumes 2 sheeps per 100 km.
     m_Metadata:
       m_Items: []
   - m_Id: 53970013732503552
-    m_Localized: How can I lose weight fast?
+    m_Localized: Which mode of transportation consumes the least fuel?
     m_Metadata:
       m_Items: []
   - m_Id: 53970013761863680

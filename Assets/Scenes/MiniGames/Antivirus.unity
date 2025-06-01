@@ -2153,7 +2153,7 @@ PrefabInstance:
     - target: {fileID: 5134930703438424026, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_Name
-      value: Document_docx
+      value: Document_docm
       objectReference: {fileID: 0}
     - target: {fileID: 7369804776236132864, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
@@ -2163,7 +2163,7 @@ PrefabInstance:
     - target: {fileID: 7445666349372468545, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
       propertyPath: m_text
-      value: thesis.docx
+      value: thesis.docm
       objectReference: {fileID: 0}
     - target: {fileID: 7445666349372468545, guid: 79684cd3f802f34409181cab376b9d72,
         type: 3}
