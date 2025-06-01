@@ -1008,7 +1008,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 53972375654137856
-    m_Localized: thesis.docx
+    m_Localized: thesis.docm
     m_Metadata:
       m_Items: []
   - m_Id: 53972375687692288
@@ -1465,7 +1465,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 55038841711263744
-    m_Localized: "<b>.docx & .xlsm</b>\n        Can contain malicious scripts (programs)."
+    m_Localized: "<b>.docm & .xlsm</b>\n        Can contain malicious scripts (programs)."
     m_Metadata:
       m_Items: []
   - m_Id: 55038841732235264
