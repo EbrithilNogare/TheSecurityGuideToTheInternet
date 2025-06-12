@@ -2196,6 +2196,14 @@ MonoBehaviour:
     m_Localized: "USB kl\xED\u010D sem"
     m_Metadata:
       m_Items: []
+  - m_Id: 84416801710833664
+    m_Localized: "Zdroje obr\xE1k\u016F: Freepik, Getty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84416801794719744
+    m_Localized: "Autor: David N\xE1pravn\xEDk"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

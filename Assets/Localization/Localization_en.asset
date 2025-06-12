@@ -2594,6 +2594,14 @@ MonoBehaviour:
     m_Localized: Drop USB key here
     m_Metadata:
       m_Items: []
+  - m_Id: 84416801710833664
+    m_Localized: 'Image attribution: Freepik, Getty'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84416801794719744
+    m_Localized: "Credits\nAuthor: David N\xE1pravn\xEDk"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

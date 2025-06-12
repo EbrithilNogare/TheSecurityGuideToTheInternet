@@ -2087,6 +2087,14 @@ MonoBehaviour:
     m_Key: AI_Presentation/Canvas/Slides/Slide (1)/Content/text 5 (1)/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 84416801710833664
+    m_Key: Settings/Canvas/Credits/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84416801794719744
+    m_Key: Settings/Canvas/Credits/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
