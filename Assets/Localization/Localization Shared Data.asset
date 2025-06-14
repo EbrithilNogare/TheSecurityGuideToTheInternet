@@ -2095,6 +2095,10 @@ MonoBehaviour:
     m_Key: Settings/Canvas/Credits/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 85080813633044480
+    m_Key: Passwords/Canvas/ProgressBar/Foreground/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -2602,6 +2602,10 @@ MonoBehaviour:
     m_Localized: "Credits\nAuthor: David N\xE1pravn\xEDk"
     m_Metadata:
       m_Items: []
+  - m_Id: 85080813633044480
+    m_Localized: light-money-globe-equal-pour-school-machinery-thrown-using-troops
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
