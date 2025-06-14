@@ -859,7 +859,7 @@ PlayerSettings:
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration:
     Android: 1
-    WebGL: 0
+    WebGL: 1
   managedStrippingLevel:
     EmbeddedLinux: 3
     GameCoreScarlett: 3
