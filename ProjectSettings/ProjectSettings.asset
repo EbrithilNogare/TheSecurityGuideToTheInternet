@@ -822,11 +822,11 @@ PlayerSettings:
   webGLTemplate: PROJECT:MicroMaterial
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
-  webGLCompressionFormat: 1
+  webGLCompressionFormat: 2
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  webGLDecompressionFallback: 1
+  webGLDecompressionFallback: 0
   webGLInitialMemorySize: 32
   webGLMaximumMemorySize: 2048
   webGLMemoryGrowthMode: 2
@@ -859,7 +859,7 @@ PlayerSettings:
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration:
     Android: 1
-    WebGL: 1
+    WebGL: 0
   managedStrippingLevel:
     EmbeddedLinux: 3
     GameCoreScarlett: 3
