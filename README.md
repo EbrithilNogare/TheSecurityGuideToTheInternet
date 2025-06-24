@@ -12,7 +12,8 @@
 ## Versions
 
 [![](https://img.shields.io/badge/Online%20version-555555?style=for-the-badge&logo=webgl&logoColor=white&cacheSeconds=3000)](https://ebrithilnogare.github.io/TheSecurityGuideToTheInternet/)
-[![](https://img.shields.io/badge/Android%20version-555555?style=for-the-badge&logo=android&logoColor=white&cacheSeconds=3000)](https://github.com/EbrithilNogare/TheSecurityGuideToTheInternet/releases/latest/download/TheSecurityGuideToTheInternet.apk)
+[![](https://img.shields.io/badge/Android%20APK-555555?style=for-the-badge&logo=android&logoColor=white&cacheSeconds=3000)](https://github.com/EbrithilNogare/TheSecurityGuideToTheInternet/releases/latest/download/TheSecurityGuideToTheInternet.apk)
+[![](https://img.shields.io/badge/Google%20Store-555555?style=for-the-badge&logo=googleplay&logoColor=white&cacheSeconds=3000)](https://play.google.com/store/apps/details?id=com.CharlesUniversityFacultyOfMathematicsAndPhysics.TheSecurityGuideToTheInternet)
 
 ## Abstract
 
