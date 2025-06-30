@@ -1,9 +1,14 @@
-using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
+
 
 public class LevelCompletedDialogController : MonoBehaviour
 {
+    private class StringArgs
+    {
+        public int Points { get; set; }
+    }
 
     public Color enabledStar;
     public Color disabledStar;
@@ -11,8 +16,7 @@ public class LevelCompletedDialogController : MonoBehaviour
     public Image minigameStar0;
     public Image minigameStar1;
     public Image quizStar;
-    public TextMeshProUGUI quizScoreText;
-
+    public LocalizeStringEvent localizedStringEvent;
 
     private void Awake()
     {
@@ -40,7 +44,12 @@ public class LevelCompletedDialogController : MonoBehaviour
         minigameStar0.color = minigameStars >= 1 ? enabledStar : disabledStar;
         minigameStar1.color = minigameStars >= 2 ? enabledStar : disabledStar;
         quizStar.color = Store.Instance.quizStars >= 1 ? enabledStar : disabledStar;
-        quizScoreText.text = quizScore.ToString();
+
+        //(localizedStringEvent.First()).ToString().Replace("{Points}", Store.Instance.quizScore.ToString());
+
+        var stringArgs = new StringArgs { Points = Store.Instance.quizScore };
+        localizedStringEvent.StringReference.Arguments = new[] { stringArgs };
+        localizedStringEvent.RefreshString();
     }
 
     public void CloseDialog()

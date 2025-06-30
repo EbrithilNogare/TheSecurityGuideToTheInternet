@@ -2099,6 +2099,10 @@ MonoBehaviour:
     m_Key: Passwords/Canvas/ProgressBar/Foreground/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 90547182977712128
+    m_Key: DynamicQuizScore
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

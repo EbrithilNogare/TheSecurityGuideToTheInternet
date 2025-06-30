@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: cs
   m_SharedData: {fileID: 11400000, guid: 6d85f9d2b6f8e5045a27a77e7f99058e, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 1489577246321803283
   m_TableData:
   - m_Id: 5705072640
     m_Localized: "Bezpe\u010Dnostn\xED pr\u016Fvodce internetem"
@@ -2208,6 +2209,17 @@ MonoBehaviour:
     m_Localized: Tisk-Galaxie-Harfa-Herec-Fotograf-Sauna-Klimatizace-Koberec-Brusle
     m_Metadata:
       m_Items: []
+  - m_Id: 90547182977712128
+    m_Localized: "Z\xEDskal jsi \r\n{Points:plural:1 bod|{} body|{} bod\u016F}"
+    m_Metadata:
+      m_Items:
+      - rid: 1489577246321803283
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1489577246321803283
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 90547182977712128

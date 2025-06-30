@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 6d85f9d2b6f8e5045a27a77e7f99058e, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 1489577246321803287
   m_TableData:
   - m_Id: 5705072640
     m_Localized: The Security Guide to the Internet
@@ -2606,6 +2607,17 @@ MonoBehaviour:
     m_Localized: light-money-globe-equal-pour-school-machinery-thrown-using-troops
     m_Metadata:
       m_Items: []
+  - m_Id: 90547182977712128
+    m_Localized: "You got \r\n{Points:plural:1 point|{} points}"
+    m_Metadata:
+      m_Items:
+      - rid: 1489577246321803287
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1489577246321803287
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 90547182977712128

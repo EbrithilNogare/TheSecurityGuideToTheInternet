@@ -1843,7 +1843,7 @@ MonoBehaviour:
   minigameStar0: {fileID: 1134368422}
   minigameStar1: {fileID: 1606899667}
   quizStar: {fileID: 359565348}
-  quizScoreText: {fileID: 455323883}
+  localizedStringEvent: {fileID: 455323885}
 --- !u!1 &359565346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2044,6 +2044,7 @@ GameObject:
   - component: {fileID: 455323882}
   - component: {fileID: 455323884}
   - component: {fileID: 455323883}
+  - component: {fileID: 455323885}
   m_Layer: 5
   m_Name: Quiz score
   m_TagString: Untagged
@@ -2065,10 +2066,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1013697137}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37.986877, y: 0}
-  m_SizeDelta: {x: 128.0461, y: 80}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -40, y: 0}
+  m_SizeDelta: {x: -96, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &455323883
 MonoBehaviour:
@@ -2090,7 +2091,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 400
+  m_text: "Z\xEDskal jsi\n<b>{0}</b> bod\u016F"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4df05822f15a2584f9901b75eb26ebe2, type: 2}
   m_sharedMaterial: {fileID: -628191379978384950, guid: 4df05822f15a2584f9901b75eb26ebe2,
@@ -2118,14 +2119,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 4
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2168,6 +2169,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455323881}
   m_CullTransparentMesh: 1
+--- !u!114 &455323885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455323881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:6d85f9d2b6f8e5045a27a77e7f99058e
+    m_TableEntryReference:
+      m_KeyId: 90547182977712128
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 455323883}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &467986290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3875851243998202951, guid: cc33a33e2dd9d2c4698cf09c86768d4a,
@@ -3202,11 +3243,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1013697137}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 70.01001, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -8, y: 0}
   m_SizeDelta: {x: 64, y: 64}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &864492175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3934,11 +3975,11 @@ RectTransform:
   - {fileID: 864492174}
   m_Father: {fileID: 1603668314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -264.52478, y: -157}
-  m_SizeDelta: {x: 241.6543, y: 80}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 126.649994, y: -157.8}
+  m_SizeDelta: {x: 290.5, y: 105}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1013697138
 MonoBehaviour:
   m_ObjectHideFlags: 0
