@@ -2189,7 +2189,10 @@ MonoBehaviour:
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
-    m_LocalVariables: []
+    m_LocalVariables:
+    - name: Points
+      variable:
+        rid: 1489577267987480579
   m_FormatArguments: []
   m_UpdateString:
     m_PersistentCalls:
@@ -2208,7 +2211,12 @@ MonoBehaviour:
         m_CallState: 2
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1489577267987480579
+      type: {class: IntVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables,
+        asm: Unity.Localization}
+      data:
+        m_Value: 1
 --- !u!1 &467986290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3875851243998202951, guid: cc33a33e2dd9d2c4698cf09c86768d4a,

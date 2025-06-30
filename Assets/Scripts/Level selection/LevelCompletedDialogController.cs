@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Localization.Components;
+using UnityEngine.Localization.SmartFormat.PersistentVariables;
 using UnityEngine.UI;
 
 
@@ -45,11 +46,8 @@ public class LevelCompletedDialogController : MonoBehaviour
         minigameStar1.color = minigameStars >= 2 ? enabledStar : disabledStar;
         quizStar.color = Store.Instance.quizStars >= 1 ? enabledStar : disabledStar;
 
-        //(localizedStringEvent.First()).ToString().Replace("{Points}", Store.Instance.quizScore.ToString());
-
-        var stringArgs = new StringArgs { Points = Store.Instance.quizScore };
-        localizedStringEvent.StringReference.Arguments = new[] { stringArgs };
-        localizedStringEvent.RefreshString();
+        var localizedString = localizedStringEvent.StringReference;
+        (localizedString["Points"] as IntVariable).Value = quizScore;
     }
 
     public void CloseDialog()
