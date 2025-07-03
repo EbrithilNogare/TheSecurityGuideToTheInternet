@@ -10,7 +10,7 @@ public static class LoggingService
 {
     private const string NewRelicLogUrl = "https://log-api.eu.newrelic.com/log/v1";
     private static string ApiKey;
-    private static int quotaLimiter = 5000;
+    private static int quotaLimiter = 100;
 
     private static string sessionId;
     private static Environment environment;
@@ -27,6 +27,11 @@ public static class LoggingService
 
         Application.logMessageReceived += (message, stackTrace, type) =>
         {
+            if (quotaLimiter-- <= 0)
+            {
+                return;
+            }
+
             if (type == LogType.Error || type == LogType.Exception)
             {
                 SendLogsAsync(LogLevel.Error, LogCategory.LogMessageReceived, message, new Dictionary<string, string> { { "stackTrace", stackTrace } });
@@ -45,11 +50,6 @@ public static class LoggingService
 
     private static async void SendLogsAsync(LogLevel logLevel, LogCategory category, string description, Dictionary<string, string> attributes = null)
     {
-        if (quotaLimiter-- <= 0)
-        {
-            return;
-        }
-
         if (environment == Environment.Development)
         {
             Debug.Log($"[LoggingService] {logLevel} {category} {description}");
