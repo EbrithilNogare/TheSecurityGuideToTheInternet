@@ -10,10 +10,13 @@ public static class LoggingService
 {
     private const string NewRelicLogUrl = "https://log-api.eu.newrelic.com/log/v1";
     private static string ApiKey;
-    private static int quotaLimiter = 100;
+    private static int quotaLimiter = 10000;
 
     private static string sessionId;
     private static Environment environment;
+    private static readonly Dictionary<string, int> errorCounts = new Dictionary<string, int>();
+    private static readonly Dictionary<string, int> warningCounts = new Dictionary<string, int>();
+    private const int MaxRepeats = 10;
 
     private enum LogLevel { Info, Warning, Error }
     private enum Environment { Development, Production }
@@ -27,18 +30,23 @@ public static class LoggingService
 
         Application.logMessageReceived += (message, stackTrace, type) =>
         {
-            if (quotaLimiter-- <= 0)
+            if (type == LogType.Error || type == LogType.Exception)
             {
+                if (!errorCounts.TryGetValue(message, out var count) || count < MaxRepeats)
+                {
+                    errorCounts[message] = count + 1;
+                    SendLogsAsync(LogLevel.Error, LogCategory.LogMessageReceived, message, new Dictionary<string, string> { { "stackTrace", stackTrace } });
+                }
                 return;
             }
 
-            if (type == LogType.Error || type == LogType.Exception)
-            {
-                SendLogsAsync(LogLevel.Error, LogCategory.LogMessageReceived, message, new Dictionary<string, string> { { "stackTrace", stackTrace } });
-            }
             if (type == LogType.Warning || type == LogType.Assert)
             {
-                SendLogsAsync(LogLevel.Warning, LogCategory.LogMessageReceived, message, new Dictionary<string, string> { { "stackTrace", stackTrace } });
+                if (!warningCounts.TryGetValue(message, out var count) || count < MaxRepeats)
+                {
+                    warningCounts[message] = count + 1;
+                    SendLogsAsync(LogLevel.Warning, LogCategory.LogMessageReceived, message, new Dictionary<string, string> { { "stackTrace", stackTrace } });
+                }
             }
         };
     }
@@ -50,6 +58,9 @@ public static class LoggingService
 
     private static async void SendLogsAsync(LogLevel logLevel, LogCategory category, string description, Dictionary<string, string> attributes = null)
     {
+        if (quotaLimiter-- <= 0)
+            return;
+
         if (environment == Environment.Development)
         {
             Debug.Log($"[LoggingService] {logLevel} {category} {description}");
