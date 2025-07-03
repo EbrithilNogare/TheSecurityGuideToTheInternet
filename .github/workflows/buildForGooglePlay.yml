@@ -5,10 +5,9 @@ on:
     inputs:
       apiVersion:
         type: choice
-        options: 
-        - AndroidApiLevel34
-        - AndroidApiLevel35
-        - AndroidApiLevel36
+        options:
+          - AndroidApiLevel35
+          - AndroidApiLevel36
 
 jobs:
   buildForGooglePlay:
@@ -21,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0
           lfs: false
-          
+
       - name: Restore platform-specific cache
         uses: actions/cache@v4
         with:
@@ -64,7 +63,7 @@ jobs:
         run: |
           sudo find ./build/Android -maxdepth 1 -type d -name "*DoNotShip*" -exec rm -rf {} +
           sudo find ./build/Android -maxdepth 1 -type d -name "*ButDontShipItWithYourGame*" -exec rm -rf {} +
-        
+
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ github.event.repository.name }}-Android
