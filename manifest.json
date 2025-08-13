@@ -1,0 +1,12 @@
+{
+  "name": "The Security Guide to the Internet",
+  "start_url": "https://ebrithilnogare.github.io/TheSecurityGuideToTheInternet/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "TemplateData/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}
